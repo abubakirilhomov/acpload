@@ -6,9 +6,7 @@ import WhyUs from '../../components/WhyUs/WhyUs'
 const Home = () => {
   return (
     <>
-    <Showcase/>
-    <Advantages/>
-    <WhyUs/>
+
     </>
   )
 }
