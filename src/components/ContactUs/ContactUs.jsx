@@ -6,7 +6,7 @@ const ContactUs = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full max-w-[90%] mx-auto my-10 px-5">
+    <div className="w-full max-w-[90%] mx-auto my-10">
       <h2 className="text-3xl font-semibold text-center mb-8 text-white font-serif">
         {t("contact-us.title")}
       </h2>
