@@ -6,6 +6,7 @@ import { Outlet } from 'react-router-dom'
 import HeroSection from './components/Showcase/Showcase'
 import About from './components/About/About'
 import HowItWorks from './components/HowItWorks/HowItWorks'
+import ContactUs from './components/ContactUs/ContactUs'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
     <HeroSection/>
     <About/>
     <HowItWorks/>
+    <ContactUs/>
     <Footer/>
     </>
   )

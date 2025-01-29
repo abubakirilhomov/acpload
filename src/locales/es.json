@@ -1,4 +1,17 @@
 {
+    "contact-us": {
+      "title": "Contáctenos",
+      "contact-info": "Información de contacto",
+      "phone": "Número de Teléfono",
+      "email": "Email",
+      "location": "Ubicación",
+      "question-suggestion": "Pregunta o Sugerencia",
+      "name": "Nombre",
+      "email-label": "Correo Electrónico",
+      "question": "Tu Pregunta o Sugerencia",
+      "send": "Enviar",
+      "description": "No dude en contactarnos en ACP Loads para abrir un mundo de servicios logísticos eficientes y confiables. Entendemos la importancia de una comunicación fluida en la industria de la logística."
+    },
     "sign-up": "Registrarse",
     "log-in": "Acceso",
     "title": "Logística de precisión: conectando su mundo",
@@ -15,6 +28,34 @@
         "title": "Cargas Calientes para Transportistas",
         "description": "Encuentra las mejores cargas calientes disponibles con nuestro sistema de filtrado avanzado y una interfaz fácil de usar.",
         "stats": "1000+ cargas diarias"
+      }
+    ],
+    "about-us": "Sobre Nosotros",
+    "advantages": [
+      {
+        "title": "Rápido",
+        "description": "Experimenta un rendimiento ultrarrápido con nuestra plataforma.",
+        "icon": "quick"
+      },
+      {
+        "title": "Fácil",
+        "description": "Nuestro diseño intuitivo garantiza una experiencia fluida.",
+        "icon": "easy"
+      },
+      {
+        "title": "Seguro",
+        "description": "Priorizamos la seguridad para proteger sus datos.",
+        "icon": "secure"
+      },
+      {
+        "title": "Cómodo",
+        "description": "Disfruta de una experiencia de usuario fluida y conveniente.",
+        "icon": "comfortable"
+      },
+      {
+        "title": "Comprensible",
+        "description": "Nuestra plataforma está diseñada para ser clara y fácil de usar.",
+        "icon": "understandable"
       }
     ]
   }

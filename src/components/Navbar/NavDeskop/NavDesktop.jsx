@@ -27,7 +27,7 @@ const NavDesktop = () => {
           <button className="btn btn-info btn-outline hover:text-white  px-7 rounded-full">
           {t("log-in")}
           </button>
-          <button className="btn btn-info border-info btn-soft hover:text-white  px-7 rounded-full">
+          <button className="btn btn-info border-info hover:text-white  px-7 rounded-full">
           {t("sign-up")}
           </button>
           <div className="dropdown dropdown-end">
