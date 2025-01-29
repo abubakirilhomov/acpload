@@ -1,5 +1,47 @@
 {
+    "contact-us": {
+      "title": "Contact Us",
+      "contact-info": "Contact Information",
+      "phone": "Phone Number",
+      "email": "Email",
+      "location": "Location",
+      "question-suggestion": "Question or Suggestion",
+      "name": "Name",
+      "email-label": "Email",
+      "question": "Your Question or Suggestion",
+      "send": "Send",
+      "description": "Feel free to get in touch with us at ACP Loads to unlock a world of efficient and reliable logistics services. We understand the importance of seamless communication in the logistics industry."
+    },
     "sign-up": "Sign Up",
     "log-in": "Log In",
-    "title": "Precision Logistics: Connecting Your World"
-}
+    "title": "Precision Logistics: Connecting Your World",
+    "about-us": "About Us",
+    "advantages": [
+      {
+        "title": "Quick",
+        "description": "Experience lightning-fast performance with our platform.",
+        "icon": "quick"
+      },
+      {
+        "title": "Easy",
+        "description": "Our intuitive design ensures a smooth user experience.",
+        "icon": "easy"
+      },
+      {
+        "title": "Secure",
+        "description": "We prioritize security to keep your data safe and protected.",
+        "icon": "secure"
+      },
+      {
+        "title": "Comfortable",
+        "description": "Enjoy a seamless and convenient user journey.",
+        "icon": "comfortable"
+      },
+      {
+        "title": "Understandable",
+        "description": "Our platform is designed to be user-friendly and clear.",
+        "icon": "understandable"
+      }
+    ]
+  }
+  
