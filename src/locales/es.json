@@ -12,9 +12,24 @@
       "send": "Enviar",
       "description": "No dude en contactarnos en ACP Loads para abrir un mundo de servicios logísticos eficientes y confiables. Entendemos la importancia de una comunicación fluida en la industria de la logística."
     },
-    "sign-up": "Registrarso",
+    "sign-up": "Registrarse",
     "log-in": "Acceso",
     "title": "Logística de precisión: conectando su mundo",
+    "howItWorks": "Cómo Funciona",
+    "description": "Nuestra plataforma conecta a expedidores de carga, agentes de carga, propietarios-operadores y transportistas. Encuentra cargas, gestiona envíos y haz crecer tu negocio de manera eficiente.",
+    "joinNow": "Únete Ahora",
+    "cards": [
+      {
+        "title": "Publicación Rápida para Agentes de Carga y Expedidores",
+        "description": "Publica cargas de manera rápida y eficiente, ahorrando tiempo y aumentando tus ganancias. ¡Más cargas movidas cada día!",
+        "stats": "50% más rápido en la publicación"
+      },
+      {
+        "title": "Cargas Calientes para Transportistas",
+        "description": "Encuentra las mejores cargas calientes disponibles con nuestro sistema de filtrado avanzado y una interfaz fácil de usar.",
+        "stats": "1000+ cargas diarias"
+      }
+    ],
     "about-us": "Sobre Nosotros",
     "advantages": [
       {
@@ -44,4 +59,3 @@
       }
     ]
   }
-  

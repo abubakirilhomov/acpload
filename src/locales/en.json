@@ -15,6 +15,21 @@
     "sign-up": "Sign Up",
     "log-in": "Log In",
     "title": "Precision Logistics: Connecting Your World",
+    "howItWorks": "How It Works",
+    "description": "Our platform connects Freight Shippers, Brokers, Owner-Operators, and Carriers. Find loads, manage shipments, and grow your business efficiently.",
+    "joinNow": "Join Now",
+    "cards": [
+      {
+        "title": "Fast Posting for Freight Brokers and Shippers",
+        "description": "Post loads quickly and efficiently, saving time and increasing your profits. More loads moved every day!",
+        "stats": "50% faster posting"
+      },
+      {
+        "title": "Hot Loads for Carriers",
+        "description": "Find the best hot loads available with our advanced filtering system and user-friendly interface.",
+        "stats": "1000+ daily loads"
+      }
+    ],
     "about-us": "About Us",
     "advantages": [
       {
@@ -44,4 +59,3 @@
       }
     ]
   }
-  
