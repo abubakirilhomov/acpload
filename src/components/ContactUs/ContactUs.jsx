@@ -7,7 +7,7 @@ const ContactUs = () => {
 
   return (
     <div className="w-full max-w-[90%] mx-auto my-10">
-      <h2 className="text-3xl font-semibold text-center mb-8 text-white font-serif">
+      <h2 className="text-3xl font-semibold text-center mb-8 text-white">
         {t("contact-us.title")}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

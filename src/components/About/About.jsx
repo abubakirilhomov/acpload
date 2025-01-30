@@ -15,7 +15,7 @@ const About = () => {
   const { t } = useTranslation();
   return (
     <div className="w-full max-w-[90%] mx-auto my-10">
-      <h2 className="text-3xl font-semibold text-center mb-8 text-white font-serif">{t('about-us')}</h2>
+      <h2 className="text-3xl font-semibold text-center mb-8 text-white">{t('about-us')}</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
         {t("advantages", { returnObjects: true }).map((advantage, index) => (
           <div

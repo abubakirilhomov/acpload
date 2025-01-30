@@ -69,7 +69,7 @@ const HowItWorks = () => {
             whileTap={{ scale: 0.95 }}
             className="inline-block"
           >
-            <button className="px-8 py-3 text-lg font-semibold bg-primary/90 hover:bg-primary text-primary-content rounded-xl backdrop-blur-sm shadow-lg transition-all duration-300">
+            <button className="px-8 py-3 text-lg font-semibold bg-primary/90 hover:bg-primary text-primary-content rounded-xl backdrop-blur-sm shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] transition-all duration-300">
               {t("joinNow")}
             </button>
           </motion.div>
@@ -86,7 +86,7 @@ const HowItWorks = () => {
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
               className="group"
             >
-              <div className="relative flex items-center backdrop-blur-xl shadow shadow-info md:min-h-[40vh] md:max-h-[40vh] min-h-[60vh] max-h-[60vh] bg-base-100/30 p-8 rounded-2xl border border-base-content/10 ">
+              <div className="relative flex items-center backdrop-blur-xl shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] md:min-h-[40vh] md:max-h-[40vh] min-h-[60vh] max-h-[60vh] bg-base-100/30 p-8 rounded-2xl border border-base-content/10 ">
                 <div className="relative z-10">
                   <div className="w-12 h-12 mb-6 rounded-xl bg-primary/20 backdrop-blur-sm flex items-center justify-center">
                     {i === 0 ? (
