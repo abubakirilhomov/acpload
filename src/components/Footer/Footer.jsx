@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="footer flex bg-base-300 text-base-content p-10">
+    <footer className="footer flex bg-base-300 text-base-content ">
+      <div className="w-full max-w-[90%] mx-auto flex py-5">
       <div className="w-full sm:w-1/3 mb-6 sm:mb-0">
         <h6 className="footer-title text-lg font-bold mb-2" aria-label="Services">
           Services
@@ -97,6 +98,7 @@ const Footer = () => {
             </svg>
           </a>
         </div>
+      </div>
       </div>
     </footer>
   );
