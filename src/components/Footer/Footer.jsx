@@ -4,9 +4,11 @@ import { MdOutlineAttachEmail } from "react-icons/md";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FiYoutube } from "react-icons/fi";
 import { LiaTelegramPlane } from "react-icons/lia";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const [copied, setCopied] = useState(false);
+  const { t } = useTranslation();
 
   const copyEmailToClipboard = () => {
     navigator.clipboard.writeText("info@acploads.com");
@@ -19,7 +21,7 @@ const Footer = () => {
       <div className="footer sm:footer-horizontal text-neutral-content items-center lg:py-8 py-4 w-full mx-auto max-auto max-w-[90%] flex lg:flex-row flex-col justify-center gap-5 lg:justify-between">
         <aside className="grid-flow-col items-center">
           <img src="" alt="" />
-          <p className="lg:text-lg text-md">© ACP Loads Group. Since 2022</p>
+          <p className="lg:text-lg text-md">{t('footer-desc')}</p>
         </aside>
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
           <button
