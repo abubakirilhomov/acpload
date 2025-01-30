@@ -15,7 +15,6 @@ const Footer = () => {
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
-
   return (
     <footer className="footer sm:footer-horizontal bg-white/5 backdrop-blur-xs text-neutral-content w-full">
       <div className="footer sm:footer-horizontal text-neutral-content items-center lg:py-8 py-4 w-full mx-auto max-auto max-w-[90%] flex lg:flex-row flex-col justify-center gap-5 lg:justify-between">
