@@ -13,11 +13,7 @@ function App() {
   return (
     <>
     <Header/>
-    <main><Outlet/></main>
-    <HeroSection/>
-    <About/>
-    <HowItWorks/>
-    <ContactUs/>
+    <main className='pt-20'><Outlet/></main>
     <Footer/>
     </>
   )
