@@ -58,5 +58,10 @@
         "description": "Our platform is designed to be user-friendly and clear.",
         "icon": "understandable"
       }
-    ]
+    ],
+    "stats": {
+      "users": 1000,
+      "sales": 500,
+      "revenue": 20000
+    }
   }
