@@ -79,7 +79,7 @@ const Services = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="flex items-center gap-4 p-4 border border-white/20 rounded-lg bg-white/10 backdrop-blur-md"
+              className="flex items-center gap-4 p-4 min-h-[10vh] text-start border border-white/20 rounded-lg bg-white/10 backdrop-blur-md"
             >
               <FaCheckCircle className="text-green-400 text-2xl" />
               <p className="text-gray-200">{benefit}</p>
