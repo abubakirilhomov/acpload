@@ -8,7 +8,7 @@ import About from "../../components/About/About";
 
 const AboutUs = () => {
   return (
-    <div className="container pb-20 max-w-[85%] mx-auto flex flex-col justify-center items-center min-h-screen">
+    <div className="container pb-20 pt-10 lg:pt-0 max-w-[85%] mx-auto flex flex-col justify-center items-center min-h-screen">
       <Decor/>
       <motion.h1
           initial={{ opacity: 0, y: -20 }}
@@ -41,7 +41,7 @@ const AboutUs = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.7, duration: 0.6 }}
-          className="p-5 bg-white/20 backdrop-blur-md rounded-lg mx-auto max-w-[50%] shadow-md"
+          className="p-5 bg-white/20 backdrop-blur-md rounded-lg mx-auto lg:max-w-[50%] shadow-md"
         >
           <img src={img} alt="acploads" className="rounded-md" />
         </motion.div>
