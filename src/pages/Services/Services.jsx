@@ -7,7 +7,7 @@ const services = [
   {
     title: "Экспресс-доставка",
     description: "Молниеносная доставка грузов по всей стране и за ее пределы.",
-    icon: <FaShippingFast className="text-4xl text-accent" />,
+    icon: <FaShippingFast className="text-4xl text-info" />,
   },
   {
     title: "Складское хранение",
@@ -17,7 +17,7 @@ const services = [
   {
     title: "Международные перевозки",
     description: "Осуществляем логистику в более чем 100 стран мира.",
-    icon: <FaGlobeAmericas className="text-4xl text-primary" />,
+    icon: <FaGlobeAmericas className="text-4xl text-info" />,
   },
 ];
 

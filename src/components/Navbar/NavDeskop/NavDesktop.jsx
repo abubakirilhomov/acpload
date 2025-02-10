@@ -56,7 +56,7 @@ const NavDesktop = () => {
     <div className="shadow fixed w-full z-50 backdrop-blur-3xl">
       <div className="flex w-full max-w-[90%] mx-auto py-3 items-center justify-between">
         <div>
-          <img src="images/acp-logo.png" className="h-14" alt="Dark Logo" />
+          <Link><img src="images/acp-logo.png" className="h-14" alt="Dark Logo" /></Link>
         </div>
         <div className="flex gap-4">
           <DropdownMenu title="Our Company" links={navLinks.company} />

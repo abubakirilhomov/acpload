@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { GrLanguage } from "react-icons/gr";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const NavMobile = () => {
   const [theme, setTheme] = useState("light");
@@ -22,7 +23,7 @@ const NavMobile = () => {
     <div className="shadow fixed w-full z-50 backdrop-blur-3xl">
       <div className="flex items-center justify-between w-full max-w-[90%] mx-auto py-3">
         <div>
-            <img src="images/acp-logo.png" className="h-9" alt="Dark Logo" />
+            <Link><img src="images/acp-logo.png" className="h-9" alt="Dark Logo" /></Link>
         </div>
         <div className="flex gap-2 items-center">
           <button className="btn btn-info btn-outline hover:text-white px-3 rounded-full">
