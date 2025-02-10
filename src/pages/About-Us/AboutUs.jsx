@@ -8,22 +8,22 @@ import About from "../../components/About/About";
 
 const AboutUs = () => {
   return (
-    <div className="container pb-20 max-w-[80%] mx-auto flex justify-center items-center min-h-screen">
+    <div className="container pb-20 max-w-[85%] mx-auto flex flex-col justify-center items-center min-h-screen">
       <Decor/>
+      <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+          className="text-4xl py-10 font-bold text-center text-white"
+        >
+          About Us
+        </motion.h1>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="p-5 backdrop-blur-lg bg-white/10 border border-white/20 rounded-xl shadow-lg"
+        className="p-5 rounded-xl shadow-lg"
       >
-        <motion.h1
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.6 }}
-          className="text-4xl font-bold text-center text-white"
-        >
-          About Us
-        </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
