@@ -32,7 +32,7 @@ const ContactUs = () => {
               </p>
             </div>
             <div className="flex items-center gap-3">
-              <IoLocation className="text-info" />
+              <IoLocation size={20} className="text-info" />
               <p>
                 <strong>{t("contact-us.location")}:</strong> 38511 S Hampton Dr,
                 Frankford, DE 19945 USA
