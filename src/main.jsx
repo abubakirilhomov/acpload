@@ -7,13 +7,27 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './i18n'
+import AboutUs from './pages/About-Us/AboutUs.jsx';
+import Home from './pages/Home/Home.jsx';
+import Services from './pages/Services/Services.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
-      
+      {
+        path: "/",
+        element: <Home/>
+      },
+      {
+        path: "/services",
+        element: <Services/>
+      },
+      {
+        path: "/about-us",
+        element: <AboutUs/>
+      }
     ]
   },
 ]);
