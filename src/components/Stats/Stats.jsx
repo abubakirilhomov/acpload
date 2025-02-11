@@ -7,10 +7,11 @@ import { useTranslation } from "react-i18next";
 import { FiTruck, FiUsers, FiDollarSign } from "react-icons/fi";
 
 const iconMap = {
-  truckloads: <FiTruck className="text-6xl text-white" />, 
-  carriers: <FiUsers className="text-6xl text-white" />, 
-  opportunity: <FiDollarSign className="text-6xl text-white" />, 
+  truckloads: <FiTruck className="text-6xl text-blue-100" />, 
+  carriers: <FiUsers className="text-6xl text-blue-100" />, 
+  opportunity: <FiDollarSign className="text-6xl text-blue-100" />, 
 };
+
 
 const Stats = () => {
   const { t } = useTranslation();
@@ -55,14 +56,15 @@ const Stats = () => {
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3 + i * 0.2, duration: 0.8 }}
               whileHover={{ scale: 1.05 }}
-              className="p-8 bg-white/10 backdrop-blur-md rounded-xl shadow-lg flex flex-col items-center border border-base-content/10"
+              className="p-8 bg-sky-900 backdrop-blur-md rounded-xl shadow-lg flex flex-col items-center border border-base-content/10"
             >
               {iconMap[stat.key]}
-              <div className="text-lg font-semibold mt-4">{t(stat.label)}</div>
-              <div className="text-3xl font-bold mt-2">
-                {stat.key === "opportunity" ? "$" : ""}
-                <CountUp end={stat.value} duration={2 + Math.random()} separator="," />
-              </div>
+              <div className="text-lg font-semibold mt-4 text-blue-100">{t(stat.label)}</div>
+<div className="text-3xl font-bold mt-2 text-blue-100">
+  {stat.key === "opportunity" ? "$" : ""}
+  <CountUp end={stat.value} duration={2 + Math.random()} separator="," />
+</div>
+
             </motion.div>
           ))}
         </div>
