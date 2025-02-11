@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Truck, Clock } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const HowItWorks = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -69,9 +70,9 @@ const HowItWorks = () => {
             whileTap={{ scale: 0.95 }}
             className="inline-block"
           >
-            <button className="px-8 py-3 text-lg font-semibold bg-primary/90 hover:bg-primary text-primary-content rounded-xl backdrop-blur-sm shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] transition-all duration-300">
+            <Link to="/services"><button className="px-8 py-3 text-lg font-semibold bg-primary/90 hover:bg-primary text-primary-content rounded-xl backdrop-blur-sm shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] transition-all duration-300">
               {t("joinNow")}
-            </button>
+            </button></Link>
           </motion.div>
         </motion.div>
 
