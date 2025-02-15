@@ -14,7 +14,7 @@ const AboutUs = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="text-4xl lg:py-10 font-bold text-center text-white"
+          className="text-4xl lg:py-10 font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent"
         >
           About Us
         </motion.h1>
@@ -29,7 +29,7 @@ const AboutUs = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.6 }}
-          className="my-10 text-lg text-gray-300 text-center"
+          className="my-10 text-lg text-center"
         >
           ACP Loads предлагает быструю и легкую платформу Loadboard для
           грузоотправителей, брокеров, перевозчиков и владельцев-операторов в
@@ -50,7 +50,7 @@ const AboutUs = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.9, duration: 0.6 }}
-          className="my-10 text-lg text-gray-300 text-center"
+          className="my-10 text-lg text-center"
         >
           Давайте зарегистрируемся сегодня, чтобы узнать, насколько на самом
           деле прост наш процесс!

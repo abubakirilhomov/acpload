@@ -10,6 +10,7 @@ import './i18n'
 import AboutUs from './pages/About-Us/AboutUs.jsx';
 import Home from './pages/Home/Home.jsx';
 import Services from './pages/Services/Services.jsx';
+import Carriers from './pages/Carriers/Carriers.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services/>
+      },
+      {
+        path: "/carriers",
+        element: <Carriers/>
       },
       {
         path: "/about-us",
