@@ -5,6 +5,8 @@ import HowItWorks from "../../components/HowItWorks/HowItWorks";
 import ContactUs from "../../components/ContactUs/ContactUs";
 import Decor from "../../components/Decor/Decor";
 import Stats from "../../components/Stats/Stats";
+import WhyUs from "../../components/WhyUs/WhyUs";
+import WhoCanBenefit from "../../components/WhoCanBenefit/WhoCanBenefit";
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
       <About ok={true}/>
       <HowItWorks />
       <Stats/>
+      <WhyUs/>
+      <WhoCanBenefit/>
       <ContactUs />
     </>
   );

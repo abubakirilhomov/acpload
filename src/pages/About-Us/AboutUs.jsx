@@ -8,13 +8,13 @@ import About from "../../components/About/About";
 
 const AboutUs = () => {
   return (
-    <div className="container pb-20 max-w-[85%] mx-auto flex flex-col justify-center items-center min-h-screen">
+    <div className="container pb-20 pt-10 lg:pt-0 max-w-[85%] mx-auto flex flex-col justify-center items-center min-h-screen">
       <Decor/>
       <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="text-4xl py-10 font-bold text-center text-white"
+          className="text-4xl lg:py-10 font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent"
         >
           About Us
         </motion.h1>
@@ -29,7 +29,7 @@ const AboutUs = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.6 }}
-          className="my-10 text-lg text-gray-300 text-center"
+          className="my-10 text-lg text-center"
         >
           ACP Loads предлагает быструю и легкую платформу Loadboard для
           грузоотправителей, брокеров, перевозчиков и владельцев-операторов в
@@ -41,7 +41,7 @@ const AboutUs = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.7, duration: 0.6 }}
-          className="p-5 bg-white/20 backdrop-blur-md rounded-lg mx-auto max-w-[50%] shadow-md"
+          className="p-5 bg-white/20 backdrop-blur-md rounded-lg mx-auto lg:max-w-[50%] shadow-md"
         >
           <img src={img} alt="acploads" className="rounded-md" />
         </motion.div>
@@ -50,7 +50,7 @@ const AboutUs = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.9, duration: 0.6 }}
-          className="my-10 text-lg text-gray-300 text-center"
+          className="my-10 text-lg text-center"
         >
           Давайте зарегистрируемся сегодня, чтобы узнать, насколько на самом
           деле прост наш процесс!
