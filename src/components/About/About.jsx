@@ -22,7 +22,7 @@ const About = ({ ok }) => {
           <Link to="/about-us" key={index} className="group">
             <div
               className="p-6 flex flex-col items-center text-center bg-white/10 rounded-2xl border border-white/20 cursor-pointer select-none
-            shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] text-white hover:scale-105 transition-transform duration-300 group-hover:shadow-lg"
+            shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] text-white hover:scale-105 transition-transform duration-300 group-hover:shadow-lg min-h-52"
             >
               <div className="text-4xl mb-3 text-info">{iconMap[advantage.icon]}</div>
               <h3 className="text-xl font-semibold mb-2">{advantage.title}</h3>
