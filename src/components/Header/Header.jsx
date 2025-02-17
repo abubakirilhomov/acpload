@@ -4,7 +4,7 @@ import NavMobile from '../Navbar/NavMobile/NavMobile';
 import NavDesktop from '../Navbar/NavDeskop/NavDesktop';
 
 const Header = () => {
-  const isMobile = useMediaQuery({ maxWidth: 678 });
+  const isMobile = useMediaQuery({ maxWidth: 1380 });
 
   return (
     <div>
