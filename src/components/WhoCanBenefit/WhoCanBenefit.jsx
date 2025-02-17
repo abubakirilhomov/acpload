@@ -65,8 +65,8 @@ const WhoCanBenefit = () => {
       <motion.h2
         className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent drop-shadow-lg mb-8"
         initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        animate={isVisible ? { opacity: 1, scale: 1 } : {}}
+        transition={{ duration: 2.5 }}
       >
         Who Can Benefit?
       </motion.h2>

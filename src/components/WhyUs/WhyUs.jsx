@@ -30,7 +30,9 @@ const whyUs = [
     title: "Smart Matching System",
     description:
       "Carriers posting empty trucks will automatically attract loads that match their criteria.",
-    icon: <MdOutlineSystemSecurityUpdateGood className="text-4xl text-primary" />,
+    icon: (
+      <MdOutlineSystemSecurityUpdateGood className="text-4xl text-primary" />
+    ),
   },
 ];
 
@@ -54,22 +56,37 @@ const WhyUs = () => {
   }, []);
 
   return (
-    <section id="why-us" className="relative py-20 px-6 md:px-16 lg:px-32 bg-opacity-60 backdrop-blur-md">
+    <section
+      id="why-us"
+      className="relative py-20 px-6 md:px-16 lg:px-32 bg-opacity-60 backdrop-blur-md"
+    >
       <Decor />
       <motion.div
         initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={isVisible ? { opacity: 1, scale: 1 } : {}}
         transition={{ duration: 2 }}
         className="text-center max-w-3xl mx-auto mb-12"
       >
-        <h2 className="text-4xl font-bold drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">
+        <motion.h2
+          initial={{ opacity: 0, y: 80 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
+          className="text-4xl font-bold drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent"
+        >
           Why Choose ACP Loads
-        </h2>
-        <p className="mt-4 text-lg">
-          Welcome to ACP Loads, the most dynamic and efficient trucking load board designed to streamline freight
-          matching and optimize logistics. Whether you're a Carrier Dispatcher, Carrier, Broker, or Shipper, our
-          platform is built to simplify your work and help you move freight faster than ever.
-        </p>
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
+          className="mt-4 text-lg"
+        >
+          Welcome to ACP Loads, the most dynamic and efficient trucking load
+          board designed to streamline freight matching and optimize logistics.
+          Whether you're a Carrier Dispatcher, Carrier, Broker, or Shipper, our
+          platform is built to simplify your work and help you move freight
+          faster than ever.
+        </motion.p>
       </motion.div>
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-10">
