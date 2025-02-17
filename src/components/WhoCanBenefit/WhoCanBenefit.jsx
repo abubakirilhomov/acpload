@@ -43,7 +43,7 @@ const benefits = [
 
 const WhoCanBenefit = () => {
   return (
-    <div className="py-16 px-6 md:px-16 lg:px-32 text-center">
+    <section className="py-16 px-6 md:px-16 lg:px-32 text-center">
       <motion.h2
         className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent drop-shadow-lg mb-8"
         initial={{ opacity: 0, y: -20 }}
@@ -76,7 +76,7 @@ const WhoCanBenefit = () => {
           </motion.div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

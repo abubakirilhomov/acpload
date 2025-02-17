@@ -36,7 +36,7 @@ const whyUs = [
 
 const WhyUs = () => {
   return (
-    <div className="relative py-20 px-6 md:px-16 lg:px-32 bg-opacity-60 backdrop-blur-md">
+    <section className="relative py-20 px-6 md:px-16 lg:px-32 bg-opacity-60 backdrop-blur-md">
       <Decor />
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -79,7 +79,7 @@ const WhyUs = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
