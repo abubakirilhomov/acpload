@@ -30,10 +30,10 @@ const ratingCategories = [
 
 const TrustTransparency = () => {
   return (
-    <section className="container max-w-[85%] bg-opacity-80 backdrop-blur-lg mx-auto p-6 space-y-6">
+    <section className="container max-w-[85%] bg-opacity-80 backdrop-blur-lg mx-auto p-5 space-y-6">
         <Decor/>
       <motion.p
-        className="text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent drop-shadow-lg"
+        className="lg:text-5xl text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent drop-shadow-lg"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
