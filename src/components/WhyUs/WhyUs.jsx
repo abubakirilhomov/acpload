@@ -36,7 +36,7 @@ const whyUs = [
 
 const WhyUs = () => {
   return (
-    <div className="relative py-20 px-6 md:px-16 lg:px-32 bg-opacity-60 backdrop-blur-md">
+    <section className="relative py-20 px-6 md:px-16 lg:px-32 bg-opacity-60 backdrop-blur-md">
       <Decor />
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -56,7 +56,7 @@ const WhyUs = () => {
         <motion.img
           src={img}
           alt="acp loads"
-          className="max-w-md rounded-2xl shadow-xl backdrop-blur-md border border-white/10"
+          className="lg:max-w-md max-w-sm rounded-2xl shadow-xl backdrop-blur-md border border-white/10"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
@@ -79,7 +79,7 @@ const WhyUs = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

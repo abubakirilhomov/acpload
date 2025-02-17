@@ -7,6 +7,7 @@ import Decor from "../../components/Decor/Decor";
 import Stats from "../../components/Stats/Stats";
 import WhyUs from "../../components/WhyUs/WhyUs";
 import WhoCanBenefit from "../../components/WhoCanBenefit/WhoCanBenefit";
+import TrustTransparency from "../../components/TrustTransparency/TrustTransparency";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Stats/>
       <WhyUs/>
       <WhoCanBenefit/>
+      <TrustTransparency/>
       <ContactUs />
     </>
   );
