@@ -93,7 +93,7 @@ const WhyUs = () => {
         <motion.img
           src={img}
           alt="acp loads"
-          className="lg:max-w-md max-w-sm rounded-2xl shadow-xl backdrop-blur-md border border-white/10"
+          className="lg:max-w-md max-w-[100%] lg:py-22 rounded-2xl shadow-xl backdrop-blur-lg border border-white/10"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5 }}
