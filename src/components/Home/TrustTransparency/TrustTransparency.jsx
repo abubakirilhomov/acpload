@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FiCheckCircle } from "react-icons/fi";
 import { motion } from "framer-motion";
-import Decor from "../Decor/Decor";
+import Decor from "../../Decor/Decor";
 
 const ratingCategories = [
   {

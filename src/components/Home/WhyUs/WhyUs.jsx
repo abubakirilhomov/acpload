@@ -4,7 +4,7 @@ import { FaUserCheck } from "react-icons/fa";
 import { IoStatsChartSharp } from "react-icons/io5";
 import { MdOutlineSystemSecurityUpdateGood } from "react-icons/md";
 import { motion } from "framer-motion";
-import Decor from "../Decor/Decor";
+import Decor from "../../Decor/Decor";
 import { SiApostrophe } from "react-icons/si";
 
 const whyUs = [
@@ -95,7 +95,7 @@ const WhyUs = () => {
           alt="acp loads"
           className="lg:max-w-md max-w-[100%] lg:py-22 rounded-2xl shadow-xl backdrop-blur-lg border border-white/10"
           initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
+          animate={isVisible ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 1.5 }}
         />
         <div className="grid gap-6 md:gap-8">
