@@ -8,6 +8,7 @@ import Stats from "../../components/Stats/Stats";
 import WhyUs from "../../components/WhyUs/WhyUs";
 import WhoCanBenefit from "../../components/WhoCanBenefit/WhoCanBenefit";
 import TrustTransparency from "../../components/TrustTransparency/TrustTransparency";
+import OurVision from "../../components/OurVision/OurVision";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <WhyUs/>
       <WhoCanBenefit/>
       <TrustTransparency/>
+      <OurVision/>
       <ContactUs />
     </>
   );

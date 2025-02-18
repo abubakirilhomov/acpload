@@ -58,7 +58,7 @@ const NavDesktop = () => {
       <div className="flex w-full max-w-[90%] mx-auto py-3 items-center justify-between">
         <div>
           <Link to="/">
-            <img src="images/acp-logo.png" className="h-14" alt="ACP Logo" />
+            <img src="/images/acp-logo.png" className="h-14" alt="ACP Logo" />
           </Link>
         </div>
         <div className="flex gap-4">

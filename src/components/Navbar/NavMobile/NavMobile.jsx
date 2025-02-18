@@ -33,7 +33,7 @@ const NavMobile = () => {
       <div className="flex items-center justify-between w-full max-w-[90%] mx-auto py-3">
         <div>
           <Link to="/">
-            <img src="images/acp-logo.png" className="h-9" alt="Logo" />
+            <img src="/images/acp-logo.png" className="h-9" alt="Logo" />
           </Link>
         </div>
         <div className="flex gap-2 items-center">
@@ -41,19 +41,10 @@ const NavMobile = () => {
             {t("log-in")}
           </button>
 
-          <div className="dropdown dropdown-end">
-            <div tabIndex={0} role="button" className="btn rounded-full btn-info">
-              <GrLanguage size={16} color="white" />
-            </div>
-            <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box w-52 p-2 shadow">
-              <li><button onClick={() => changeLanguage("en")}>English</button></li>
-              <li><button onClick={() => changeLanguage("ru")}>Русский</button></li>
-              <li><button onClick={() => changeLanguage("es")}>Español</button></li>
-            </ul>
-          </div>
+          
 
-          <label htmlFor="my-drawer" className="btn btn-primary drawer-button">
-            <FaBars size={20} />
+          <label htmlFor="my-drawer" className="btn btn-info text-white rounded-full drawer-button">
+            <FaBars size={18} />
           </label>
         </div>
       </div>
