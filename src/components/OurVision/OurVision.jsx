@@ -14,7 +14,7 @@ const OurVision = () => {
   }, [controls, inView]);
 
   return (
-    <section ref={ref} className="container max-w-[85%] bg-opacity-80 backdrop-blur-lg mx-auto p-6 space-y-6">
+    <section ref={ref} className="container max-w-[90%] bg-opacity-80 backdrop-blur-lg mx-auto space-y-6">
       <Decor />
       <motion.p
         className="text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent drop-shadow-lg"
@@ -35,7 +35,7 @@ const OurVision = () => {
         {[1, 2, 3, 4].map((num, index) => (
           <motion.img
             key={num}
-            className="w-full h-56 md:h-72 object-cover rounded-lg"
+            className="w-full h-56 md:h-80 object-cover rounded-lg"
             src={`/images/acp-content-${num}.png`}
             alt=""
             initial={{ opacity: 0, y: 50 }}

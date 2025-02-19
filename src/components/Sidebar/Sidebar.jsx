@@ -92,7 +92,7 @@ const Sidebar = ({ closeSidebar }) => {
                     <li key={subIndex} className="ml-4">
                       <Link
                         to={link.link}
-                        className="block py-2 px-4 rounded-lg hover:bg-gray-300"
+                        className="block py-2 px-4 rounded-lg hover:bg-gray-300 hover:text-black"
                         onClick={closeSidebar}
                       >
                         {link.title}
