@@ -9,13 +9,13 @@
             <div
             tabIndex={0}
             role="button"
-            className="btn m-1 flex items-center gap-1"
+            className="btn m-1 flex items-center gap-1 backdrop-blur-3xl bg-white/5 border-none"
             >
             {title} <IoIosArrowDown />
             </div>
             <ul
             tabIndex={0}
-            className="dropdown-content menu bg-base-100 rounded-box z-50 w-52 p-2 shadow-md md:w-40 sm:w-full"
+            className="dropdown-content menu backdrop-blur-3xl bg-white/5 rounded-box z-50 w-52 p-2 shadow-md md:w-40 sm:w-full"
             >
             {links.map((item, index) => (
                 <li key={index} className="py-1">

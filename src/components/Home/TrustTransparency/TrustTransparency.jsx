@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FiCheckCircle } from "react-icons/fi";
 import { motion } from "framer-motion";
-import Decor from "../Decor/Decor";
+import Decor from "../../Decor/Decor";
 
 const ratingCategories = [
   {
@@ -29,13 +29,35 @@ const ratingCategories = [
 ];
 
 const TrustTransparency = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const section = document.getElementById("trust-transparency");
+      if (section) {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.75) {
+          setIsVisible(true);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section className="container max-w-[85%] bg-opacity-80 backdrop-blur-lg mx-auto p-6 space-y-6">
-        <Decor/>
+    <section
+      id="trust-transparency"
+      className="container max-w-[85%] bg-opacity-80 backdrop-blur-lg mx-auto p-5 space-y-6"
+    >
+      <Decor />
+
       <motion.p
-        className="text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent drop-shadow-lg"
+        className="lg:text-5xl text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent drop-shadow-lg"
         initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
         transition={{ duration: 0.8 }}
       >
         Trust & Transparency with Reviews
@@ -44,7 +66,7 @@ const TrustTransparency = () => {
       <motion.p
         className="text-center text-lg"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        animate={isVisible ? { opacity: 1 } : { opacity: 0 }}
         transition={{ delay: 0.4, duration: 0.8 }}
       >
         We believe in building a trustworthy freight network. That’s why our
@@ -52,13 +74,13 @@ const TrustTransparency = () => {
         on key performance metrics.
       </motion.p>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {ratingCategories.map((category, idx) => (
           <motion.div
             key={idx}
             className="card backdrop-blur-xl border border-white/20 p-6"
             initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ delay: 0.2 * idx, duration: 0.8 }}
           >
             <h3 className={`text-lg font-light ${category.color}`}>
@@ -79,7 +101,7 @@ const TrustTransparency = () => {
       <motion.div
         className="flex justify-center mt-4"
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ delay: 0.6, duration: 0.8 }}
       >
         <button className="btn btn-primary btn-lg">Learn More</button>
