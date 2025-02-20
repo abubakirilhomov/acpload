@@ -58,7 +58,7 @@ const WhyUs = () => {
   return (
     <section
       id="why-us"
-      className="relative py-20 px-6 md:px-16 lg:px-32 bg-opacity-60 backdrop-blur-md"
+      className="relative py-20 w-full max-w-[90%] mx-auto justify-between bg-opacity-60 backdrop-blur-md"
     >
       <Decor />
       <motion.div
@@ -89,11 +89,11 @@ const WhyUs = () => {
         </motion.p>
       </motion.div>
 
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-10">
         <motion.img
           src={img}
           alt="acp loads"
-          className="lg:max-w-md max-w-[100%] lg:py-22 rounded-2xl shadow-xl backdrop-blur-lg border border-white/10"
+          className="lg:max-w-lg max-w-[100%] lg:py-22 rounded-2xl shadow-xl backdrop-blur-lg border border-white/10"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={isVisible ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 1.5 }}

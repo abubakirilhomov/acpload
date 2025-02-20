@@ -19,7 +19,6 @@ const Footer = () => {
     <footer className="footer sm:footer-horizontal bg-white/5 backdrop-blur-xs text-neutral-content w-full">
       <div className="footer sm:footer-horizontal text-neutral-content items-center lg:py-8 py-4 w-full mx-auto max-auto max-w-[90%] flex lg:flex-row flex-col justify-center gap-5 lg:justify-between">
         <aside className="grid-flow-col items-center">
-          <img src="" alt="acp footer" />
           <p className="lg:text-lg text-md">{t('footer-desc')}</p>
         </aside>
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
