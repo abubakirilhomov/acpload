@@ -5,8 +5,10 @@ import HowItWorks from "../../components/HowItWorks/HowItWorks";
 import ContactUs from "../../components/ContactUs/ContactUs";
 import Decor from "../../components/Decor/Decor";
 import Stats from "../../components/Stats/Stats";
-import WhyUs from "../../components/WhyUs/WhyUs";
-import WhoCanBenefit from "../../components/WhoCanBenefit/WhoCanBenefit";
+import WhyUs from "../../components/Home/WhyUs/WhyUs";
+import WhoCanBenefit from "../../components/Home/WhoCanBenefit/WhoCanBenefit";
+import TrustTransparency from "../../components/Home/TrustTransparency/TrustTransparency";
+import FeaturedPartners from "../../components/Home/FeaturedPartners/FeaturedPartners";
 
 const Home = () => {
   return (
@@ -17,6 +19,8 @@ const Home = () => {
       <Stats/>
       <WhyUs/>
       <WhoCanBenefit/>
+      <TrustTransparency/>
+      <FeaturedPartners/>
       <ContactUs />
     </>
   );
