@@ -2,6 +2,7 @@ import React from 'react';
 import Showcase from '../../../components/HowItWorksComponents/Showcase/Showcase';
 import WhoBenefits from '../../../components/HowItWorksComponents/WhoBenefits/WhoBenefits';
 import HowToSignUp from '../../../components/HowItWorksComponents/HowToSignUp/HowToSignUp';
+import WhyOurProcessWorks from '../../../components/HowItWorksComponents/WhyOurProcessWorks/WhyOurProcessWorks';
 
 const HowItWorks = () => {
   return (
@@ -9,6 +10,7 @@ const HowItWorks = () => {
       <Showcase />
       <WhoBenefits />
       <HowToSignUp/>
+      <WhyOurProcessWorks/>
     </div>
   );
 };
