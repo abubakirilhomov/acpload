@@ -80,5 +80,44 @@
       "description": "Disfruta del acceso directo a cargas de alta calidad adaptadas a las especificaciones de tu camión. Con nuestro registro fácil, puedes conectar con remitentes y corredores que buscan operadores confiables, maximizando tus ganancias y reduciendo el tiempo de inactividad."
     },
     "getAccess": "Obtener acceso"
+  },
+  "nav": {
+    "company": {
+      "title": "Nuestra Empresa",
+      "aboutUs": "Sobre Nosotros",
+      "leadership": "Liderazgo",
+      "testimonials": "Testimonios",
+      "supportCenter": "Centro de Soporte",
+      "contactUs": "Contáctanos"
+    },
+    "platform": {
+      "title": "Plataforma",
+      "howItWorks": "Cómo Funciona",
+      "features": "Características",
+      "liveLoadboard": "Tablero de Cargas en Vivo",
+      "freightRateCalculator": "Calculadora de Tarifas de Carga",
+      "termsOfService": "Términos de Servicio"
+    },
+    "products": {
+      "title": "Productos",
+      "loadboard": "Tablero de Cargas",
+      "acpTms": "ACP TMS"
+    },
+    "solutions": {
+      "title": "Soluciones",
+      "carrierDispatcher": "Despachador de Transportistas",
+      "broker": "Corredor",
+      "carrier": "Transportista",
+      "shipper": "Remitente"
+    },
+    "resources": {
+      "title": "Recursos",
+      "blog": "Blog",
+      "partnership": "Asociación y Afiliados",
+      "newsletter": "Suscripción al Boletín",
+      "guides": "Guías",
+      "videos": "Videos",
+      "faqs": "Preguntas Frecuentes"
+    }
   }
   }

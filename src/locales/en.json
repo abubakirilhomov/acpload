@@ -85,5 +85,44 @@
       "description": "Enjoy direct access to high-quality freight tailored to your truck’s specifications. With our easy sign-up, you can connect with shippers and brokers looking for dependable owner-operators, ensuring you maximize your earnings and reduce downtime."
     },
     "getAccess": "Get Access"
-  } 
+  },
+  "nav": {
+    "company": {
+      "title": "Our Company",
+      "aboutUs": "About Us",
+      "leadership": "Leadership",
+      "testimonials": "Testimonials",
+      "supportCenter": "Support Center",
+      "contactUs": "Contact Us"
+    },
+    "platform": {
+      "title": "Platform",
+      "howItWorks": "How It Works",
+      "features": "Features",
+      "liveLoadboard": "Live Loadboard",
+      "freightRateCalculator": "Freight Rate Calculator",
+      "termsOfService": "Terms of Service"
+    },
+    "products": {
+      "title": "Products",
+      "loadboard": "Loadboard",
+      "acpTms": "ACP TMS"
+    },
+    "solutions": {
+      "title": "Solutions",
+      "carrierDispatcher": "Carrier Dispatcher",
+      "broker": "Broker",
+      "carrier": "Carrier",
+      "shipper": "Shipper"
+    },
+    "resources": {
+      "title": "Resources",
+      "blog": "Blog",
+      "partnership": "Partnership & Affiliate",
+      "newsletter": "Newsletter Subscription",
+      "guides": "Guides",
+      "videos": "Videos",
+      "faqs": "FAQs"
+    }
+  }
   }

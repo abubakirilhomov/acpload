@@ -14,42 +14,71 @@ const NavDesktop = () => {
 
   // Check the device's theme preference
   useEffect(() => {
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
     setTheme(prefersDark ? "dark" : "light");
   }, []);
 
   const navLinks = {
     company: [
-      { title: "About Us", link: "/our-company/about-us" },
-      { title: "Leadership", link: "/our-company/leadership" },
-      { title: "Testimonials", link: "/our-company/testimonials-reviews" },
-      { title: "Support Center", link: "/our-company/support-center" },
-      { title: "Contact Us", link: "/our-company/contact-us" },
+      { title: t("nav.company.aboutUs"), link: "/our-company/about-us" },
+      { title: t("nav.company.leadership"), link: "/our-company/leadership" },
+      {
+        title: t("nav.company.testimonials"),
+        link: "/our-company/testimonials-reviews",
+      },
+      {
+        title: t("nav.company.supportCenter"),
+        link: "/our-company/support-center",
+      },
+      { title: t("nav.company.contactUs"), link: "/our-company/contact-us" },
     ],
     platform: [
-      { title: "How It Works", link: "/platform/how-it-works" },
-      { title: "Features", link: "/platform/features" },
-      { title: "Live Loadboard", link: "/platform/live-loadboard" },
-      { title: "Freight Rate Calculator", link: "/platform/freight-rate-calculator" },
-      { title: "Terms of Service", link: "/platform/terms-of-service" },
+      { title: t("nav.platform.howItWorks"), link: "/platform/how-it-works" },
+      { title: t("nav.platform.features"), link: "/platform/features" },
+      {
+        title: t("nav.platform.liveLoadboard"),
+        link: "/platform/live-loadboard",
+      },
+      {
+        title: t("nav.platform.freightRateCalculator"),
+        link: "/platform/freight-rate-calculator",
+      },
+      {
+        title: t("nav.platform.termsOfService"),
+        link: "/platform/terms-of-service",
+      },
     ],
     products: [
-      { title: "Loadboard", link: "/products/loadboard" },
-      { title: "ACP TMS", link: "/products/acp-tms" },
+      { title: t("nav.products.loadboard"), link: "/products/loadboard" },
+      { title: t("nav.products.acpTms"), link: "/products/acp-tms" },
     ],
     solutions: [
-      { title: "Carrier Dispatcher", link: "/solutions/carrier-dispatcher" },
-      { title: "Broker", link: "/solutions/broker" },
-      { title: "Carrier", link: "/solutions/carrier" },
-      { title: "Shipper", link: "/solutions/shipper" },
+      {
+        title: t("nav.solutions.carrierDispatcher"),
+        link: "/solutions/carrier-dispatcher",
+      },
+      { title: t("nav.solutions.broker"), link: "/solutions/broker" },
+      { title: t("nav.solutions.carrier"), link: "/solutions/carrier" },
+      { title: t("nav.solutions.shipper"), link: "/solutions/shipper" },
     ],
     resources: [
-      { title: "Blog", link: "/resources/freight-logistics-blog" },
-      { title: "Partnership & Affiliate", link: "/resources/partnership-affiliate" },
-      { title: "Newsletter Subscription", link: "/resources/newsletter-subscription" },
-      { title: "Guides", link: "/resources/guides" },
-      { title: "Videos", link: "/resources/videos" },
-      { title: "FAQs", link: "/resources/faqs" },
+      {
+        title: t("nav.resources.blog"),
+        link: "/resources/freight-logistics-blog",
+      },
+      {
+        title: t("nav.resources.partnership"),
+        link: "/resources/partnership-affiliate",
+      },
+      {
+        title: t("nav.resources.newsletter"),
+        link: "/resources/newsletter-subscription",
+      },
+      { title: t("nav.resources.guides"), link: "/resources/guides" },
+      { title: t("nav.resources.videos"), link: "/resources/videos" },
+      { title: t("nav.resources.faqs"), link: "/resources/faqs" },
     ],
   };
 
@@ -62,11 +91,26 @@ const NavDesktop = () => {
           </Link>
         </div>
         <div className="flex gap-4">
-          <DropdownMenu title="Our Company" links={navLinks.company} />
-          <DropdownMenu title="Platform" links={navLinks.platform} />
-          <DropdownMenu title="Products" links={navLinks.products} />
-          <DropdownMenu title="Solutions" links={navLinks.solutions} />
-          <DropdownMenu title="Resources" links={navLinks.resources} />
+          <DropdownMenu
+            title={t("nav.company.title")}
+            links={navLinks.company}
+          />
+          <DropdownMenu
+            title={t("nav.platform.title")}
+            links={navLinks.platform}
+          />
+          <DropdownMenu
+            title={t("nav.products.title")}
+            links={navLinks.products}
+          />
+          <DropdownMenu
+            title={t("nav.solutions.title")}
+            links={navLinks.solutions}
+          />
+          <DropdownMenu
+            title={t("nav.resources.title")}
+            links={navLinks.resources}
+          />
         </div>
         <div className="flex gap-4 items-center">
           <button className="btn btn-info btn-outline hover:text-white px-5 rounded-full">
@@ -76,7 +120,11 @@ const NavDesktop = () => {
             {t("sign-up")}
           </button>
           <div className="dropdown dropdown-end">
-            <div tabIndex={0} role="button" className="btn rounded-full btn-info p-3">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn rounded-full btn-info p-3"
+            >
               <GrLanguage size={18} color="white" />
             </div>
             <ul
@@ -86,7 +134,11 @@ const NavDesktop = () => {
               {["en", "ru", "es"].map((lng) => (
                 <li key={lng}>
                   <button onClick={() => changeLanguage(lng)}>
-                    {lng === "en" ? "English" : lng === "ru" ? "Русский" : "Español"}
+                    {lng === "en"
+                      ? "English"
+                      : lng === "ru"
+                      ? "Русский"
+                      : "Español"}
                   </button>
                 </li>
               ))}

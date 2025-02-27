@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useTranslation } from "react-i18next";
 import Button from "../../../components/Button/Button";
+import { FaAngleDoubleDown } from "react-icons/fa";
 
 const Showcase = () => {
   const { ref, inView } = useInView({
@@ -11,6 +12,13 @@ const Showcase = () => {
   });
 
   const { t } = useTranslation();
+
+  const handleScroll = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <section
@@ -49,6 +57,12 @@ const Showcase = () => {
           <Button text={t("showcase.signIn")} />
         </motion.div>
       </div>
+      <button
+        onClick={handleScroll}
+        className="absolute bottom-10 text-primary animate-bounce"
+      >
+        <FaAngleDoubleDown size={40} />
+      </button>
     </section>
   );
 };
