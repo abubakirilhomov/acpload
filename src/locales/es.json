@@ -63,5 +63,22 @@
     "title": "Cómo Funciona – Conexión Perfecta de Cargas para Todos!",
     "description": "ACP Loads está diseñado para conectar a transportistas, corredores, propietarios-operadores y transportistas de manera rápida, eficiente y económica. Nuestra plataforma facilita la publicación, búsqueda y transporte de cargas sin tarifas. ¡Comencemos, es 100% GRATIS!",
     "signIn": "Iniciar sesión"
+  },
+  "whoBenefits": {
+    "title": "¿Quién se beneficia al registrarse?",
+    "joinFree": "¡Únete gratis!",
+    "carriers": {
+      "title": "Transportistas y Despachadores",
+      "description": "Obtén acceso instantáneo a miles de oportunidades de carga. Ya sea que administres una flota o trabajes de manera independiente, nuestra plataforma te ayuda a emparejar camiones disponibles con cargas adecuadas, ahorrando tiempo y aumentando la rentabilidad."
+    },
+    "brokers": {
+      "title": "Corredores de carga y Remitentes",
+      "description": "Publica tus cargas fácilmente y llega a una amplia red de transportistas confiables. Nuestro proceso de registro simplificado garantiza que puedas listar tus envíos rápidamente, reduciendo el tiempo en administración y enfocándote en mover carga."
+    },
+    "owners": {
+      "title": "Propietarios-Operadores",
+      "description": "Disfruta del acceso directo a cargas de alta calidad adaptadas a las especificaciones de tu camión. Con nuestro registro fácil, puedes conectar con remitentes y corredores que buscan operadores confiables, maximizando tus ganancias y reduciendo el tiempo de inactividad."
+    },
+    "getAccess": "Obtener acceso"
   }
   }

@@ -58,7 +58,7 @@ const NavDesktop = () => {
       <div className="flex w-full max-w-[90%] mx-auto py-3 items-center justify-between">
         <div>
           <Link to="/">
-            <img src="/images/acp-logo.png" className="h-14" alt="ACP Logo" />
+            <img src="/images/acp-logo.png" className="h-12" alt="ACP Logo" />
           </Link>
         </div>
         <div className="flex gap-4">
@@ -69,14 +69,14 @@ const NavDesktop = () => {
           <DropdownMenu title="Resources" links={navLinks.resources} />
         </div>
         <div className="flex gap-4 items-center">
-          <button className="btn btn-info btn-outline hover:text-white px-7 rounded-full">
+          <button className="btn btn-info btn-outline hover:text-white px-5 rounded-full">
             {t("log-in")}
           </button>
-          <button className="btn btn-info border-info hover:text-white px-7 rounded-full">
+          <button className="btn btn-info border-info hover:text-white px-5 rounded-full">
             {t("sign-up")}
           </button>
           <div className="dropdown dropdown-end">
-            <div tabIndex={0} role="button" className="btn rounded-full btn-info">
+            <div tabIndex={0} role="button" className="btn rounded-full btn-info p-3">
               <GrLanguage size={18} color="white" />
             </div>
             <ul

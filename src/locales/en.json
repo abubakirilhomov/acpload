@@ -68,5 +68,22 @@
     "title": "How It Works – Seamless Freight Matching for Everyone!",
     "description": "ACP Loads is designed to connect Freight Shippers, Brokers, Owner-Operators, and Carriers in a fast, efficient, and cost-effective way. Our platform makes it easy to post, find, and move freight with ZERO fees! Let’s get started – It’s 100% FREE!",
     "signIn": "Sign In"
-  }
+  },
+  "whoBenefits": {
+    "title": "Who Benefits from Signing Up?",
+    "joinFree": "Join for Free!",
+    "carriers": {
+      "title": "Carriers & Dispatchers",
+      "description": "Gain instant access to thousands of load opportunities. Whether you manage a fleet or operate as an individual, our platform helps you quickly match available trucks with suitable loads, saving time and boosting profitability."
+    },
+    "brokers": {
+      "title": "Freight Brokers & Shippers",
+      "description": "Post your loads effortlessly and reach a broad network of reliable carriers. Our streamlined sign-up process ensures you can list your shipments quickly, so you spend less time on administration and more time on moving freight."
+    },
+    "owners": {
+      "title": "Owner-Operators",
+      "description": "Enjoy direct access to high-quality freight tailored to your truck’s specifications. With our easy sign-up, you can connect with shippers and brokers looking for dependable owner-operators, ensuring you maximize your earnings and reduce downtime."
+    },
+    "getAccess": "Get Access"
+  } 
   }
