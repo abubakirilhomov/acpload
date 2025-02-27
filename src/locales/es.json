@@ -58,5 +58,10 @@
         "description": "Nuestra plataforma está diseñada para ser clara y fácil de usar.",
         "icon": "understandable"
       }
-    ]
+    ],
+    "showcase": {
+    "title": "Cómo Funciona – Conexión Perfecta de Cargas para Todos!",
+    "description": "ACP Loads está diseñado para conectar a transportistas, corredores, propietarios-operadores y transportistas de manera rápida, eficiente y económica. Nuestra plataforma facilita la publicación, búsqueda y transporte de cargas sin tarifas. ¡Comencemos, es 100% GRATIS!",
+    "signIn": "Iniciar sesión"
+  }
   }

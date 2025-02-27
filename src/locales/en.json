@@ -63,5 +63,10 @@
       "users": 1000,
       "sales": 500,
       "revenue": 20000
-    }
+    },
+    "showcase": {
+    "title": "How It Works – Seamless Freight Matching for Everyone!",
+    "description": "ACP Loads is designed to connect Freight Shippers, Brokers, Owner-Operators, and Carriers in a fast, efficient, and cost-effective way. Our platform makes it easy to post, find, and move freight with ZERO fees! Let’s get started – It’s 100% FREE!",
+    "signIn": "Sign In"
+  }
   }

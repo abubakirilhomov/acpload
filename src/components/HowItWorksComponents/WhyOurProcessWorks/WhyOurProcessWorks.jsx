@@ -8,22 +8,22 @@ const WhyOurProcessWorks = () => {
 
   const features = [
     {
-      icon: <FaBolt className="text-info text-4xl" />,
+      icon: <FaBolt className="text-info text-5xl" />,
       title: "Efficiency",
       description:
-        "The combination of a streamlined sign-up, smart load matching, and instant notifications means less downtime and more freight movement.",
+        "Streamlined sign-up, smart load matching, and instant notifications mean less downtime and more freight movement.",
     },
     {
-      icon: <FaHandshake className="text-info text-4xl" />,
+      icon: <FaHandshake className="text-info text-5xl" />,
       title: "Trust & Transparency",
       description:
-        "Our review system ensures that every user is held accountable, building a trusted community where every transaction is backed by real feedback.",
+        "Our review system builds a trusted community where every transaction is backed by real feedback.",
     },
     {
-      icon: <FaChartLine className="text-info text-4xl" />,
+      icon: <FaChartLine className="text-info text-5xl" />,
       title: "Growth",
       description:
-        "By connecting shippers, brokers, carriers, and owner-operators on one platform, you can reduce empty miles, optimize your operations, and ultimately grow your business.",
+        "By connecting shippers, brokers, and carriers, you can reduce empty miles and optimize your operations.",
     },
   ];
 
@@ -41,7 +41,7 @@ const WhyOurProcessWorks = () => {
           initial={{ scale: 0.9, opacity: 0 }}
           animate={inView ? { scale: 1, opacity: 1 } : {}}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="w-full md:w-1/2 flex items-center justify-between"
+          className="w-full md:w-1/2 flex items-center justify-center md:justify-end"
         >
           <img
             src="/images/acp-why-works.png"
