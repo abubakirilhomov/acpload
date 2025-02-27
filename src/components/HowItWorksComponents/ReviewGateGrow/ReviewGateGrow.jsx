@@ -20,13 +20,7 @@ const ReviewRateGrow = () => {
       icon: <Users className="text-5xl text-info mb-4" />,
       title: t("review_rate_grow.build_reputation.title"),
       description: t("review_rate_grow.build_reputation.description"),
-    },
-    {
-      id: 3,
-      icon: <CheckCircle className="text-5xl text-info mb-4" />,
-      title: t("review_rate_grow.grow_network.title"),
-      description: t("review_rate_grow.grow_network.description"),
-    },
+    }
   ];
 
   return (
