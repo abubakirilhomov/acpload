@@ -2,30 +2,13 @@ import React from "react";
 import { FaHandshake, FaChartLine, FaBolt } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslation } from "react-i18next"; // Import translation hook
 
 const WhyOurProcessWorks = () => {
+  const { t } = useTranslation(); // Use translation hook
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
 
-  const features = [
-    {
-      icon: <FaBolt className="text-info text-5xl" />,
-      title: "Efficiency",
-      description:
-        "Streamlined sign-up, smart load matching, and instant notifications mean less downtime and more freight movement.",
-    },
-    {
-      icon: <FaHandshake className="text-info text-5xl" />,
-      title: "Trust & Transparency",
-      description:
-        "Our review system builds a trusted community where every transaction is backed by real feedback.",
-    },
-    {
-      icon: <FaChartLine className="text-info text-5xl" />,
-      title: "Growth",
-      description:
-        "By connecting shippers, brokers, and carriers, you can reduce empty miles and optimize your operations.",
-    },
-  ];
+  const features = t("whyOurProcessWorks.features", { returnObjects: true });
 
   return (
     <motion.section
@@ -58,7 +41,7 @@ const WhyOurProcessWorks = () => {
           className="w-full md:w-1/2 flex flex-col items-center md:items-start"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">
-            Why Our Process Works
+            {t("whyOurProcessWorks.title")}
           </h2>
           <div className="space-y-6">
             {features.map((feature, index) => (
@@ -71,14 +54,12 @@ const WhyOurProcessWorks = () => {
               >
                 {/* Icon */}
                 <div className="p-3 bg-white/20 rounded-full shadow-md">
-                  {feature.icon}
+                  {index === 0 ? <FaBolt className="text-info text-5xl" /> : index === 1 ? <FaHandshake className="text-info text-5xl" /> : <FaChartLine className="text-info text-5xl" />}
                 </div>
                 {/* Text */}
                 <div>
                   <h3 className="text-xl sm:text-2xl font-semibold">{feature.title}</h3>
-                  <p className="text-gray-300 mt-2 text-sm sm:text-base">
-                    {feature.description}
-                  </p>
+                  <p className="text-gray-300 mt-2 text-sm sm:text-base">{feature.description}</p>
                 </div>
               </motion.div>
             ))}

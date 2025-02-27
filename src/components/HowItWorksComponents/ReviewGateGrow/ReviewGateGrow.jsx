@@ -2,33 +2,32 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { CheckCircle, Star, Users } from "lucide-react";
-
-const cardData = [
-  {
-    id: 1,
-    icon: <Star className="text-5xl text-info mb-4" />,
-    title: "Transparent Reviews",
-    description:
-      "After each shipment, both parties can leave detailed feedback on communication, service quality, and reliability.",
-  },
-  {
-    id: 2,
-    icon: <Users className="text-5xl text-info mb-4" />,
-    title: "Build Your Reputation",
-    description:
-      "High ratings help build credibility, attract more business, and foster strong partnerships.",
-  },
-  {
-    id: 3,
-    icon: <CheckCircle className="text-5xl text-info mb-4" />,
-    title: "Grow Your Network",
-    description:
-      "Consistently great service boosts your visibility, leading to more opportunities and trust in the industry.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const ReviewRateGrow = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
+  const { t } = useTranslation();
+
+  const cardData = [
+    {
+      id: 1,
+      icon: <Star className="text-5xl text-info mb-4" />,
+      title: t("review_rate_grow.transparent_reviews.title"),
+      description: t("review_rate_grow.transparent_reviews.description"),
+    },
+    {
+      id: 2,
+      icon: <Users className="text-5xl text-info mb-4" />,
+      title: t("review_rate_grow.build_reputation.title"),
+      description: t("review_rate_grow.build_reputation.description"),
+    },
+    {
+      id: 3,
+      icon: <CheckCircle className="text-5xl text-info mb-4" />,
+      title: t("review_rate_grow.grow_network.title"),
+      description: t("review_rate_grow.grow_network.description"),
+    },
+  ];
 
   return (
     <div ref={ref} className="bg-[#0F172A] text-white py-16 px-4 max-w-[90%] mx-auto w-full">
@@ -38,7 +37,7 @@ const ReviewRateGrow = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        Review, Rate, & Grow
+        {t("review_rate_grow.heading")}
       </motion.h2>
       <div className="flex flex-col md:flex-row justify-center items-center gap-8">
         {cardData.map((card, index) => (

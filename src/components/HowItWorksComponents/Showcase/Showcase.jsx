@@ -59,7 +59,7 @@ const Showcase = () => {
       </div>
       <button
         onClick={handleScroll}
-        className="absolute bottom-10 text-primary animate-bounce"
+        className="absolute bottom-10 text-primary animate-bounce cursor-pointer"
       >
         <FaAngleDoubleDown size={40} />
       </button>

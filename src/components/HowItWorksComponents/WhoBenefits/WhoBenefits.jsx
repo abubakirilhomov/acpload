@@ -1,14 +1,31 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslation } from "react-i18next";
 import Button from "../../Button/Button";
 import Decor from "../../Decor/Decor";
 
 const WhoBenefits = () => {
+  const { t } = useTranslation();
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
   });
+
+  const benefits = [
+    {
+      title: t("whoBenefits.carriers.title"),
+      description: t("whoBenefits.carriers.description"),
+    },
+    {
+      title: t("whoBenefits.brokers.title"),
+      description: t("whoBenefits.brokers.description"),
+    },
+    {
+      title: t("whoBenefits.owners.title"),
+      description: t("whoBenefits.owners.description"),
+    },
+  ];
 
   return (
     <section ref={ref} className="text-white py-16">
@@ -20,7 +37,7 @@ const WhoBenefits = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-3xl md:text-4xl font-bold mb-6"
         >
-          Who Benefits from Signing Up?
+          {t("whoBenefits.title")}
         </motion.h2>
 
         <motion.p
@@ -29,7 +46,7 @@ const WhoBenefits = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
           className="text-lg mb-12"
         >
-          Join for Free!
+          {t("whoBenefits.join")}
         </motion.p>
 
         <div className="flex flex-col lg:flex-row w-full gap-6">
@@ -54,29 +71,11 @@ const WhoBenefits = () => {
           animate={inView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.6 }}
         >
-          <Button text={"Get Access"} />
+          <Button text={t("whoBenefits.button")} />
         </motion.div>
       </div>
     </section>
   );
 };
-
-const benefits = [
-  {
-    title: "Carriers & Dispatchers",
-    description:
-      "Gain instant access to thousands of load opportunities. Whether you manage a fleet or operate as an individual, our platform helps you quickly match available trucks with suitable loads, saving time and boosting profitability.",
-  },
-  {
-    title: "Freight Brokers & Shippers",
-    description:
-      "Post your loads effortlessly and reach a broad network of reliable carriers. Our streamlined sign-up process ensures you can list your shipments quickly, so you spend less time on administration and more time on moving freight.",
-  },
-  {
-    title: "Owner-Operators",
-    description:
-      "Enjoy direct access to high-quality freight tailored to your truck’s specifications. With our easy sign-up, you can connect with shippers and brokers looking for dependable owner-operators, ensuring you maximize your earnings and reduce downtime.",
-  },
-];
 
 export default WhoBenefits;

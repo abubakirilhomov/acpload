@@ -119,5 +119,72 @@
       "videos": "Videos",
       "faqs": "Preguntas Frecuentes"
     }
+  },
+    "howToSignUp": {
+      "title": "Cómo Registrarse",
+      "step1Title": "Visita Nuestra Página de Registro:",
+      "step1Description": "Navega a nuestro sencillo formulario de registro donde proporcionarás detalles básicos de contacto...",
+      "step2Title": "Completa el Formulario:",
+      "step2Description": "Rellena la información necesaria—no te preocupes, solo tomará unos minutos...",
+      "step3Title": "Verifícate:",
+      "step3Description": "Una vez que completes el registro, nuestro sistema verificará tus datos...",
+      "step4Title": "Empieza a Conectar:",
+      "step4Description": "Comienza a explorar oportunidades de carga, publicar envíos..."
+    },"whyOurProcessWorks": {
+    "title": "Por qué nuestro proceso funciona",
+    "features": [
+      {
+        "title": "Eficiencia",
+        "description": "Registro optimizado, coincidencia inteligente de cargas y notificaciones instantáneas significan menos tiempo de inactividad y más movimiento de carga."
+      },
+      {
+        "title": "Confianza y Transparencia",
+        "description": "Nuestro sistema de reseñas crea una comunidad confiable donde cada transacción está respaldada por comentarios reales."
+      },
+      {
+        "title": "Crecimiento",
+        "description": "Al conectar transportistas, corredores y cargadores, puedes reducir millas vacías y optimizar tus operaciones."
+      }
+    ]
+  },"post_search": {
+    "heading": "Encuentra y Publica Cargas de Transporte",
+    "brokers_shippers": {
+      "title": "Para Corredores de Carga y Embarcadores",
+      "load_posting": {
+        "title": "Publicación Fácil de Cargas",
+        "description": "Publica tus cargas rápidamente y conéctate con transportistas verificados."
+      },
+      "targeted_reach": {
+        "title": "Alcance Específico",
+        "description": "Asegura que tu carga llegue a la audiencia correcta con precisión."
+      }
+    },
+    "carriers_dispatchers": {
+      "title": "Para Transportistas y Despachadores",
+      "load_searching": {
+        "title": "Búsqueda Avanzada de Cargas",
+        "description": "Encuentra cargas de manera eficiente con nuestro sistema de filtrado inteligente."
+      },
+      "empty_truck": {
+        "title": "Reduce los Kilómetros Vacíos",
+        "description": "Optimiza tus rutas para minimizar los viajes sin carga."
+      }
+    }
+  },"review_rate_grow": {
+    "heading": "Revisión, Calificación y Crecimiento",
+    "transparent_reviews": {
+      "title": "Reseñas Transparentes",
+      "description": "Después de cada envío, ambas partes pueden dejar comentarios detallados sobre la comunicación, la calidad del servicio y la confiabilidad."
+    },
+    "build_reputation": {
+      "title": "Construye Tu Reputación",
+      "description": "Las calificaciones altas ayudan a generar credibilidad, atraer más negocios y fomentar asociaciones sólidas."
+    },
+    "grow_network": {
+      "title": "Expande Tu Red",
+      "description": "Un servicio excelente y constante aumenta tu visibilidad, generando más oportunidades y confianza en la industria."
+    }
   }
+  
+  
   }

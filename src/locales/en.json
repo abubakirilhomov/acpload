@@ -124,5 +124,70 @@
       "videos": "Videos",
       "faqs": "FAQs"
     }
+  },
+  "howToSignUp": {
+    "title": "How To Sign Up",
+    "step1Title": "Visit Our Registration Page:",
+    "step1Description": "Navigate to our simple sign-up form where you'll provide basic contact details...",
+    "step2Title": "Complete the Form:",
+    "step2Description": "Fill out the necessary information—don’t worry, it only takes a few minutes...",
+    "step3Title": "Get Verified:",
+    "step3Description": "Once you complete the registration, our system will verify your details...",
+    "step4Title": "Start Connecting:",
+    "step4Description": "Begin exploring load opportunities, posting shipments..."
+  },"whyOurProcessWorks": {
+    "title": "Why Our Process Works",
+    "features": [
+      {
+        "title": "Efficiency",
+        "description": "Streamlined sign-up, smart load matching, and instant notifications mean less downtime and more freight movement."
+      },
+      {
+        "title": "Trust & Transparency",
+        "description": "Our review system builds a trusted community where every transaction is backed by real feedback."
+      },
+      {
+        "title": "Growth",
+        "description": "By connecting shippers, brokers, and carriers, you can reduce empty miles and optimize your operations."
+      }
+    ]
+  },"post_search": {
+    "heading": "Find & Post Freight Loads",
+    "brokers_shippers": {
+      "title": "For Freight Brokers & Shippers",
+      "load_posting": {
+        "title": "Easy Load Posting",
+        "description": "Post your loads quickly and connect with verified carriers."
+      },
+      "targeted_reach": {
+        "title": "Targeted Reach",
+        "description": "Ensure your freight reaches the right audience with precision."
+      }
+    },
+    "carriers_dispatchers": {
+      "title": "For Carriers & Dispatchers",
+      "load_searching": {
+        "title": "Advanced Load Searching",
+        "description": "Find loads efficiently with our smart filtering system."
+      },
+      "empty_truck": {
+        "title": "Reduce Empty Miles",
+        "description": "Optimize your truck routes to minimize empty trips."
+      }
+    }
+  },"review_rate_grow": {
+    "heading": "Review, Rate, & Grow",
+    "transparent_reviews": {
+      "title": "Transparent Reviews",
+      "description": "After each shipment, both parties can leave detailed feedback on communication, service quality, and reliability."
+    },
+    "build_reputation": {
+      "title": "Build Your Reputation",
+      "description": "High ratings help build credibility, attract more business, and foster strong partnerships."
+    },
+    "grow_network": {
+      "title": "Grow Your Network",
+      "description": "Consistently great service boosts your visibility, leading to more opportunities and trust in the industry."
+    }
   }
   }

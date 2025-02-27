@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslation } from "react-i18next";
 import {
   FaRegListAlt,
   FaBullseye,
@@ -11,6 +12,7 @@ import {
 
 const PostSearch = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
+  const { t } = useTranslation();
 
   return (
     <div ref={ref} className="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center mt-10">
@@ -21,7 +23,7 @@ const PostSearch = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        Post & Search Loads
+        {t("post_search.heading")}
       </motion.h1>
 
       {/* Two Columns */}
@@ -34,7 +36,7 @@ const PostSearch = () => {
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
         >
           <h2 className="text-3xl font-semibold mb-6 flex items-center gap-3">
-            For Freight Brokers & Shippers:
+            {t("post_search.brokers_shippers.title")}
           </h2>
           <ul className="space-y-5 text-gray-300">
             <li className="flex items-start gap-4">
@@ -42,9 +44,9 @@ const PostSearch = () => {
                 <FaRegListAlt className="text-white w-6 h-6" />
               </span>
               <div>
-                <strong className="text-lg">Effortless Load Posting:</strong>
+                <strong className="text-lg">{t("post_search.brokers_shippers.load_posting.title")}</strong>
                 <p className="mt-1 text-gray-400">
-                  Quickly list your loads with details like pickup/delivery locations, load specs, and time frames.
+                  {t("post_search.brokers_shippers.load_posting.description")}
                 </p>
               </div>
             </li>
@@ -53,9 +55,9 @@ const PostSearch = () => {
                 <FaBullseye className="text-white w-6 h-6" />
               </span>
               <div>
-                <strong className="text-lg">Targeted Reach:</strong>
+                <strong className="text-lg">{t("post_search.brokers_shippers.targeted_reach.title")}</strong>
                 <p className="mt-1 text-gray-400">
-                  Your loads are visible to a vast network of carriers and dispatchers, ensuring the right audience sees them.
+                  {t("post_search.brokers_shippers.targeted_reach.description")}
                 </p>
               </div>
             </li>
@@ -70,7 +72,7 @@ const PostSearch = () => {
           transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
         >
           <h2 className="text-3xl font-semibold mb-6 flex items-center gap-3">
-            For Carriers & Dispatchers:
+            {t("post_search.carriers_dispatchers.title")}
           </h2>
           <ul className="space-y-5 text-gray-300">
             <li className="flex items-start gap-4">
@@ -78,9 +80,9 @@ const PostSearch = () => {
                 <FaSearch className="text-white w-6 h-6" />
               </span>
               <div>
-                <strong className="text-lg">Smart Load Searching:</strong>
+                <strong className="text-lg">{t("post_search.carriers_dispatchers.load_searching.title")}</strong>
                 <p className="mt-1 text-gray-400">
-                  Use advanced filters to search for loads based on location, equipment requirements, and load type.
+                  {t("post_search.carriers_dispatchers.load_searching.description")}
                 </p>
               </div>
             </li>
@@ -89,9 +91,9 @@ const PostSearch = () => {
                 <FaTruckLoading className="text-white w-6 h-6" />
               </span>
               <div>
-                <strong className="text-lg">Empty Truck Posting:</strong>
+                <strong className="text-lg">{t("post_search.carriers_dispatchers.empty_truck.title")}</strong>
                 <p className="mt-1 text-gray-400">
-                  Post your available trucks to attract the best load opportunities that fit your capacity and schedule.
+                  {t("post_search.carriers_dispatchers.empty_truck.description")}
                 </p>
               </div>
             </li>
