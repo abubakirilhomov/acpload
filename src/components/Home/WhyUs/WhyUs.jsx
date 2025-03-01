@@ -58,7 +58,7 @@ const WhyUs = () => {
   return (
     <section
       id="why-us"
-      className="relative py-20 w-full max-w-[90%] mx-auto justify-between bg-opacity-60 backdrop-blur-md"
+      className="relative w-full max-w-[90%] mx-auto justify-between bg-opacity-60 backdrop-blur-md"
     >
       <Decor />
       <motion.div
@@ -71,7 +71,7 @@ const WhyUs = () => {
           initial={{ opacity: 0, y: 80 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 2 }}
-          className="text-4xl font-bold drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent"
+          className="text-3xl sm:text-4xl font-bold drop-shadow-lg"
         >
           Why Choose ACP Loads
         </motion.h2>

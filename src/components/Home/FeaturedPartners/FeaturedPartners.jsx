@@ -55,7 +55,7 @@ const FeaturedPartners = () => {
     >
       {/* Заголовок с более плавной анимацией */}
       <motion.h2
-        className="lg:text-5xl text-4xl font-extrabold text-center bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent drop-shadow-lg"
+        className="sm:text-4xl text-3xl font-bold text-center drop-shadow-lg"
         initial={{ opacity: 0, y: -30, scale: 0.9 }}
         animate={isVisible ? { opacity: 1, y: 0, scale: 1 } : {}}
         transition={{ duration: 1 }}
