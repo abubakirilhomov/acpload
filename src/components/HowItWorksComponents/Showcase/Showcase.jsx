@@ -1,13 +1,24 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslation } from "react-i18next";
 import Button from "../../../components/Button/Button";
+import { FaAngleDoubleDown } from "react-icons/fa";
 
 const Showcase = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2, // Starts animation when 20% of the component is visible
   });
+
+  const { t } = useTranslation();
+
+  const handleScroll = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <section
@@ -26,7 +37,7 @@ const Showcase = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"
         >
-          How It Works – Seamless Freight Matching for Everyone!
+          {t("showcase.title")}
         </motion.h1>
 
         <motion.p
@@ -35,7 +46,7 @@ const Showcase = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
           className="text-base sm:text-lg md:text-xl leading-relaxed"
         >
-          ACP Loads is designed to connect Freight Shippers, Brokers, Owner-Operators, and Carriers in a fast, efficient, and cost-effective way. Our platform makes it easy to post, find, and move freight with ZERO fees! Let’s get started – It’s 100% FREE!
+          {t("showcase.description")}
         </motion.p>
 
         <motion.div
@@ -43,9 +54,15 @@ const Showcase = () => {
           animate={inView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.6 }}
         >
-          <Button text={"Sign In"} />
+          <Button text={t("showcase.signIn")} />
         </motion.div>
       </div>
+      <button
+        onClick={handleScroll}
+        className="absolute bottom-10 text-primary animate-bounce cursor-pointer"
+      >
+        <FaAngleDoubleDown size={40} />
+      </button>
     </section>
   );
 };

@@ -59,7 +59,7 @@ const HowItWorks = () => {
           transition={{ duration: 0.8 }}
           className="mb-12"
         >
-          <h2 className="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">
+          <h2 className="text-4xl font-bold mb-6">
             {t("howItWorks")}
           </h2>
           <p className="text-xl max-w-2xl mx-auto mb-8 text-base-content/80">

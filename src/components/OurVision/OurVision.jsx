@@ -14,10 +14,10 @@ const OurVision = () => {
   }, [controls, inView]);
 
   return (
-    <section ref={ref} className="container max-w-[90%] bg-opacity-80 backdrop-blur-lg mx-auto space-y-6">
+    <section ref={ref} className="container max-w-[90%] bg-opacity-80 backdrop-blur-lg mx-auto space-y-6 mt-18">
       <Decor />
       <motion.p
-        className="text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent drop-shadow-lg"
+        className="text-3xl sm:text-4xl font-bold text-center drop-shadow-lg"
         initial={{ opacity: 0, y: -30 }}
         animate={controls}
       >

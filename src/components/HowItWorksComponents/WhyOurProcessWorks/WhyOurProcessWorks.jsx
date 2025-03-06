@@ -2,30 +2,13 @@ import React from "react";
 import { FaHandshake, FaChartLine, FaBolt } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslation } from "react-i18next"; // Import translation hook
 
 const WhyOurProcessWorks = () => {
+  const { t } = useTranslation(); // Use translation hook
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
 
-  const features = [
-    {
-      icon: <FaBolt className="text-info text-4xl" />,
-      title: "Efficiency",
-      description:
-        "The combination of a streamlined sign-up, smart load matching, and instant notifications means less downtime and more freight movement.",
-    },
-    {
-      icon: <FaHandshake className="text-info text-4xl" />,
-      title: "Trust & Transparency",
-      description:
-        "Our review system ensures that every user is held accountable, building a trusted community where every transaction is backed by real feedback.",
-    },
-    {
-      icon: <FaChartLine className="text-info text-4xl" />,
-      title: "Growth",
-      description:
-        "By connecting shippers, brokers, carriers, and owner-operators on one platform, you can reduce empty miles, optimize your operations, and ultimately grow your business.",
-    },
-  ];
+  const features = t("whyOurProcessWorks.features", { returnObjects: true });
 
   return (
     <motion.section
@@ -41,7 +24,7 @@ const WhyOurProcessWorks = () => {
           initial={{ scale: 0.9, opacity: 0 }}
           animate={inView ? { scale: 1, opacity: 1 } : {}}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="w-full md:w-1/2 flex items-center justify-between"
+          className="w-full md:w-1/2 flex items-center justify-center md:justify-end"
         >
           <img
             src="/images/acp-why-works.png"
@@ -58,7 +41,7 @@ const WhyOurProcessWorks = () => {
           className="w-full md:w-1/2 flex flex-col items-center md:items-start"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">
-            Why Our Process Works
+            {t("whyOurProcessWorks.title")}
           </h2>
           <div className="space-y-6">
             {features.map((feature, index) => (
@@ -71,14 +54,12 @@ const WhyOurProcessWorks = () => {
               >
                 {/* Icon */}
                 <div className="p-3 bg-white/20 rounded-full shadow-md">
-                  {feature.icon}
+                  {index === 0 ? <FaBolt className="text-info text-5xl" /> : index === 1 ? <FaHandshake className="text-info text-5xl" /> : <FaChartLine className="text-info text-5xl" />}
                 </div>
                 {/* Text */}
                 <div>
                   <h3 className="text-xl sm:text-2xl font-semibold">{feature.title}</h3>
-                  <p className="text-gray-300 mt-2 text-sm sm:text-base">
-                    {feature.description}
-                  </p>
+                  <p className="text-gray-300 mt-2 text-sm sm:text-base">{feature.description}</p>
                 </div>
               </motion.div>
             ))}

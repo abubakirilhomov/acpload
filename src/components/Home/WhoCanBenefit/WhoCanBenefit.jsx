@@ -9,8 +9,8 @@ const benefits = [
       "Search for loads effortlessly.",
       "Register without an MC number.",
     ],
-    icon: <FaTruckMoving className="text-4xl text-blue-500" />,
-    color: "badge-primary",
+    icon: <FaTruckMoving className="text-4xl text-info" />,
+    color: "badge-neutral",
   },
   {
     title: "Brokers",
@@ -18,8 +18,8 @@ const benefits = [
       "Post loads and find available empty trucks.",
       "Connect with Shippers to fulfill their shipments.",
     ],
-    icon: <FaUserTie className="text-4xl text-green-500" />,
-    color: "badge-secondary",
+    icon: <FaUserTie className="text-4xl text-info" />,
+    color: "badge-neutral",
   },
   {
     title: "Carriers",
@@ -27,8 +27,8 @@ const benefits = [
       "Search for loads and post empty trucks.",
       "Attract loads based on truck availability.",
     ],
-    icon: <FaUsers className="text-4xl text-yellow-500" />,
-    color: "badge-accent",
+    icon: <FaUsers className="text-4xl text-info" />,
+    color: "badge-neutral",
   },
   {
     title: "Shippers",
@@ -36,7 +36,7 @@ const benefits = [
       "Post shipments quickly and easily.",
       "Get connected with Brokers and Carriers in real-time.",
     ],
-    icon: <FaShippingFast className="text-4xl text-red-500" />,
+    icon: <FaShippingFast className="text-4xl text-info" />,
     color: "badge-neutral",
   },
 ];
@@ -63,7 +63,7 @@ const WhoCanBenefit = () => {
   return (
     <section id="who-can-benefit" className="py-16 px-6 md:px-16 lg:px-32 text-center">
       <motion.h2
-        className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent drop-shadow-lg mb-8"
+        className="text-4xl font-bold bg-clip-text drop-shadow-lg mb-8"
         initial={{ opacity: 0, y: -20 }}
         animate={isVisible ? { opacity: 1, scale: 1 } : {}}
         transition={{ duration: 2.5 }}

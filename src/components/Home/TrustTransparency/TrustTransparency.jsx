@@ -13,7 +13,7 @@ const ratingCategories = [
       "Payment Speed",
       "Honesty & Trustworthiness",
     ],
-    color: "text-blue-500",
+    color: "text-info",
   },
   {
     title: "Brokers Rate Carriers On:",
@@ -24,7 +24,7 @@ const ratingCategories = [
       "Freight Care",
       "Punctuality",
     ],
-    color: "text-green-500",
+    color: "text-info",
   },
 ];
 
@@ -50,12 +50,12 @@ const TrustTransparency = () => {
   return (
     <section
       id="trust-transparency"
-      className="container max-w-[85%] bg-opacity-80 backdrop-blur-lg mx-auto p-5 space-y-6"
+      className="container max-w-[90%] bg-opacity-80 backdrop-blur-lg mx-auto space-y-6 mt-10"
     >
       <Decor />
 
       <motion.p
-        className="lg:text-5xl text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent drop-shadow-lg"
+        className="sm:text-4xl text-3xl font-bold text-center drop-shadow-lg"
         initial={{ opacity: 0, y: -20 }}
         animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
         transition={{ duration: 0.8 }}
