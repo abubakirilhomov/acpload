@@ -88,7 +88,7 @@ const HowItWorks = () => {
               className="group"
             >
               <div className="relative flex items-center backdrop-blur-xl shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] md:min-h-[40vh] md:max-h-[40vh] min-h-[60vh] max-h-[60vh] bg-base-100/30 p-8 rounded-2xl border border-base-content/10 ">
-                <div className="relative z-10">
+                <div className="relative z-10 flex flex-col items-center">
                   <div className="w-12 h-12 mb-6 rounded-xl bg-primary/20 backdrop-blur-sm flex items-center justify-center">
                     {i === 0 ? (
                       <Clock className="w-6 h-6 text-primary" />
