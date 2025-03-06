@@ -12,6 +12,7 @@ const iconMap = {
   opportunity: <FiDollarSign className="text-3xl text-info" />, 
 };
 
+
 const Stats = () => {
   const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
