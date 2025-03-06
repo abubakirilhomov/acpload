@@ -3,7 +3,7 @@ import React from 'react'
 const Loadboards = () => {
   return (
     <div>
-      Loadboards
+      loadboard
     </div>
   )
 }
