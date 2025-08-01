@@ -16,7 +16,7 @@ import Carriers from './pages/Carriers/Carriers.jsx';
 // Platform 
 import HowItWorks from './pages/Platform/HowItWorks/HowItWorks.jsx';
 import Features from './pages/Platform/Features/Features.jsx';
-import LiveLoadboard from './pages/Platform/LiveLoadboard/LiveLoadboard.jsx';
+import TruckerCalculator from './pages/Platform/TruckerCalculator/TruckerCalculator.jsx';
 import FreightRateCalculator from './pages/Platform/FreightRateCalculator/FreightRateCalculator.jsx';
 import TermsOfService from './pages/Platform/TermsOfService/TermsOfService.jsx';
 
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
       // Platform
       { path: "/platform/how-it-works", element: <HowItWorks /> },
       { path: "/platform/features", element: <Features /> },
-      { path: "/platform/live-loadboard", element: <LiveLoadboard /> },
+      { path: "/platform/trucker-calculator", element: <TruckerCalculator /> },
       { path: "/platform/freight-rate-calculator", element: <FreightRateCalculator /> },
       { path: "/platform/terms-of-service", element: <TermsOfService /> },
 

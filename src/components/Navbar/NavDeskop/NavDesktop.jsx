@@ -21,6 +21,22 @@ const NavDesktop = () => {
   }, []);
 
   const navLinks = {
+    platform: [
+      { title: t("nav.platform.howItWorks"), link: "/platform/how-it-works" },
+      { title: t("nav.platform.features"), link: "/platform/features" },
+      {
+        title: t("nav.platform.liveLoadboard"),
+        link: "/platform/trucker-calculator",
+      },
+      {
+        title: t("nav.platform.freightRateCalculator"),
+        link: "/platform/freight-rate-calculator",
+      },
+      {
+        title: t("nav.platform.termsOfService"),
+        link: "/platform/terms-of-service",
+      },
+    ],
     company: [
       { title: t("nav.company.aboutUs"), link: "/our-company/about-us" },
       { title: t("nav.company.leadership"), link: "/our-company/leadership" },
@@ -33,22 +49,6 @@ const NavDesktop = () => {
         link: "/our-company/support-center",
       },
       { title: t("nav.company.contactUs"), link: "/our-company/contact-us" },
-    ],
-    platform: [
-      { title: t("nav.platform.howItWorks"), link: "/platform/how-it-works" },
-      { title: t("nav.platform.features"), link: "/platform/features" },
-      {
-        title: t("nav.platform.liveLoadboard"),
-        link: "/platform/live-loadboard",
-      },
-      {
-        title: t("nav.platform.freightRateCalculator"),
-        link: "/platform/freight-rate-calculator",
-      },
-      {
-        title: t("nav.platform.termsOfService"),
-        link: "/platform/terms-of-service",
-      },
     ],
     products: [
       { title: t("nav.products.loadboard"), link: "/products/loadboard" },
@@ -92,12 +92,12 @@ const NavDesktop = () => {
         </div>
         <div className="flex gap-4">
           <DropdownMenu
-            title={t("nav.company.title")}
-            links={navLinks.company}
-          />
-          <DropdownMenu
             title={t("nav.platform.title")}
             links={navLinks.platform}
+          />
+          <DropdownMenu
+            title={t("nav.company.title")}
+            links={navLinks.company}
           />
           <DropdownMenu
             title={t("nav.products.title")}
