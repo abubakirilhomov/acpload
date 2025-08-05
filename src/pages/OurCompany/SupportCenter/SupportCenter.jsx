@@ -360,7 +360,6 @@ const SupportCenter = () => {
             </div>
           </div>
 
-          {/* Подпись */}
           <div className="mt-12 text-gray-400 text-sm">
             <p className="font-semibold">ACP Loads Support Center — Your Trusted Partner in US Trucking Logistics</p>
             <p className="italic mt-1">We’re here to help. Your questions and feedback drive our commitment to excellence.</p>
