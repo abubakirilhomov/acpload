@@ -78,10 +78,8 @@ export default function FreightLoadboard() {
         animate="visible"
         variants={fadeIn}
       >
-        {/* Dark Overlay */}
         <div className="absolute inset-0 bg-base-100 bg-opacity-70"></div>
         
-        {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 text-center">
           {/* Main Heading */}
           <motion.div variants={fadeIn} initial="hidden" animate="visible">
