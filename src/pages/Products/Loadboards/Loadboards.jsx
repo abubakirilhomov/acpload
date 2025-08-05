@@ -65,7 +65,7 @@ export default function FreightLoadboard() {
       transition: { duration: 2, ease: 'easeInOut', repeat: Infinity }
     }
   };
-
+//asdadsadsadas
   return (
     <div className="min-h-screen bg-gray-600">
       {/* Hero Section */}
