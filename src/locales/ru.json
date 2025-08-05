@@ -105,10 +105,10 @@
     },
     "solutions": {
       "title": "Решения",
-      "carrierDispatcher": "Диспетчер перевозчиков",
-      "broker": "Брокер",
-      "carrier": "Перевозчик",
-      "shipper": "Грузоотправитель"
+      "carrierDispatcher": "Carrir Dispacher",
+      "broker": "Broker",
+      "carrier": "Carrier",
+      "shipper": "Shipper"
     },
     "resources": {
       "title": "Ресурсы",
