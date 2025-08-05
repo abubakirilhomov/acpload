@@ -34,7 +34,7 @@ import Shipper from './pages/Solutions/Shipper/Shipper.jsx';
 import Blog from './pages/Resources/Blog/Blog.jsx';
 import PartnershipAffiliate from './pages/Resources/PartnershipAffiliate/PartnershipAffiliate.jsx';
 import NewsletterSubscription from './pages/Resources/NewsletterSubscription/NewsletterSubscription.jsx';
-import Guides from './pages/Resources/Guides/Guides.jsx';
+import Guides from './pages/Resources/GuidesVideos/Guides.jsx';
 import Videos from './pages/Resources/Videos/Videos.jsx';
 import FAQs from './pages/Resources/FAQs/FAQs.jsx';
 
