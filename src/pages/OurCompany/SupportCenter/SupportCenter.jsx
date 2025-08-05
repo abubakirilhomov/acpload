@@ -324,17 +324,6 @@ const SupportCenter = () => {
       <div className="bg-[#0c1e35] min-h-screen flex items-center justify-center px-4">
         <div className="max-w-5xl w-full">
           {/* Заголовок */}
-           <AnimatedContent
-              distance={100}
-              direction="Vertical"
-              reverse={false}
-              duration={2}
-              initialOpacity={0}
-              animateOpacity={true}
-              initialScale={1}
-              threshold={0}
-              delay={0}
-            >
           <h1 className="text-white text-4xl font-bold mb-12 flex items-center">
             <span className="border-l-4 border-blue-500 mr-3 h-10"></span>
             Stay Connected
@@ -376,7 +365,6 @@ const SupportCenter = () => {
             <p className="font-semibold">ACP Loads Support Center — Your Trusted Partner in US Trucking Logistics</p>
             <p className="italic mt-1">We’re here to help. Your questions and feedback drive our commitment to excellence.</p>
           </div>
-          </AnimatedContent>
         </div>
       </div>
     </div>
