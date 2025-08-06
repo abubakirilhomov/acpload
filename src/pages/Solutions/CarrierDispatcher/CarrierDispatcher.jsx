@@ -50,7 +50,6 @@ const staggerItems = {
 const CarrierDispatcher = () => {
   return (
     <div className="overflow-hidden">
-      {/* Hero Section */}
       <motion.div
         initial="hidden"
         animate="visible"
