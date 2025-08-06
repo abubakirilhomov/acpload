@@ -28,24 +28,24 @@ const Section2 = () => {
 
   return (
     <section className="bg-slate-700 my-20 px-4 md:px-8">
-      <div className="md:flex p-10 justify-between items-center">
+      <div className="md:flex md:p-10 py-10 md:py-0 justify-between items-center">
         {/* Left Column - Text Content */}
         <motion.div
-          className="space-y-8 max-w-[50%]"
+          className="space-y-8"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           transition={{ staggerChildren: 0.2 }}
         >
           {/* Heading */}
-          <motion.h2
-            className="text-4xl md:text-5xl font-bold text-blue-300 leading-tight"
+          <motion.p
+            className="text-3xl text-center md:text-5xl font-bold text-blue-300 leading-tight"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
             Why Trust Our Reviews?
-          </motion.h2>
+          </motion.p>
 
           {/* Trust Points */}
           <div className="space-y-6">
