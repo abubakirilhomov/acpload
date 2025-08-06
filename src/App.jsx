@@ -15,6 +15,7 @@ function App() {
     <>
     <Header/>
     <main className='pt-20'><Outlet/></main>
+    
     <Footer/>
     </>
   )
