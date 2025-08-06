@@ -12,6 +12,14 @@
         "enter-phone": "Enter your phone (e.g. +14155552675)",
         "enter-company": "Company (Optional)",
         "enter-msg": "Enter your message",
+        "full-name": "Full Name",
+        "enter-first-name": "Enter your First Name",
+        "enter-last-name": "Enter your Last Name",
+        "first-name": "First Name",
+        "last-name": "Last Name",
+        "email": "Email",
+        "how-can-we-help": "How can we help?",
+        "msg": "Message",
         "submit": "Submit",
         "send-msg": "Send Message",
         "learn-more": "Learn More",
@@ -24,6 +32,8 @@
         "subscribe": "Subscribe",
         "mission": "Mission",
         "donate-now": "Donate Now",
+        "leave-a-testimonial": "Leave a Testimonial",
+        "view-all-reviews": "View All Reviews",
         "sign-up-now-and-start-booking-loads-instantly": "Sign Up Now & Start Booking Loads Instantly!",
         "post-your-load-now-and-get-matched-with-carriers-instantly": "Post Your Load Now & Get Matched with Carriers Instantly!"
     },
@@ -884,9 +894,68 @@
         },
         "subscribe": "Subscribe for latest news & updates"
     },
-    "partnership and affiliate": {
-        "title": "",
-        "description": ""
+    "partnership-and-affiliate": {
+        "title": "Partnership & Affiliate Program",
+        "sub-title-1": "Collaborate. Grow. Succeed — Together.",
+        "description-1": "At ACP Loads, we believe in building powerful partnerships that create long-term value across the logistics and freight industry. Whether you’re a marketing affiliate, logistics consultant, tech platform, or service provider, our Partnership & Affiliate Program is designed to help you grow your business while bringing efficiency to the U.S. trucking network.",
+        "description-2": "Partnership is a collaborative relationship between individuals or organizations for mutual benefit.",
+        "sub-title-2": "Collaboration builds strong bonds.",
+        "why-partner": {
+            "title": "Why Partner with ACP Loads?",
+            "1": {
+                "title": "Trusted Loadboard in the U.S. Logistics Sector",
+                "description": "Our platform connects thousands of carriers, brokers, dispatchers, and shippers every day."
+            },
+            "2": {
+                "title": "Free Access, Fast Growth",
+                "description": "As a free-to-use loadboard, we attract high volumes of users, ensuring your referral network scales quickly."
+            },
+            "3": {
+                "title": "Modern Technology & Real-Time Tools",
+                "description": "Partner with a platform that integrates cutting-edge tools like TMS, rate calculators, and live load data."
+            },
+            "4": {
+                "title": "Dedicated Support & Co-Marketing",
+                "description": "Get access to custom assets, branded campaigns, and support to promote effectively."
+            },
+            "cards": {
+                "1": {
+                    "title": "Affiliate Program",
+                    "sub-title": "Earn by Sharing ACP Loads",
+                    "description": "If you’re a logistics influencer, content creator, consultant, or digital marketer, our Affiliate Program lets you earn money by referring new users to our platform.",
+                    "text-1": "Commission on Sign-Ups",
+                    "text-2": "Custom Referral Links",
+                    "text-3": "Analytics Dashboard",
+                    "text-4": "Payouts via Stripe or PayPal",
+                    "footer-text": "✅ Perfect for dispatching trainers, loadboard reviewers, and freight marketing pros."
+                },
+                "2": {
+                    "title": "Strategic Partnerships",
+                    "sub-title": "Build Logistics Solutions Together",
+                    "label": "We're always open to strategic collaborations with:",
+                    "text-1": "Trucking schools or training academies",
+                    "text-2": "Freight factoring or insurance companies",
+                    "text-3": "Truck stop operators & telematics providers",
+                    "text-4": "Tech startups in logistics automation",
+                    "text-5": "Digital freight brokers",
+                    "description": "Let’s explore how we can integrate, co-brand, or develop tools to move the industry forward — together."
+                },
+                "3": {
+                    "title": "For Brokers with Automated Systems",
+                    "description": "If you're a freight broker with your own load posting system or TMS, you can integrate directly with ACP Loads. Share your loads through a secure API and have them automatically posted on our platform — saving you time and expanding your exposure instantly. ",
+                    "sub-description": "📌 It’s fast, secure, and brings your freight to a wider network of qualified carriers and dispatchers.",
+                    "footer-text": "Collaborating for Mutual Business Growth"
+                }
+            },
+            "get-started": {
+                "title": "Get started now!",
+                "description": "If you would like to work with us or just want to get in touch, we’d love to hear from you!",
+                "question-text": "Want to join our growing partner network?",
+                "1": "✔️ Fill out the quick application form",
+                "2": "✔️ Our team will review your fit and reach out",
+                "3": "✔️ Start earning and collaborating!"
+            }
+        }
     },
     "newsletter-subscription": {
         "title": "Stay Connected with ACP Loads",
@@ -931,28 +1000,431 @@
         }
     },
     "guides-and-videos": {
-        "title": "",
-        "description": ""
+        "title": "Learn How to Get the Most from ACP Loads",
+        "description": "Whether you're new to freight logistics or a seasoned industry pro, this page is your go-to source for practical tutorials, walkthroughs, and step-by-step guides. Discover how to get the most out of ACP Loads, based on your role in the trucking ecosystem.",
+        "choose-role-title": "Choose Your Role to Begin",
+        "choose-role-description": "ACP Loads is built for the entire freight lifecycle. Select the role that fits you to explore personalized guides and instructional videos:",
+        "carrier": {
+            "title": "Carrier Dispatcher",
+            "role-overview": "Role Overview:",
+            "sub-text": "Find and book loads posted by brokers with ease. You don’t need an MC number to join as a dispatcher.",
+            "what-will-learn": "What You’ll Learn:",
+            "1": "How to sign up as a dispatcher (no MC required)",
+            "2": "Searching loads posted by brokers",
+            "3": "Filtering by route, equipment type, or region",
+            "4": "Contacting brokers and booking loads",
+            "5": "Managing your dispatcher dashboard"
+        },
+        "carrier-dispatcher": {
+            "title": "Carrier",
+            "role-overview": "Role Overview:",
+            "sub-text": "Access broker loads and post your empty trucks to receive more opportunities.",
+            "what-will-learn": "What You’ll Learn:",
+            "1": "Creating a carrier profile",
+            "2": "Finding and booking loads from brokers",
+            "3": "Posting empty trucks (visibility for brokers & shippers)",
+            "4": "Managing offers and load matches",
+            "5": "How ratings and reviews work for carriers"
+        },
+        "broker": {
+            "title": "Broker",
+            "role-overview": "Role Overview:",
+            "sub-text": "Post freight loads for carriers and dispatchers, search for trucks, and monitor shipper activity.",
+            "what-will-learn": "What You’ll Learn:",
+            "1": "How to post a load quickly",
+            "2": "Searching empty trucks posted by carriers",
+            "3": "Connecting with carrier dis​patchers",
+            "4": "Tracking and reviewing shipment activity",
+            "5": "Collaborating with shippers on posted freight"
+        },
+        "shipper": {
+            "title": "Shipper",
+            "role-overview": "Role Overview:",
+            "sub-text": "Post shipments that brokers can access and move faster across the U.S.",
+            "what-will-learn": "What You’ll Learn:",
+            "1": "Registering as a shipper",
+            "2": "How to post a shipment",
+            "3": "Viewing broker interest in your loads",
+            "4": "Working with multiple brokers for capacity",
+            "5": "Tracking your shipment status"
+        },
+        "need-help": {
+            "title": "Need Help?",
+            "description-1": "If you're unsure where to start or have technical questions, visit our",
+            "description-2": "or contact our team at info"
+        }
     },
     "faqs": {
-        "title": "",
-        "description": ""
+        "title": "FAQs",
+        "description": "Welcome to the ACP Loads FAQ section. Below you'll find detailed answers grouped by user roles, along with general platform information to ensure you have all necessary details.",
+        "comrehensive-faqs": "ACP Loads – Comprehensive FAQs",
+        "carrier-dispatcher": {
+            "title": "Carrier Dispatcher FAQs",
+            "q-1": "Do I need an MC number to sign up as a Dispatcher?",
+            "a-1": "No. Dispatchers can register without an MC or USDOT number.",
+            "q-2": "What can I do as a Dispatcher?",
+            "a-2": "You can search for broker-posted loads using advanced filters like origin, destination, date, trailer length, and load type.",
+            "q-3": "Can I post loads or trucks as a Dispatcher?",
+            "a-3": "No. Dispatchers can only view and book available loads.",
+            "q-4": "Can I rate brokers?",
+            "a-4": "You must upgrade your account to “Carrier” status to leave reviews or ratings."
+        },
+        "carrier": {
+            "title": "Carrier FAQs",
+            "q-1": "What’s required to register as a Carrier?",
+            "a-1": "You’ll need an MC or USDOT number, which will be validated and auto-filled from FMCSA.",
+            "q-2": "Can I post my available trucks?",
+            "a-2": "Yes. Carriers can post available trucks for brokers and shippers to see.",
+            "q-3": "Can I book loads directly?",
+            "a-3": "Yes. You can contact brokers or shippers who posted loads and book directly.",
+            "q-4": "Can I add other users to my account?",
+            "a-4": "Yes, if you’re a verified user, you can verify or invite others under the same MC.",
+            "q-5": "Can I review brokers?",
+            "a-5": "Yes. You can rate brokers on communication, service, payment speed, and reliability."
+        },
+        "broker": {
+            "title": "Broker FAQs",
+            "q-1": "How do I sign up as a Broker?",
+            "a-1": "Enter your MC/USDOT number and verify your company details retrieved from FMCSA.",
+            "q-2": "What can I do on the platform?",
+            "a-2": "Post loads, search for available trucks, and connect with carriers and dispatchers.",
+            "q-3": "Can I find loads from shippers?",
+            "a-3": "Yes. Brokers can also browse available shipper loads.",
+            "q-4": "Can I review carriers?",
+            "a-4": "Yes. Brokers can rate carriers on service level, punctuality, and care.",
+            "q-5": "Can I work with ACP Loads via API?",
+            "a-5": "Yes. If your system supports auto-load posting, contact us to integrate."
+        },
+        "shipper": {
+            "title": "",
+            "q-1": "How do I register as a Shipper?",
+            "a-1": "Register with your company details. MC or USDOT numbers aren't required, and your role is automatically set to Shipper.",
+            "q-2": "Can Shippers directly post loads?",
+            "a-2": "Yes. Shippers can easily post loads that become available to brokers.",
+            "q-3": "How do shippers track posted loads?",
+            "a-3": "Shippers can view all interactions, responses, and matched trucks via their dashboard.",
+            "q-4": "Can Shippers review brokers or carriers?",
+            "a-4": "Shippers can view ratings and reviews but do not directly rate brokers or carriers."
+        },
+        "general-platform": {
+            "title": "General Platform FAQs",
+            "q-1": "Is ACP Loads free to use?",
+            "a-1": "Currently, ACP Loads is entirely free with full access to all features.",
+            "q-2": "How do I update my company or personal information?",
+            "a-2": "Use the ACP Directory or Help section to request information updates.",
+            "q-3": "What should I do if I suspect unauthorized access?",
+            "a-3": "Immediately contact support through the Help section to secure your account.",
+            "q-4": "Can I customize my ACP Loads experience?",
+            "a-4": "Yes, ACP Loads offers language preferences, themes (ACP Style and Classic), and dark or light modes.",
+            "q-5": "How do I get support for technical issues?",
+            "a-5": "How do I get support for technical issues?",
+            "q-6": "Is ACP Loads available on mobile devices?",
+            "a-6": "Yes, ACP Loads is fully responsive and accessible on all devices.",
+            "q-7": "How can I partner with ACP Loads or become an affiliate?",
+            "a-7": "Visit our 'Partnership & Affiliate' page to learn about collaboration opportunities.",
+            "q-8": "How do I provide feedback or report bugs?",
+            "a-8": "Feedback and bugs can be reported through the platform’s Help section or directly via email to our support center."
+        },
+        "get-in-touch": "Get in touch"
     },
     "about-us": {
-        "title": "",
-        "description": ""
+        "about-us": "About Us",
+        "title": "Welcome to ACP Loads — Empowering America’s Freight Connections",
+        "description": "ACP Loads is an innovative US-based trucking loadboard platform dedicated to bringing efficiency, transparency, and reliability to the logistics industry. Whether you are a carrier, dispatcher, broker, or shipper, ACP Loads is designed to simplify your workflow and accelerate your business growth.",
+        "our-mission-title": "Our Mission",
+        "our-mission-description": "Our mission is simple: To connect shippers, brokers, carriers, and dispatchers through a fast, user-friendly, and secure digital platform. We believe in creating opportunities for everyone in the logistics supply chain by leveraging technology and industry expertise.",
+        "who-we-serve": {
+            "title": "Who We Serve",
+            "description": "We proudly support all key players in the freight and logistics industry:",
+            "carrier-dispacther": "Carrier Dispatchers",
+            "carrier-dispacther-description": "Find the best loads quickly, no MC number required.",
+            "carriers": "Carriers",
+            "carriers-description": "Discover high-quality loads, post your empty trucks, and expand your network.",
+            "brokers": "Brokers",
+            "brokers-description": "Post shipments, match loads with carriers, and manage your relationships.",
+            "shipper": "Shippers",
+            "shipper-description": "Post loads with ease and gain access to a nationwide network of trusted brokers and carriers."
+        },
+        "technology-driven-logistics": "Technology-Driven Logistics",
+        "technology-driven-logistics-description": "ACP Loads integrates the latest digital tools to streamline freight matching, automate processes, and ensure up-to-the-minute information for all users. From our intuitive dashboards to our secure cloud infrastructure, we empower logistics professionals to work smarter, not harder.",
+        "why-choose": {
+            "title": "Why Choose ACP Loads?",
+            "card-1": {
+                "title": "Fast & Easy",
+                "description": "Get instant access to real-time loadboard data and opportunities."
+            },
+            "card-2": {
+                "title": "Smart Tools",
+                "description": "Use advanced search filters, calculators, and analytics to make informed decisions."
+            },
+            "card-3": {
+                "title": "Total Transparency",
+                "description": "Review company ratings, read testimonials, and communicate directly with partners."
+            },
+            "card-4": {
+                "title": "Free Access",
+                "description": "Enjoy all our core features at no cost during our promotional period."
+            }
+        },
+        "meet-our-team": {
+            "title": "Meet Our Team",
+            "description": "Our leadership and development team includes logistics veterans, technology innovators, and passionate customer advocates, all working together to make ACP Loads the trusted partner for your transportation needs.",
+            "daily-loads": "Daily Loads",
+            "users": "Users",
+            "brokers": "Brokers",
+            "our-team": "Our Team"
+        },
+        "our-commitment": {
+            "title": "Our Commitment",
+            "1": "Customer Success: Your experience is our top priority. Our support team is always ready to help.",
+            "2": "Data Security: We safeguard your data and privacy with industry-leading protections.",
+            "3": "Continuous Improvement: We listen to user feedback and rapidly evolve our platform to meet your changing needs."
+        },
+        "contact-us": {
+            "title": "Contact Us",
+            "description": "Any questions or remarks? Just write us a message!",
+            "office-address": "Office Address",
+            "phone-number": "Phone Number",
+            "email-address": "Email Address",
+            "get-in-touch": "Get in Touch",
+            "get-in-touch-description": "Have an inquiry or some feedbak for us? Fill out the form below to contact our team."
+        }
     },
     "leadership": {
-        "title": "",
-        "description": ""
+        "leadership": "Leadership",
+        "title": "Meet the Team Behind ACP Loads",
+        "description": "At ACP Loads, leadership means more than managing a platform—it means inspiring innovation, championing trust, and driving the freight industry forward. Our leadership team brings together decades of experience in logistics, technology, and customer service. We believe that by combining industry knowledge with a passion for digital transformation, we can solve the biggest challenges in US trucking.",
+        "our-core": {
+            "title": "Our Core Leadership Values",
+            "1": {
+                "title": "Integrity",
+                "description": "We lead by example, upholding the highest ethical standards and putting our customers first in every decision."
+            },
+            "2": {
+                "title": "Innovation",
+                "description": "Our leaders are relentless about exploring new solutions, leveraging data, and staying ahead of trends to keep our platform and users competitive."
+            },
+            "3": {
+                "title": "Collaboration",
+                "description": "We work closely as a team—and with our users, partners, and industry stakeholders—to create real, lasting value for the entire logistics ecosystem."
+            },
+            "4": {
+                "title": "Accountability",
+                "description": "We own our results, welcome feedback, and hold ourselves responsible for continuous improvement and customer satisfaction."
+            }
+        },
+        "our-leadership": {
+            "title": "Our Leadership Philosophy",
+            "card-1": {
+                "title": "People-First Approach",
+                "description": "Our leaders know that technology is only as strong as the people who use it. That’s why we invest in building genuine relationships with our community of carriers, brokers, shippers, and dispatchers. We listen, respond, and evolve—so our platform reflects real-world needs."
+            },
+            "card-2": {
+                "title": "Continuous Learning",
+                "description": "The freight industry is changing faster than ever. Our leadership team is committed to ongoing education and staying at the forefront of logistics trends, regulatory shifts, and digital transformation. We embrace change, encourage creativity, and foster a culture of curiosity and growth."
+            },
+            "card-3": {
+                "title": "Transparent Communication",
+                "description": "Trust is earned through honesty and openness. Our leaders are dedicated to clear, timely communication with users and partners. We value feedback and see every comment, question, or concern as an opportunity to improve."
+            },
+            "card-4": {
+                "title": "Ethical and Responsible Innovation",
+                "description": "We hold ourselves to high ethical standards. Whether it’s data security, fair business practices, or unbiased decision-making, our leadership sets the tone for a trustworthy and reliable platform."
+            }
+        },
+        "leadership-profiles": {
+            "title": "Leadership Profiles",
+            "1": {
+                "title": "Nick Charles",
+                "profession": "Founder & CEO",
+                "description": "Nick’s vision is to empower the US trucking community through practical technology and transparent service."
+            },
+            "2": {
+                "title": "James Smith",
+                "profession": "Chief Operating Officer",
+                "description": "James ensures operational excellence and keeps the team focused on what matters most: the user experience."
+            },
+            "3": {
+                "title": "Emily Davis",
+                "profession": "Head of Customer Success",
+                "description": "Emily is the voice of our users, making sure every feature, update, and support response is driven by customer needs."
+            },
+            "4": {
+                "title": "Jack Adams",
+                "profession": "Chief Technology Officer",
+                "description": "Jack leads the development of innovative, secure, and reliable digital tools for the ACP Loads community."
+            }
+        },
+        "msg-from-leadership": {
+            "title": "Message from Our Leadership",
+            "description": "“ACP Loads is more than a platform—it’s a partnership with the hard-working men and women who keep America moving. Our mission is to make your day simpler, your business more profitable, and your experience more rewarding. We invite you to join us, share your ideas, and help us build the future of logistics together.”",
+            "signature": "Nick Charles"
+        },
+        "connect-with-us": {
+            "title": "Connect With Us",
+            "description-1": "Our leadership is always open to feedback, partnerships, and new ideas.",
+            "description-2": "Reach out through our Support Center or LinkedIn for leadership insights, industry news, and collaboration opportunities.",
+            "call-today": "Call today",
+            "address": "Address",
+            "email-us": "Email Us",
+            "opening-hours": "Opening hours"
+        }
     },
     "testimonials-and-reviews": {
-        "title": "",
-        "description": ""
+        "title": "Testimonials & Reviews",
+        "sub-title": "What Our Community Is Saying",
+        "description": "At ACP Loads, our mission is to deliver efficiency, transparency, and real value to every member of the US logistics and trucking community. The feedback and experiences of our users—Carriers, Brokers, Dispatchers, and Shippers—drive our continuous improvement and innovation. Here’s what our community has to say about working with ACP Loads.",
+        "why-trust": {
+            "title": "Why Trust Our Reviews?",
+            "1": {
+                "title": "Verified Users:",
+                "description": "All reviews are submitted by registered, verified users—real companies and professionals using our platform."
+            },
+            "2": {
+                "title": "Role-Based Ratings:",
+                "description": "See feedback that’s specific to your role, whether you’re a Carrier, Broker, Dispatcher, or Shipper."
+            },
+            "3": {
+                "title": "Transparency & Integrity:",
+                "description": "We encourage honest, constructive feedback, and regularly monitor reviews for fairness and relevance."
+            },
+            "4": {
+                "title": "Multi-Criteria Ratings:",
+                "description": "Our rating system covers Communication, Service, Payment Speed, Load Information, and Reliability—so you get the full picture before you work together."
+            }
+        },
+        "real-stories": {
+            "title": "Real Stories, Real Impact",
+            "sub-title": "Carrier, Broker, Shipper, Owner-Operator and Dispatcher Testimonals",
+            "card-1": {
+                "text": "“ACP Loads makes it so easy to find hot loads and get paid quickly. Their rating system helps us choose who we want to work with.”",
+                "sub-text": "Carrier Testimonials",
+                "signature": "Michael R., Owner-Operator"
+            },
+            "card-2": {
+                "text": "“The user interface is top-notch and the support team actually listens to feedback.”",
+                "sub-text": "Carrier Testimonials",
+                "signature": "Brittany C., Fleet Carrier, Illinois"
+            },
+            "card-3": {
+                "text": "“Posting loads is fast and seamless, and the dispatcher network brings quality carriers directly to our shipments.”",
+                "sub-text": "Broker Testimonials",
+                "signature": "Jason S., Freight Broker, California"
+            },
+            "card-4": {
+                "text": "“ACP Loads has helped our brokerage expand our reach and maintain great relationships with both shippers and carriers.”",
+                "sub-text": "Broker Testimonials",
+                "signature": "Anna L., Logistics Coordinator, Georgia"
+            },
+            "card-5": {
+                "text": "“We reduced empty miles and improved on-time deliveries by using ACP Loads for all our freight posting needs.”",
+                "sub-text": "Shipper Testimonials",
+                "signature": "Scott T., Shipper, Ohio"
+            },
+            "card-6": {
+                "text": "“As a dispatcher, ACP Loads gives me every tool I need to move freight fast—no MC required. Highly recommended!”",
+                "sub-text": "Carrier Dispatcher Testimonials",
+                "signature": "Dave P., Carrier Dispatcher, New York"
+            }
+        },
+        "how-our-review": {
+            "title": "",
+            "card-1": {
+                "title": "Submit Your Experience",
+                "description": "After every transaction, users are invited to leave a review for their counterpart—helping everyone choose trusted partners."
+            },
+            "card-2": {
+                "title": "Criteria-Based Ratings",
+                "description": "Rate your experience on service, communication, honesty, payment speed, and load/truck information accuracy."
+            },
+            "card-3": {
+                "title": "Public & Private Feedback",
+                "description": "Share comments with the community or send private feedback to our support team for further review."
+            },
+            "card-4": {
+                "title": "Dispute Resolution",
+                "description": "If you encounter issues with a review or a partner, our support center is ready to help resolve disputes fairly and efficiently."
+            }
+        },
+        "share-your-story": {
+            "title": "Share Your Story",
+            "description-1": "Have you had a great (or not-so-great) experience with ACP Loads?",
+            "description-2": "Your feedback helps shape a safer, more effective trucking marketplace.",
+            "sub-text": "ACP Loads – Powering Trusted Logistics Across America"
+        }
     },
     "support-center": {
-        "title": "",
-        "description": ""
+        "support-center": "Support Center",
+        "title": "Welcome to the ACP Loads Support Center",
+        "description": "At ACP Loads, your satisfaction and success are our highest priorities. Whether you’re a Carrier, Broker, Dispatcher, or Shipper, our dedicated Support Center is here to provide you with fast, effective assistance—so you can keep your logistics operations running smoothly.",
+        "how-can-we-help": {
+            "title": "How Can We Help You Today?",
+            "sub-title": "Our Support Team:",
+            "1": {
+                "title": "Email Support:",
+                "description": "Reach us at support@acploads.com for detailed inquiries or documentation requests."
+            },
+            "2": {
+                "title": "Phone Support:",
+                "description": "Call us at 111-111-1111 for urgent matters or troubleshooting."
+            },
+            "3": {
+                "title": "FAQs",
+                "description": "Find quick answers to common questions about accounts, platform features, posting, searching, and more."
+            },
+            "4": {
+                "title": "Guides & Videos",
+                "description": "Step-by-step instructions and video tutorials for all user roles."
+            },
+            "5": {
+                "title": "User Manuals",
+                "description": "Download comprehensive user guides for Carriers, Brokers, Dispatchers, and Shippers."
+            }
+        },
+        "support-topics": {
+            "title": "Popular Support Topics",
+            "1": "Account Registration & Verification",
+            "2": "Password Recovery & Security",
+            "3": "Posting & Managing Loads",
+            "4": "Searching for Loads or Trucks",
+            "5": "Ratings, Reviews, and Disputes",
+            "6": "Billing & Subscription Questions",
+            "7": "Technical Issues & Bug Reporting",
+            "8": "Profile & Company Information Updates",
+            "9": "API & Partner Integration Support"
+        },
+        "submit-request": {
+            "title": "Submit a Request",
+            "description": "If you can’t find the answer you need in our FAQs or guides, please fill out our Support Request Form with details about your issue. Our team strives to respond to all inquiries within one business day."
+        },
+        "additional-support": {
+            "title": "Additional Support Services",
+            "1": {
+                "title": "Status Upgrades:",
+                "description": "Need to verify your MC or upgrade your role? We’ll guide you through the process."
+            },
+            "2": {
+                "title": "Reporting Suspicious Activity:",
+                "description": "Notify us of any fraudulent or suspicious activity—your safety is our priority."
+            },
+            "3": {
+                "title": "Feature Suggestions:",
+                "description": "We welcome your feedback to make ACP Loads even better! Submit new ideas or suggestions through our feedback portal."
+            }
+        },
+        "stay-connected": {
+            "title": "Stay Connected",
+            "card-1": {
+                "title": "Newsletter Subscription:",
+                "description": "Sign up to receive updates, platform tips, and industry news straight to your inbox."
+            },
+            "card-2": {
+                "title": "Community Forums:",
+                "description": "Join our online community to connect with other users, share advice, and get the most out of ACP Loads."
+            },
+            "sub-text-1": "ACP Loads Support Center — Your Trusted Partner in US Trucking Logistics",
+            "sub-text-2": "We’re here to help. Your questions and feedback drive our commitment to excellence."
+        }
     },
     "contact-us": {
         "title": "Contact Us",
