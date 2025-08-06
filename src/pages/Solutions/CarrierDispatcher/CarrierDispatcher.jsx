@@ -305,6 +305,7 @@ const CarrierDispatcher = () => {
             gives you the tools you need to work smarter, not harder.
           </motion.p>
           <motion.a
+          
             variants={itemVariants}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -312,6 +313,7 @@ const CarrierDispatcher = () => {
             className="inline-block bg-primary text-white px-6 py-3 sm:px-7 sm:py-3.5 md:px-8 md:py-4 rounded-lg text-lg sm:text-xl font-semibold mb-3 sm:mb-4 hover:bg-blue-700 transition"
           >
             Sign Up Now
+
           </motion.a>
           <motion.p
             variants={itemVariants}
