@@ -58,7 +58,7 @@ const CarrierDispatcher = () => {
         className="bg-cover bg-center pt-16 md:pt-20 min-h-screen bg-[url('https://freightwaves.b-cdn.net/wp-content/uploads/2020/02/Volvo-driver-cab.jpg?width=1200&height=683')] flex items-center"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gray-600 bg-opacity-80 w-full max-w-3xl lg:max-w-4xl xl:max-w-[700px] h-auto min-h-[400px] md:min-h-[500px] lg:h-[600px] rounded-2xl p-6 sm:p-8 flex flex-col justify-center items-start my-8 md:my-0">
+          <div className="bg-gray-600 bg-opacity-80 w-full max-w-3xl lg:max-w-4xl xl:max-w-[700px] h-auto min-h-[400px] md:min-h-[500px] lg:h-[600px] rounded-2xl p-6 sm:p-8 flex flex-col justify-center items-start md:my-0">
             <motion.p
               variants={itemVariants}
               className="text-3xl sm:text-4xl md:text-5xl text-white w-full lg:max-w-[85%] font-bold mb-4 md:mb-5 leading-tight"

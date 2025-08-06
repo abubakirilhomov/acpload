@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { MdOutlineAccessTime } from "react-icons/md";
 import { HiMiniCheckBadge } from "react-icons/hi2";
@@ -21,7 +20,7 @@ const containerVariants = {
     opacity: 1,
     transition: {
       staggerChildren: 0.2,
-      when: "beforeChildren"
+      when: "beforeChildren",
     },
   },
 };
@@ -42,40 +41,40 @@ const itemVariants = {
 
 const fadeIn = {
   hidden: { opacity: 0 },
-  visible: { 
-    opacity: 1, 
-    transition: { 
+  visible: {
+    opacity: 1,
+    transition: {
       duration: 0.8,
-      ease: "easeInOut" 
-    } 
+      ease: "easeInOut",
+    },
   },
 };
 
 const slideInLeft = {
   hidden: { x: -50, opacity: 0 },
-  visible: { 
-    x: 0, 
+  visible: {
+    x: 0,
     opacity: 1,
     transition: {
       type: "spring",
       stiffness: 100,
       damping: 10,
-      duration: 0.6
-    }
+      duration: 0.6,
+    },
   },
 };
 
 const slideInRight = {
   hidden: { x: 50, opacity: 0 },
-  visible: { 
-    x: 0, 
+  visible: {
+    x: 0,
     opacity: 1,
     transition: {
       type: "spring",
       stiffness: 100,
       damping: 10,
-      duration: 0.6
-    }
+      duration: 0.6,
+    },
   },
 };
 
@@ -85,7 +84,7 @@ const staggerItems = {
     opacity: 1,
     transition: {
       staggerChildren: 0.2,
-      when: "beforeChildren"
+      when: "beforeChildren",
     },
   },
 };
@@ -96,77 +95,79 @@ const floatAnimation = {
     duration: 4,
     repeat: Infinity,
     ease: "easeInOut",
-  }
+  },
 };
 
 const Carrier = () => {
   return (
     <div className="overflow-hidden">
-      {/* Hero Section - Enhanced Responsiveness */}
       <motion.div
         initial="hidden"
         animate="visible"
         variants={containerVariants}
         className="relative pt-24 md:pt-32 lg:pt-40 bg-[url('https://www.potelawfirm.com/img/agreement-new-ownership.jpg')] bg-cover bg-center min-h-[70vh] lg:h-[90vh]"
       >
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-8 py-12 lg:py-0">
-          <motion.div 
-            variants={itemVariants}
-            className="w-full lg:w-[600px] bg-blue-500/80 rounded-2xl p-6 sm:p-8 flex flex-col justify-center items-start"
-          >
-            <motion.p
+        <div className="absolute inset-0 bg-black/40">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-8 py-12 lg:py-0">
+            <motion.div
               variants={itemVariants}
-              className="text-2xl sm:text-3xl lg:text-4xl text-white font-bold mb-4 sm:mb-5"
+              className="w-full lg:w-[600px] bg-blue-500/80 rounded-2xl p-6 sm:p-8 flex flex-col justify-center items-start"
             >
-              Find Loads & Keep Your Trucks Moving
-            </motion.p>
-            <motion.p
-              variants={itemVariants}
-              className="text-white text-lg sm:text-xl font-medium mb-4 sm:mb-5"
-            >
-              Maximize Your Earnings with Access to High-Paying Loads & Trusted Brokers!
-            </motion.p>
-            <motion.p
-              variants={itemVariants}
-              className="text-white mb-6 sm:mb-8 text-sm sm:text-base"
-            >
-              As a carrier, finding the right freight at the right time is crucial
-              for keeping your trucks moving and maximizing profits. Our platform
-              gives you access to a real-time loadboard, trusted brokers, and
-              powerful tools designed to streamline your operations.
-            </motion.p>
-            <motion.button
-              variants={itemVariants}
-              whileHover={{ 
-                scale: 1.05,
-                backgroundColor: "#ffffff",
-                color: "#000000"
+              <motion.p
+                variants={itemVariants}
+                className="text-2xl sm:text-3xl lg:text-4xl text-white font-bold mb-4 sm:mb-5"
+              >
+                Find Loads & Keep Your Trucks Moving
+              </motion.p>
+              <motion.p
+                variants={itemVariants}
+                className="text-white text-lg sm:text-xl font-medium mb-4 sm:mb-5"
+              >
+                Maximize Your Earnings with Access to High-Paying Loads &
+                Trusted Brokers!
+              </motion.p>
+              <motion.p
+                variants={itemVariants}
+                className="text-white mb-6 sm:mb-8 text-sm sm:text-base"
+              >
+                As a carrier, finding the right freight at the right time is
+                crucial for keeping your trucks moving and maximizing profits.
+                Our platform gives you access to a real-time loadboard, trusted
+                brokers, and powerful tools designed to streamline your
+                operations.
+              </motion.p>
+              <motion.button
+                variants={itemVariants}
+                whileHover={{
+                  scale: 1.05,
+                  backgroundColor: "#ffffff",
+                  color: "#000000",
+                }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-none border-2 text-white border-white px-6 py-2 sm:px-8 sm:py-3 rounded-md transition text-sm sm:text-base"
+              >
+                Contact Us
+              </motion.button>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 60,
+                damping: 10,
+                duration: 0.8,
               }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-none border-2 text-white border-white px-6 py-2 sm:px-8 sm:py-3 rounded-md transition text-sm sm:text-base"
+              className="w-full lg:w-auto mt-8 lg:mt-0"
             >
-              Contact Us
-            </motion.button>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ 
-              type: "spring",
-              stiffness: 60,
-              damping: 10,
-              duration: 0.8 
-            }}
-            className="w-full lg:w-auto mt-8 lg:mt-0"
-          >
-            <img
-              src="https://imageio.forbes.com/specials-images/imageserve/61008b130788d17e927fd31b/TuSimple-Ryder-Partnership/0x0.jpg?format=jpg&crop=3470,1998,x222,y19,safe&width=960"
-              alt="Truck partnership"
-              className="rounded-2xl w-full max-w-[650px] h-auto max-h-[500px] object-cover shadow-xl mx-auto"
-            />
-          </motion.div>
+              <img
+                src="https://imageio.forbes.com/specials-images/imageserve/61008b130788d17e927fd31b/TuSimple-Ryder-Partnership/0x0.jpg?format=jpg&crop=3470,1998,x222,y19,safe&width=960"
+                alt="Truck partnership"
+                className="rounded-2xl w-full max-w-[650px] h-[600px] relative right-15 max-h-[500px] object-cover shadow-xl mx-auto"
+              />
+            </motion.div>
+          </div>
         </div>
       </motion.div>
 
@@ -224,20 +225,24 @@ const Carrier = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                whileHover={{ 
+                whileHover={{
                   scale: 1.03,
-                  backgroundColor: "rgba(55, 65, 81, 0.7)"
+                  backgroundColor: "rgba(55, 65, 81, 0.7)",
                 }}
                 className="flex flex-col items-center text-center p-6 bg-gray-800 rounded-xl transition-all"
               >
-                <motion.div 
+                <motion.div
                   whileHover={{ rotate: 15 }}
                   className="w-12 h-12 sm:w-14 sm:h-14 mb-3 sm:mb-4 rounded-full border-2 border-blue-400 p-3 sm:p-4 flex items-center justify-center"
                 >
                   {feature.icon}
                 </motion.div>
-                <h3 className="font-bold text-lg sm:text-xl mb-2">{feature.title}</h3>
-                <p className="text-gray-300 text-sm sm:text-base">{feature.desc}</p>
+                <h3 className="font-bold text-lg sm:text-xl mb-2">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-300 text-sm sm:text-base">
+                  {feature.desc}
+                </p>
               </motion.div>
             ))}
           </motion.div>
@@ -289,20 +294,24 @@ const Carrier = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                whileHover={{ 
+                whileHover={{
                   y: -5,
-                  backgroundColor: "rgba(55, 65, 81, 0.7)"
+                  backgroundColor: "rgba(55, 65, 81, 0.7)",
                 }}
                 className="bg-gray-700 rounded-xl p-6 sm:p-8 text-white transition-all"
               >
-                <motion.div 
+                <motion.div
                   animate={floatAnimation}
                   className="text-blue-400 mx-auto mb-3 sm:mb-4 flex justify-center"
                 >
                   {step.icon}
                 </motion.div>
-                <h3 className="font-bold text-base sm:text-lg mb-2 text-center">{step.title}</h3>
-                <p className="text-gray-300 text-sm sm:text-base text-center">{step.desc}</p>
+                <h3 className="font-bold text-base sm:text-lg mb-2 text-center">
+                  {step.title}
+                </h3>
+                <p className="text-gray-300 text-sm sm:text-base text-center">
+                  {step.desc}
+                </p>
               </motion.div>
             ))}
           </motion.div>
@@ -331,48 +340,62 @@ const Carrier = () => {
             >
               {[
                 {
-                  icon: <MdOutlineAccessTime className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />,
+                  icon: (
+                    <MdOutlineAccessTime className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />
+                  ),
                   title: "Real-Time Loadboard",
                   desc: "Access thousands of loads daily.",
                 },
                 {
-                  icon: <HiMiniCheckBadge className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />,
+                  icon: (
+                    <HiMiniCheckBadge className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />
+                  ),
                   title: "Verified Broker Network",
                   desc: "Work with trusted freight partners.",
                 },
                 {
-                  icon: <BsFillTicketPerforatedFill className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />,
+                  icon: (
+                    <BsFillTicketPerforatedFill className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />
+                  ),
                   title: "Rate Comparison Tool",
                   desc: "Get fair compensation for every haul.",
                 },
                 {
-                  icon: <BsCardChecklist className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />,
+                  icon: (
+                    <BsCardChecklist className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />
+                  ),
                   title: "Instant Load Booking",
                   desc: "Secure the best loads before they're gone.",
                 },
                 {
-                  icon: <GiProgression className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />,
+                  icon: (
+                    <GiProgression className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />
+                  ),
                   title: "User-Friendly Dashboard",
                   desc: "Manage loads, documents, and payments in one place.",
                 },
               ].map((feature, index) => (
                 <motion.div
                   key={index}
-                  whileHover={{ 
+                  whileHover={{
                     x: 5,
-                    backgroundColor: "rgba(31, 41, 55, 0.7)"
+                    backgroundColor: "rgba(31, 41, 55, 0.7)",
                   }}
                   className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg transition-all"
                 >
-                  <motion.div 
+                  <motion.div
                     whileHover={{ scale: 1.2 }}
                     className="flex-shrink-0"
                   >
                     {feature.icon}
                   </motion.div>
                   <div>
-                    <h4 className="font-semibold text-base sm:text-lg">{feature.title}</h4>
-                    <p className="text-gray-400 text-sm sm:text-base">{feature.desc}</p>
+                    <h4 className="font-semibold text-base sm:text-lg">
+                      {feature.title}
+                    </h4>
+                    <p className="text-gray-400 text-sm sm:text-base">
+                      {feature.desc}
+                    </p>
                   </div>
                 </motion.div>
               ))}
@@ -422,11 +445,11 @@ const Carrier = () => {
             </motion.p>
             <motion.button
               variants={itemVariants}
-              whileHover={{ 
-                scale: 1.05, 
-                backgroundColor: "#3B82F6", 
+              whileHover={{
+                scale: 1.05,
+                backgroundColor: "#3B82F6",
                 color: "white",
-                borderColor: "#3B82F6"
+                borderColor: "#3B82F6",
               }}
               whileTap={{ scale: 0.95 }}
               className="border-2 text-blue-400 border-blue-400 py-2 sm:py-3 lg:py-4 px-6 sm:px-8 lg:px-12 rounded-xl text-base sm:text-lg lg:text-xl transition-all"
