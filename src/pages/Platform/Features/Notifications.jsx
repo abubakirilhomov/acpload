@@ -38,7 +38,7 @@ const Notifications = () => {
           <div
             key={index}
             style={{ transitionDelay: `${index * 200}ms` }}
-            className={`border border-white bg-opacity-10 bg-white rounded-2xl p-6 flex flex-col items-center justify-center text-white font-semibold shadow-lg transition-all duration-700 ease-out transform ${
+            className={`border border-white bg-opacity-10 rounded-2xl p-6 flex flex-col items-center justify-center text-white font-semibold shadow-lg transition-all duration-700 ease-out transform ${
               isVisible ? "scale-100 opacity-100" : "scale-75 opacity-0"
             }`}
           >
