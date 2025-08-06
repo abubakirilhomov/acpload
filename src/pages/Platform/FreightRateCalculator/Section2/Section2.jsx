@@ -12,7 +12,7 @@ const Section2 = () => {
       <div className="z-10 text-white relative md:px-8 py-2 max-w-[90%] mx-auto">
         <p className="text-5xl mt-10 mb-5">Key Features of Our Calculator</p>
 
-        <ul className="">
+        <ul className="max-w-[90%] mx-auto">
           <li className="text-2xl list-disc font-bold">Real-Time Data:</li>
           <p className="mb-4">
             Uses current mapping and fuel pricing data for accurate distance and
@@ -47,7 +47,7 @@ const Section2 = () => {
 
         <p className="text-5xl mt-10">Why Use Our Freight Rate Calculator?</p>
 
-        <ul className="mt-5">
+        <ul className="mt-5 max-w-[90%] mx-auto">
           <li className="text-2xl list-disc font-bold">
             Optimize Your Earnings:
           </li>
