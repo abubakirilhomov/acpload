@@ -60,7 +60,7 @@ const HowItWorks = () => {
           className="mb-12"
         >
           <h2 className="text-4xl font-bold mb-6">
-            {t("howItWorks")}
+            {t("navfooter.how-it-works")}
           </h2>
           <p className="text-xl max-w-2xl mx-auto mb-8 text-base-content/80">
             {t("description")}
@@ -77,7 +77,7 @@ const HowItWorks = () => {
         </motion.div>
 
         <div className="mt-16 grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {t("cards", { returnObjects: true }).map((card, i) => (
+          {/* {t("cards", { returnObjects: true }).map((card, i) => (
             <motion.div
               key={card.title}
               custom={i}
@@ -104,7 +104,7 @@ const HowItWorks = () => {
                 </div>
               </div>
             </motion.div>
-          ))}
+          ))} */}
         </div>
       </div>
     </section>

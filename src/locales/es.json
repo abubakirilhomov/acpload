@@ -22,7 +22,7 @@
     "msg": "Mensaje",
     "submit": "Entregar",
     "send-msg": "Enviar un mensaje",
-    "learn-more": "Obtenga más información",
+    "learn-more": "Más información",
     "read-more": "Leer más",
     "get-access-now": "Obtenga acceso ahora",
     "post-loads-now": "Publicar cargas ahora",
@@ -93,7 +93,7 @@
     },
     "who-benefits": {
       "title": "¿Quién puede beneficiarse?",
-      "dispatchers": "Despachadores de transportistas",
+      "dispatchers": "Despachadores",
       "brokers": "Corredores",
       "carriers": "Operador",
       "shippers": "Cargadores",
@@ -128,7 +128,7 @@
     },
     "futured-partners": {
       "title": "Socios destacados",
-      "description": "En ACP Cargas, creemos en el poder de la colaboración. ",
+      "description": "En ACP Loads, creemos en el poder de la colaboración. Nos enorgullece asociarnos con marcas líderes de la industria que comparten nuestro compromiso con la innovación, la eficiencia y la confiabilidad en el sector del transporte y la logística en EE. UU. Estas alianzas nos permiten brindar a nuestros usuarios las mejores herramientas, conocimientos y oportunidades para impulsar el éxito en la industria.",
       "osrm": "OSRM: mapeo eficiente y enrutamiento optimizado a través de OSRM",
       "google": "Google: mapeo de precisión para navegación sin problemas",
       "github": "GitHub: Empoderar la colaboración de código sin costuras",
@@ -1136,7 +1136,7 @@
     "who-we-serve": {
       "title": "A quien servimos",
       "description": "Orgullosamente apoyamos a todos los actores clave en la industria de la carga y la logística:",
-      "carrier-dispacther": "Despachadores de transportistas",
+      "carrier-dispacther": "Despachadores",
       "carrier-dispacther-description": "Encuentre las mejores cargas rápidamente, no se requiere un número MC.",
       "carriers": "Operador",
       "carriers-description": "Descubra cargas de alta calidad, publique sus camiones vacíos y expanda su red.",
@@ -1217,19 +1217,19 @@
       "title": "Nuestra filosofía de liderazgo",
       "card-1": {
         "title": "Enfoque de las personas primero",
-        "description": "Nuestros líderes saben que la tecnología es tan fuerte como las personas que la usan. "
+        "description": "Nuestros líderes saben que la tecnología es tan poderosa como las personas que la usan. Por eso invertimos en construir relaciones genuinas con nuestra comunidad de transportistas, agentes, expedidores y despachadores. Escuchamos, respondemos y evolucionamos para que nuestra plataforma refleje las necesidades del mundo real."
       },
       "card-2": {
         "title": "Aprendizaje continuo",
-        "description": "La industria del flete está cambiando más rápido que nunca. "
+        "description": "La industria del transporte de mercancías está cambiando más rápido que nunca. Nuestro equipo directivo está comprometido con la formación continua y con mantenerse a la vanguardia de las tendencias logísticas, los cambios regulatorios y la transformación digital. Nos adaptamos al cambio, fomentamos la creatividad y promovemos una cultura de curiosidad y crecimiento."
       },
       "card-3": {
         "title": "Comunicación transparente",
-        "description": "La confianza se obtiene a través de la honestidad y la apertura. "
+        "description": "La confianza se gana con honestidad y transparencia. Nuestros líderes se dedican a una comunicación clara y oportuna con usuarios y socios. Valoramos la retroalimentación y vemos cada comentario, pregunta o inquietud como una oportunidad para mejorar."
       },
       "card-4": {
         "title": "Innovación ética y responsable",
-        "description": "Nos mantenemos a altos estándares éticos. "
+        "description": "Nos regimos por altos estándares éticos. Ya sea en materia de seguridad de datos, prácticas comerciales justas o toma de decisiones imparcial, nuestro liderazgo marca la pauta para una plataforma confiable y segura."
       }
     },
     "leadership-profiles": {
@@ -1273,7 +1273,7 @@
   "testimonials-and-reviews": {
     "title": "Testimonios y revisiones",
     "sub-title": "Lo que dice nuestra comunidad",
-    "description": "En ACP Loads, nuestra misión es ofrecer eficiencia, transparencia y valor real para cada miembro de la comunidad de logística y camiones de EE. UU. ",
+    "description": "En ACP Loads, nuestra misión es brindar eficiencia, transparencia y valor real a todos los miembros de la comunidad de logística y transporte de EE. UU. Los comentarios y experiencias de nuestros usuarios (transportistas, agentes, despachadores y expedidores) impulsan nuestra mejora e innovación continuas. A continuación, lo que nuestra comunidad opina sobre trabajar con ACP Loads.",
     "why-trust": {
       "1": {
         "title": "Usuarios verificados:",
@@ -1328,7 +1328,7 @@
       }
     },
     "how-our-review": {
-      "title": "",
+      "title": "Cómo funciona nuestro sistema de reseñas",
       "card-1": {
         "title": "Envíe su experiencia",
         "description": "Después de cada transacción, los usuarios están invitados a dejar una revisión para su contraparte, lo que obtiene que todos eligen socios confiables."
@@ -1356,7 +1356,7 @@
   "support-center": {
     "support-center": "Centro de apoyo",
     "title": "Bienvenido al Centro de soporte de ACP Cargas",
-    "description": "En ACP Cargas, su satisfacción y éxito son nuestras más altas prioridades. ",
+    "description": "En ACP Loads, su satisfacción y éxito son nuestra máxima prioridad. Ya sea transportista, agente, despachador o expedidor, nuestro Centro de Soporte está aquí para brindarle asistencia rápida y eficaz, para que sus operaciones logísticas funcionen sin problemas.",
     "how-can-we-help": {
       "1": {
         "title": "Soporte por correo electrónico:",
@@ -1429,7 +1429,7 @@
   "contact-us": {
     "title": "Contáctenos",
     "sub-title": "Póngase en contacto con cargas ACP",
-    "description": "¡Estamos aquí para ayudar! ",
+    "description": "¡Estamos aquí para ayudarte! Si tienes alguna pregunta sobre nuestra plataforma, necesitas asistencia técnica, quieres colaborar con nosotros o simplemente quieres compartir tu opinión, nuestro equipo está listo para contactarte.",
     "how-to-reach-us": {
       "card-1": {
         "title": "Consultas generales:",
@@ -1441,7 +1441,7 @@
         "support-center": "Centro de apoyo"
       },
       "card-3": {
-        "title": "!!!>>> Unexpected token '<', \"<html lang\"... is not valid JSON <<<!!!",
+        "title": "Asociaciones y afiliados:",
         "description": "¿Está interesado en asociarse o integrar su sistema con cargas ACP? ",
         "email": "Correo electrónico:",
         "partnership-and-affiliate": "Asociación y Afiliado"
@@ -1461,7 +1461,7 @@
     },
     "connect-with-us": {
       "title": "Conéctese con nosotros en línea",
-      "description": "Sus comentarios son valiosos. "
+      "description": "Sus comentarios son valiosos. Esperamos tener noticias suyas y apoyar su éxito en la industria del transporte y la logística en EE. UU."
     }
   }
 }

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 // Animation variants (unchanged)
 const containerVariants = {
@@ -48,9 +49,11 @@ const staggerItems = {
 };
 
 const CarrierDispatcher = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="overflow-hidden">
-      {/* Hero Section - Responsive */}
+      {/* Hero Section */}
       <motion.div
         initial="hidden"
         animate="visible"
@@ -63,16 +66,15 @@ const CarrierDispatcher = () => {
               variants={itemVariants}
               className="text-3xl sm:text-4xl md:text-5xl text-white w-full lg:max-w-[85%] font-bold mb-4 md:mb-5 leading-tight"
             >
-              Find & Manage Loads with Ease
+              {t("carrier-dispatcher.title")}
             </motion.p>
             <motion.p
               variants={itemVariants}
               className="text-white text-base sm:text-lg md:text-xl font-medium mb-4 md:mb-5 w-full"
             >
-              Maximize Efficiency, Minimize Hassle – The Ultimate Load Search Tool
-              for Carrier Dispatchers! Carrier dispatchers play a critical role in
-              the trucking industry by managing loads, coordinating drivers, and
-              ensuring timely freight delivery.
+              {t("carrier-dispatcher.description").split("!")[0]}!
+              <br />
+              {t("carrier-dispatcher.description").split("!")[1]}
             </motion.p>
             <motion.button
               variants={itemVariants}
@@ -80,13 +82,13 @@ const CarrierDispatcher = () => {
               whileTap={{ scale: 0.95 }}
               className="bg-none border-2 border-primary text-primary hover:text-white hover:bg-primary px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-md transition text-sm sm:text-base md:text-lg"
             >
-              Contact Us
+              {t("btn-input-texts.contact-us")}
             </motion.button>
           </div>
         </div>
       </motion.div>
 
-      {/* Features Section - Responsive */}
+      {/* Features Section */}
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -99,7 +101,7 @@ const CarrierDispatcher = () => {
             variants={itemVariants}
             className="text-3xl sm:text-4xl font-bold mb-8 md:mb-10 lg:mb-12 text-center"
           >
-            Why Use Our Platform as a Carrier Dispatcher?
+            {t("carrier-dispatcher.why-use-platform.title")}
           </motion.h2>
           <motion.div
             variants={staggerItems}
@@ -108,28 +110,28 @@ const CarrierDispatcher = () => {
             {[
               {
                 icon: "https://assets.nicepagecdn.com/08f6c9cc/6449759/images/3178933-1f084769.png",
-                title: "INSTANT LOAD ACCESS",
-                desc: "Search and secure the best loads in real-time, without delays.",
+                title: t("carrier-dispatcher.why-use-platform.1.title"),
+                desc: t("carrier-dispatcher.why-use-platform.1.description"),
               },
               {
                 icon: "https://assets.nicepagecdn.com/08f6c9cc/6449759/images/679720-7f4b0609.png",
-                title: "SMART LOAD MATCHING",
-                desc: "Find shipments based on truck availability, location, and preferred routes.",
+                title: t("carrier-dispatcher.why-use-platform.2.title"),
+                desc: t("carrier-dispatcher.why-use-platform.2.description"),
               },
               {
                 icon: "https://assets.nicepagecdn.com/08f6c9cc/6449759/images/3061732-78ef29a0.png",
-                title: "SEAMLESS COORDINATION",
-                desc: "Easily manage multiple carriers and optimize freight movements.",
+                title: t("carrier-dispatcher.why-use-platform.3.title"),
+                desc: t("carrier-dispatcher.why-use-platform.3.description"),
               },
               {
                 icon: "https://assets.nicepagecdn.com/08f6c9cc/6449759/images/7314686-690bdad7.png",
-                title: "MAXIMIZE PROFITS",
-                desc: "Reduce deadhead miles and boost earnings with well-matched loads.",
+                title: t("carrier-dispatcher.why-use-platform.4.title"),
+                desc: t("carrier-dispatcher.why-use-platform.4.description"),
               },
               {
                 icon: "https://assets.nicepagecdn.com/08f6c9cc/6449759/images/4947736-13ce3961.png",
-                title: "LIVE LOADBOARD DATA",
-                desc: "Get access to real-time freight postings and market insights.",
+                title: t("carrier-dispatcher.why-use-platform.5.title"),
+                desc: t("carrier-dispatcher.why-use-platform.5.description"),
               },
             ].map((feature, index) => (
               <motion.div
@@ -155,7 +157,7 @@ const CarrierDispatcher = () => {
         </div>
       </motion.div>
 
-      {/* How It Works Section - Responsive */}
+      {/* How It Works Section */}
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -168,7 +170,7 @@ const CarrierDispatcher = () => {
             variants={itemVariants}
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 md:mb-10 lg:mb-12 text-center"
           >
-            How It Works
+            {t("carrier-dispatcher.how-it-works.title")}
           </motion.h2>
           <motion.div
             variants={staggerItems}
@@ -177,34 +179,34 @@ const CarrierDispatcher = () => {
             {[
               {
                 step: "1",
-                title: "Sign Up – Quick & Free Registration",
+                title: t("carrier-dispatcher.how-it-works.card-1.title"),
                 desc: [
-                  "No MC number required – start dispatching loads instantly.",
-                  "Create a dispatcher profile to access real-time freight listings.",
+                  t("carrier-dispatcher.how-it-works.card-1.description-1"),
+                  t("carrier-dispatcher.how-it-works.card-1.description-2"),
                 ],
               },
               {
                 step: "2",
-                title: "Search & Select the Best Loads",
+                title: t("carrier-dispatcher.how-it-works.card-2.title"),
                 desc: [
-                  "Use filters to find loads based on route, price, and truck type.",
-                  "Get live loadboard updates to stay ahead in the market.",
+                  t("carrier-dispatcher.how-it-works.card-2.description-1"),
+                  t("carrier-dispatcher.how-it-works.card-2.description-2"),
                 ],
               },
               {
                 step: "3",
-                title: "Dispatch & Coordinate",
+                title: t("carrier-dispatcher.how-it-works.card-3.title"),
                 desc: [
-                  "Assign loads to carriers and manage trips with ease.",
-                  "Track progress and updates in real time.",
+                  t("carrier-dispatcher.how-it-works.card-3.description-1"),
+                  t("carrier-dispatcher.how-it-works.card-3.description-2"),
                 ],
               },
               {
                 step: "4",
-                title: "Optimize & Scale Your Operations",
+                title: t("carrier-dispatcher.how-it-works.card-4.title"),
                 desc: [
-                  "Use advanced tools like Freight Rate Calculator to ensure profitable dispatching.",
-                  "Leverage analytics to refine strategies and grow your business.",
+                  t("carrier-dispatcher.how-it-works.card-4.description-1"),
+                  t("carrier-dispatcher.how-it-works.card-4.description-2"),
                 ],
               },
             ].map((step, index) => (
@@ -214,7 +216,9 @@ const CarrierDispatcher = () => {
                 className="flex flex-col sm:flex-row items-start p-5 sm:p-6 md:p-7 bg-gray-700 rounded-2xl hover:bg-gray-600 transition"
               >
                 <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 text-white rounded-full flex items-center justify-center mb-4 sm:mb-0 sm:mr-4 md:mr-6 bg-primary shrink-0">
-                  <span className="text-2xl sm:text-3xl font-bold">{step.step}</span>
+                  <span className="text-2xl sm:text-3xl font-bold">
+                    {step.step}
+                  </span>
                 </div>
                 <div className="text-left">
                   <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3">
@@ -234,7 +238,7 @@ const CarrierDispatcher = () => {
         </div>
       </motion.div>
 
-      {/* Key Features Section - Responsive */}
+      {/* Key Features Section */}
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -246,18 +250,18 @@ const CarrierDispatcher = () => {
           variants={itemVariants}
           className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 md:mb-10 text-center md:text-left"
         >
-          Key Features for Dispatchers
+          {t("carrier-dispatcher.key-features.title")}
         </motion.h2>
         <motion.div
           variants={staggerItems}
           className="space-y-4 sm:space-y-5 md:space-y-6 flex flex-col items-center"
         >
           {[
-            "No MC Number Required – Register and start dispatching immediately.",
-            "Fast & Easy Load Search – Access thousands of verified loads daily.",
-            "Smart Matching System – Find the most profitable and suitable loads for your carriers.",
-            "Live Market Insights – Get real-time rate updates to stay competitive.",
-            "Integrated Freight Tools – Use calculators and analytics to enhance decision-making.",
+            t("carrier-dispatcher.key-features.1"),
+            t("carrier-dispatcher.key-features.2"),
+            t("carrier-dispatcher.key-features.3"),
+            t("carrier-dispatcher.key-features.4"),
+            t("carrier-dispatcher.key-features.5"),
           ].map((feature, index) => (
             <motion.div
               key={index}
@@ -281,7 +285,7 @@ const CarrierDispatcher = () => {
         </motion.div>
       </motion.div>
 
-      {/* CTA Section - Responsive */}
+      {/* CTA Section */}
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -294,32 +298,28 @@ const CarrierDispatcher = () => {
             variants={itemVariants}
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-5 md:mb-6 leading-tight"
           >
-            Join Today & Simplify Your Dispatching Process!
+            {t("carrier-dispatcher.join-today-and-simplify.title")}
           </motion.h2>
           <motion.p
             variants={itemVariants}
             className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-7 md:mb-8 text-gray-300"
           >
-            Carrier dispatchers are the backbone of trucking logistics. Whether
-            you're managing a small fleet or a large operation, our platform
-            gives you the tools you need to work smarter, not harder.
+            {t("carrier-dispatcher.join-today-and-simplify.description")}
           </motion.p>
           <motion.a
-          
             variants={itemVariants}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             href="#"
             className="inline-block bg-primary text-white px-6 py-3 sm:px-7 sm:py-3.5 md:px-8 md:py-4 rounded-lg text-lg sm:text-xl font-semibold mb-3 sm:mb-4 hover:bg-blue-700 transition"
           >
-            Sign Up Now
-
+            {t("btn-input-texts.sign-up-now")}
           </motion.a>
           <motion.p
             variants={itemVariants}
             className="text-gray-400 text-sm sm:text-base"
           >
-            and take your dispatching operations to the next level!
+            {t("carrier-dispatcher.join-today-and-simplify.sub-text")}
           </motion.p>
         </div>
       </motion.div>

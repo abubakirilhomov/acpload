@@ -1,35 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { FiCheckCircle } from "react-icons/fi";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import Decor from "../../Decor/Decor";
-
-const ratingCategories = [
-  {
-    title: "Carriers Rate Brokers On:",
-    items: [
-      "Communication Level",
-      "Service Quality",
-      "Load Accuracy",
-      "Payment Speed",
-      "Honesty & Trustworthiness",
-    ],
-    color: "text-info",
-  },
-  {
-    title: "Brokers Rate Carriers On:",
-    items: [
-      "Communication Level",
-      "Service Quality",
-      "Reliable Information",
-      "Freight Care",
-      "Punctuality",
-    ],
-    color: "text-info",
-  },
-];
 
 const TrustTransparency = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,6 +24,21 @@ const TrustTransparency = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const ratingCategories = [
+    {
+      title: t("main.trust-and-transparency.carrier-rate-title"),
+      items: Object.values(
+        t("main.trust-and-transparency.carrier-rate", { returnObjects: true })
+      ),
+    },
+    {
+      title: t("main.trust-and-transparency.broker-rate-title"),
+      items: Object.values(
+        t("main.trust-and-transparency.broker-rate", { returnObjects: true })
+      ),
+    },
+  ];
+
   return (
     <section
       id="trust-transparency"
@@ -60,7 +52,7 @@ const TrustTransparency = () => {
         animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
         transition={{ duration: 0.8 }}
       >
-        Trust & Transparency with Reviews
+        {t("main.trust-and-transparency.title")}
       </motion.p>
 
       <motion.p
@@ -69,9 +61,7 @@ const TrustTransparency = () => {
         animate={isVisible ? { opacity: 1 } : { opacity: 0 }}
         transition={{ delay: 0.4, duration: 0.8 }}
       >
-        We believe in building a trustworthy freight network. That’s why our
-        platform allows Carriers and Brokers to rate and review each other based
-        on key performance metrics.
+        {t("main.trust-and-transparency.description")}
       </motion.p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -83,9 +73,7 @@ const TrustTransparency = () => {
             animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ delay: 0.2 * idx, duration: 0.8 }}
           >
-            <h3 className={`text-lg font-light ${category.color}`}>
-              {category.title}
-            </h3>
+            <h3 className="text-lg font-light text-info">{category.title}</h3>
             <ul className="mt-2 space-y-2 pt-3">
               {category.items.map((item, i) => (
                 <li key={i} className="flex items-center gap-2">
@@ -104,7 +92,9 @@ const TrustTransparency = () => {
         animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ delay: 0.6, duration: 0.8 }}
       >
-        <button className="btn btn-primary btn-lg">Learn More</button>
+        <button className="btn btn-primary btn-lg">
+          {t("btn-input-texts.learn-more", "Learn More")}
+        </button>
       </motion.div>
     </section>
   );

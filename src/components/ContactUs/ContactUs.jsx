@@ -16,11 +16,10 @@ const ContactUs = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        {t("contact-us.title")}
+        {t("main.contact-us.title")}
       </motion.h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Contact Information Section */}
         <motion.div
           className="p-6 bg-white/10 rounded-2xl border border-white/20 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] text-white"
           initial={{ opacity: 0, y: 50 }}
@@ -28,7 +27,7 @@ const ContactUs = () => {
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
         >
           <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
-            {t("contact-us.contact-info")}
+            {t("contact-us.sub-title")}
           </h3>
           <div className="mb-10 text-lg">
             <p>{t("contact-us.description")}</p>
@@ -37,19 +36,19 @@ const ContactUs = () => {
             <div className="flex items-center gap-3">
               <IoCall className="text-info" />
               <p>
-                <strong>{t("contact-us.phone")}:</strong> +1 408-676-5535
+                <strong>{t("navfooter.phone")}:</strong> +1 408-676-5535
               </p>
             </div>
             <div className="flex items-center gap-3">
               <IoMail className="text-info" />
               <p>
-                <strong>{t("contact-us.email")}:</strong> info@acploads.com
+                <strong>{t("navfooter.email")}:</strong> info@acploads.com
               </p>
             </div>
             <div className="flex items-center gap-3">
               <IoLocation size={20} className="text-info" />
               <p>
-                <strong>{t("contact-us.location")}:</strong> 38511 S Hampton Dr,
+                <strong>{t("navfooter.location")}:</strong> 38511 S Hampton Dr,
                 Frankford, DE 19945 USA
               </p>
             </div>
@@ -64,7 +63,7 @@ const ContactUs = () => {
           transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
         >
           <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
-            {t("contact-us.question-suggestion")}
+            {t("about-us.contact-us.description")}
           </h3>
           <form className="space-y-4">
             <motion.div
@@ -73,13 +72,13 @@ const ContactUs = () => {
               transition={{ duration: 0.6, delay: 0.5 }}
             >
               <label className="block text-sm font-medium mb-2" htmlFor="name">
-                {t("contact-us.name")}
+                {t("btn-input-texts.full-name")}
               </label>
               <input
                 type="text"
                 id="name"
                 className="w-full p-2 bg-white/20 rounded-lg border border-white/30 focus:outline-none focus:border-info"
-                placeholder={t("contact-us.name")}
+                placeholder={t("btn-input-texts.enter-name")}
               />
             </motion.div>
             <motion.div
@@ -88,13 +87,13 @@ const ContactUs = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
             >
               <label className="block text-sm font-medium mb-2" htmlFor="email">
-                {t("contact-us.email-label")}
+                {t("btn-input-texts.email")}
               </label>
               <input
                 type="email"
                 id="email"
                 className="w-full p-2 bg-white/20 rounded-lg border border-white/30 focus:outline-none focus:border-info"
-                placeholder={t("contact-us.email")}
+                placeholder={t("btn-input-texts.enter-email")}
               />
             </motion.div>
             <motion.div
@@ -106,13 +105,13 @@ const ContactUs = () => {
                 className="block text-sm font-medium mb-2"
                 htmlFor="question"
               >
-                {t("contact-us.question")}
+                {t("btn-input-texts.msg")}
               </label>
               <textarea
                 id="question"
                 className="w-full p-2 bg-white/20 rounded-lg border border-white/30 focus:outline-none focus:border-info"
                 rows="4"
-                placeholder={t("contact-us.question")}
+                placeholder={t("btn-input-texts.enter-msg")}
               ></textarea>
             </motion.div>
             <motion.button
@@ -124,7 +123,7 @@ const ContactUs = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.8 }}
             >
-              {t("contact-us.send")} <IoSend />
+              {t("btn-input-texts.send-msg")} <IoSend />
             </motion.button>
           </form>
         </motion.div>

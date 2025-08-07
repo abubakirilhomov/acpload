@@ -12,7 +12,6 @@ const NavDesktop = () => {
     i18n.changeLanguage(lng);
   };
 
-  // Check the device's theme preference
   useEffect(() => {
     const prefersDark = window.matchMedia(
       "(prefers-color-scheme: dark)"
@@ -22,63 +21,62 @@ const NavDesktop = () => {
 
   const navLinks = {
     platform: [
-      { title: t("nav.platform.howItWorks"), link: "/platform/how-it-works" },
-      { title: t("nav.platform.features"), link: "/platform/features" },
+      { title: t("navfooter.how-it-works"), link: "/platform/how-it-works" },
+      { title: t("navfooter.features"), link: "/platform/features" },
       {
-        title: t("nav.platform.liveLoadboard"),
+        title: t("navfooter.trucker-calculator"),
         link: "/platform/trucker-calculator",
       },
       {
-        title: t("nav.platform.freightRateCalculator"),
+        title: t("navfooter.freight-rate-calculator"),
         link: "/platform/freight-rate-calculator",
       },
       {
-        title: t("nav.platform.termsOfService"),
+        title: t("navfooter.terms-and-conditions"),
         link: "/platform/terms-of-service",
       },
     ],
     company: [
-      { title: t("nav.company.aboutUs"), link: "/our-company/about-us" },
-      { title: t("nav.company.leadership"), link: "/our-company/leadership" },
+      { title: t("navfooter.about-us"), link: "/our-company/about-us" },
+      { title: t("navfooter.leadership"), link: "/our-company/leadership" },
       {
-        title: t("nav.company.testimonials"),
+        title: t("navfooter.testimonials-and-reviews"),
         link: "/our-company/testimonials-reviews",
       },
       {
-        title: t("nav.company.supportCenter"),
+        title: t("navfooter.support-center"),
         link: "/our-company/support-center",
       },
-      { title: t("nav.company.contactUs"), link: "/our-company/contact-us" },
+      { title: t("navfooter.contact-us"), link: "/our-company/contact-us" },
     ],
     products: [
-      { title: t("nav.products.loadboard"), link: "/products/loadboard" },
-      { title: t("nav.products.acpTms"), link: "/products/acp-tms" },
+      { title: t("navfooter.loadboard"), link: "/products/loadboard" },
+      { title: t("navfooter.acp-tms"), link: "/products/acp-tms" },
     ],
     solutions: [
       {
-        title: t("nav.solutions.carrierDispatcher"),
+        title: t("navfooter.carrier-dispatcher"),
         link: "/solutions/carrier-dispatcher",
       },
-      { title: t("nav.solutions.broker"), link: "/solutions/broker" },
-      { title: t("nav.solutions.carrier"), link: "/solutions/carrier" },
-      { title: t("nav.solutions.shipper"), link: "/solutions/shipper" },
+      { title: t("navfooter.broker"), link: "/solutions/broker" },
+      { title: t("navfooter.carrier"), link: "/solutions/carrier" },
+      { title: t("navfooter.shipper"), link: "/solutions/shipper" },
     ],
     resources: [
       {
-        title: t("nav.resources.blog"),
+        title: t("navfooter.freight-and-logistics-blog"),
         link: "/resources/freight-logistics-blog",
       },
       {
-        title: t("nav.resources.partnership"),
+        title: t("navfooter.partnership-and-affiliate"),
         link: "/resources/partnership-affiliate",
       },
       {
-        title: t("nav.resources.newsletter"),
+        title: t("navfooter.newsletter-subscription"),
         link: "/resources/newsletter-subscription",
       },
-      { title: t("nav.resources.guides"), link: "/resources/guides" },
-      { title: t("nav.resources.videos"), link: "/resources/videos" },
-      { title: t("nav.resources.faqs"), link: "/resources/faqs" },
+      { title: t("navfooter.guides-and-videos"), link: "/resources/guides" },
+      { title: t("navfooter.faqs"), link: "/resources/faqs" },
     ],
   };
 
@@ -92,32 +90,32 @@ const NavDesktop = () => {
         </div>
         <div className="flex gap-4">
           <DropdownMenu
-            title={t("nav.platform.title")}
+            title={t("navfooter.platform")}
             links={navLinks.platform}
           />
           <DropdownMenu
-            title={t("nav.company.title")}
-            links={navLinks.company}
-          />
-          <DropdownMenu
-            title={t("nav.products.title")}
+            title={t("navfooter.products")}
             links={navLinks.products}
           />
           <DropdownMenu
-            title={t("nav.solutions.title")}
+            title={t("navfooter.solutions")}
             links={navLinks.solutions}
           />
           <DropdownMenu
-            title={t("nav.resources.title")}
+            title={t("navfooter.resources")}
             links={navLinks.resources}
+          />
+          <DropdownMenu
+            title={t("navfooter.our-company")}
+            links={navLinks.company}
           />
         </div>
         <div className="flex gap-4 items-center">
           <button className="btn btn-info btn-outline hover:text-white px-5 rounded-full">
-            {t("log-in")}
+            {t("btn-input-texts.log-in")}
           </button>
           <button className="btn btn-info border-info hover:text-white px-5 rounded-full">
-            {t("sign-up")}
+            {t("btn-input-texts.sign-up")}
           </button>
           <div className="dropdown dropdown-end">
             <div

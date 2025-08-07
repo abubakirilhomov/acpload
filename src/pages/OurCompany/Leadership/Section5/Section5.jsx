@@ -1,42 +1,44 @@
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Navigation, Pagination, Autoplay } from "swiper/modules"
-import { motion } from "framer-motion"
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import "swiper/css"
-import "swiper/css/navigation"
-import "swiper/css/pagination"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { motion } from "framer-motion";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Section5 = () => {
+  const { t } = useTranslation();
+
   const messages = [
     {
       id: 1,
-      quote:
-        "ACP Loads is more than a platform—it's a partnership with the hard-working men and women who keep America moving. Our mission is to make your day simpler, your business more profitable, and your experience more rewarding. We invite you to join us, share your ideas, and help us build the future of logistics together.",
-      author: "NICK CHARLES",
-      title: "Founder & CEO",
+      quote: t("leadership.msg-from-leadership.description"),
+      author: t("leadership.msg-from-leadership.signature"),
+      title: t("leadership.leadership-profiles.1.profession"),
     },
     {
       id: 2,
       quote:
         "Innovation drives everything we do. We're not just building software; we're crafting solutions that understand the real challenges of the trucking industry. Every feature we develop comes from listening to our community and understanding what truly matters to drivers and fleet owners.",
-      author: "JACK ADAMS",
-      title: "Chief Technology Officer",
+      author: "Jack Adams",
+      title: t("leadership.leadership-profiles.2.profession"),
     },
     {
       id: 3,
       quote:
         "Our customers are at the heart of every decision we make. We believe that exceptional service isn't just about solving problems—it's about anticipating needs, exceeding expectations, and building relationships that last. Your success is our success.",
-      author: "EMILY DAVIS",
-      title: "Head of Customer Success",
+      author: "Emily Davis",
+      title: t("leadership.leadership-profiles.3.profession"),
     },
     {
       id: 4,
       quote:
         "Operational excellence isn't just a goal—it's our commitment to you. We focus on reliability, efficiency, and continuous improvement because we understand that your business depends on systems that work flawlessly, every single time.",
-      author: "JAMES SMITH",
-      title: "Chief Operating Officer",
+      author: "James Smith",
+      title: t("leadership.leadership-profiles.4.profession"),
     },
-  ]
+  ];
 
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center overflow-hidden">
@@ -54,7 +56,7 @@ const Section5 = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-4xl md:text-5xl font-bold text-white text-center mb-16"
         >
-          Message from Our Leadership
+          {t("leadership.msg-from-leadership.title")}
         </motion.h2>
 
         <div className="relative">
@@ -94,8 +96,12 @@ const Section5 = () => {
                       "{message.quote}"
                     </blockquote>
                     <div className="space-y-2">
-                      <h4 className="text-xl md:text-2xl font-bold text-white tracking-wider">{message.author}</h4>
-                      <p className="text-blue-300 text-sm md:text-base font-medium">{message.title}</p>
+                      <h4 className="text-xl md:text-2xl font-bold text-white tracking-wider">
+                        {message.author}
+                      </h4>
+                      <p className="text-blue-300 text-sm md:text-base font-medium">
+                        {message.title}
+                      </p>
                     </div>
                   </motion.div>
                 </SwiperSlide>
@@ -117,7 +123,7 @@ const Section5 = () => {
       <div className="absolute bottom-20 right-20 w-40 h-40 bg-purple-500/20 rounded-full blur-xl"></div>
       <div className="absolute top-1/2 left-10 w-24 h-24 bg-cyan-500/20 rounded-full blur-lg"></div>
     </div>
-  )
-}
+  );
+};
 
-export default Section5
+export default Section5;

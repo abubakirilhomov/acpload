@@ -1,31 +1,35 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-
-const cards = [
-  {
-    title: 'General Inquiries:',
-    content:
-      'If you have general questions about ACP Loads, our platform features, or need help getting started, reach out via the contact form below or use any of the options provided.',
-  },
-  {
-    title: 'Customer Support:',
-    content:
-      'For immediate help with your account, load posting, searching, or technical issues, please visit our Support Center or email us directly.',
-  },
-  {
-    title: 'Partnerships & Affiliates:',
-    content: (
-      <>
-        Are you interested in partnering or integrating your system with ACP Loads? Visit our Partnership & Affiliate page or contact us at:{' '}
-        <a href="mailto:partners@acploads.com" className="text-blue-400 underline">
-          partners@acploads.com
-        </a>
-      </>
-    ),
-  },
-];
+import React from "react";
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Section2 = () => {
+  const { t } = useTranslation();
+
+  const cards = [
+    {
+      title: t("contact-us.how-to-reach-us.card-1.title"),
+      content: t("contact-us.how-to-reach-us.card-1.description"),
+    },
+    {
+      title: t("contact-us.how-to-reach-us.card-2.title"),
+      content: t("contact-us.how-to-reach-us.card-2.description"),
+    },
+    {
+      title: t("contact-us.how-to-reach-us.card-3.title"),
+      content: (
+        <>
+          {t("contact-us.how-to-reach-us.card-3.description")}{"\n"}
+          <a
+            href="mailto:partners@acploads.com"
+            className="text-blue-400 underline"
+          >
+            {t("contact-us.how-to-reach-us.card-3.email")} partners@acploads.com
+          </a>
+        </>
+      ),
+    },
+  ];
+
   return (
     <div className="bg-gray-900 text-white py-16 px-4 text-center">
       {/* Animated Heading */}
@@ -36,7 +40,7 @@ const Section2 = () => {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        How to Reach Us
+        {t("contact-us.how-to-reach-us-title", "How to Reach Us")}
       </motion.h1>
 
       {/* Animated Cards */}
@@ -61,10 +65,14 @@ const Section2 = () => {
               hidden: { opacity: 0, y: 30 },
               visible: { opacity: 1, y: 0 },
             }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
           >
-            <h3 className="text-xl font-semibold text-blue-400 mb-3">{card.title}</h3>
-            <p className="text-sm text-gray-200 leading-relaxed">{card.content}</p>
+            <h3 className="text-xl font-semibold text-blue-400 mb-3">
+              {card.title}
+            </h3>
+            <p className="text-sm text-gray-200 leading-relaxed">
+              {card.content}
+            </p>
           </motion.div>
         ))}
       </motion.div>

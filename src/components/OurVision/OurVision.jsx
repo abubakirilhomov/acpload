@@ -1,27 +1,36 @@
-import React, { useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import Decor from '../Decor/Decor';
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import Decor from "../Decor/Decor";
+import { useTranslation } from "react-i18next";
 
 const OurVision = () => {
   const controls = useAnimation();
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (inView) {
-      controls.start({ opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut', bounce: 0.3 } });
+      controls.start({
+        opacity: 1,
+        y: 0,
+        transition: { duration: 1, ease: "easeOut", bounce: 0.3 },
+      });
     }
   }, [controls, inView]);
 
   return (
-    <section ref={ref} className="container max-w-[90%] bg-opacity-80 backdrop-blur-lg mx-auto space-y-6 mt-18">
+    <section
+      ref={ref}
+      className="container max-w-[90%] bg-opacity-80 backdrop-blur-lg mx-auto space-y-6 mt-18"
+    >
       <Decor />
       <motion.p
         className="text-3xl sm:text-4xl font-bold text-center drop-shadow-lg"
         initial={{ opacity: 0, y: -30 }}
         animate={controls}
       >
-        Our Vision
+        {t("main.our-vision.title")}
       </motion.p>
       <motion.p
         className="text-center text-lg"
@@ -29,7 +38,7 @@ const OurVision = () => {
         animate={controls}
         transition={{ delay: 0.4, duration: 1 }}
       >
-        We envision a future where every freight transaction is seamless, transparent, and efficient. By harnessing innovative technology and fostering a collaborative environment, ACP Loads aims to be the go-to platform for every stakeholder in the logistics ecosystem.
+        {t("main.our-vision.description")}
       </motion.p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
         {[1, 2, 3, 4].map((num, index) => (
@@ -40,7 +49,12 @@ const OurVision = () => {
             alt=""
             initial={{ opacity: 0, y: 50 }}
             animate={controls}
-            transition={{ delay: index * 0.3, duration: 1, ease: 'easeOut', bounce: 0.2 }}
+            transition={{
+              delay: index * 0.3,
+              duration: 1,
+              ease: "easeOut",
+              bounce: 0.2,
+            }}
           />
         ))}
       </div>
@@ -48,9 +62,8 @@ const OurVision = () => {
         className="flex justify-center mt-4"
         initial={{ opacity: 0, y: 30 }}
         animate={controls}
-        transition={{ delay: 0.6, duration: 1, ease: 'easeOut', bounce: 0.2 }}
-      >
-      </motion.div>
+        transition={{ delay: 0.6, duration: 1, ease: "easeOut", bounce: 0.2 }}
+      ></motion.div>
     </section>
   );
 };

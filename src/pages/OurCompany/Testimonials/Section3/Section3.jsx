@@ -1,66 +1,68 @@
 import { Quote, User } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Section3 = () => {
+  const { t } = useTranslation();
+
   const testimonials = [
     {
-      quote:
-        "ACP Loads makes it so easy to find hot loads and get paid quickly. Their rating system helps us choose who we want to work with.",
-      category: "Carrier Testimonials",
+      quote: t("testimonials-and-reviews.real-stories.card-1.text"),
+      category: t("testimonials-and-reviews.real-stories.card-1.sub-text"),
       author: {
-        name: "Michael R.",
-        role: "Owner-Operator",
+        name: t("testimonials-and-reviews.real-stories.card-1.signature").split(", ")[0],
+        role:
+          t("testimonials-and-reviews.real-stories.card-1.signature").split(", ")[1] || "Owner-Operator",
         location: "",
       },
     },
     {
-      quote:
-        "The user interface is top-notch and the support team actually listens to feedback.",
-      category: "Carrier Testimonials",
+      quote: t("testimonials-and-reviews.real-stories.card-2.text"),
+      category: t("testimonials-and-reviews.real-stories.card-2.sub-text"),
       author: {
-        name: "Brittany C.",
-        role: "Fleet Carrier",
-        location: "Illinois",
+        name: t("testimonials-and-reviews.real-stories.card-2.signature").split(", ")[0],
+        role: t("testimonials-and-reviews.real-stories.card-2.signature").split(", ")[1],
+        location:
+          t("testimonials-and-reviews.real-stories.card-2.signature").split(", ")[2] || "Illinois",
       },
     },
     {
-      quote:
-        "Posting loads is fast and seamless, and the dispatcher network brings quality carriers directly to our shipments.",
-      category: "Broker Testimonials",
+      quote: t("testimonials-and-reviews.real-stories.card-3.text"),
+      category: t("testimonials-and-reviews.real-stories.card-3.sub-text"),
       author: {
-        name: "Jason S.",
-        role: "Freight Broker",
-        location: "California",
+        name: t("testimonials-and-reviews.real-stories.card-3.signature").split(", ")[0],
+        role: t("testimonials-and-reviews.real-stories.card-3.signature").split(", ")[1],
+        location:
+          t("testimonials-and-reviews.real-stories.card-3.signature").split(", ")[2] || "California",
       },
     },
     {
-      quote:
-        "ACP Loads has helped our brokerage expand our reach and maintain great relationships with both shippers and carriers.",
-      category: "Broker Testimonials",
+      quote: t("testimonials-and-reviews.real-stories.card-4.text"),
+      category: t("testimonials-and-reviews.real-stories.card-4.sub-text"),
       author: {
-        name: "Anna L.",
-        role: "Logistics Coordinator",
-        location: "Georgia",
+        name: t("testimonials-and-reviews.real-stories.card-4.signature").split(", ")[0],
+        role: t("testimonials-and-reviews.real-stories.card-4.signature").split(", ")[1],
+        location:
+          t("testimonials-and-reviews.real-stories.card-4.signature").split(", ")[2] || "Georgia",
       },
     },
     {
-      quote:
-        "We reduced empty miles and improved on-time deliveries by using ACP Loads for all our freight posting needs.",
-      category: "Shipper Testimonials",
+      quote: t("testimonials-and-reviews.real-stories.card-5.text"),
+      category: t("testimonials-and-reviews.real-stories.card-5.sub-text"),
       author: {
-        name: "Scott T.",
-        role: "Shipper",
-        location: "Ohio",
+        name: t("testimonials-and-reviews.real-stories.card-5.signature").split(", ")[0],
+        role: t("testimonials-and-reviews.real-stories.card-5.signature").split(", ")[1],
+        location: t("testimonials-and-reviews.real-stories.card-5.signature").split(", ")[2] || "Ohio",
       },
     },
     {
-      quote:
-        "As a dispatcher, ACP Loads gives me every tool I need to move freight fast—no MC required. Highly recommended!",
-      category: "Carrier Dispatcher Testimonials",
+      quote: t("testimonials-and-reviews.real-stories.card-6.text"),
+      category: t("testimonials-and-reviews.real-stories.card-6.sub-text"),
       author: {
-        name: "Dave P.",
-        role: "Carrier Dispatcher",
-        location: "New York",
+        name: t("testimonials-and-reviews.real-stories.card-6.signature").split(", ")[0],
+        role: t("testimonials-and-reviews.real-stories.card-6.signature").split(", ")[1],
+        location:
+          t("testimonials-and-reviews.real-stories.card-6.signature").split(", ")[2] || "New York",
       },
     },
   ];
@@ -77,10 +79,10 @@ const Section3 = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-blue-300 mb-4">
-            Real Stories, Real Impact
+            {t("testimonials-and-reviews.real-stories.title")}
           </h2>
           <p className="text-white text-lg md:text-xl">
-            Carrier, Broker, Shipper, Owner-Operator and Dispatcher Testimonials
+            {t("testimonials-and-reviews.real-stories.sub-title")}
           </p>
         </motion.div>
 
@@ -114,7 +116,7 @@ const Section3 = () => {
 
               {/* Testimonial Text */}
               <blockquote className="text-white text-lg leading-relaxed mb-8">
-                "{testimonial.quote}"
+                {testimonial.quote}
               </blockquote>
 
               {/* Author Info */}
@@ -128,7 +130,8 @@ const Section3 = () => {
                   </div>
                   <div className="text-gray-300 text-sm">
                     {testimonial.author.role}
-                    {testimonial.author.location && `, ${testimonial.author.location}`}
+                    {testimonial.author.location &&
+                      `, ${testimonial.author.location}`}
                   </div>
                   <div className="text-blue-300 text-xs mt-1">
                     {testimonial.category}

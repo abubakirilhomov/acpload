@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { MdOutlineAccessTime } from "react-icons/md";
 import { HiMiniCheckBadge } from "react-icons/hi2";
@@ -13,6 +12,7 @@ import {
   Search,
   Share2,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 // Animation variants (unchanged)
 const containerVariants = {
@@ -21,7 +21,7 @@ const containerVariants = {
     opacity: 1,
     transition: {
       staggerChildren: 0.2,
-      when: "beforeChildren"
+      when: "beforeChildren",
     },
   },
 };
@@ -42,40 +42,40 @@ const itemVariants = {
 
 const fadeIn = {
   hidden: { opacity: 0 },
-  visible: { 
-    opacity: 1, 
-    transition: { 
+  visible: {
+    opacity: 1,
+    transition: {
       duration: 0.8,
-      ease: "easeInOut" 
-    } 
+      ease: "easeInOut",
+    },
   },
 };
 
 const slideInLeft = {
   hidden: { x: -50, opacity: 0 },
-  visible: { 
-    x: 0, 
+  visible: {
+    x: 0,
     opacity: 1,
     transition: {
       type: "spring",
       stiffness: 100,
       damping: 10,
-      duration: 0.6
-    }
+      duration: 0.6,
+    },
   },
 };
 
 const slideInRight = {
   hidden: { x: 50, opacity: 0 },
-  visible: { 
-    x: 0, 
+  visible: {
+    x: 0,
     opacity: 1,
     transition: {
       type: "spring",
       stiffness: 100,
       damping: 10,
-      duration: 0.6
-    }
+      duration: 0.6,
+    },
   },
 };
 
@@ -85,7 +85,7 @@ const staggerItems = {
     opacity: 1,
     transition: {
       staggerChildren: 0.2,
-      when: "beforeChildren"
+      when: "beforeChildren",
     },
   },
 };
@@ -96,13 +96,15 @@ const floatAnimation = {
     duration: 4,
     repeat: Infinity,
     ease: "easeInOut",
-  }
+  },
 };
 
 const Carrier = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="overflow-hidden">
-      {/* Hero Section - Enhanced Responsiveness */}
+      {/* Hero Section */}
       <motion.div
         initial="hidden"
         animate="visible"
@@ -111,7 +113,7 @@ const Carrier = () => {
       >
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-8 py-12 lg:py-0">
-          <motion.div 
+          <motion.div
             variants={itemVariants}
             className="w-full lg:w-[600px] bg-blue-500/80 rounded-2xl p-6 sm:p-8 flex flex-col justify-center items-start"
           >
@@ -119,45 +121,42 @@ const Carrier = () => {
               variants={itemVariants}
               className="text-2xl sm:text-3xl lg:text-4xl text-white font-bold mb-4 sm:mb-5"
             >
-              Find Loads & Keep Your Trucks Moving
+              {t("carrier.title")}
             </motion.p>
             <motion.p
               variants={itemVariants}
               className="text-white text-lg sm:text-xl font-medium mb-4 sm:mb-5"
             >
-              Maximize Your Earnings with Access to High-Paying Loads & Trusted Brokers!
+              {t("carrier.sub-title")}
             </motion.p>
             <motion.p
               variants={itemVariants}
               className="text-white mb-6 sm:mb-8 text-sm sm:text-base"
             >
-              As a carrier, finding the right freight at the right time is crucial
-              for keeping your trucks moving and maximizing profits. Our platform
-              gives you access to a real-time loadboard, trusted brokers, and
-              powerful tools designed to streamline your operations.
+              {t("carrier.description")}
             </motion.p>
             <motion.button
               variants={itemVariants}
-              whileHover={{ 
+              whileHover={{
                 scale: 1.05,
                 backgroundColor: "#ffffff",
-                color: "#000000"
+                color: "#000000",
               }}
               whileTap={{ scale: 0.95 }}
               className="bg-none border-2 text-white border-white px-6 py-2 sm:px-8 sm:py-3 rounded-md transition text-sm sm:text-base"
             >
-              Contact Us
+              {t("btn-input-texts.contact-us")}
             </motion.button>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ 
+            transition={{
               type: "spring",
               stiffness: 60,
               damping: 10,
-              duration: 0.8 
+              duration: 0.8,
             }}
             className="w-full lg:w-auto mt-8 lg:mt-0"
           >
@@ -170,7 +169,7 @@ const Carrier = () => {
         </div>
       </motion.div>
 
-      {/* Features Section - Enhanced Responsiveness */}
+      {/* Features Section */}
       <motion.section
         initial="hidden"
         whileInView="visible"
@@ -183,7 +182,7 @@ const Carrier = () => {
             variants={itemVariants}
             className="text-center font-bold text-white text-3xl sm:text-4xl mb-10 sm:mb-12 lg:mb-16"
           >
-            Why Carriers Choose Our Platform?
+            {t("carrier.why-choose.title")}
           </motion.h2>
           <motion.div
             variants={staggerItems}
@@ -192,59 +191,63 @@ const Carrier = () => {
             {[
               {
                 icon: <ArrowUpRight className="w-6 h-6" />,
-                title: "Find Loads Instantly",
-                desc: "Browse a real-time loadboard with high-paying freight.",
+                title: t("carrier.why-choose.1.title"),
+                desc: t("carrier.why-choose.1.description"),
               },
               {
                 icon: <DollarSign className="w-6 h-6" />,
-                title: "Load Matching",
-                desc: "Get personalized load recommendations based on your routes and preferences.",
+                title: t("carrier.why-choose.2.title"),
+                desc: t("carrier.why-choose.2.description"),
               },
               {
                 icon: <Search className="w-6 h-6" />,
-                title: "Work with Verified Brokers & Shippers",
-                desc: "Access reliable partnerships with trusted industry professionals.",
+                title: t("carrier.why-choose.3.title"),
+                desc: t("carrier.why-choose.3.description"),
               },
               {
                 icon: <FileText className="w-6 h-6" />,
-                title: "Freight Rate Insights",
-                desc: "Use our Freight Rate Calculator to ensure profitable hauls.",
+                title: t("carrier.why-choose.4.title"),
+                desc: t("carrier.why-choose.4.description"),
               },
               {
                 icon: <Laptop className="w-6 h-6" />,
-                title: "Easy Booking & Paperwork",
-                desc: "Simplify contracts, rate confirmations, and load details all in one place.",
+                title: t("carrier.why-choose.5.title"),
+                desc: t("carrier.why-choose.5.description"),
               },
               {
                 icon: <Share2 className="w-6 h-6" />,
-                title: "Minimize Deadhead",
-                desc: "Reduce empty miles with optimized load planning.",
+                title: t("carrier.why-choose.6.title"),
+                desc: t("carrier.why-choose.6.description"),
               },
             ].map((feature, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
-                whileHover={{ 
+                whileHover={{
                   scale: 1.03,
-                  backgroundColor: "rgba(55, 65, 81, 0.7)"
+                  backgroundColor: "rgba(55, 65, 81, 0.7)",
                 }}
                 className="flex flex-col items-center text-center p-6 bg-gray-800 rounded-xl transition-all"
               >
-                <motion.div 
+                <motion.div
                   whileHover={{ rotate: 15 }}
                   className="w-12 h-12 sm:w-14 sm:h-14 mb-3 sm:mb-4 rounded-full border-2 border-blue-400 p-3 sm:p-4 flex items-center justify-center"
                 >
                   {feature.icon}
                 </motion.div>
-                <h3 className="font-bold text-lg sm:text-xl mb-2">{feature.title}</h3>
-                <p className="text-gray-300 text-sm sm:text-base">{feature.desc}</p>
+                <h3 className="font-bold text-lg sm:text-xl mb-2">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-300 text-sm sm:text-base">
+                  {feature.desc}
+                </p>
               </motion.div>
             ))}
           </motion.div>
         </div>
       </motion.section>
 
-      {/* How It Works Section - Enhanced Responsiveness */}
+      {/* How It Works Section */}
       <motion.section
         initial="hidden"
         whileInView="visible"
@@ -257,7 +260,7 @@ const Carrier = () => {
             variants={itemVariants}
             className="text-white text-center text-3xl sm:text-4xl font-bold mb-10 sm:mb-12 lg:mb-16"
           >
-            How It Works
+            {t("carrier.how-it-works.title")}
           </motion.h2>
 
           <motion.div
@@ -267,49 +270,61 @@ const Carrier = () => {
             {[
               {
                 icon: <CheckCircle className="w-10 h-10 sm:w-12 sm:h-12" />,
-                title: "Step 1: Sign Up & Create Your Carrier Profile",
-                desc: "Register your company and set up your trucking preferences. No MC number? No problem! Carrier Dispatchers can search for loads without one.",
+                title: t("carrier.how-it-works.card-1.title"),
+                desc: `${t("carrier.how-it-works.card-1.description-1")} ${t(
+                  "carrier.how-it-works.card-1.description-2"
+                )}`,
               },
               {
                 icon: <CheckCircle className="w-10 h-10 sm:w-12 sm:h-12" />,
-                title: "Step 2: Search & Find Loads in Seconds",
-                desc: "Filter loads based on origin, destination, weight, and rate. View broker and shipper ratings before booking.",
+                title: t("carrier.how-it-works.card-2.title"),
+                desc: `${t("carrier.how-it-works.card-2.description-1")} ${t(
+                  "carrier.how-it-works.card-2.description-2"
+                )}`,
               },
               {
                 icon: <CheckCircle className="w-10 h-10 sm:w-12 sm:h-12" />,
-                title: "Step 3: Book & Haul Freight",
-                desc: "Accept loads directly through the platform or negotiate with brokers. Receive all necessary shipment details instantly.",
+                title: t("carrier.how-it-works.card-3.title"),
+                desc: `${t("carrier.how-it-works.card-3.description-1")} ${t(
+                  "carrier.how-it-works.card-3.description-2"
+                )}`,
               },
               {
                 icon: <CheckCircle className="w-10 h-10 sm:w-12 sm:h-12" />,
-                title: "Step 4: Track, Deliver & Get Paid Fast",
-                desc: "Manage your shipments from pickup to delivery. Work with brokers offering quick payment options.",
+                title: t("carrier.how-it-works.card-4.title"),
+                desc: `${t("carrier.how-it-works.card-4.description-1")} ${t(
+                  "carrier.how-it-works.card-4.description-2"
+                )}`,
               },
             ].map((step, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
-                whileHover={{ 
+                whileHover={{
                   y: -5,
-                  backgroundColor: "rgba(55, 65, 81, 0.7)"
+                  backgroundColor: "rgba(55, 65, 81, 0.7)",
                 }}
                 className="bg-gray-700 rounded-xl p-6 sm:p-8 text-white transition-all"
               >
-                <motion.div 
+                <motion.div
                   animate={floatAnimation}
                   className="text-blue-400 mx-auto mb-3 sm:mb-4 flex justify-center"
                 >
                   {step.icon}
                 </motion.div>
-                <h3 className="font-bold text-base sm:text-lg mb-2 text-center">{step.title}</h3>
-                <p className="text-gray-300 text-sm sm:text-base text-center">{step.desc}</p>
+                <h3 className="font-bold text-base sm:text-lg mb-2 text-center">
+                  {step.title}
+                </h3>
+                <p className="text-gray-300 text-sm sm:text-base text-center">
+                  {step.desc}
+                </p>
               </motion.div>
             ))}
           </motion.div>
         </div>
       </motion.section>
 
-      {/* Key Features Section - Enhanced Responsiveness */}
+      {/* Key Features Section */}
       <motion.section
         initial="hidden"
         whileInView="visible"
@@ -322,7 +337,8 @@ const Carrier = () => {
             variants={itemVariants}
             className="text-center font-bold text-white text-3xl sm:text-4xl mb-10 sm:mb-12 lg:mb-16"
           >
-            Key Features for Carriers
+            {t("carrier.key-features.1.title").split(" ")[0]}{" "}
+            {t("carrier.key-features.1.title").split(" ").slice(1).join(" ")}
           </motion.h2>
           <div className="flex flex-col lg:flex-row justify-between gap-8 sm:gap-10">
             <motion.div
@@ -331,48 +347,62 @@ const Carrier = () => {
             >
               {[
                 {
-                  icon: <MdOutlineAccessTime className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />,
-                  title: "Real-Time Loadboard",
-                  desc: "Access thousands of loads daily.",
+                  icon: (
+                    <MdOutlineAccessTime className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />
+                  ),
+                  title: t("carrier.key-features.1.title"),
+                  desc: t("carrier.key-features.1.description"),
                 },
                 {
-                  icon: <HiMiniCheckBadge className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />,
-                  title: "Verified Broker Network",
-                  desc: "Work with trusted freight partners.",
+                  icon: (
+                    <HiMiniCheckBadge className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />
+                  ),
+                  title: t("carrier.key-features.2.title"),
+                  desc: t("carrier.key-features.2.description"),
                 },
                 {
-                  icon: <BsFillTicketPerforatedFill className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />,
-                  title: "Rate Comparison Tool",
-                  desc: "Get fair compensation for every haul.",
+                  icon: (
+                    <BsFillTicketPerforatedFill className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />
+                  ),
+                  title: t("carrier.key-features.3.title"),
+                  desc: t("carrier.key-features.3.description"),
                 },
                 {
-                  icon: <BsCardChecklist className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />,
-                  title: "Instant Load Booking",
-                  desc: "Secure the best loads before they're gone.",
+                  icon: (
+                    <BsCardChecklist className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />
+                  ),
+                  title: t("carrier.key-features.4.title"),
+                  desc: t("carrier.key-features.4.description"),
                 },
                 {
-                  icon: <GiProgression className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />,
-                  title: "User-Friendly Dashboard",
-                  desc: "Manage loads, documents, and payments in one place.",
+                  icon: (
+                    <GiProgression className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />
+                  ),
+                  title: t("carrier.key-features.5.title"),
+                  desc: t("carrier.key-features.5.description"),
                 },
               ].map((feature, index) => (
                 <motion.div
                   key={index}
-                  whileHover={{ 
+                  whileHover={{
                     x: 5,
-                    backgroundColor: "rgba(31, 41, 55, 0.7)"
+                    backgroundColor: "rgba(31, 41, 55, 0.7)",
                   }}
                   className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg transition-all"
                 >
-                  <motion.div 
+                  <motion.div
                     whileHover={{ scale: 1.2 }}
                     className="flex-shrink-0"
                   >
                     {feature.icon}
                   </motion.div>
                   <div>
-                    <h4 className="font-semibold text-base sm:text-lg">{feature.title}</h4>
-                    <p className="text-gray-400 text-sm sm:text-base">{feature.desc}</p>
+                    <h4 className="font-semibold text-base sm:text-lg">
+                      {feature.title}
+                    </h4>
+                    <p className="text-gray-400 text-sm sm:text-base">
+                      {feature.desc}
+                    </p>
                   </div>
                 </motion.div>
               ))}
@@ -392,7 +422,7 @@ const Carrier = () => {
         </div>
       </motion.section>
 
-      {/* CTA Section - Enhanced Responsiveness */}
+      {/* CTA Section */}
       <motion.section
         initial="hidden"
         whileInView="visible"
@@ -409,29 +439,28 @@ const Carrier = () => {
               variants={itemVariants}
               className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 lg:mb-10 text-white"
             >
-              Take Control of Your Trucking Business Today!
+              {t("carrier.take-control.title")}
             </motion.h2>
             <motion.p
               variants={itemVariants}
               className="text-lg sm:text-xl lg:text-2xl mb-6 sm:mb-8 lg:mb-10 text-gray-300"
             >
-              Join thousands of carriers who are maximizing profits and reducing
-              deadhead miles with our easy-to-use platform. Whether you're an
-              owner-operator or running a fleet, we give you the tools to stay
-              loaded, stay profitable, and stay ahead.
+              {t("carrier.take-control.description")}
             </motion.p>
             <motion.button
               variants={itemVariants}
-              whileHover={{ 
-                scale: 1.05, 
-                backgroundColor: "#3B82F6", 
+              whileHover={{
+                scale: 1.05,
+                backgroundColor: "#3B82F6",
                 color: "white",
-                borderColor: "#3B82F6"
+                borderColor: "#3B82F6",
               }}
               whileTap={{ scale: 0.95 }}
               className="border-2 text-blue-400 border-blue-400 py-2 sm:py-3 lg:py-4 px-6 sm:px-8 lg:px-12 rounded-xl text-base sm:text-lg lg:text-xl transition-all"
             >
-              Sign Up Now & Start Booking Loads Instantly!
+              {t(
+                "btn-input-texts.sign-up-now-and-start-booking-loads-instantly"
+              )}
             </motion.button>
           </motion.div>
         </div>
