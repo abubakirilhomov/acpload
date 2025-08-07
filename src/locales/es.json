@@ -1,190 +1,1467 @@
 {
+  "btn-input-texts": {
+    "more": "Más",
+    "list-of-loads": "Lista de cargas",
+    "btn-free-access": "Acceso gratuito",
+    "log-in": "Acceso",
+    "sign-up": "Inscribirse",
+    "sign-up-now": "Regístrese ahora",
+    "sign-up-today": "Regístrese hoy",
+    "enter-name": "Ingrese su nombre",
+    "enter-email": "Ingrese una dirección de correo electrónico válida",
+    "enter-phone": "Ingrese su teléfono (por ejemplo, +14155552675)",
+    "enter-company": "Compañía (opcional)",
+    "enter-msg": "Ingrese su mensaje",
+    "full-name": "Nombre completo",
+    "enter-first-name": "Ingrese su primer nombre",
+    "enter-last-name": "Ingrese su apellido",
+    "first-name": "Nombre de pila",
+    "last-name": "Apellido",
+    "email": "Correo electrónico",
+    "how-can-we-help": "¿Cómo podemos ayudar?",
+    "msg": "Mensaje",
+    "submit": "Entregar",
+    "send-msg": "Enviar un mensaje",
+    "learn-more": "Obtenga más información",
+    "read-more": "Leer más",
+    "get-access-now": "Obtenga acceso ahora",
+    "post-loads-now": "Publicar cargas ahora",
+    "read-the-full-terms-and-conditions": "Lea los términos y condiciones completos",
+    "search": "Buscar",
+    "contact-us": "Contáctenos",
+    "subscribe": "Suscribir",
+    "mission": "Misión",
+    "donate-now": "Donar ahora",
+    "leave-a-testimonial": "Deja un testimonio",
+    "view-all-reviews": "Ver todas las reseñas",
+    "sign-up-now-and-start-booking-loads-instantly": "¡Regístrese ahora y comience a reservar cargas al instante!",
+    "post-your-load-now-and-get-matched-with-carriers-instantly": "¡Publique su carga ahora y coincide con los operadores al instante!"
+  },
+  "navfooter": {
+    "platform": "Plataforma",
+    "products": "Productos",
+    "solutions": "Soluciones",
+    "resources": "Recursos",
+    "our-company": "Nuestra empresa",
+    "how-it-works": "Cómo funciona",
+    "features": "Características",
+    "trucker-calculator": "Calculadora de camionero",
+    "freight-rate-calculator": "Calculadora de tarifa de flete",
+    "terms-and-conditions": "Términos y condiciones",
+    "loadboard": "Placa de carga",
+    "acp-tms": "ACP TMS",
+    "carrier-dispatcher": "Despachador de transportistas",
+    "carrier": "Transportador",
+    "broker": "Corredor",
+    "shipper": "Expedidor",
+    "freight-and-logistics-blog": "Blog de flete y logística",
+    "partnership-and-affiliate": "Asociación y Afiliado",
+    "newsletter-subscription": "Suscripción al boletín",
+    "guides-and-videos": "Guías y videos",
+    "faqs": "Preguntas frecuentes",
+    "about-us": "Sobre nosotros",
+    "leadership": "Liderazgo",
+    "testimonials-and-reviews": "Testimonios y revisiones",
+    "support-center": "Centro de apoyo",
+    "contact-us": "Contáctenos",
+    "footer-sub-text": "© Grupo de Cargas ACP. ",
+    "footer-review-us-on": "Revisarnos en",
+    "footer-info-text": "Siéntase libre de ponerse en contacto con nosotros en las cargas ACP para desbloquear un mundo de servicios logísticos eficientes y confiables. ",
+    "phone": "Teléfono",
+    "email": "Correo electrónico",
+    "location": "Ubicación"
+  },
+  "main": {
+    "title": "Su mejor tablero de carga de camiones: rápido, confiable y eficiente",
+    "sub-title": "La gestión de logística eficiente garantiza la entrega oportuna, reduce los costos y mejora la satisfacción y la lealtad del cliente.",
+    "sub-text": "Nos unamos a nosotros. ",
+    "daily-posted": {
+      "title": "Cargas publicadas diarias",
+      "description": "En ACP Cargas, nuestros números cuentan la historia de una comunidad de carga dinámica y próspera. "
+    },
+    "why-choose": {
+      "title": "¿Por qué elegir las cargas de ACP?",
+      "description": "Bienvenido a las cargas ACP, el tablero de carga de camiones más dinámico y eficiente diseñado para agilizar la coincidencia de carga y optimizar la logística. ",
+      "fast-posting-title": "Publicación y búsqueda rápida",
+      "fast-posting-description": "Publique al instante las cargas, encuentre envíos y coincidan con camiones vacíos con la carga disponible.",
+      "user-interface-title": "Interfaz fácil de usar",
+      "user-interface-description": "Nuestro espacio de trabajo intuitivo garantiza que los detalles de carga sean fácilmente accesibles para la toma de decisiones rápidas.",
+      "rating-review-title": "Calificaciones y reseñas",
+      "rating-review-description": "Los operadores y corredores pueden calificar y revisarse entre sí, fomentando la transparencia y la confianza.",
+      "matching-system-title": "Sistema de coincidencia inteligente",
+      "matching-system-description": "Los transportistas que publican camiones vacíos atraerán automáticamente cargas que coincidan con sus criterios."
+    },
+    "who-benefits": {
+      "title": "¿Quién puede beneficiarse?",
+      "dispatchers": "Despachadores de transportistas",
+      "brokers": "Corredores",
+      "carriers": "Operador",
+      "shippers": "Cargadores",
+      "dispatchers-benefit-1": "Busque cargas sin esfuerzo.",
+      "dispatchers-benefit-2": "Regístrese sin un número MC.",
+      "brokers-benefit-1": "Publicar cargas y encontrar camiones vacíos disponibles.",
+      "brokers-benefit-2": "Conéctese con los cargadores para cumplir con sus envíos.",
+      "carriers-benefit-1": "Busque cargas y publique camiones vacíos.",
+      "carriers-benefit-2": "Atraer cargas basadas en la disponibilidad de camiones.",
+      "shippers-benefit-1": "Publicar envíos rápida y fácilmente.",
+      "shippers-benefit-2": "Conéctese con corredores y operadores en tiempo real."
+    },
+    "trust-and-transparency": {
+      "title": "Confianza y transparencia con revisiones",
+      "description": "Creemos en construir una red de carga confiable. ",
+      "carrier-rate-title": "Los operadores califican los corredores en:",
+      "carrier-rate": {
+        "1": "Nivel de comunicación",
+        "2": "Calidad de servicio",
+        "3": "Precisión de carga",
+        "4": "Velocidad de pago",
+        "5": "Honestidad y confiabilidad"
+      },
+      "broker-rate-title": "Corredores de tarifas de los corredores:",
+      "broker-rate": {
+        "1": "Nivel de comunicación",
+        "2": "Calidad de servicio",
+        "3": "Información confiable",
+        "4": "Cuidado de flete",
+        "5": "Puntualidad"
+      }
+    },
+    "futured-partners": {
+      "title": "Socios destacados",
+      "description": "En ACP Cargas, creemos en el poder de la colaboración. ",
+      "osrm": "OSRM: mapeo eficiente y enrutamiento optimizado a través de OSRM",
+      "google": "Google: mapeo de precisión para navegación sin problemas",
+      "github": "GitHub: Empoderar la colaboración de código sin costuras",
+      "digitalocean": "Digitalocean: soluciones de nube simplificadas y escalables"
+    },
+    "our-vision": {
+      "title": "Nuestra visión",
+      "description": "Imaginamos un futuro donde cada transacción de carga es perfecta, transparente y eficiente. "
+    },
+    "contact-us": {
+      "title": "Contáctenos"
+    }
+  },
+  "how-it-works": {
+    "title": "Cómo funciona: ¡una coincidencia de carga perfecta para todos!",
+    "description": "ACP Loads está diseñado para conectar Freight Shi Ppers, corredores, operadores de propietarios y operadores de una manera rápida, eficiente y rentable. ",
+    "sub-title": "Comencemos, ¡es 100% gratis!",
+    "who-benefits": {
+      "title": "¿Quién se beneficia de registrarse?",
+      "sub-title": "¡Únete gratis!",
+      "card-1": {
+        "title": "Transportistas y despachadores",
+        "description": "Obtenga acceso instantáneo a miles de oportunidades de carga. "
+      },
+      "card-2": {
+        "title": "Freight Brokers & Shippers",
+        "description": "Publique sus cargas sin esfuerzo y llegue a una amplia red de operadores confiables. "
+      },
+      "card-3": {
+        "title": "Propietario-operadores",
+        "description": "Disfrute del acceso directo a la carga de alta calidad adaptada a las especificaciones de su camión. "
+      }
+    },
+    "how-to-sign-up": {
+      "title": "Cómo registrarse",
+      "card-1": {
+        "title": "Visite nuestra página de registro:",
+        "description": "Navegue a nuestro formulario de registro simple donde proporcionará datos de contacto básicos y seleccione su rol (transportista, despachador, corredor de carga, remitente o propietario-operador)."
+      },
+      "card-2": {
+        "title": "Completa el formulario:",
+        "description": "Complete la información necesaria; no te preocupes, solo lleva unos minutos. "
+      },
+      "card-3": {
+        "title": "Verificar:",
+        "description": "Una vez que complete el registro, nuestro sistema verificará sus datos. "
+      },
+      "card-4": {
+        "title": "Comience a conectarse:",
+        "description": "Comience a explorar oportunidades de carga, publicar envíos o encontrar camiones disponibles. "
+      }
+    },
+    "why-our-works": {
+      "1": {
+        "title": "Eficiencia",
+        "description": "La combinación de un registro simplificado, una coincidencia de carga inteligente y notificaciones instantáneas significa menos tiempo de inactividad y más movimiento de carga."
+      },
+      "2": {
+        "title": "Confianza y transparencia",
+        "description": "Nuestro sistema de revisión garantiza que cada usuario sea responsable, construyendo una comunidad confiable donde cada transacción esté respaldada por comentarios reales."
+      },
+      "3": {
+        "title": "Crecimiento",
+        "description": "Al conectar cargadores, corredores, transportistas y propietarios-operadores en una plataforma, puede reducir las millas vacías, optimizar sus operaciones y, en última instancia, hacer crecer su negocio."
+      },
+      "title": "Por qué funciona nuestro proceso"
+    },
+    "post-search-loads": {
+      "1": {
+        "title": "Cargas de publicación y búsqueda",
+        "sub-title-1": "Para los corredores de carga y los cargadores:",
+        "description-1": "Enumere rápidamente sus cargas con información detallada, como ubicaciones de recogida y entrega, especificaciones de carga y marcos de tiempo.",
+        "sub-title-2": "Alcance dirigido:",
+        "description-2": "Sus cargas son visibles para una amplia red de operadores y despachadores, asegurando que llegue a la audiencia adecuada."
+      },
+      "2": {
+        "title": "Para transportistas y despachadores:",
+        "sub-title-1": "Búsqueda de carga inteligente:",
+        "description-1": "Use nuestros filtros avanzados para buscar cargas según la ubicación, los requisitos del equipo y el tipo de carga.",
+        "sub-title-2": "Publicación de camión vacía:",
+        "description-2": "Publique sus camiones disponibles para atraer oportunidades de carga que coincidan con su capacidad y horario."
+      },
+      "title": "Cargas de publicación y búsqueda"
+    },
+    "review-grow": {
+      "1": {
+        "title": "Revisiones transparentes",
+        "description": "Después de completar un envío, ambas partes pueden dejar calificaciones y revisiones detalladas. "
+      },
+      "2": {
+        "title": "Construye tu reputación",
+        "description": "Las revisiones positivas y las altas calificaciones lo ayudan a generar credibilidad en nuestra comunidad, atrayendo más negocios y fomentando asociaciones a largo plazo."
+      },
+      "title": "Publique sus camiones disponibles para atraer oportunidades de carga que coincidan con su capacidad y horario."
+    }
+  },
+  "features": {
+    "title": "Empodera tus operaciones de flete",
+    "description": "Descubra una plataforma de carga de vanguardia diseñada para agilizar su logística de transporte de EE. UU. ",
+    "fast-and-easy": {
+      "1": {
+        "title": "Publicación de carga optimizada:",
+        "description-1": "Sin esfuerzo para corredores y cargadores: publique rápidamente las cargas con especificaciones detalladas: ubicaciones de recolección y entrega, peso, requisitos de equipos y marcos de tiempo.",
+        "description-2": "Registro sin problemas: los despachadores de operadores pueden registrarse sin un número de MC, por lo que puede comenzar a publicar cargas de inmediato."
+      },
+      "2": {
+        "title": "Búsqueda de carga avanzada:",
+        "description-1": "Filtros fáciles de usar: busque fácilmente las cargas por ubicación, tipo y necesidades de equipos.",
+        "description-2": "COCACIONES rápidas: nuestro sistema de búsqueda intuitivo conecta portadores con cargas disponibles al instante, reduciendo las millas vacías y el tiempo de inactividad."
+      }
+    },
+    "smart-matching": {
+      "title": "Matriota inteligente y notificaciones instantáneas",
+      "card-1": {
+        "title": "Emparejamiento automatizado",
+        "description": "Nuestros algoritmos inteligentes coinciden instantáneamente las cargas publicadas con los camiones disponibles más adecuados."
+      },
+      "card-2": {
+        "title": "Eficiencia optimizada",
+        "description": "Obtenga los partidos correctos cada vez, asegurando movimientos de carga más rápidos y costos operativos reducidos."
+      },
+      "card-3": {
+        "title": "Notificaciones instantáneas",
+        "description": "Manténgase actualizado con alertas en tiempo real para obtener nuevas publicaciones de carga o disponibilidad de camiones que cumplan con sus criterios."
+      },
+      "card-4": {
+        "title": "Nunca te pierdas una oportunidad",
+        "description": "Sea el primero en saber cuándo está disponible la carga correcta."
+      }
+    },
+    "comprehensive-loadboard": {
+      "title": "Estadísticas integrales de placa de carga",
+      "sub-title": "Datos del mercado en vivo y decisiones basadas en datos",
+      "card-1": {
+        "title": "Publicaciones de carga diaria",
+        "description": "Monitoree la cantidad de cargas publicadas todos los días, dándole un pulso sobre la actividad actual del mercado."
+      },
+      "card-2": {
+        "title": "Métricas clave de rendimiento",
+        "description": "Acceda a datos en vivo sobre volúmenes de carga, recuentos de usuarios activos y tendencias geográficas para ayudarlo a tomar decisiones informadas."
+      },
+      "card-3": {
+        "title": "Ideas procesables",
+        "description": "Use nuestros análisis para ajustar su estrategia, optimizar las rutas y maximizar la rentabilidad."
+      },
+      "card-4": {
+        "title": "Mantente competitivo",
+        "description": "Con las estadísticas actualizadas, puede responder rápidamente a los cambios en el mercado y aprovechar nuevas oportunidades."
+      }
+    },
+    "advanced-calculator": {
+      "1": {
+        "title": "Estimación de costos precisa:",
+        "description-1": "Precios optimizados: calcule las tasas de flete competitivas según la distancia, los costos de combustible, el peso de la carga y otros factores clave.",
+        "description-2": "Cálculos transparentes: garantizar la equidad y la precisión en sus precios, ayudándole a negociar mejores ofertas."
+      },
+      "2": {
+        "title": "Interfaz fácil de usar:",
+        "description-1": "Entrada fácil: simplemente ingrese sus detalles de carga y deje que nuestra calculadora haga el resto.",
+        "description-2": "Resultados en tiempo real: reciba estimaciones de tarifas instantáneas para ayudarlo a planificar sus envíos de manera más efectiva."
+      },
+      "title": "Calculadora de tasa de carga avanzada"
+    },
+    "integrated-rating": {
+      "1": {
+        "title": "Crear confianza y credibilidad:",
+        "description-1": "Comentarios transparentes: los transportistas, corredores, cargadores y despachadores pueden calificar y revisarse entre sí en función de criterios como comunicación, calidad del servicio y puntualidad.",
+        "description-2": "Gestión de la reputación: las calificaciones positivas ayudan a construir un perfil confiable, atrayendo más oportunidades comerciales."
+      },
+      "2": {
+        "title": "Mejora impulsada por la comunidad:",
+        "description-1": "Comentarios continuos: use revisiones para mejorar su servicio y fomentar asociaciones a largo plazo dentro de nuestra comunidad.",
+        "description-2": "Responsabilidad del usuario: nuestro sistema promueve la responsabilidad, asegurando que cada participante mantenga altos estándares."
+      },
+      "title": "Sistema de calificaciones y revisiones integradas"
+    },
+    "secure-and-interface": {
+      "1": {
+        "title": "Diseño intuitivo:",
+        "description-1": "Navegación fácil: nuestra plataforma está diseñada con una interfaz limpia y moderna que simplifica la gestión de la carga.",
+        "description-2": "Panel de tablero centralizado: acceda a todas sus publicaciones, búsquedas y comunicaciones en un centro conveniente."
+      },
+      "2": {
+        "title": "Seguridad de datos:",
+        "description-1": "Protección robusta: priorizamos la seguridad de su información con medidas de protección de datos de última generación.",
+        "description-2": "Acceso confiable: disfrute de una experiencia segura mientras administra su flete y las operaciones de carga sin problemas."
+      },
+      "title": "Interfaz segura y fácil de usar"
+    },
+    "mobile-compatibility": {
+      "1": {
+        "title": "Acceso sobre la marcha:",
+        "description-1": "Diseño amigable para dispositivos móviles: nuestra plataforma está completamente optimizada para teléfonos inteligentes y tabletas, lo que le permite administrar las cargas en cualquier momento y en cualquier lugar.",
+        "description-2": "Experiencia receptiva: disfrute de una experiencia consistente y de alto rendimiento en todos los dispositivos."
+      },
+      "2": {
+        "title": "Conectividad en tiempo real:",
+        "description-1": "Actualizaciones inmediatas: Manténgase informado con actualizaciones y notificaciones en vivo, asegurando que siempre esté en el bucle.",
+        "description-2": "Productividad mejorada: ya sea que esté en la oficina o en la carretera, nuestra plataforma lo mantiene conectado a sus operaciones."
+      },
+      "title": "Compatibilidad móvil y actualizaciones en tiempo real"
+    },
+    "integration-with-services": {
+      "title": "Integración con los principales servicios de mapeo",
+      "card-1": {
+        "title": "Planificación de ruta eficiente:",
+        "description-1": "OSRM y Google Maps: beneficio de la tecnología de mapeo avanzado que proporciona un enrutamiento y navegación precisos, asegurando entregas oportunas y eficientes.",
+        "description-2": "Optimización de la ruta visual: planifique las rutas más efectivas y reduzca el consumo de combustible con la integración de mapeo en tiempo real."
+      },
+      "card-2": {
+        "title": "Seguimiento mejorado:",
+        "description-1": "Actualizaciones en vivo: monitoree el progreso del envío y reciba actualizaciones sobre el tráfico, las condiciones de la carretera y los tiempos de llegada estimados.",
+        "description-2": "Coordinación perfecta: nuestros mapas integrados hacen que sea más fácil coordinar la logística y mejorar la eficiencia operativa general."
+      }
+    }
+  },
+  "trucker-calculator": {
+    "title": "Calculadora de camioneros: estimar sus ganancias brutas",
+    "description": "Tome el control de sus finanzas con nuestra calculadora de camioneros fáciles de usar. ",
+    "get-started": {
+      "title": "Empezar",
+      "description": "¿Listo para ver cuánto puedes ganar? "
+    },
+    "key-benefits": {
+      "title": "Beneficios clave",
+      "card-1": {
+        "title": "Muy reputable",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      "card-2": {
+        "title": "Servicios de calidad",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      "card-3": {
+        "title": "Servicios certificados",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      "card-4": {
+        "title": "9k+ proyectos",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    }
+  },
+  "freight-rate-calculator": {
+    "title": "Estime sus tarifas de flete al instante",
+    "description": "Desbloquee las estimaciones precisas de costos de flete en segundos con nuestra calculadora de tasa de carga avanzada. ",
+    "get-started": {
+      "title": "¡Empiece ahora!",
+      "description": "¿Listo para tomar el control de su precio de carga? ",
+      "sign-up-for-free": "Regístrese gratis"
+    },
+    "key-features": {
+      "1": {
+        "title": "Datos en tiempo real:",
+        "description": "Utiliza la asignación actual y los datos de precios de combustible para cálculos precisos de distancia y costos."
+      },
+      "2": {
+        "title": "Entradas personalizables:",
+        "description": "Adapte sus estimaciones con tasas base ajustables, recargos de combustible y tarifas adicionales."
+      },
+      "3": {
+        "title": "Desglose de costos:",
+        "description": "Vea un desglose detallado de cómo cada factor contribuye a su tasa total."
+      },
+      "4": {
+        "title": "Interfaz fácil de usar:",
+        "description": "Diseñado para una entrada rápida y cálculos rápidos: obtenga su tasa en segundos"
+      },
+      "5": {
+        "title": "Insights del mercado:",
+        "description": "Opción para comparar su tarifa calculada con los promedios del mercado para mantenerse competitivos."
+      },
+      "title": "Características clave de nuestra calculadora"
+    },
+    "why-use-our-calculator": {
+      "1": {
+        "title": "Optimizar sus ganancias:",
+        "description": "Al conocer su tasa de carga estimada por adelantado, puede negociar con confianza y reducir millas vacías."
+      },
+      "2": {
+        "title": "Planificación eficiente:",
+        "description": "Planifique sus rutas y presupuestos con precisión, asegurando una operación más suave y costos reducidos."
+      },
+      "3": {
+        "title": "Ventaja competitiva:",
+        "description": "Manténgase informado sobre las condiciones actuales del mercado y ajuste su estrategia de precios en tiempo real."
+      },
+      "title": "¿Por qué usar nuestra calculadora de tasa de carga?"
+    }
+  },
+  "terms-and-conditions": {
+    "title": "Conozca sus derechos y responsabilidades",
+    "description": "Bienvenido a ACP Cargas, el Premier Trucking Loadboard que conecta a los operadores, corredores y transportistas en los EE. UU. Antes de usar nuestros servicios, tómese un momento para revisar nuestros términos y condiciones para comprender sus derechos, obligaciones y las pautas para usar nuestra plataforma.",
+    "why-are-terms-important": {
+      "title": "¿Por qué son importantes los términos y condiciones?",
+      "description": "Al usar las cargas de ACP, usted acepta cumplir con nuestras políticas que aseguran una experiencia segura, justa y eficiente para todos los usuarios. ",
+      "card-1": {
+        "title": "Elegibilidad del usuario",
+        "description": "Quién puede usar nuestra plataforma y qué requisitos deben cumplirse."
+      },
+      "card-2": {
+        "title": "Cuenta y registro",
+        "description": "Sus responsabilidades al crear y mantener una cuenta."
+      },
+      "card-3": {
+        "title": "Uso de la plataforma",
+        "description": "Directrices sobre cómo buscar cargas, publicar flete e interactuar con otros usuarios."
+      },
+      "card-4": {
+        "title": "Privacidad y protección de datos",
+        "description": "Cómo manejamos los datos del usuario de forma segura y de cumplimiento de las regulaciones."
+      },
+      "card-5": {
+        "title": "Actividades prohibidas",
+        "description": "Qué acciones no están permitidas en nuestra plataforma para mantener un mercado seguro."
+      },
+      "card-6": {
+        "title": "Resolución de disputas",
+        "description": "Pasos para resolver conflictos entre usuarios o con la plataforma."
+      }
+    },
+    "your-agreement": {
+      "title": "Tu acuerdo",
+      "description": "Al continuar utilizando las cargas de ACP, usted reconoce que ha leído, entendido y acordado nuestros términos y condiciones. ",
+      "sub-text": "¿Necesita ayuda? "
+    }
+  },
+  "loadboard": {
+    "title": "Tablero de carga en vivo",
+    "sub-title": "Oportunidades de Freigh T en tiempo real",
+    "description": "Desbloquee los detalles de carga de flete de la altura al final a su alcance. ",
+    "key-benefits": {
+      "title": "Beneficios clave",
+      "card-1": {
+        "title": "Información actualizada",
+        "description": "Obtenga actualizaciones en tiempo real que lo mantengan informado de las últimas oportunidades de carga."
+      },
+      "card-2": {
+        "title": "Eficiencia mejorada",
+        "description": "El filtrado avanzado y las notificaciones instantáneas minimizan el tiempo de inactividad, reduciendo las millas vacías y aumentando la rentabilidad."
+      },
+      "card-3": {
+        "title": "Toma de decisiones informadas",
+        "description": "Aproveche los análisis en vivo para comprender las tendencias del mercado y ajustar sus operaciones en consecuencia."
+      },
+      "card-4": {
+        "title": "Conectividad perfecta",
+        "description": "Las herramientas de comunicación directa lo ayudan a negociar y confirmar las cargas rápidamente, fomentando la confianza y las transacciones oportunas."
+      }
+    },
+    "get-started": {
+      "title": "Empiece hoy",
+      "description": "Únase a nuestra creciente red de profesionales de la industria y obtenga acceso inmediato a nuestro tablero de carga en vivo. ",
+      "sub-text": "¡Para comenzar a aprovechar el poder de la gestión de carga en tiempo real!"
+    }
+  },
+  "acp-tms": {
+    "coming-soon": "Muy pronto:",
+    "title": "ACP TMS: ¡el futuro de la gestión de carga!",
+    "description": "¡Prepárate para una forma más inteligente y más eficiente de administrar tus operaciones de camiones! "
+  },
+  "carrier-dispatcher": {
+    "title": "Buscar y administrar cargas con facilidad",
+    "description": "Maximice la eficiencia, minimice la molestia: la herramienta de búsqueda de carga definitiva para despachadores de operadores! Los despachadores de operadores juegan un papel fundamental en la industria del transporte de camiones al administrar cargas, coordinar a los conductores y garantizar la entrega oportuna de carga. ",
+    "why-use-platform": {
+      "1": {
+        "title": "Acceso de carga instantánea",
+        "description": "Busque y asegure las mejores cargas en tiempo real, sin demoras."
+      },
+      "2": {
+        "title": "Coincidencia de carga inteligente",
+        "description": "Encuentre envíos basados en la disponibilidad de camiones, la ubicación y las rutas preferidas."
+      },
+      "3": {
+        "title": "Coordinación perfecta",
+        "description": "Administre fácilmente múltiples operadores y optimice los movimientos de carga."
+      },
+      "4": {
+        "title": "Maximizar las ganancias",
+        "description": "Reduzca millas de Deadhead y aumente las ganancias con cargas bien emparejadas."
+      },
+      "5": {
+        "title": "Datos de Live LoBboard",
+        "description": "Obtenga acceso a las publicaciones de carga en tiempo real y las ideas del mercado."
+      },
+      "title": "¿Por qué utilizar nuestra plataforma como despachador de operadores?"
+    },
+    "how-it-works": {
+      "title": "Cómo funciona",
+      "card-1": {
+        "title": "Registrarse - Registro rápido y gratuito",
+        "description-1": "No se requiere número de MC: comience a enviar cargas al instante.",
+        "description-2": "Cree un perfil de despachador para acceder a listados de carga en tiempo real."
+      },
+      "card-2": {
+        "title": "Buscar y seleccionar las mejores cargas",
+        "description-1": "Use filtros para encontrar cargas basadas en la ruta, el precio y el tipo de camión.",
+        "description-2": "Obtenga actualizaciones de Live Loadboard para mantenerse a la vanguardia en el mercado."
+      },
+      "card-3": {
+        "title": "Despacho y coordenadas",
+        "description-1": "Asigne cargas a los operadores y administre los viajes con facilidad.",
+        "description-2": "Rastree el progreso y las actualizaciones en tiempo real."
+      },
+      "card-4": {
+        "title": "Optimizar y escalar sus operaciones",
+        "description-1": "Use herramientas avanzadas como la calculadora de tarifas de flete para garantizar el envío rentable.",
+        "description-2": "Aproveche el análisis para refinar estrategias y hacer crecer su negocio."
+      }
+    },
+    "key-features": {
+      "1": "No se requiere número de MC: registre y comience a enviar de inmediato.",
+      "2": "Búsqueda de carga rápida y fácil: acceda a miles de cargas verificadas diariamente.",
+      "3": "Sistema de coincidencia inteligente: encuentre las cargas más rentables y adecuadas para sus operadores.",
+      "4": "Insights en vivo del mercado: obtenga actualizaciones de tarifas en tiempo real para mantenerse competitivos.",
+      "5": "Herramientas de flete integradas: use calculadoras y análisis para mejorar la toma de decisiones.",
+      "title": "Características clave para los despachadores de transportistas"
+    },
+    "join-today-and-simplify": {
+      "title": "¡Únase hoy y simplifique su proceso de envío!",
+      "description": "Los despachadores de transportistas son la columna vertebral de la logística de transporte. ",
+      "sub-text": "¡Y lleve sus operaciones de envío al siguiente nivel!"
+    }
+  },
+  "carrier": {
+    "title": "Encuentre cargas y mantenga en movimiento sus camiones",
+    "sub-title": "¡Maximice sus ganancias con acceso a cargas de alto pago y corredores de confianza!",
+    "description": "Como transportista, encontrar la carga correcta en el momento correcto es crucial para mantener sus camiones en movimiento y maximizar las ganancias. ",
+    "why-choose": {
+      "1": {
+        "title": "Encuentra cargas al instante",
+        "description": "Explore un tablero de carga en tiempo real con flete de alto pago."
+      },
+      "2": {
+        "title": "Coincidencia de carga",
+        "description": "Obtenga recomendaciones de carga personalizadas basadas en sus rutas y preferencias."
+      },
+      "3": {
+        "title": "Trabajar con corredores y cargadores verificados",
+        "description": "Acceda a asociaciones confiables con profesionales de la industria de confianza."
+      },
+      "4": {
+        "title": "Insights de tasa de carga",
+        "description": " Use nuestra calculadora de tarifas de flete para garantizar lances rentables."
+      },
+      "5": {
+        "title": "Fácil reserva y papeleo",
+        "description": "Simplifique los contratos, las confirmaciones de tasas y los detalles de carga en un solo lugar."
+      },
+      "6": {
+        "title": "Minimizar Deadhead",
+        "description": "Reduzca millas vacías con planificación de carga optimizada."
+      },
+      "title": "¿Por qué los operadores eligen nuestra plataforma?"
+    },
+    "how-it-works": {
+      "title": "Cómo funciona",
+      "card-1": {
+        "title": "Paso 1: Regístrese y cree el perfil de su operador",
+        "description-1": "Registre su empresa y configure sus preferencias de camiones.",
+        "description-2": "¿No hay número MC? "
+      },
+      "card-2": {
+        "title": "Paso 2: Busque cargas en segundos",
+        "description-1": "Cargas de filtro según el origen, el destino, el peso y la velocidad.",
+        "description-2": "Vea las calificaciones del corredor y el cargador antes de reservar."
+      },
+      "card-3": {
+        "title": "Paso 3: Libro y transporte de flete",
+        "description-1": "Acepte cargas directamente a través de la plataforma o negocie con los corredores.",
+        "description-2": "Reciba todos los detalles de envío necesarios al instante."
+      },
+      "card-4": {
+        "title": "Paso 4: Track, entregue y reciba el pago rápido",
+        "description-1": "Administre sus envíos desde la recogida hasta la entrega.",
+        "description-2": "Trabajar con corredores que ofrecen opciones de pago rápidos."
+      }
+    },
+    "key-features": {
+      "1": {
+        "title": "Tablero de carga en tiempo real",
+        "description": "Acceda a miles de cargas diarias."
+      },
+      "2": {
+        "title": "Red de corredor verificada",
+        "description": "Trabajar con socios de carga de confianza."
+      },
+      "3": {
+        "title": "Herramienta de comparación de tasas",
+        "description": "Obtenga una compensación justa por cada recorrido."
+      },
+      "4": {
+        "title": "Reserva de carga instantánea",
+        "description": "Asegure las mejores cargas antes de que se hayan ido."
+      },
+      "5": {
+        "title": "Tablero de control",
+        "description": "Administre cargas, documentos y pagos en un solo lugar."
+      }
+    },
+    "take-control": {
+      "title": "¡Tome el control de su negocio de camiones hoy!",
+      "description": "Únase a miles de operadores que maximizan las ganancias y reducen las millas de Deadhead con nuestra plataforma fácil de usar. "
+    }
+  },
+  "broker": {
+    "title": "Publicar cargas y encontrar operadores de confianza",
+    "description": "Gestión de carga simplificada para corredores: ¡conéctese con transportistas confiables y se muevan envíos rápidamente!",
+    "why-choose": {
+      "title": "¿Por qué los corredores eligen nuestra plataforma?",
+      "card-1": {
+        "title": "Publicar cargas al instante",
+        "description": "Enumere su carga disponible con solo unos pocos clics."
+      },
+      "card-2": {
+        "title": "Encuentra portadores confiables",
+        "description": "Acceda a una red de operadores verificados de MC prevettados."
+      },
+      "card-3": {
+        "title": "Visibilidad de Live Loboard",
+        "description": "Consulte la disponibilidad del operador y las cargas de coincidencia en tiempo real."
+      },
+      "card-4": {
+        "title": "Insights de tasa de carga",
+        "description": "Use la calculadora de tarifas de carga para fijar el precio de sus cargas de manera competitiva."
+      },
+      "card-5": {
+        "title": "Comunicación perfecta",
+        "description": "Conéctese directamente con los operadores para una reserva de carga eficiente."
+      },
+      "card-6": {
+        "title": "Cumplimiento y documentación",
+        "description": "Realice un seguimiento del papeleo, los contratos y el estado de carga sin esfuerzo."
+      }
+    },
+    "how-it-works": {
+      "title": "Cómo funciona",
+      "description": "Como corredor de carga, la eficiencia lo es todo. ",
+      "card-1": {
+        "title": "Regístrese y cree su perfil de corredor",
+        "description-1": "Verifique y comience a publicar cargas de inmediato.",
+        "description-2": "Establezca preferencias para calificaciones de transportistas, tipos de carga y rutas preferidas."
+      },
+      "card-2": {
+        "title": "Publique su carga y coincide con los operadores",
+        "description-1": "Ingrese los detalles de carga, incluidos los lugares de peso, recogida/entrega y requisitos especiales.",
+        "description-2": "Nuestro sistema lo conecta con operadores calificados según la disponibilidad y las preferencias."
+      },
+      "card-3": {
+        "title": "Seleccione y reserve el mejor portador",
+        "description-1": "Revise los perfiles de los operadores, las calificaciones e historia antes de finalizar.",
+        "description-2": "Comuníquese directamente con los operadores para negociaciones y confirmaciones."
+      },
+      "card-4": {
+        "title": "Rastrear y administrar envíos en tiempo real",
+        "description-1": "Obtenga actualizaciones sobre el estado de carga desde la recolección hasta la entrega.",
+        "description-2": "Mantenga registros de envíos, tarifas y contratos a través de su tablero."
+      }
+    },
+    "key-features": {
+      "1": "Publicación de carga instantánea: obtenga sus cargas frente a los portadores rápidamente.",
+      "2": "Red de operadores verificados: trabaje con operadores confiables aprobados por MC.",
+      "3": "Matriota de carga en tiempo real: reduzca el tiempo de inactividad y garantice envíos eficientes.",
+      "4": "Herramientas de optimización de tarifas: use la calculadora de tarifas de flete para establecer precios competitivos.",
+      "5": "Operaciones seguras y transparentes: realice un seguimiento de todas las reservas, pagos y detalles del operador en un solo lugar.",
+      "title": "Características clave para corredores de carga"
+    },
+    "scale-brokerage": {
+      "title": "¡Escala su negocio de corretaje hoy!",
+      "description": "Nuestra plataforma está construida para empoderar a los corredores ofreciendo la forma más rápida, más fácil y más transparente de conectarse con los transportistas y mover la carga. ",
+      "sub-text": "¡Y comience a publicar sus cargas sin problemas!"
+    }
+  },
+  "shipper": {
+    "title": "Agilice su envío de carga",
+    "sub-title": "¡Haga que su carga se mueva de manera rápida y eficiente con los operadores de confianza!",
+    "description": "Encontrar operadores confiables y garantizar entregas a tiempo puede ser un desafío. ",
+    "why-choose": {
+      "1": {
+        "text-1": "Publicación de carga instantánea -",
+        "text-2": "Enumere sus envíos en segundos y obtenga partidos instantáneos."
+      },
+      "2": {
+        "text-1": "Red de operador confiable -",
+        "text-2": "Trabajar con transportistas profesionales previos a la selección."
+      },
+      "3": {
+        "text-1": "Tasas de flete competitivas -",
+        "text-2": "Compare y elija las mejores ofertas."
+      },
+      "4": {
+        "text-1": "Seguimiento en tiempo real-",
+        "text-2": "Monitoree sus envíos en cada paso del camino."
+      },
+      "5": {
+        "text-1": "Documentación sin esfuerzo -",
+        "text-2": "Simplifique los contratos, las confirmaciones de tasas y las facturas."
+      },
+      "6": {
+        "text-1": "Entrega más rápida -",
+        "text-2": "Reduzca el tiempo de tránsito con la coincidencia de portadores optimizado."
+      },
+      "title": "¿Por qué los cargadores eligen nuestra plataforma?"
+    },
+    "how-it-works": {
+      "title": "Cómo funciona",
+      "card-1": {
+        "title": "Publica tu carga",
+        "description-1": "Ingrese los detalles del envío, incluidos la recolección, el destino, el peso y los requisitos especiales.",
+        "description-2": "Obtenga una visibilidad de carga instantánea a los operadores de confianza."
+      },
+      "card-2": {
+        "title": "Emparejarse con portadores confiables",
+        "description-1": "Nuestro sistema inteligente encuentra los mejores operadores y corredores según la disponibilidad y el precio.",
+        "description-2": "Revise las clasificaciones de los operadores y el rendimiento antes de la reserva."
+      },
+      "card-3": {
+        "title": "Asegure la mejor tarifa y confirme el envío",
+        "description-1": "Recibir ofertas competitivas de los operadores.",
+        "description-2": "Elija la mejor oferta y confirme su envío con un solo clic."
+      },
+      "card-4": {
+        "title": "Rastrear y entregar con confianza",
+        "description-1": "Seguimiento en tiempo real para la visibilidad completa del envío.",
+        "description-2": "Obtenga notificaciones sobre las actualizaciones de estado y las confirmaciones de entrega."
+      }
+    },
+    "key-features": {
+      "1": "Publicación de carga instantánea: publicar, administrar y editar envíos fácilmente.",
+      "2": "Carriers y corredores verificados: trabaje con profesionales de la industria.",
+      "3": "Calculadora de tarifas de flete: garantizar el envío rentable.",
+      "4": "Matriota de carga optimizada: reduzca los retrasos y aumente la eficiencia.",
+      "5": "Seguimiento de envío 24/7: manténgase informado desde la recolección hasta la entrega."
+    },
+    "ship-smarter": {
+      "title": "Envíe más inteligente, más rápido y más eficiente!",
+      "description": "Ya sea que sea una pequeña empresa o un remitente de alto volumen, nuestra plataforma lo ayuda a mover el flete más rápido, más barato y con total visibilidad."
+    }
+  },
+  "freight-and-logistics-blog": {
+    "title": "Blog de flete y logística:",
+    "sub-title": "Su fuente de confianza para los conocimientos de la industria",
+    "description": "¡Manténgase a la vanguardia en el mundo acelerado de la carga y la logística!",
+    "why-follow": {
+      "card-1": {
+        "title": "Mantente informado",
+        "description": "Obtenga actualizaciones oportunas sobre las tendencias de la industria, las regulaciones y los mercados de carga."
+      },
+      "card-2": {
+        "title": "Ideas basadas en datos",
+        "description": "Acceda a análisis de expertos y pronósticos para tomar decisiones más inteligentes."
+      },
+      "card-3": {
+        "title": "Consejos procesables",
+        "description": "Aprenda estrategias probadas para el envío, los precios y la reducción de costos."
+      },
+      "card-4": {
+        "title": "Tecnología e innovación",
+        "description": "Explore cómo las tablas de carga digital, los sistemas TMS y la automatización están transformando la logística."
+      },
+      "card-5": {
+        "title": "Historias de éxito real",
+        "description": "Inspírese con las empresas, corredores y operadores logrando resultados notables."
+      }
+    },
+    "freight-market": {
+      "1": {
+        "title": "Instantánea de la industria de camiones:",
+        "description": "La industria de transporte de EE. UU. A mediados de 2015 está navegando por una recesión de flete, con tasas de mercado spot estabilizando pero la demanda general sigue siendo débil. "
+      },
+      "2": {
+        "title": "Destacados clave:",
+        "sub-title-1": "Crecimiento del volumen de corta distancia:",
+        "text-1": "Impulsado por el comercio electrónico y la demanda del consumidor, las cargas de corta distancia están aumentando, especialmente en las áreas metropolitanas.",
+        "sub-title-2": "Delección de larga distancia:",
+        "text-2": "La carga de larga distancia está cambiando a soluciones intermodales debido a los ahorros de costos.",
+        "sub-title-3": "Spot Market Insights:",
+        "text-3": "Los rechazos de carga son tendencias hacia arriba (actualmente alrededor del 7%), lo que indica la capacidad de ajuste en algunas regiones.",
+        "sub-title-4": "Impactos arancelarios:",
+        "text-4": "Las tensiones comerciales recientes han causado sobretensiones de tasas temporales, especialmente en bienes importados, pero ahora están disminuyendo."
+      },
+      "title": "Tendencias del mercado de carga: 2025"
+    },
+    "fmcsa-and-dot": {
+      "1": {
+        "title": "Fecha límite de camioneta anterior a 2000:",
+        "text": "A partir de junio de 2025, todos los camiones, incluidos los modelos anteriores a 2000, deben cumplir con el mandato de campo. "
+      },
+      "2": {
+        "title": "Los certificados médicos de DOT se vuelven digital:",
+        "text": "A partir del 23 de junio de 2025, los certificados médicos se presentarán electrónicamente a las agencias estatales, simplificando el proceso para los conductores."
+      },
+      "3": {
+        "title": "Control de dominio del inglés:",
+        "text": "Las inspecciones en la carretera ahora verificarán la capacidad de habla inglesa de los conductores como parte de los controles de cumplimiento de seguridad de FMCSA."
+      },
+      "title": "Actualizaciones de cumplimiento de FMCSA & Dot",
+      "sub-title": "Qué hay de nuevo:"
+    },
+    "dispatching-strategies": {
+      "1": {
+        "title": "Centrarse en la eficiencia de corta distancia:",
+        "text": "Con la disminución de la capacidad de larga distancia, los portadores pueden maximizar las ganancias al optimizar las rutas de corta distancia."
+      },
+      "2": {
+        "title": "Monitorear datos de carga en tiempo real:",
+        "text": "Ajuste las estrategias basadas en las densidades de carga de cambio, las tasas de rechazo y los cambios en el mercado spot."
+      },
+      "3": {
+        "title": "Partnaciones de operador -broter:",
+        "text": "Fortalecer las relaciones aprovechando las tasas en vivo, la comunicación transparente y las herramientas de envío confiables."
+      },
+      "title": "Estrategias de envío para 2025",
+      "sub-title": "Las mejores prácticas:"
+    },
+    "fuel-price": {
+      "1": {
+        "title": "Precios de combustible hacia abajo:",
+        "text": "Los costos diesel han disminuido en aproximadamente un 4% desde enero."
+      },
+      "2": {
+        "title": "Los riesgos geopolíticos permanecen:",
+        "text": "Las interrupciones del envío de Medio Oriente aún podrían crear volatilidad, así que vigile las tarifas globales de los petroleros y los cuellos de botella de la cadena de suministro."
+      },
+      "title": "",
+      "sub-title": ""
+    },
+    "building-freight-networks": {
+      "1": {
+        "title": "Use Smart LoadBoards:",
+        "text": "Los datos en vivo, las tasas en tiempo real y los detalles de carga verificados ayudan a construir confianza a largo plazo entre corredores y operadores."
+      },
+      "2": {
+        "title": "Precios transparentes:",
+        "text": "Los corredores que ofrecen visibilidad en tiempo real fomentan lealtad con socios de operadores."
+      },
+      "title": "Construyendo redes de carga más fuertes",
+      "sub-title": "Consejos de relación:"
+    },
+    "technology-automation": {
+      "1": {
+        "title": "Plataformas de flete digitales Rising:",
+        "text": "Más corredores y operadores están adoptando soluciones logísticas avanzadas de TMS y AI."
+      },
+      "2": {
+        "title": "Pilotos de camiones autónomos:",
+        "text": "Las rutas de camiones autónomos se están expandiendo en Texas y Arizona, lo que potencialmente está remodelando a la industria en los próximos años."
+      },
+      "title": "Tecnología y automatización",
+      "sub-title": "Lo que esta cambiando:"
+    },
+    "freight-care": {
+      "1": {
+        "title": "Tasas basadas en datos:",
+        "text": "Utilice herramientas de precios dinámicos que tengan en cuenta los costos de combustible, la capacidad del mercado, los volúmenes de carga y las tendencias regionales."
+      },
+      "2": {
+        "title": "Calculadoras de flete:",
+        "text": "Las calculadoras de tarifas de carga en tiempo real ayudan a los operadores y corredores a negociar de manera más competitiva."
+      },
+      "title": "Cálculos de tarifa de flete",
+      "sub-title": "Consejos de precios:"
+    },
+    "subscribe": "Suscribirse para las últimas noticias y actualizaciones"
+  },
+  "partnership-and-affiliate": {
+    "title": "Programa de Asociación y Afiliado",
+    "sub-title-1": "Colaborar. ",
+    "description-1": "En ACP Loads, creemos en la creación de asociaciones potentes que crean un valor a largo plazo en la industria de la logística y la carga. ",
+    "description-2": "La asociación es una relación colaborativa entre individuos u organizaciones para beneficio mutuo.",
+    "sub-title-2": "La colaboración construye fuertes lazos.",
+    "why-partner": {
+      "1": {
+        "title": "Tablero de carga de confianza en el sector de logística de EE. UU.",
+        "description": "Nuestra plataforma conecta miles de transportistas, corredores, despachadores y cargadores todos los días."
+      },
+      "2": {
+        "title": "Acceso libre, crecimiento rápido",
+        "description": "Como un tablero de carga gratuito, atraemos altos volúmenes de usuarios, asegurando sus escalas de red de referencia rápidamente."
+      },
+      "3": {
+        "title": "Tecnología moderna y herramientas en tiempo real",
+        "description": "Asóciese con una plataforma que integra herramientas de vanguardia como TMS, calculadoras de tarifas y datos de carga en vivo."
+      },
+      "4": {
+        "title": "Soporte dedicado y comercialización conjunta",
+        "description": "Obtenga acceso a activos personalizados, campañas de marca y apoyo para promover de manera efectiva."
+      },
+      "title": "¿Por qué asociarse con las cargas de ACP?",
+      "cards": {
+        "1": {
+          "title": "Programa de afiliados",
+          "sub-title": "Gane compartiendo cargas de ACP",
+          "description": "Si es un influencer de logística, creador de contenido, consultor o vendedor digital, nuestro programa de afiliados le permite ganar dinero al referir nuevos usuarios a nuestra plataforma.",
+          "text-1": "Comisión de registros",
+          "text-2": "Enlaces de referencia personalizados",
+          "text-3": "Tablero de análisis",
+          "text-4": "Pagos a través de stripe o paypal",
+          "footer-text": "✅ Perfecto para enviar entrenadores, revisores de carga y profesionales de marketing de carga."
+        },
+        "2": {
+          "title": "Asociaciones estratégicas",
+          "sub-title": "Crear soluciones logísticas juntas",
+          "label": "Siempre estamos abiertos a colaboraciones estratégicas con:",
+          "text-1": "Escuelas de camiones o academias de capacitación",
+          "text-2": "Factorización de carga o compañías de seguros",
+          "text-3": "Operadores de paradas de camiones y proveedores de telemática",
+          "text-4": "Startups de tecnología en automatización de logística",
+          "text-5": "Corredores de carga digital",
+          "description": "Exploremos cómo podemos integrar, compartir la marca o desarrollar herramientas para avanzar a la industria, juntas."
+        },
+        "3": {
+          "title": "Para corredores con sistemas automatizados",
+          "description": "Si es un corredor de carga con su propio sistema de publicación de carga o TMS, puede integrarse directamente con las cargas ACP.  ",
+          "sub-description": "📌 Es rápido, seguro y lleva su flete a una red más amplia de operadores y despachadores calificados.",
+          "footer-text": "Colaboración para el crecimiento empresarial mutuo"
+        }
+      },
+      "get-started": {
+        "1": "✔️ Complete el formulario de solicitud rápida",
+        "2": "✔️ Nuestro equipo revisará su ajuste y se comunicará",
+        "3": "✔️ ¡Empiece a ganar y colaborar!",
+        "title": "¡Empiece ahora!",
+        "description": "Si desea trabajar con nosotros o simplemente quiere ponerse en contacto, ¡nos encantaría saber de usted!",
+        "question-text": "¿Quiere unirse a nuestra red de crecientes socios?"
+      }
+    }
+  },
+  "newsletter-subscription": {
+    "title": "Manténgase conectado con cargas ACP",
+    "join-our-newsletter": {
+      "title": "Únase a nuestro boletín: manténgase a la vanguardia en Trucking & Logistics",
+      "description": "Ya sea que sea un transportista, despachador, corredor o remitente, nuestro boletín le brinda actualizaciones llenas de valor que lo ayudan a trabajar de manera más inteligente y mantenerse competitiva.",
+      "card-1": "Tendencias del mercado de flete y noticias de la industria",
+      "card-2": "Estadísticas de placa en vivo y carriles calientes",
+      "card-3": "Consejos de transportista y corredor",
+      "card-4": "Ideas de expertos, guías y alertas de cumplimiento"
+    },
+    "why-subscribe": {
+      "1": {
+        "title": "Ideas mensuales de la industria",
+        "description": "Obtenga un análisis experto sobre tendencias en tarifas de carga, capacidad, regulaciones y más, entregada cada mes."
+      },
+      "2": {
+        "title": "Invitaciones a seminarios web y eventos",
+        "description": "Obtenga conocimiento de las sesiones en vivo alojadas por expertos en logística y conecte con la comunidad ACP Loads."
+      },
+      "3": {
+        "title": "Consejos de flete en tiempo real",
+        "description": "Manténgase afilado con consejos oportunos sobre la búsqueda de carga, el envío, el ahorro de combustible y la optimización de sus operaciones."
+      },
+      "4": {
+        "title": "Sin spam, solo contenido centrado en la carga",
+        "description": "Valoramos su tiempo. "
+      },
+      "5": {
+        "title": "Acceso temprano a herramientas y características",
+        "description": "Sea el primero en probar nuevas herramientas de plataforma, calculadoras y actualizaciones de rendimiento antes del lanzamiento público."
+      },
+      "6": {
+        "title": "Entrevistas de expertos e historias de éxito",
+        "description": "Aprenda directamente de corredores, operadores y despachadores reales que comparten sus ideas y victorias del mundo real."
+      },
+      "title": "¿Por qué suscribirse?"
+    },
+    "our-privacy-matters": {
+      "title": "Tu privacidad importa",
+      "description": "Respetamos su bandeja de entrada. "
+    }
+  },
+  "guides-and-videos": {
+    "title": "Aprenda a aprovechar al máximo las cargas de ACP",
+    "description": "Ya sea que sea nuevo en la logística de flete o un profesional experimentado en la industria, esta página es su fuente de referencia para tutoriales prácticos, tutoriales y guías paso a paso. ",
+    "choose-role-title": "Elija su papel para comenzar",
+    "choose-role-description": "ACP Loads está construido para todo el ciclo de vida de carga. ",
+    "carrier": {
+      "1": "Cómo registrarse como despachador (no se requiere MC)",
+      "2": "Buscando cargas publicadas por corredores",
+      "3": "Filtrado por ruta, tipo de equipo o región",
+      "4": "Contactar a corredores y cargas de reservas",
+      "5": "Administrar el tablero de su despachador",
+      "title": "Despachador de transportistas",
+      "role-overview": "Descripción general de roles:",
+      "sub-text": "Encuentre y resume cargas publicadas por corredores con facilidad. ",
+      "what-will-learn": "Lo que aprenderás:"
+    },
+    "carrier-dispatcher": {
+      "1": "Creando un perfil de portador",
+      "2": "Encontrar y reservar cargas de corredores",
+      "3": "Publicar camiones vacíos (visibilidad para corredores y cargadores)",
+      "4": "Administrar ofertas y partidos de carga",
+      "5": "Cómo funcionan las calificaciones y las revisiones para los operadores",
+      "title": "Transportador",
+      "role-overview": "Descripción general de roles:",
+      "sub-text": "Acceda a las cargas de Broker y publique sus camiones vacíos para recibir más oportunidades.",
+      "what-will-learn": "Lo que aprenderás:"
+    },
+    "broker": {
+      "1": "Cómo publicar una carga rápidamente",
+      "2": "Buscando camiones vacíos publicados por transportistas",
+      "3": "Conectarse con Patchers de portador",
+      "4": "Seguimiento y revisión de la actividad de envío",
+      "5": "Colaborando con los cargadores en la carga publicada",
+      "title": "Corredor",
+      "role-overview": "Descripción general de roles:",
+      "sub-text": "Publique cargas de flete para transportistas y despachadores, busque camiones y monitoree la actividad del remitente.",
+      "what-will-learn": "Lo que aprenderás:"
+    },
+    "shipper": {
+      "1": "Registrándose como remitente",
+      "2": "Cómo publicar un envío",
+      "3": "Ver el interés del corredor en sus cargas",
+      "4": "Trabajar con múltiples corredores por capacidad",
+      "5": "Rastrear el estado de su envío",
+      "title": "Expedidor",
+      "role-overview": "Descripción general de roles:",
+      "sub-text": "Publicar envíos a los que los corredores pueden acceder y moverse más rápido en los EE. UU.",
+      "what-will-learn": "Lo que aprenderás:"
+    },
+    "need-help": {
+      "title": "¿Necesitar ayuda?",
+      "description-1": "Si no está seguro de por dónde comenzar o tener preguntas técnicas, visite nuestra",
+      "description-2": "o comuníquese con nuestro equipo en la información"
+    }
+  },
+  "faqs": {
+    "title": "Preguntas frecuentes",
+    "description": "Bienvenido a la sección ACP Cargas FAQ. ",
+    "comrehensive-faqs": "Cargas ACP: preguntas frecuentes completas",
+    "carrier-dispatcher": {
+      "title": "Preguntas frecuentes de despachador de transportistas",
+      "q-1": "¿Necesito un número de MC para registrarse como despachador?",
+      "a-1": "No. Los despachadores pueden registrarse sin un número MC o USDOT.",
+      "q-2": "¿Qué puedo hacer como despachador?",
+      "a-2": "Puede buscar cargas postales de corredor utilizando filtros avanzados como origen, destino, fecha, longitud del remolque y tipo de carga.",
+      "q-3": "¿Puedo publicar cargas o camiones como despachador?",
+      "a-3": "No. Los despachadores solo pueden ver y reservar cargas disponibles.",
+      "q-4": "¿Puedo calificar a los corredores?",
+      "a-4": "Debe actualizar su cuenta al estado de \"operador\" para dejar revisiones o calificaciones."
+    },
+    "carrier": {
+      "title": "Preguntas frecuentes de transportista",
+      "q-1": "¿Qué se requiere para registrarse como transportista?",
+      "a-1": "Necesitará un número MC o USDOT, que se validará y se llenará automáticamente de FMCSA.",
+      "q-2": "¿Puedo publicar mis camiones disponibles?",
+      "a-2": "Sí. ",
+      "q-3": "¿Puedo reservar cargas directamente?",
+      "a-3": "Sí. ",
+      "q-4": "¿Puedo agregar otros usuarios a mi cuenta?",
+      "a-4": "Sí, si eres un usuario verificado, puedes verificar o invitar a otros bajo el mismo MC.",
+      "q-5": "¿Puedo revisar los corredores?",
+      "a-5": "Sí. "
+    },
+    "broker": {
+      "title": "Preguntas frecuentes de corredores",
+      "q-1": "¿Cómo me registro como corredor?",
+      "a-1": "Ingrese su número MC/USDOT y verifique los detalles de su empresa recuperados de FMCSA.",
+      "q-2": "¿Qué puedo hacer en la plataforma?",
+      "a-2": "Publicar cargas, buscar camiones disponibles y conectarse con transportistas y despachadores.",
+      "q-3": "¿Puedo encontrar cargas de los cargadores?",
+      "a-3": "Sí. ",
+      "q-4": "¿Puedo revisar los operadores?",
+      "a-4": "Sí. ",
+      "q-5": "¿Puedo trabajar con cargas ACP a través de API?",
+      "a-5": "Sí. "
+    },
+    "shipper": {
+      "title": "",
+      "q-1": "¿Cómo me registro como remitente?",
+      "a-1": "Regístrese con los detalles de su empresa. ",
+      "q-2": "¿Pueden los transportistas publicar directamente las cargas?",
+      "a-2": "Sí. ",
+      "q-3": "¿Cómo rastrean las cargas publicadas de los cargadores?",
+      "a-3": "Los cargadores pueden ver todas las interacciones, respuestas y camiones combinados a través de su tablero.",
+      "q-4": "¿Pueden los cargadores revisar corredores o operadores?",
+      "a-4": "Los cargadores pueden ver las calificaciones y las revisiones, pero no califican directamente a los corredores o portadores."
+    },
+    "general-platform": {
+      "title": "Preguntas frecuentes de plataforma general",
+      "q-1": "¿Las cargas ACP son gratuitas?",
+      "a-1": "Actualmente, ACP Loads es completamente gratuito con acceso completo a todas las características.",
+      "q-2": "¿Cómo actualizo mi empresa o información personal?",
+      "a-2": "Use el directorio ACP o la sección de ayuda para solicitar actualizaciones de información.",
+      "q-3": "¿Qué debo hacer si sospecho que el acceso no autorizado?",
+      "a-3": "Comuníquese inmediatamente con el soporte de ayuda a través de la sección de ayuda para asegurar su cuenta.",
+      "q-4": "¿Puedo personalizar mi experiencia de carga ACP?",
+      "a-4": "Sí, ACP Loads ofrece preferencias de lenguaje, temas (estilo ACP y clásico) y modos oscuros o de luz.",
+      "q-5": "¿Cómo obtengo apoyo para problemas técnicos?",
+      "a-5": "¿Cómo obtengo apoyo para problemas técnicos?",
+      "q-6": "¿Las cargas ACP están disponibles en dispositivos móviles?",
+      "a-6": "Sí, las cargas de ACP son totalmente receptivas y accesibles en todos los dispositivos.",
+      "q-7": "¿Cómo puedo asociarme con las cargas de ACP o convertirme en un afiliado?",
+      "a-7": "Visite nuestra página de 'Asociación y Afiliado' para aprender sobre oportunidades de colaboración.",
+      "q-8": "¿Cómo proporciono comentarios o informes de informes?",
+      "a-8": "Los comentarios y los errores se pueden informar a través de la sección de ayuda de la plataforma o directamente por correo electrónico a nuestro centro de soporte."
+    },
+    "get-in-touch": "Ponerse en contacto"
+  },
+  "about-us": {
+    "about-us": "Sobre nosotros",
+    "title": "Bienvenido a ACP Loads - Empoderando las conexiones de flete de Estados Unidos",
+    "description": "ACP Loads es una innovadora plataforma de carga de transporte en los Estados Unidos dedicada a brindar eficiencia, transparencia y confiabilidad a la industria de la logística. ",
+    "our-mission-title": "Nuestra misión",
+    "our-mission-description": "Nuestra misión es simple: conectar cargadores, corredores, transportistas y despachadores a través de una plataforma digital rápida, fácil de usar y segura. ",
+    "who-we-serve": {
+      "title": "A quien servimos",
+      "description": "Orgullosamente apoyamos a todos los actores clave en la industria de la carga y la logística:",
+      "carrier-dispacther": "Despachadores de transportistas",
+      "carrier-dispacther-description": "Encuentre las mejores cargas rápidamente, no se requiere un número MC.",
+      "carriers": "Operador",
+      "carriers-description": "Descubra cargas de alta calidad, publique sus camiones vacíos y expanda su red.",
+      "brokers": "Corredores",
+      "brokers-description": "Publicar envíos, combinar cargas con transportistas y administrar sus relaciones.",
+      "shipper": "Cargadores",
+      "shipper-description": "Publique cargas con facilidad y obtenga acceso a una red nacional de corredores y operadores de confianza."
+    },
+    "technology-driven-logistics": "Logística basada en tecnología",
+    "technology-driven-logistics-description": "ACP Loads integra las últimas herramientas digitales para optimizar la coincidencia de carga, automatizar procesos y garantizar información actualizada para todos los usuarios. ",
+    "why-choose": {
+      "title": "¿Por qué elegir las cargas de ACP?",
+      "card-1": {
+        "title": "Rápido y fácil",
+        "description": "Obtenga acceso instantáneo a datos y oportunidades de carga en tiempo real."
+      },
+      "card-2": {
+        "title": "Herramientas inteligentes",
+        "description": "Use filtros de búsqueda avanzados, calculadoras y análisis para tomar decisiones informadas."
+      },
+      "card-3": {
+        "title": "Transparencia total",
+        "description": "Revise las calificaciones de la compañía, lea testimonios y se comunique directamente con los socios."
+      },
+      "card-4": {
+        "title": "Acceso gratuito",
+        "description": "Disfrute de todas nuestras características principales sin costo durante nuestro período promocional."
+      }
+    },
+    "meet-our-team": {
+      "title": "Conocer a nuestro equipo",
+      "description": "Nuestro equipo de liderazgo y desarrollo incluye veteranos de logística, innovadores tecnológicos y defensores apasionados de los clientes, todos trabajando juntos para hacer de ACP las cargas del socio de confianza para sus necesidades de transporte.",
+      "daily-loads": "Cargas diarias",
+      "users": "Usuarios",
+      "brokers": "Corredores",
+      "our-team": "Nuestro equipo"
+    },
+    "our-commitment": {
+      "1": "Éxito del cliente: su experiencia es nuestra máxima prioridad. ",
+      "2": "Seguridad de datos: salvaguardamos sus datos y privacidad con las protecciones líderes en la industria.",
+      "3": "Mejora continua: escuchamos los comentarios de los usuarios y evolucionamos rápidamente nuestra plataforma para satisfacer sus necesidades cambiantes.",
+      "title": "Nuestro compromiso"
+    },
     "contact-us": {
       "title": "Contáctenos",
-      "contact-info": "Información de contacto",
-      "phone": "Número de Teléfono",
-      "email": "Email",
-      "location": "Ubicación",
-      "question-suggestion": "Pregunta o Sugerencia",
-      "name": "Nombre",
-      "email-label": "Correo Electrónico",
-      "question": "Tu Pregunta o Sugerencia",
-      "send": "Enviar",
-      "description": "No dude en contactarnos en ACP Loads para abrir un mundo de servicios logísticos eficientes y confiables. Entendemos la importancia de una comunicación fluida en la industria de la logística."
-    },
-    "sign-up": "Registrarse",
-    "log-in": "Acceso",
-    "title": "Logística de precisión: conectando su mundo",
-    "howItWorks": "Cómo Funciona",
-    "description": "Nuestra plataforma conecta a expedidores de carga, agentes de carga, propietarios-operadores y transportistas. Encuentra cargas, gestiona envíos y haz crecer tu negocio de manera eficiente.",
-    "joinNow": "Únete Ahora",
-    "footer-desc": "© Grupo Cargas ACP. Desde 2022",
-    "cards": [
-      {
-        "title": "Publicación Rápida para Agentes de Carga y Expedidores",
-        "description": "Publica cargas de manera rápida y eficiente, ahorrando tiempo y aumentando tus ganancias. ¡Más cargas movidas cada día!",
-        "stats": "50% más rápido en la publicación"
-      },
-      {
-        "title": "Cargas Calientes para Transportistas",
-        "description": "Encuentra las mejores cargas calientes disponibles con nuestro sistema de filtrado avanzado y una interfaz fácil de usar.",
-        "stats": "1000+ cargas diarias"
-      }
-    ],
-    "about-us": "Sobre Nosotros",
-    "advantages": [
-      {
-        "title": "Rápido",
-        "description": "Experimenta un rendimiento ultrarrápido con nuestra plataforma.",
-        "icon": "quick"
-      },
-      {
-        "title": "Fácil",
-        "description": "Nuestro diseño intuitivo garantiza una experiencia fluida.",
-        "icon": "easy"
-      },
-      {
-        "title": "Seguro",
-        "description": "Priorizamos la seguridad para proteger sus datos.",
-        "icon": "secure"
-      },
-      {
-        "title": "Cómodo",
-        "description": "Disfruta de una experiencia de usuario fluida y conveniente.",
-        "icon": "comfortable"
-      },
-      {
-        "title": "Comprensible",
-        "description": "Nuestra plataforma está diseñada para ser clara y fácil de usar.",
-        "icon": "understandable"
-      }
-    ],
-    "showcase": {
-    "title": "Cómo Funciona – Conexión Perfecta de Cargas para Todos!",
-    "description": "ACP Loads está diseñado para conectar a transportistas, corredores, propietarios-operadores y transportistas de manera rápida, eficiente y económica. Nuestra plataforma facilita la publicación, búsqueda y transporte de cargas sin tarifas. ¡Comencemos, es 100% GRATIS!",
-    "signIn": "Iniciar sesión"
-  },
-  "whoBenefits": {
-    "title": "¿Quién se beneficia al registrarse?",
-    "joinFree": "¡Únete gratis!",
-    "carriers": {
-      "title": "Transportistas y Despachadores",
-      "description": "Obtén acceso instantáneo a miles de oportunidades de carga. Ya sea que administres una flota o trabajes de manera independiente, nuestra plataforma te ayuda a emparejar camiones disponibles con cargas adecuadas, ahorrando tiempo y aumentando la rentabilidad."
-    },
-    "brokers": {
-      "title": "Corredores de carga y Remitentes",
-      "description": "Publica tus cargas fácilmente y llega a una amplia red de transportistas confiables. Nuestro proceso de registro simplificado garantiza que puedas listar tus envíos rápidamente, reduciendo el tiempo en administración y enfocándote en mover carga."
-    },
-    "owners": {
-      "title": "Propietarios-Operadores",
-      "description": "Disfruta del acceso directo a cargas de alta calidad adaptadas a las especificaciones de tu camión. Con nuestro registro fácil, puedes conectar con remitentes y corredores que buscan operadores confiables, maximizando tus ganancias y reduciendo el tiempo de inactividad."
-    },
-    "getAccess": "Obtener acceso"
-  },
-  "nav": {
-    "company": {
-      "title": "Nuestra Empresa",
-      "aboutUs": "Sobre Nosotros",
-      "leadership": "Liderazgo",
-      "testimonials": "Testimonios",
-      "supportCenter": "Centro de Soporte",
-      "contactUs": "Contáctanos"
-    },
-    "platform": {
-      "title": "Plataforma",
-      "howItWorks": "Cómo Funciona",
-      "features": "Características",
-      "liveLoadboard": "Calculadora de camionero",
-      "freightRateCalculator": "Calculadora de Tarifas de Carga",
-      "termsOfService": "Términos de Servicio"
-    },
-    "products": {
-      "title": "Productos",
-      "loadboard": "Tablero de Cargas",
-      "acpTms": "ACP TMS"
-    },
-    "solutions": {
-      "title": "Soluciones",
-      "carrierDispatcher": "Despachador de Transportistas",
-      "broker": "Corredor",
-      "carrier": "Transportista",
-      "shipper": "Remitente"
-    },
-    "resources": {
-      "title": "Recursos",
-      "blog": "Blog",
-      "partnership": "Asociación y Afiliados",
-      "newsletter": "Suscripción al Boletín",
-      "guides": "Guías",
-      "videos": "Videos",
-      "faqs": "Preguntas Frecuentes"
+      "description": "¿Alguna pregunta o observación? ",
+      "office-address": "Dirección de oficina",
+      "phone-number": "Número de teléfono",
+      "email-address": "Dirección de correo electrónico",
+      "get-in-touch": "Ponerse en contacto",
+      "get-in-touch-description": "¿Tienes una consulta o algún feedbak para nosotros? "
     }
   },
-    "howToSignUp": {
-      "title": "Cómo Registrarse",
-      "step1Title": "Visita Nuestra Página de Registro:",
-      "step1Description": "Navega a nuestro sencillo formulario de registro donde proporcionarás detalles básicos de contacto...",
-      "step2Title": "Completa el Formulario:",
-      "step2Description": "Rellena la información necesaria—no te preocupes, solo tomará unos minutos...",
-      "step3Title": "Verifícate:",
-      "step3Description": "Una vez que completes el registro, nuestro sistema verificará tus datos...",
-      "step4Title": "Empieza a Conectar:",
-      "step4Description": "Comienza a explorar oportunidades de carga, publicar envíos..."
-    },"whyOurProcessWorks": {
-    "title": "Por qué nuestro proceso funciona",
-    "features": [
-      {
-        "title": "Eficiencia",
-        "description": "Registro optimizado, coincidencia inteligente de cargas y notificaciones instantáneas significan menos tiempo de inactividad y más movimiento de carga."
+  "leadership": {
+    "leadership": "Liderazgo",
+    "title": "Conoce al equipo detrás de las cargas de ACP",
+    "description": "En ACP Loads, el liderazgo significa más que administrar una plataforma, significa inspirar la innovación, defender la confianza y impulsar la industria de carga. ",
+    "our-core": {
+      "1": {
+        "title": "Integridad",
+        "description": "Lideramos con el ejemplo, defendemos los más altos estándares éticos y ponemos a nuestros clientes primero en cada decisión."
       },
-      {
-        "title": "Confianza y Transparencia",
-        "description": "Nuestro sistema de reseñas crea una comunidad confiable donde cada transacción está respaldada por comentarios reales."
+      "2": {
+        "title": "Innovación",
+        "description": "Nuestros líderes son implacables sobre explorar nuevas soluciones, aprovechar datos y mantenerse por delante de las tendencias para mantener nuestra plataforma y usuarios competitivos."
       },
-      {
-        "title": "Crecimiento",
-        "description": "Al conectar transportistas, corredores y cargadores, puedes reducir millas vacías y optimizar tus operaciones."
-      }
-    ]
-  },"post_search": {
-    "heading": "Encuentra y Publica Cargas de Transporte",
-    "brokers_shippers": {
-      "title": "Para Corredores de Carga y Embarcadores",
-      "load_posting": {
-        "title": "Publicación Fácil de Cargas",
-        "description": "Publica tus cargas rápidamente y conéctate con transportistas verificados."
+      "3": {
+        "title": "Colaboración",
+        "description": "Trabajamos en estrecha colaboración como un equipo, y con nuestros usuarios, socios y partes interesadas de la industria, para crear un valor real y duradero para todo el ecosistema logístico."
       },
-      "targeted_reach": {
-        "title": "Alcance Específico",
-        "description": "Asegura que tu carga llegue a la audiencia correcta con precisión."
+      "4": {
+        "title": "Responsabilidad",
+        "description": "Somos dueños de nuestros resultados, damos la bienvenida a los comentarios y nos responsabilizamos de la mejora continua y la satisfacción del cliente."
+      },
+      "title": "Nuestros valores principales de liderazgo"
+    },
+    "our-leadership": {
+      "title": "Nuestra filosofía de liderazgo",
+      "card-1": {
+        "title": "Enfoque de las personas primero",
+        "description": "Nuestros líderes saben que la tecnología es tan fuerte como las personas que la usan. "
+      },
+      "card-2": {
+        "title": "Aprendizaje continuo",
+        "description": "La industria del flete está cambiando más rápido que nunca. "
+      },
+      "card-3": {
+        "title": "Comunicación transparente",
+        "description": "La confianza se obtiene a través de la honestidad y la apertura. "
+      },
+      "card-4": {
+        "title": "Innovación ética y responsable",
+        "description": "Nos mantenemos a altos estándares éticos. "
       }
     },
-    "carriers_dispatchers": {
-      "title": "Para Transportistas y Despachadores",
-      "load_searching": {
-        "title": "Búsqueda Avanzada de Cargas",
-        "description": "Encuentra cargas de manera eficiente con nuestro sistema de filtrado inteligente."
+    "leadership-profiles": {
+      "1": {
+        "title": "Nick Charles",
+        "profession": "Fundador y CEO",
+        "description": "La visión de Nick es capacitar a la comunidad de transporte de EE. UU. A través de la tecnología práctica y el servicio transparente."
       },
-      "empty_truck": {
-        "title": "Reduce los Kilómetros Vacíos",
-        "description": "Optimiza tus rutas para minimizar los viajes sin carga."
-      }
+      "2": {
+        "title": "James Smith",
+        "profession": "Oficial de Operaciones",
+        "description": "James garantiza la excelencia operativa y mantiene al equipo enfocado en lo que más importa: la experiencia del usuario."
+      },
+      "3": {
+        "title": "Emily Davis",
+        "profession": "Jefe de éxito del cliente",
+        "description": "Emily es la voz de nuestros usuarios, asegurándose de que cada característica, actualización y respuesta de soporte esté impulsada por las necesidades del cliente."
+      },
+      "4": {
+        "title": "Jack Adams",
+        "profession": "Director de tecnología",
+        "description": "Jack lidera el desarrollo de herramientas digitales innovadoras, seguras y confiables para la comunidad de carga ACP."
+      },
+      "title": "Perfiles de liderazgo"
+    },
+    "msg-from-leadership": {
+      "title": "Mensaje de nuestro liderazgo",
+      "description": "\"ACP Loads es más que una plataforma: es una asociación con los hombres y mujeres trabajadores que mantienen a Estados Unidos en movimiento. Nuestra misión es hacer que su día sea más simple, su negocio más rentable y su experiencia más gratificante. Le invitamos a unirse a nosotros, compartir sus ideas y ayudarnos a construir el futuro de la logística juntos\".",
+      "signature": "Nick Charles"
+    },
+    "connect-with-us": {
+      "title": "Conéctate con nosotros",
+      "description-1": "Nuestro liderazgo siempre está abierto a comentarios, asociaciones y nuevas ideas.",
+      "description-2": "Comuníquese con nuestro centro de apoyo o LinkedIn para obtener información de liderazgo, noticias de la industria y oportunidades de colaboración.",
+      "call-today": "Llame hoy",
+      "address": "DIRECCIÓN",
+      "email-us": "Envíenos un correo electrónico",
+      "opening-hours": "Horario de apertura"
     }
-  },"review_rate_grow": {
-    "heading": "Revisión, Calificación y Crecimiento",
-    "transparent_reviews": {
-      "title": "Reseñas Transparentes",
-      "description": "Después de cada envío, ambas partes pueden dejar comentarios detallados sobre la comunicación, la calidad del servicio y la confiabilidad."
+  },
+  "testimonials-and-reviews": {
+    "title": "Testimonios y revisiones",
+    "sub-title": "Lo que dice nuestra comunidad",
+    "description": "En ACP Loads, nuestra misión es ofrecer eficiencia, transparencia y valor real para cada miembro de la comunidad de logística y camiones de EE. UU. ",
+    "why-trust": {
+      "1": {
+        "title": "Usuarios verificados:",
+        "description": "Todas las revisiones son enviadas por usuarios registrados y verificados, compañías reales y profesionales que utilizan nuestra plataforma."
+      },
+      "2": {
+        "title": "Calificaciones basadas en roles:",
+        "description": "Vea los comentarios que sean específicos de su papel, ya sea que sea un transportista, corredor, despachador o remitente."
+      },
+      "3": {
+        "title": "Transparencia e integridad:",
+        "description": "Alentamos comentarios honestos y constructivos y monitoreamos regularmente las revisiones de equidad y relevancia."
+      },
+      "4": {
+        "title": "Calificaciones de criterios múltiples:",
+        "description": "Nuestro sistema de calificación cubre la comunicación, el servicio, la velocidad de pago, la información de carga y la confiabilidad, por lo que obtendrá la imagen completa antes de trabajar juntos."
+      },
+      "title": "¿Por qué confiar en nuestras reseñas?"
     },
-    "build_reputation": {
-      "title": "Construye Tu Reputación",
-      "description": "Las calificaciones altas ayudan a generar credibilidad, atraer más negocios y fomentar asociaciones sólidas."
+    "real-stories": {
+      "title": "Historias reales, impacto real",
+      "sub-title": "Testimonales de operador, corredor, remitente, propietario-operador y despachador",
+      "card-1": {
+        "text": "\"ACP Loads hace que sea tan fácil encontrar cargas calientes y recibir un pago rápidamente. Su sistema de calificación nos ayuda a elegir con quién queremos trabajar\".",
+        "sub-text": "Testimonios de portadores",
+        "signature": "Michael R., propietario-operador"
+      },
+      "card-2": {
+        "text": "\"La interfaz de usuario es de primera categoría y el equipo de soporte realmente escucha comentarios\".",
+        "sub-text": "Testimonios de portadores",
+        "signature": "Brittany C., portador de la flota, Illinois"
+      },
+      "card-3": {
+        "text": "\"Publicar cargas es rápida y perfecta, y la red de despachadores trae transportistas de calidad directamente a nuestros envíos\".",
+        "sub-text": "Testimonios de corredores",
+        "signature": "Jason S., corredor de carga, California"
+      },
+      "card-4": {
+        "text": "\"ACP Loads ha ayudado a nuestra corredora a expandir nuestro alcance y mantener grandes relaciones con los cargadores y los transportistas\".",
+        "sub-text": "Testimonios de corredores",
+        "signature": "Anna L., Coordinadora de Logística, Georgia"
+      },
+      "card-5": {
+        "text": "\"Redujimos millas vacías y mejoramos las entregas a tiempo mejoradas mediante el uso de cargas ACP para todas nuestras necesidades de publicación de carga\".",
+        "sub-text": "Testimonios de cargador",
+        "signature": "Scott T., remitente, Ohio"
+      },
+      "card-6": {
+        "text": "\"Como despachador, ACP Loads me da todas las herramientas que necesito para mover la carga rápidamente, no se requiere MC. ¡Muy recomendable!\"",
+        "sub-text": "Testimonios de despachador de transportistas",
+        "signature": "Dave P., despachador de operadores, Nueva York"
+      }
     },
-    "grow_network": {
-      "title": "Expande Tu Red",
-      "description": "Un servicio excelente y constante aumenta tu visibilidad, generando más oportunidades y confianza en la industria."
+    "how-our-review": {
+      "title": "",
+      "card-1": {
+        "title": "Envíe su experiencia",
+        "description": "Después de cada transacción, los usuarios están invitados a dejar una revisión para su contraparte, lo que obtiene que todos eligen socios confiables."
+      },
+      "card-2": {
+        "title": "Calificaciones basadas en criterios",
+        "description": "Califique su experiencia en servicio, comunicación, honestidad, velocidad de pago y precisión de la información de carga/camión."
+      },
+      "card-3": {
+        "title": "Comentarios públicos y privados",
+        "description": "Comparta comentarios con la comunidad o envíe comentarios privados a nuestro equipo de soporte para una revisión adicional."
+      },
+      "card-4": {
+        "title": "Resolución de disputas",
+        "description": "Si encuentra problemas con una revisión o un socio, nuestro centro de soporte está listo para ayudar a resolver disputas de manera justa y eficiente."
+      }
+    },
+    "share-your-story": {
+      "title": "Comparte tu historia",
+      "description-1": "¿Ha tenido una experiencia excelente (o no tan genial) con las cargas de ACP?",
+      "description-2": "Sus comentarios ayudan a dar forma a un mercado de camiones más seguro y efectivo.",
+      "sub-text": "Cargas ACP: alimentando la logística de confianza en todo Estados Unidos"
+    }
+  },
+  "support-center": {
+    "support-center": "Centro de apoyo",
+    "title": "Bienvenido al Centro de soporte de ACP Cargas",
+    "description": "En ACP Cargas, su satisfacción y éxito son nuestras más altas prioridades. ",
+    "how-can-we-help": {
+      "1": {
+        "title": "Soporte por correo electrónico:",
+        "description": "Comuníquese con nosotros en support@acploads.com para consultas detalladas o solicitudes de documentación."
+      },
+      "2": {
+        "title": "Soporte telefónico:",
+        "description": "Llámenos al 111-111-1111 por asuntos urgentes o la resolución de problemas."
+      },
+      "3": {
+        "title": "Preguntas frecuentes",
+        "description": "Encuentre respuestas rápidas a preguntas comunes sobre cuentas, características de la plataforma, publicación, búsqueda y más."
+      },
+      "4": {
+        "title": "Guías y videos",
+        "description": "Instrucciones paso a paso y tutoriales en video para todos los roles de usuario."
+      },
+      "5": {
+        "title": "Manuales de usuario",
+        "description": "Descargue guías de usuario integrales para transportistas, corredores, despachadores y cargadores."
+      },
+      "title": "¿Cómo podemos ayudarte hoy?",
+      "sub-title": "Nuestro equipo de apoyo:"
+    },
+    "support-topics": {
+      "1": "Registro y verificación de la cuenta",
+      "2": "Recuperación y seguridad de contraseña",
+      "3": "Publicar y administrar cargas",
+      "4": "Buscando cargas o camiones",
+      "5": "Calificaciones, revisiones y disputas",
+      "6": "Preguntas de facturación y suscripción",
+      "7": "Problemas técnicos e informes de errores",
+      "8": "Actualizaciones de información de perfil y empresa",
+      "9": "Soporte de integración de API y socios",
+      "title": "Temas de soporte popular"
+    },
+    "submit-request": {
+      "title": "Enviar una solicitud",
+      "description": "Si no puede encontrar la respuesta que necesita en nuestras preguntas frecuentes o guías, complete nuestro formulario de solicitud de soporte con detalles sobre su problema. "
+    },
+    "additional-support": {
+      "1": {
+        "title": "Actualizaciones de estado:",
+        "description": "¿Necesita verificar su MC o actualizar su papel? "
+      },
+      "2": {
+        "title": "Informar actividad sospechosa:",
+        "description": "Notifíquenos sobre cualquier actividad fraudulenta o sospechosa: su seguridad es nuestra prioridad."
+      },
+      "3": {
+        "title": "Sugerencias de características:",
+        "description": "¡Agradecemos sus comentarios para mejorar aún más las cargas de ACP! "
+      },
+      "title": "Servicios de soporte adicionales"
+    },
+    "stay-connected": {
+      "title": "Mantente conectado",
+      "card-1": {
+        "title": "Suscripción del boletín:",
+        "description": "Regístrese para recibir actualizaciones, consejos de plataforma y noticias de la industria directamente a su bandeja de entrada."
+      },
+      "card-2": {
+        "title": "Foros de la comunidad:",
+        "description": "Únase a nuestra comunidad en línea para conectarse con otros usuarios, compartir consejos y aprovechar al máximo las cargas de ACP."
+      },
+      "sub-text-1": "Centro de soporte de carga ACP: su socio de confianza en la logística de camiones de EE. UU.",
+      "sub-text-2": "Estamos aquí para ayudar. "
+    }
+  },
+  "contact-us": {
+    "title": "Contáctenos",
+    "sub-title": "Póngase en contacto con cargas ACP",
+    "description": "¡Estamos aquí para ayudar! ",
+    "how-to-reach-us": {
+      "card-1": {
+        "title": "Consultas generales:",
+        "description": "Si tiene preguntas generales sobre las cargas de ACP, las características de nuestra plataforma o necesitan ayuda para comenzar, comuníquese con el formulario de contacto a continuación o use cualquiera de las opciones proporcionadas."
+      },
+      "card-2": {
+        "title": "Atención al cliente:",
+        "description": "Para obtener ayuda inmediata con su cuenta, publicación de carga, búsqueda o problemas técnicos, visite nuestro centro de soporte o envíenos un correo electrónico directamente.",
+        "support-center": "Centro de apoyo"
+      },
+      "card-3": {
+        "title": "!!!>>> Unexpected token '<', \"<html lang\"... is not valid JSON <<<!!!",
+        "description": "¿Está interesado en asociarse o integrar su sistema con cargas ACP? ",
+        "email": "Correo electrónico:",
+        "partnership-and-affiliate": "Asociación y Afiliado"
+      }
+    },
+    "contact-us-now": {
+      "title": "Contáctenos ahora",
+      "contact-sales": "Ventas de contacto",
+      "phone": "Teléfono:",
+      "email": "Correo electrónico:",
+      "support": "Apoyo:",
+      "service-hours": "Horario de servicio:",
+      "monday-saturday": "Lunes a sábado",
+      "sunday-closed": "Domingo: Cerrado",
+      "office-address": "Dirección de la oficina:",
+      "form-title": "¿Necesitar ayuda? "
+    },
+    "connect-with-us": {
+      "title": "Conéctese con nosotros en línea",
+      "description": "Sus comentarios son valiosos. "
     }
   }
-  
-  
-  }
+}

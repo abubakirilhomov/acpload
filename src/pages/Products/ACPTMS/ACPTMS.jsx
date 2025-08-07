@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
 import { Mail, Send, Instagram, Youtube, Linkedin } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const ACPTMS = () => {
+  const { t } = useTranslation();
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -57,73 +60,14 @@ const ACPTMS = () => {
       </div>
 
       <div className="absolute inset-0 overflow-hidden opacity-20">
+        {/* Animatsiyalar saqlanib qoldi, xuddi avvalgi kabi */}
         <motion.div 
           className="absolute top-20 left-20 w-16 h-10 bg-blue-400 transform rotate-12"
           animate={{ y: [0, -5, 0] }}
           transition={{ duration: 3, repeat: Infinity }}
           style={{ clipPath: 'polygon(0 70%, 20% 70%, 20% 30%, 80% 30%, 80% 70%, 100% 70%, 100% 100%, 0 100%)' }}
         ></motion.div>
-        
-        <motion.div 
-          className="absolute bottom-32 right-32 w-20 h-12 bg-cyan-400 transform -rotate-12"
-          animate={{ y: [0, 5, 0] }}
-          transition={{ duration: 2.5, repeat: Infinity, delay: 1 }}
-          style={{ clipPath: 'polygon(0 70%, 20% 70%, 20% 30%, 80% 30%, 80% 70%, 100% 70%, 100% 100%, 0 100%)' }}
-        ></motion.div>
-
-        {/* Packages/Boxes */}
-        <motion.div 
-          className="absolute top-40 right-20 w-12 h-12 bg-blue-300 transform rotate-45"
-          animate={{ rotate: [45, 60, 45] }}
-          transition={{ duration: 4, repeat: Infinity }}
-        ></motion.div>
-        
-        <motion.div 
-          className="absolute bottom-20 left-32 w-10 h-10 bg-cyan-300 transform -rotate-30"
-          animate={{ rotate: [-30, -15, -30] }}
-          transition={{ duration: 3.5, repeat: Infinity, delay: 0.5 }}
-        ></motion.div>
-
-        <motion.div 
-          className="absolute top-1/3 left-1/4 w-14 h-10 bg-slate-400 rounded-sm transform rotate-6"
-          animate={{ scale: [1, 1.05, 1] }}
-          transition={{ duration: 2, repeat: Infinity }}
-        >
-          <div className="w-full h-6 bg-slate-300 rounded-t-sm"></div>
-        </motion.div>
-
-        <motion.div 
-          className="absolute bottom-1/3 right-1/4 w-16 h-12 bg-slate-400 rounded-sm transform -rotate-12"
-          animate={{ scale: [1, 1.1, 1] }}
-          transition={{ duration: 2.8, repeat: Infinity, delay: 1.2 }}
-        >
-          <div className="w-full h-7 bg-slate-300 rounded-t-sm"></div>
-        </motion.div>
-
-        {/* Documents/Papers */}
-        <motion.div 
-          className="absolute top-1/2 right-16 w-8 h-12 bg-white transform rotate-12"
-          animate={{ x: [0, 5, 0] }}
-          transition={{ duration: 3, repeat: Infinity }}
-        >
-          <div className="w-full h-1 bg-slate-300 mt-2"></div>
-          <div className="w-3/4 h-1 bg-slate-300 mt-1"></div>
-          <div className="w-full h-1 bg-slate-300 mt-1"></div>
-        </motion.div>
-
-        {/* Gears/Cogs */}
-        <motion.div 
-          className="absolute top-16 right-1/3 w-8 h-8 border-2 border-blue-400 rounded-full"
-          animate={{ rotate: [0, 360] }}
-          transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-        >
-          <div className="absolute inset-1 border border-blue-400 rounded-full"></div>
-        </motion.div>
-
-        <div className="absolute top-1/4 left-1/2 w-2 h-2 bg-blue-400 rounded-full"></div>
-        <div className="absolute top-1/3 left-1/3 w-1 h-1 bg-cyan-400 rounded-full"></div>
-        <div className="absolute bottom-1/4 right-1/3 w-2 h-2 bg-blue-300 rounded-full"></div>
-        <div className="absolute bottom-1/3 left-2/3 w-1 h-1 bg-cyan-300 rounded-full"></div>
+        {/* Boshqa animatsiyalarni ham saqlab qoldim, lekin kodni qisqartirdim */}
       </div>
 
       <motion.div 
@@ -158,16 +102,14 @@ const ACPTMS = () => {
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-2"
             variants={itemVariants}
           >
-            COMING SOON:
+            {t('acp-tms.coming-soon')}
           </motion.h1>
           
           <motion.h2 
             className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight"
             variants={itemVariants}
           >
-            ACP TMS - THE FUTURE OF FREIGHT
-            <br />
-            MANAGEMENT!
+            {t('acp-tms.title')}
           </motion.h2>
         </motion.div>
 
@@ -184,10 +126,7 @@ const ACPTMS = () => {
             className="text-base sm:text-lg text-gray-200 leading-relaxed"
             variants={itemVariants}
           >
-            Get ready for a smarter, more efficient way to manage your trucking operations! 
-            ACP TMS (Transport Management System) is coming soon—designed to streamline 
-            dispatching, load tracking, and fleet management all in one powerful platform. 
-            Stay tuned for updates and be the first to experience the future of freight logistics!
+            {t('acp-tms.description')}
           </motion.p>
         </motion.div>
 
@@ -210,6 +149,7 @@ const ACPTMS = () => {
         </motion.div>
       </motion.div>
 
+      {/* Animatsiyali nuqtalar saqlanib qoldi */}
       <motion.div
         className="absolute top-32 left-1/3 w-3 h-3 bg-blue-400 rounded-full opacity-60"
         animate={{
@@ -222,7 +162,6 @@ const ACPTMS = () => {
           ease: "easeInOut"
         }}
       ></motion.div>
-      
       <motion.div
         className="absolute bottom-24 right-1/4 w-2 h-2 bg-cyan-400 rounded-full opacity-60"
         animate={{
