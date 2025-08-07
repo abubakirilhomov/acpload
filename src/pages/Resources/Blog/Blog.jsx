@@ -49,7 +49,7 @@ const Blog = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-10"
         >
-          <CustomText type="subtitle">{t('freight-and-logistics-blog.why-follow')}</CustomText>
+          <CustomText type="subtitle">{t('freight-and-logistics-blog.why-follow.title')}</CustomText>
         </motion.div>
 
         <div className="w-full mx-auto flex flex-wrap justify-center gap-6">
