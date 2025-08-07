@@ -14,14 +14,12 @@ const Blog = () => {
   const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true, threshold: 0.3 });
 
   const cardData = [
-    { title: 'Stay Informed', text: 'Get timely updates on industry trends, regulations, and freight markets.' },
-    { title: 'Data-Driven Insights', text: 'Access expert analysis and forecasts to make smarter decisions.' },
-    { title: 'Actionable Tips', text: 'Learn proven strategies for dispatching, pricing, and cost reduction.' },
-    { title: 'Technology & Innovation', text: 'Explore how digital loadboards, TMS systems, and automation are transforming logistics.' },
-    { title: 'Real Success Stories', text: 'Get inspired by companies, brokers, and carriers achieving remarkable results.' },
+    { key: 'card-1', icon: FaChartLine },
+    { key: 'card-2', icon: FaSearchDollar },
+    { key: 'card-3', icon: FaBolt },
+    { key: 'card-4', icon: FaCogs },
+    { key: 'card-5', icon: FaGlobeAmericas },
   ];
-
-  const iconComponents = [FaChartLine, FaSearchDollar, FaBolt, FaCogs, FaGlobeAmericas];
 
   return (
     <>
@@ -34,10 +32,10 @@ const Blog = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="relative z-10 max-w-2xl text-white"
           >
-            <CustomText type="title">Freight & Logistics Blog:</CustomText>
-            <CustomText type="title">Your Trusted Source for Industry Insights</CustomText>
+            <CustomText type="title">{t('freight-and-logistics-blog.title')}</CustomText>
+            <CustomText type="title">{t('freight-and-logistics-blog.sub-title')}</CustomText>
             <CustomText type="text" className="mt-5">
-              Stay Ahead in the Fast-Paced World of Freight & Logistics!
+              {t('freight-and-logistics-blog.description')}
             </CustomText>
           </motion.div>
         </SectionContainer>
@@ -51,12 +49,12 @@ const Blog = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-10"
         >
-          <CustomText type="subtitle">Why Follow Our Blog?</CustomText>
+          <CustomText type="subtitle">{t('freight-and-logistics-blog.why-follow')}</CustomText>
         </motion.div>
 
         <div className="w-full mx-auto flex flex-wrap justify-center gap-6">
           {cardData.map((card, index) => {
-            const Icon = iconComponents[index % iconComponents.length];
+            const Icon = card.icon;
             return (
               <motion.div
                 key={index}
@@ -70,10 +68,10 @@ const Blog = () => {
                   <Icon />
                 </div>
                 <CustomText type="heading" className="mt-6">
-                  {card.title}
+                  {t(`freight-and-logistics-blog.why-follow.${card.key}.title`)}
                 </CustomText>
                 <CustomText type="text" className="mt-3 text-gray-300">
-                  {card.text}
+                  {t(`freight-and-logistics-blog.why-follow.${card.key}.description`)}
                 </CustomText>
               </motion.div>
             );
@@ -89,57 +87,62 @@ const Blog = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="space-y-6"
         >
-          <CustomText type="subtitle" className="mb-4">Freight Market Trends: 2025</CustomText>
-          <CustomText type="heading" className="mb-2">Trucking Industry Snapshot</CustomText>
-          <CustomText type="text" className="mb-4">The U.S. trucking industry in mid-2025 is navigating a freight recession, with spot market rates stabilizing but overall demand remaining weak. Overcapacity continues to pressure carriers, while diesel prices have seen a modest 4% drop since the start of the year.</CustomText>
-          <CustomText type="heading" className="mt-6 mb-2">Key Highlights</CustomText>
+          <CustomText type="subtitle" className="mb-4">{t('freight-and-logistics-blog.freight-market.title')}</CustomText>
+          <CustomText type="heading" className="mb-2">{t('freight-and-logistics-blog.freight-market.1.title')}</CustomText>
+          <CustomText type="text" className="mb-4">{t('freight-and-logistics-blog.freight-market.1.description')}</CustomText>
+          <CustomText type="heading" className="mt-6 mb-2">{t('freight-and-logistics-blog.freight-market.2.title')}</CustomText>
           <ul className="list-disc ml-6 text-white/80 space-y-2">
-            <li>Short-Haul Volume Growth: Driven by e-commerce and consumer demand, short-haul loads are increasing, especially in metro areas.</li>
-            <li>Long-Haul Slowdown: Long-haul freight is shifting to intermodal solutions due to cost savings.</li>
-            <li>Spot Market Insights: Load rejections are trending upward (currently around 7%), signaling tightening capacity in some regions.</li>
-            <li>Tariff Impacts: Recent trade tensions have caused temporary rate surges, especially on imported goods, but these are now easing.</li>
+            <li>{t('freight-and-logistics-blog.freight-market.2.sub-title-1')} {t('freight-and-logistics-blog.freight-market.2.text-1')}</li>
+            <li>{t('freight-and-logistics-blog.freight-market.2.sub-title-2')} {t('freight-and-logistics-blog.freight-market.2.text-2')}</li>
+            <li>{t('freight-and-logistics-blog.freight-market.2.sub-title-3')} {t('freight-and-logistics-blog.freight-market.2.text-3')}</li>
+            <li>{t('freight-and-logistics-blog.freight-market.2.sub-title-4')} {t('freight-and-logistics-blog.freight-market.2.text-4')}</li>
           </ul>
 
-          <CustomText type="heading" className="mt-6 mb-2">FMCSA & DOT Compliance Updates</CustomText>
+          <CustomText type="heading" className="mt-6 mb-2">{t('freight-and-logistics-blog.fmcsa-and-dot.title')}</CustomText>
+          <CustomText type="text" className="mb-4">{t('freight-and-logistics-blog.fmcsa-and-dot.sub-title')}</CustomText>
           <ul className="list-disc ml-6 text-white/80 space-y-2">
-            <li>Pre-2000 Truck ELD Deadline: Starting June 2025, all trucks—including pre-2000 models—must comply with the ELD mandate. No more paper logs.</li>
-            <li>DOT Medical Certificates Go Digital: From June 23, 2025, medical certificates will be electronically submitted to state agencies, streamlining the process for drivers.</li>
-            <li>English Proficiency Enforcement: Roadside inspections will now verify drivers’ English-speaking ability as part of FMCSA’s safety compliance checks.</li>
+            <li>{t('freight-and-logistics-blog.fmcsa-and-dot.1.title')} {t('freight-and-logistics-blog.fmcsa-and-dot.1.text')}</li>
+            <li>{t('freight-and-logistics-blog.fmcsa-and-dot.2.title')} {t('freight-and-logistics-blog.fmcsa-and-dot.2.text')}</li>
+            <li>{t('freight-and-logistics-blog.fmcsa-and-dot.3.title')} {t('freight-and-logistics-blog.fmcsa-and-dot.3.text')}</li>
           </ul>
 
-          <CustomText type="heading" className="mt-6 mb-2">Dispatching Strategies for 2025</CustomText>
+          <CustomText type="heading" className="mt-6 mb-2">{t('freight-and-logistics-blog.dispatching-strategies.title')}</CustomText>
+          <CustomText type="text" className="mb-4">{t('freight-and-logistics-blog.dispatching-strategies.sub-title')}</CustomText>
           <ul className="list-disc ml-6 text-white/80 space-y-2">
-            <li>Focus on Short-Haul Efficiency: With long-haul capacity decreasing, carriers can maximize profits by optimizing short-haul routes.</li>
-            <li>Monitor Real-Time Loadboard Data: Adjust strategies based on shifting load densities, rejection rates, and spot market changes.</li>
-            <li>Carrier–Broker Partnerships: Strengthen relationships by leveraging live rates, transparent communication, and reliable dispatching tools.</li>
+            <li>{t('freight-and-logistics-blog.dispatching-strategies.1.title')} {t('freight-and-logistics-blog.dispatching-strategies.1.text')}</li>
+            <li>{t('freight-and-logistics-blog.dispatching-strategies.2.title')} {t('freight-and-logistics-blog.dispatching-strategies.2.text')}</li>
+            <li>{t('freight-and-logistics-blog.dispatching-strategies.3.title')} {t('freight-and-logistics-blog.dispatching-strategies.3.text')}</li>
           </ul>
 
-          <CustomText type="heading" className="mt-6 mb-2">Fuel Price Trends</CustomText>
+          <CustomText type="heading" className="mt-6 mb-2">{t('freight-and-logistics-blog.fuel-price.1.title')}</CustomText>
           <ul className="list-disc ml-6 text-white/80 space-y-2">
-            <li>Fuel Prices Down: Diesel costs have decreased by about 4% since January.</li>
-            <li>Geopolitical Risks Remain: Middle East shipping disruptions could still create volatility, so keep an eye on global tanker rates and supply chain bottlenecks.</li>
+            <li>{t('freight-and-logistics-blog.fuel-price.1.title')} {t('freight-and-logistics-blog.fuel-price.1.text')}</li>
+            <li>{t('freight-and-logistics-blog.fuel-price.2.title')} {t('freight-and-logistics-blog.fuel-price.2.text')}</li>
           </ul>
 
-          <CustomText type="heading" className="mt-6 mb-2">Building Stronger Freight Networks</CustomText>
+          <CustomText type="heading" className="mt-6 mb-2">{t('freight-and-logistics-blog.building-freight-networks.title')}</CustomText>
+          <CustomText type="text" className="mb-4">{t('freight-and-logistics-blog.building-freight-networks.sub-title')}</CustomText>
           <ul className="list-disc ml-6 text-white/80 space-y-2">
-            <li>Use Smart Loadboards: Live data, real-time rates, and verified load details help build long-term trust between brokers and carriers.</li>
-            <li>Transparent Pricing: Brokers offering real-time rate visibility foster loyalty with carrier partners.</li>
+            <li>{t('freight-and-logistics-blog.building-freight-networks.1.title')} {t('freight-and-logistics-blog.building-freight-networks.1.text')}</li>
+            <li>{t('freight-and-logistics-blog.building-freight-networks.2.title')} {t('freight-and-logistics-blog.building-freight-networks.2.text')}</li>
           </ul>
 
-          <CustomText type="heading" className="mt-6 mb-2">Technology & Automation</CustomText>
+          <CustomText type="heading" className="mt-6 mb-2">{t('freight-and-logistics-blog.technology-automation.title')}</CustomText>
+          <CustomText type="text" className="mb-4">{t('freight-and-logistics-blog.technology-automation.sub-title')}</CustomText>
           <ul className="list-disc ml-6 text-white/80 space-y-2">
-            <li>Digital Freight Platforms Rising: More brokers and carriers are adopting advanced TMS and AI-powered logistics solutions.</li>
-            <li>Autonomous Truck Pilots: Self-driving truck routes are expanding in Texas and Arizona, potentially reshaping the industry in the coming years.</li>
+            <li>{t('freight-and-logistics-blog.technology-automation.1.title')} {t('freight-and-logistics-blog.technology-automation.1.text')}</li>
+            <li>{t('freight-and-logistics-blog.technology-automation.2.title')} {t('freight-and-logistics-blog.technology-automation.2.text')}</li>
           </ul>
 
-          <CustomText type="heading" className="mt-6 mb-2">Freight Rate Calculations</CustomText>
+          <CustomText type="heading" className="mt-6 mb-2">{t('freight-and-logistics-blog.freight-care.title')}</CustomText>
+          <CustomText type="text" className="mb-4">{t('freight-and-logistics-blog.freight-care.sub-title')}</CustomText>
           <ul className="list-disc ml-6 text-white/80 space-y-2">
-            <li>Data-Driven Rates: Use dynamic pricing tools that factor in fuel costs, market capacity, load volumes, and regional trends.</li>
-            <li>Freight Calculators: Real-time freight rate calculators help carriers and brokers negotiate more competitively.</li>
+            <li>{t('freight-and-logistics-blog.freight-care.1.title')} {t('freight-and-logistics-blog.freight-care.1.text')}</li>
+            <li>{t('freight-and-logistics-blog.freight-care.2.title')} {t('freight-and-logistics-blog.freight-care.2.text')}</li>
           </ul>
         </motion.div>
       </SectionContainer>
-      <SubscribeSection />
+      <SubscribeSection text={t('freight-and-logistics-blog.subscribe')} />
     </>
   );
 };

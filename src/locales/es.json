@@ -892,7 +892,14 @@
       "title": "Cálculos de tarifa de flete",
       "sub-title": "Consejos de precios:"
     },
-    "subscribe": "Suscribirse para las últimas noticias y actualizaciones"
+    "subscribe": {
+      "text": "Suscríbete para recibir las últimas noticias y actualizaciones",
+      "subscribe-form": {
+        "placeholder": "Ingresa una dirección de correo electrónico válida",
+        "button": "SUSCRIBIRSE",
+        "subscribe": "Suscríbete para recibir las últimas noticias y actualizaciones"
+      }
+    }
   },
   "partnership-and-affiliate": {
     "title": "Programa de Asociación y Afiliado",
@@ -927,7 +934,8 @@
           "text-2": "Enlaces de referencia personalizados",
           "text-3": "Tablero de análisis",
           "text-4": "Pagos a través de stripe o paypal",
-          "footer-text": "✅ Perfecto para enviar entrenadores, revisores de carga y profesionales de marketing de carga."
+          "footer-text": "✅ Perfecto para enviar entrenadores, revisores de carga y profesionales de marketing de carga.",
+          "read-more": "Leer más"
         },
         "2": {
           "title": "Asociaciones estratégicas",
@@ -938,7 +946,8 @@
           "text-3": "Operadores de paradas de camiones y proveedores de telemática",
           "text-4": "Startups de tecnología en automatización de logística",
           "text-5": "Corredores de carga digital",
-          "description": "Exploremos cómo podemos integrar, compartir la marca o desarrollar herramientas para avanzar a la industria, juntas."
+          "description": "Exploremos cómo podemos integrar, compartir la marca o desarrollar herramientas para avanzar a la industria, juntas.",
+          "read-more": "Leer más"
         },
         "3": {
           "title": "Para corredores con sistemas automatizados",

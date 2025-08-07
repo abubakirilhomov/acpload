@@ -8,10 +8,12 @@ import {
   MdBarChart,
   MdLocalShipping,
   MdOutlineInsights,
-  MdCheckCircle,
+  MdStarRate
 } from "react-icons/md";
-import { MdStarRate } from "react-icons/md"; // Replace MdCheckCircle import
+import { useTranslation } from "react-i18next";
+
 const NewsletterSubscription = () => {
+  const { t } = useTranslation();
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
   const { ref: ref2, inView: inView2 } = useInView({
     triggerOnce: true,
@@ -25,57 +27,51 @@ const NewsletterSubscription = () => {
   const items = [
     {
       icon: <MdTrendingUp className="h-8 w-8 text-white" />,
-      text: "Freight market trends & industry news",
+      text: t("newsletter-subscription.join-our-newsletter.card-1"),
     },
     {
       icon: <MdBarChart className="h-8 w-8 text-white" />,
-      text: "Live loadboard stats & hot lanes",
+      text: t("newsletter-subscription.join-our-newsletter.card-2"),
     },
     {
       icon: <MdLocalShipping className="h-8 w-8 text-white" />,
-      text: "Carrier & broker tips",
+      text: t("newsletter-subscription.join-our-newsletter.card-3"),
     },
     {
       icon: <MdOutlineInsights className="h-8 w-8 text-white" />,
-      text: "Expert insights, guides, and compliance alerts",
+      text: t("newsletter-subscription.join-our-newsletter.card-4"),
     },
   ];
 
   const subscribeItems = [
     {
-      title: "Monthly Industry Insights",
-      description:
-        "Get expert analysis on trends in freight rates, capacity, regulations, and more—delivered every month.",
+      title: t("newsletter-subscription.why-subscribe.1.title"),
+      description: t("newsletter-subscription.why-subscribe.1.description"),
     },
     {
-      title: "Invitations to Webinars & Events",
-      description:
-        "Gain knowledge from live sessions hosted by logistics experts and connect with the ACP Loads community.",
+      title: t("newsletter-subscription.why-subscribe.2.title"),
+      description: t("newsletter-subscription.why-subscribe.2.description"),
     },
     {
-      title: "Real-Time Freight Tips",
-      description:
-        "Stay sharp with timely tips on load searching, dispatching, fuel savings, and optimizing your operations.",
+      title: t("newsletter-subscription.why-subscribe.3.title"),
+      description: t("newsletter-subscription.why-subscribe.3.description"),
     },
     {
-      title: "No Spam – Just Freight-Focused Content",
-      description:
-        "We value your time. Expect only relevant and high-impact updates—no fluff, no junk.",
+      title: t("newsletter-subscription.why-subscribe.4.title"),
+      description: t("newsletter-subscription.why-subscribe.4.description"),
     },
     {
-      title: "Early Access to Tools & Features",
-      description:
-        "Be the first to try new platform tools, calculators, and performance upgrades before public release.",
+      title: t("newsletter-subscription.why-subscribe.5.title"),
+      description: t("newsletter-subscription.why-subscribe.5.description"),
     },
     {
-      title: "Expert Interviews & Success Stories",
-      description:
-        "Learn directly from real brokers, carriers, and dispatchers sharing their insights and real-world wins.",
+      title: t("newsletter-subscription.why-subscribe.6.title"),
+      description: t("newsletter-subscription.why-subscribe.6.description"),
     },
   ];
 
   return (
-    <>
+    <div>
       {/* TOP SECTION WITH IMAGE */}
       <div className="relative w-full min-h-[400px] sm:min-h-[500px] lg:min-h-[600px] bg-[url('/images/news-subscription-showcase.jpg')] bg-cover bg-center flex items-center justify-center">
         <div className="absolute inset-0 bg-black opacity-60 z-0" />
@@ -96,7 +92,7 @@ const NewsletterSubscription = () => {
                 type="title"
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6"
               >
-                Always stay connected with ACP LOADS
+                {t("newsletter-subscription.title")}
               </CustomText>
             </motion.div>
             <motion.div
@@ -108,8 +104,7 @@ const NewsletterSubscription = () => {
                 type="text"
                 className="text-base sm:text-lg md:text-xl mb-8"
               >
-                Stay updated with the latest news, trends, and insights in the
-                freight and logistics industry!
+                {t("newsletter-subscription.join-our-newsletter.description")}
               </CustomText>
             </motion.div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -119,7 +114,7 @@ const NewsletterSubscription = () => {
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
                 className="btn btn-info text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors"
               >
-                MISSION
+                {t("btn-input-texts.mission")}
               </motion.button>
               <motion.button
                 initial={{ opacity: 0, y: 20 }}
@@ -127,7 +122,7 @@ const NewsletterSubscription = () => {
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
                 className="btn btn-outline text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition-colors"
               >
-                DONATE NOW
+                {t("btn-input-texts.donate-now")}
               </motion.button>
             </div>
           </motion.div>
@@ -148,15 +143,13 @@ const NewsletterSubscription = () => {
               type="subtitle"
               className="text-2xl sm:text-3xl font-bold mb-4"
             >
-              Join Our Newsletter — Stay Ahead in Trucking & Logistics
+              {t("newsletter-subscription.join-our-newsletter.title")}
             </CustomText>
             <CustomText type="text" className="mb-6">
-              Whether you're a carrier, dispatcher, broker, or shipper, our
-              newsletter brings you value-packed updates that help you work
-              smarter and stay competitive.
+              {t("newsletter-subscription.join-our-newsletter.description")}
             </CustomText>
             <button className="btn btn-info rounded-full text-white">
-              Learn More
+              {t("btn-input-texts.learn-more")}
             </button>
           </motion.div>
 
@@ -194,7 +187,7 @@ const NewsletterSubscription = () => {
             type="subtitle"
             className="text-3xl md:text-4xl font-bold"
           >
-            Why Subscribe?
+            {t("newsletter-subscription.why-subscribe.title")}
           </CustomText>
         </div>
         <div
@@ -241,17 +234,16 @@ const NewsletterSubscription = () => {
             <span className="block w-6 h-36 bg-info mb-2"></span>
             <div className="ml-4">
               <CustomText type="title" className="text-4xl font-bold">
-                YOUR PRIVACY MATTERS
+                {t("newsletter-subscription.our-privacy-matters.title")}
               </CustomText>
               <CustomText type="text" className="mt-4 text-lg">
-                We respect your inbox. ACP Loads will never sell or share your
-                information. You can unsubscribe at any time.
+                {t("newsletter-subscription.our-privacy-matters.description")}
               </CustomText>
             </div>
           </div>
         </SectionContainer>
       </motion.div>
-    </>
+    </div>
   );
 };
 

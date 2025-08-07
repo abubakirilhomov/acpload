@@ -1,9 +1,12 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import SectionContainer from "../../../components/SectionContainer/SectionContainer";
 import CustomText from "../../../components/CustomText/CustomText";
-import Button from "../../../components/Button/Button"; // Assuming you have a Button component
+// Assuming you have a Button component
 
 const Guides = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       {/* First Section with Background Image */}
@@ -12,17 +15,13 @@ const Guides = () => {
           <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
           <div className="relative z-10 text-start py-12 max-w-3xl">
             <CustomText type="title" className="font-bold mb-6 text-white">
-              LEARN HOW TO GET MOST FROM ACP LOADS
+              {t("guides-and-videos.title")}
             </CustomText>
             <CustomText type="text" className="mb-8 text-white">
-              Whether you're new to freight logistics or a seasoned industry
-              pro, this page is your go-to source for practical tutorials,
-              walkthroughs, and step-by-step guides. Discover how to get the
-              most out of ACP Loads, based on your role in the trucking
-              ecosystem.
+              {t("guides-and-videos.description")}
             </CustomText>
             <button className="btn btn-info text-white rounded-full">
-              IT'S FREE, CLICK NOW
+              {t("main.sub-text")}
             </button>
           </div>
         </SectionContainer>
@@ -31,42 +30,42 @@ const Guides = () => {
       {/* Second Section */}
       <SectionContainer>
         <div className="text-center space-y-5 max-w-3xl mx-auto px-4">
-          <CustomText type="subtitle">Choose Your Role to Begin</CustomText>
+          <CustomText type="subtitle">
+            {t("guides-and-videos.choose-role-title")}
+          </CustomText>
           <CustomText type="text">
-            ACP Loads is built for the entire freight lifecycle. Select the role
-            that fits you to explore personalized guides and instructional
-            videos:
+            {t("guides-and-videos.choose-role-description")}
           </CustomText>
         </div>
       </SectionContainer>
 
-      {/* Third Section - Carrier */}
-
-      {/* Fourth Section - Carrier Dispatcher */}
+      {/* Third Section - Carrier Dispatcher */}
       <div className="bg-gray-800">
         <SectionContainer className="text-white">
           <div className="flex flex-col lg:flex-row items-center gap-10 px-4 py-12">
             {/* Text Section */}
             <div className="w-full lg:w-1/2">
               <CustomText type="title" className="text-3xl font-bold mb-4">
-                Carrier Dispatcher
+                {t("guides-and-videos.carrier.title")}
               </CustomText>
               <CustomText type="text" className="mb-6">
-                Role Overview: Find and book loads posted by brokers with ease.
-                You don't need an MC number to join as a dispatcher.
+                {t("guides-and-videos.carrier.role-overview")}
               </CustomText>
               <CustomText type="text" className="mb-6">
-                What You'll Learn:
+                {t("guides-and-videos.carrier.sub-text")}
+              </CustomText>
+              <CustomText type="text" className="mb-6">
+                {t("guides-and-videos.carrier.what-will-learn")}
                 <ul className="list-disc pl-5 mt-2 space-y-1">
-                  <li>How to sign up as a dispatcher (no MC required)</li>
-                  <li>Searching loads posted by brokers</li>
-                  <li>Filtering by route, equipment type, or region</li>
-                  <li>Contacting brokers and booking loads</li>
-                  <li>Managing your dispatcher dashboard</li>
+                  <li>{t("guides-and-videos.carrier.1")}</li>
+                  <li>{t("guides-and-videos.carrier.2")}</li>
+                  <li>{t("guides-and-videos.carrier.3")}</li>
+                  <li>{t("guides-and-videos.carrier.4")}</li>
+                  <li>{t("guides-and-videos.carrier.5")}</li>
                 </ul>
               </CustomText>
               <button className="btn btn-info text-white rounded-full w-full sm:w-auto">
-                Learn More
+                {t("btn-input-texts.learn-more")}
               </button>
             </div>
 
@@ -87,6 +86,7 @@ const Guides = () => {
         </SectionContainer>
       </div>
 
+      {/* Fourth Section - Carrier */}
       <div className="bg-gray-900">
         <SectionContainer>
           <div className="flex flex-col lg:flex-row items-center gap-10 px-4 py-12">
@@ -106,56 +106,59 @@ const Guides = () => {
 
             <div className="w-full lg:w-1/2 bg-gray-700 p-10 rounded-tr-4xl rounded-l-4xl">
               <CustomText type="title" className="text-3xl font-bold mb-4">
-                Carrier
+                {t("guides-and-videos.carrier-dispatcher.title")}
               </CustomText>
               <CustomText type="text" className="mb-6">
-                Role Overview: Access broker loads and post your empty trucks to
-                receive more opportunities.
+                {t("guides-and-videos.carrier-dispatcher.role-overview")}
               </CustomText>
               <CustomText type="text" className="mb-6">
-                What You'll Learn:
+                {t("guides-and-videos.carrier-dispatcher.sub-text")}
+              </CustomText>
+              <CustomText type="text" className="mb-6">
+                {t("guides-and-videos.carrier-dispatcher.what-will-learn")}
                 <ul className="list-disc pl-5 mt-2 space-y-1">
-                  <li>Creating a carrier profile</li>
-                  <li>Finding and booking loads from brokers</li>
-                  <li>
-                    Posting empty trucks (visibility for brokers & shippers)
-                  </li>
-                  <li>Managing offers and load matches</li>
-                  <li>How ratings and reviews work for carriers</li>
+                  <li>{t("guides-and-videos.carrier-dispatcher.1")}</li>
+                  <li>{t("guides-and-videos.carrier-dispatcher.2")}</li>
+                  <li>{t("guides-and-videos.carrier-dispatcher.3")}</li>
+                  <li>{t("guides-and-videos.carrier-dispatcher.4")}</li>
+                  <li>{t("guides-and-videos.carrier-dispatcher.5")}</li>
                 </ul>
               </CustomText>
               <button className="btn btn-info text-white rounded-full w-full sm:w-auto">
-                LEARN MORE
+                {t("btn-input-texts.learn-more")}
               </button>
             </div>
           </div>
         </SectionContainer>
       </div>
 
+      {/* Fifth Section - Broker */}
       <div className="bg-gray-800">
         <SectionContainer className="text-white">
           <div className="flex flex-col lg:flex-row items-center gap-10 px-4 py-12">
             {/* Text Section */}
             <div className="w-full lg:w-1/2">
               <CustomText type="title" className="text-3xl font-bold mb-4">
-                Broker
+                {t("guides-and-videos.broker.title")}
               </CustomText>
               <CustomText type="text" className="mb-6">
-                Role Overview: Post freight loads for carriers and dispatchers,
-                search for trucks, and monitor shipper activity.
+                {t("guides-and-videos.broker.role-overview")}
               </CustomText>
               <CustomText type="text" className="mb-6">
-                What You'll Learn:
+                {t("guides-and-videos.broker.sub-text")}
+              </CustomText>
+              <CustomText type="text" className="mb-6">
+                {t("guides-and-videos.broker.what-will-learn")}
                 <ul className="list-disc pl-5 mt-2 space-y-1">
-                  <li>How to post a load quickly</li>
-                  <li>Searching empty trucks posted by carriers</li>
-                  <li>Connecting with carrier dis​patchers</li>
-                  <li>Tracking and reviewing shipment activity</li>
-                  <li>Collaborating with shippers on posted freight</li>
+                  <li>{t("guides-and-videos.broker.1")}</li>
+                  <li>{t("guides-and-videos.broker.2")}</li>
+                  <li>{t("guides-and-videos.broker.3")}</li>
+                  <li>{t("guides-and-videos.broker.4")}</li>
+                  <li>{t("guides-and-videos.broker.5")}</li>
                 </ul>
               </CustomText>
               <button className="btn btn-info text-white rounded-full w-full sm:w-auto">
-                Learn More
+                {t("btn-input-texts.learn-more")}
               </button>
             </div>
 
@@ -176,6 +179,7 @@ const Guides = () => {
         </SectionContainer>
       </div>
 
+      {/* Sixth Section - Shipper */}
       <SectionContainer className="text-white">
         <div className="flex flex-col lg:flex-row items-center gap-10 px-4 pt-12">
           {/* Text Section */}
@@ -194,38 +198,44 @@ const Guides = () => {
 
           <div className="w-full lg:w-1/2 bg-gray-700 p-10 rounded-br-4xl rounded-l-4xl">
             <CustomText type="title" className="text-3xl font-bold mb-4">
-              Shipper
+              {t("guides-and-videos.shipper.title")}
             </CustomText>
             <CustomText type="text" className="mb-6">
-              Role Overview: Post shipments that brokers can access and move
-              faster across the U.S.
+              {t("guides-and-videos.shipper.role-overview")}
             </CustomText>
             <CustomText type="text" className="mb-6">
-              What You'll Learn:
+              {t("guides-and-videos.shipper.sub-text")}
+            </CustomText>
+            <CustomText type="text" className="mb-6">
+              {t("guides-and-videos.shipper.what-will-learn")}
               <ul className="list-disc pl-5 mt-2 space-y-1">
-                <li>Registering as a shipper</li>
-                <li>How to post a shipment</li>
-                <li>Viewing broker interest in your loads</li>
-                <li>Working with multiple brokers for capacity</li>
-                <li>Tracking your shipment status</li>
+                <li>{t("guides-and-videos.shipper.1")}</li>
+                <li>{t("guides-and-videos.shipper.2")}</li>
+                <li>{t("guides-and-videos.shipper.3")}</li>
+                <li>{t("guides-and-videos.shipper.4")}</li>
+                <li>{t("guides-and-videos.shipper.5")}</li>
               </ul>
             </CustomText>
             <button className="btn btn-info text-white rounded-full w-full sm:w-auto">
-              Learn More
+              {t("btn-input-texts.learn-more")}
             </button>
           </div>
-
-          {/* Video Section */}
         </div>
       </SectionContainer>
 
+      {/* Need Help Section */}
       <SectionContainer>
         <div className="border-2 border-info p-10 flex items-center justify-center mx-4">
           <div className="max-w-3xl text-center">
-            <CustomText type="subtitle" className={'mb-5'}>Need Help?</CustomText>
+            <CustomText type="subtitle" className="mb-5">
+              {t("guides-and-videos.need-help.title")}
+            </CustomText>
             <CustomText>
-              If you're unsure where to start or have technical questions, visit
-              our Support Center or contact our team at info @acploads.com
+              {t("guides-and-videos.need-help.description-1")}
+              <a href="/support-center" className="text-info">
+                 Support Center
+              </a>
+              {t("guides-and-videos.need-help.description-2")}
             </CustomText>
           </div>
         </div>
