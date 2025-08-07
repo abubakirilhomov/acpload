@@ -1,41 +1,40 @@
-import { motion } from "framer-motion"
-import img from "../../../../assets/user-icon.jpg"
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import img from "../../../../assets/user-icon.jpg";
 
 const Section4 = () => {
+  const { t } = useTranslation();
+
   const leaders = [
     {
       id: 1,
-      name: "Nick Charles",
-      title: "Founder & CEO",
-      description:
-        "Nick's vision is to empower the US trucking community through practical technology and transparent service.",
+      name: t("leadership.leadership-profiles.1.title"),
+      title: t("leadership.leadership-profiles.1.profession"),
+      description: t("leadership.leadership-profiles.1.description"),
       image: img,
     },
     {
       id: 2,
-      name: "James Smith",
-      title: "Chief Operating Officer",
-      description:
-        "James ensures operational excellence and keeps the team focused on what matters most: the user experience.",
+      name: t("leadership.leadership-profiles.2.title"),
+      title: t("leadership.leadership-profiles.2.profession"),
+      description: t("leadership.leadership-profiles.2.description"),
       image: img,
     },
     {
       id: 3,
-      name: "Emily Davis",
-      title: "Head of Customer Success",
-      description:
-        "Emily is the voice of our users, making sure every feature, update, and support response is driven by customer needs.",
+      name: t("leadership.leadership-profiles.3.title"),
+      title: t("leadership.leadership-profiles.3.profession"),
+      description: t("leadership.leadership-profiles.3.description"),
       image: img,
     },
     {
       id: 4,
-      name: "Jack Adams",
-      title: "Chief Technology Officer",
-      description:
-        "Jack leads the development of innovative, secure, and reliable digital tools for the ACP Loads community.",
+      name: t("leadership.leadership-profiles.4.title"),
+      title: t("leadership.leadership-profiles.4.profession"),
+      description: t("leadership.leadership-profiles.4.description"),
       image: img,
     },
-  ]
+  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -45,7 +44,7 @@ const Section4 = () => {
         staggerChildren: 0.2,
       },
     },
-  }
+  };
 
   const cardVariants = {
     hidden: {
@@ -62,7 +61,7 @@ const Section4 = () => {
         ease: "easeOut",
       },
     },
-  }
+  };
 
   const hoverVariants = {
     hover: {
@@ -73,7 +72,7 @@ const Section4 = () => {
         ease: "easeInOut",
       },
     },
-  }
+  };
 
   return (
     <div className="py-16 px-4">
@@ -83,7 +82,9 @@ const Section4 = () => {
         transition={{ duration: 0.8 }}
         className="text-center mb-12"
       >
-        <h2 className="text-5xl font-bold mb-4">Leadership Profiles</h2>
+        <h2 className="text-5xl font-bold mb-4">
+          {t("leadership.leadership-profiles.title")}
+        </h2>
         <div className="w-24 h-1 bg-info mx-auto"></div>
       </motion.div>
 
@@ -100,8 +101,15 @@ const Section4 = () => {
             whileHover="hover"
             className="card bg-info text-white shadow-xl hover:shadow-2xl cursor-pointer"
           >
-            <motion.div variants={hoverVariants} className="card-body items-center text-center p-8">
-              <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }} className="avatar mb-6">
+            <motion.div
+              variants={hoverVariants}
+              className="card-body items-center text-center p-8"
+            >
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.3 }}
+                className="avatar mb-6"
+              >
                 <div className="w-32 h-32 rounded-full ring-4 ring-blue-300 ring-offset-4 ring-offset-transparent">
                   <img
                     src={leader.image || "/placeholder.svg"}
@@ -139,7 +147,7 @@ const Section4 = () => {
         ))}
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default Section4
+export default Section4;

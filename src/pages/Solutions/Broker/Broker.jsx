@@ -1,8 +1,19 @@
 import { motion } from "framer-motion";
-import { CheckCircle, PlusCircle, Search, Eye, TrendingUp, MessageSquare, FileText } from "lucide-react";
+import {
+  CheckCircle,
+  PlusCircle,
+  Search,
+  Eye,
+  TrendingUp,
+  MessageSquare,
+  FileText,
+} from "lucide-react";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Broker = () => {
+  const { t } = useTranslation();
+
   // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -68,36 +79,27 @@ const Broker = () => {
             whileHover={{ scale: 1.02 }}
             className="text-4xl md:text-5xl font-bold text-white mb-2"
           >
-            Post Loads & Find
+            {t("broker.title").split(" & ")[0]}
           </motion.h1>
           <motion.h2
             whileHover={{ scale: 1.02 }}
             className="text-3xl md:text-4xl font-semibold text-white mb-8"
           >
-            Trusted Carriers
+            {t("broker.title").split(" & ")[1]}
           </motion.h2>
 
           <motion.p
             whileHover={{ scale: 1.01 }}
             className="text-xl md:text-2xl text-white mb-4"
           >
-            Simplified Freight Management for Brokers
+            {t("broker.description")}
           </motion.p>
-          <motion.p
-            whileHover={{ scale: 1.01 }}
-            className="text-lg md:text-xl text-white mb-8"
-          >
-            Connect with Reliable Carriers & Move
-            <br />
-            Shipments Fast!
-          </motion.p>
-
           <motion.button
             whileHover={{ scale: 1.05, backgroundColor: "#1E40AF" }}
             whileTap={{ scale: 0.95 }}
-            className="bg-primary hover:text-white text-black font-medium py-3 px-8 rounded-lg transition"
+            className="bg-primary uppercase hover:text-white text-black font-medium py-2 sm:py-3 px-6 sm:px-8 rounded-lg transition text-sm sm:text-base"
           >
-            SIGN UP NOW
+            {t("btn-input-texts.sign-up-now")}
           </motion.button>
         </motion.div>
 
@@ -130,8 +132,8 @@ const Broker = () => {
             variants={itemVariants}
             className="text-center mb-16"
           >
-            <h1 className="text-3xl font-extrabold text-white">
-              Why Brokers Choose Our Platform?
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-white">
+              {t("broker.why-choose.title")}
             </h1>
           </motion.div>
 
@@ -142,33 +144,33 @@ const Broker = () => {
           >
             {[
               {
-                title: "Post Loads Instantly",
-                desc: "List your available freight with just a few clicks.",
+                title: t("broker.why-choose.card-1.title"),
+                desc: t("broker.why-choose.card-1.description"),
                 icon: PlusCircle,
               },
               {
-                title: "Find Reliable Carriers",
-                desc: "Access a network of pre-vetted, MC-verified carriers.",
+                title: t("broker.why-choose.card-2.title"),
+                desc: t("broker.why-choose.card-2.description"),
                 icon: Search,
               },
               {
-                title: "Live Loadboard Visibility",
-                desc: "See carrier availability and match loads in real time.",
+                title: t("broker.why-choose.card-3.title"),
+                desc: t("broker.why-choose.card-3.description"),
                 icon: Eye,
               },
               {
-                title: "Freight Rate Insights",
-                desc: "Use Freight Rate Calculator to price your loads competitively.",
+                title: t("broker.why-choose.card-4.title"),
+                desc: t("broker.why-choose.card-4.description"),
                 icon: TrendingUp,
               },
               {
-                title: "Seamless Communication",
-                desc: "Connect directly with carriers for efficient load booking.",
+                title: t("broker.why-choose.card-5.title"),
+                desc: t("broker.why-choose.card-5.description"),
                 icon: MessageSquare,
               },
               {
-                title: "Compliance & Documentation",
-                desc: "Keep track of paperwork, contracts, and load status effortlessly.",
+                title: t("broker.why-choose.card-6.title"),
+                desc: t("broker.why-choose.card-6.description"),
                 icon: FileText,
               },
             ].map((feature, index) => (
@@ -185,7 +187,9 @@ const Broker = () => {
                   <h2 className="text-xl font-bold text-white mb-4">
                     {feature.title}
                   </h2>
-                  <p className="text-gray-300 flex-grow">{feature.desc}</p>
+                  <p className="text-gray-300 text-sm sm:text-base flex-grow">
+                    {feature.desc}
+                  </p>
                 </div>
               </motion.div>
             ))}
@@ -201,26 +205,19 @@ const Broker = () => {
         variants={fadeIn}
         className="bg-[#0f172a] py-20 px-4 sm:px-6 lg:px-8"
       >
-        <div className="max-w-7xl mx-auto text-white mb-5">
-          <motion.div
-            variants={itemVariants}
-            className="mb-12"
-          >
+        <div className="max-w-7xl mx-auto text-white">
+          <motion.div variants={itemVariants} className="mb-8 sm:mb-12">
             <motion.h2
               whileHover={{ scale: 1.01 }}
               className="text-4xl md:text-6xl font-bold mb-4"
             >
-              How It Works
+              {t("broker.how-it-works.title")}
             </motion.h2>
             <motion.p
               whileHover={{ scale: 1.01 }}
               className="text-lg max-w-3xl"
             >
-              As a freight broker, efficiency is everything. Whether you're
-              managing high-volume freight or handling specialized shipments,
-              our platform provides seamless load posting, real-time carrier
-              matching, and industry-leading tools to help you optimize your
-              operations.
+              {t("broker.how-it-works.description")}
             </motion.p>
           </motion.div>
 
@@ -232,34 +229,34 @@ const Broker = () => {
             {[
               {
                 step: "1",
-                title: "Sign Up & Create Your Broker Profile",
+                title: t("broker.how-it-works.card-1.title"),
                 points: [
-                  "Get verified and start posting loads immediately.",
-                  "Set preferences for carrier qualifications, freight types, and preferred routes.",
+                  t("broker.how-it-works.card-1.description-1"),
+                  t("broker.how-it-works.card-1.description-2"),
                 ],
               },
               {
                 step: "2",
-                title: "Post Your Load & Get Matched with Carriers",
+                title: t("broker.how-it-works.card-2.title"),
                 points: [
-                  "Enter load details, including weight, pickup/delivery locations, and special requirements.",
-                  "Our system connects you with qualified carriers based on availability and preferences.",
+                  t("broker.how-it-works.card-2.description-1"),
+                  t("broker.how-it-works.card-2.description-2"),
                 ],
               },
               {
                 step: "3",
-                title: "Select & Book the Best Carrier",
+                title: t("broker.how-it-works.card-3.title"),
                 points: [
-                  "Review carrier profiles, ratings, and history before finalizing.",
-                  "Directly communicate with carriers for negotiations and confirmations.",
+                  t("broker.how-it-works.card-3.description-1"),
+                  t("broker.how-it-works.card-3.description-2"),
                 ],
               },
               {
                 step: "4",
-                title: "Track & Manage Shipments in Real Time",
+                title: t("broker.how-it-works.card-4.title"),
                 points: [
-                  "Get updates on load status from pickup to delivery.",
-                  "Maintain records of shipments, rates, and contracts through your dashboard.",
+                  t("broker.how-it-works.card-4.description-1"),
+                  t("broker.how-it-works.card-4.description-2"),
                 ],
               },
             ].map((step, index) => (
@@ -283,7 +280,7 @@ const Broker = () => {
                         whileHover={{ x: 5 }}
                         className="text-white text-lg md:text-xl"
                       >
-                        {point}
+                        • {point}
                       </motion.li>
                     ))}
                   </ul>
@@ -306,7 +303,7 @@ const Broker = () => {
             variants={itemVariants}
             className="text-3xl sm:text-4xl font-bold mb-10"
           >
-            Key Features for Freight Brokers
+            {t("broker.key-features.title")}
           </motion.h2>
 
           <motion.div
@@ -314,11 +311,11 @@ const Broker = () => {
             className="space-y-6"
           >
             {[
-              "Instant Load Posting - Get your loads in front of carriers quickly.",
-              "Verified Carrier Network - Work with reliable, MC-approved carriers.",
-              "Real-Time Load Matching - Reduce downtime and ensure efficient shipments.",
-              "Rate Optimization Tools - Use Freight Rate Calculator to set competitive pricing.",
-              "Secure & Transparent Operations - Keep track of all bookings, payments, and carrier details in one place.",
+              t("broker.key-features.1"),
+              t("broker.key-features.2"),
+              t("broker.key-features.3"),
+              t("broker.key-features.4"),
+              t("broker.key-features.5"),
             ].map((feature, index) => (
               <motion.div
                 key={index}
@@ -328,11 +325,11 @@ const Broker = () => {
               >
                 <CheckCircle className="text-white w-6 h-6 mt-1 flex-shrink-0" />
                 <div className="text-left">
-                  <h3 className="font-semibold text-white text-lg">
-                    {feature.split(" - ")[0]}
+                  <h3 className="font-semibold text-white text-base sm:text-lg capitalize">
+                    {feature.replaceAll(": ", " - ").split(" - ")[0]}
                   </h3>
-                  <p className="text-sm text-white/90 mt-1">
-                    {feature.split(" - ")[1]}
+                  <p className="text-xs sm:text-sm text-white/90 mt-1 capitalize">
+                    {feature.replaceAll(": ", " - ").split(" - ")[1]}
                   </p>
                 </div>
               </motion.div>
@@ -366,30 +363,28 @@ const Broker = () => {
             whileHover={{ scale: 1.01 }}
             className="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight"
           >
-            Scale Your Brokerage <br /> Business Today!
+            {t("broker.scale-brokerage.title").split(" ").slice(0, 3).join(" ")}
+            <br />
+            {t("broker.scale-brokerage.title").split(" ").slice(3).join(" ")}
           </motion.h1>
           <motion.p
             whileHover={{ scale: 1.01 }}
             className="max-w-[600px] text-lg md:text-xl text-gray-200 mb-8"
           >
-            Our platform is built to empower brokers by offering the fastest,
-            easiest, and most transparent way to connect with carriers and move
-            freight. Whether you're a small broker or a nationwide operation,
-            our tools help you reduce deadhead, maximize profits, and streamline
-            logistics like never before
+            {t("broker.scale-brokerage.description")}
           </motion.p>
           <motion.button
             whileHover={{ scale: 1.05, backgroundColor: "#1E40AF" }}
             whileTap={{ scale: 0.95 }}
             className="bg-white hover:bg-gray-100 text-primary font-bold py-3 px-8 md:px-12 rounded-full transition shadow-lg mb-6"
           >
-            SIGN UP TODAY
+            {t("btn-input-texts.sign-up-today")}
           </motion.button>
           <motion.p
             whileHover={{ scale: 1.01 }}
             className="text-gray-300 text-lg md:text-xl italic"
           >
-            and start posting your loads hassle-free!
+            {t("broker.scale-brokerage.sub-text")}
           </motion.p>
         </motion.div>
         <motion.div

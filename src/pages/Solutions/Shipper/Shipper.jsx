@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -36,6 +37,8 @@ const fadeIn = {
 };
 
 const Shipper = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
@@ -51,16 +54,13 @@ const Shipper = () => {
           className="relative bg-gray-600/90 rounded-xl md:rounded-2xl mx-4 md:ml-10 p-4 md:p-6 w-auto md:w-[90%] max-w-[600px] flex flex-col items-start"
         >
           <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-bold mb-3 sm:mb-4 md:mb-5">
-            Streamline Your Freight Shipping
+            {t("shipper.title")}
           </p>
           <p className="text-white text-base sm:text-lg md:text-xl font-medium mb-3 sm:mb-4 md:mb-5">
-            Get Your Freight Moved Quickly & Efficiently with Trusted Carriers!
+            {t("shipper.sub-title")}
           </p>
           <p className="text-white text-sm sm:text-base md:text-lg mb-4 sm:mb-6 md:mb-8">
-            Finding reliable carriers and ensuring on-time deliveries can be
-            challenging. Our platform makes freight shipping fast, transparent,
-            and hassle-free by connecting shippers with verified carriers and
-            brokers in real time.
+            {t("shipper.description")}
           </p>
           <motion.button
             whileHover={{
@@ -71,7 +71,7 @@ const Shipper = () => {
             whileTap={{ scale: 0.95 }}
             className="bg-none border-2 text-primary border-primary px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-md transition text-sm sm:text-base"
           >
-            Contact Us
+            {t("btn-input-texts.contact-us")}
           </motion.button>
         </motion.div>
       </motion.div>
@@ -94,16 +94,28 @@ const Shipper = () => {
           </motion.div>
           <motion.div variants={itemVariants} className="w-full md:w-1/2">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 lg:mb-6">
-              Why Shippers Choose Our Platform?
+              {t("shipper.why-choose.title")}
             </h2>
             <div className="space-y-2 sm:space-y-3 md:space-y-4">
               {[
-                "Instant Load Posting – List your shipments in seconds and get instant matches.",
-                "Reliable Carrier Network – Work with pre-screened, professional carriers.",
-                "Competitive Freight Rates – Compare and choose the best offers.",
-                "Real-Time Tracking – Monitor your shipments every step of the way.",
-                "Effortless Documentation – Simplify contracts, rate confirmations, and invoices.",
-                "Faster Delivery – Reduce transit time with optimized carrier matching.",
+                `${t("shipper.why-choose.1.text-1")} ${t(
+                  "shipper.why-choose.1.text-2"
+                )}`,
+                `${t("shipper.why-choose.2.text-1")} ${t(
+                  "shipper.why-choose.2.text-2"
+                )}`,
+                `${t("shipper.why-choose.3.text-1")} ${t(
+                  "shipper.why-choose.3.text-2"
+                )}`,
+                `${t("shipper.why-choose.4.text-1")} ${t(
+                  "shipper.why-choose.4.text-2"
+                )}`,
+                `${t("shipper.why-choose.5.text-1")} ${t(
+                  "shipper.why-choose.5.text-2"
+                )}`,
+                `${t("shipper.why-choose.6.text-1")} ${t(
+                  "shipper.why-choose.6.text-2"
+                )}`,
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-2 sm:gap-3">
                   <CheckCircle className="text-blue-400 mt-0.5 sm:mt-1 flex-shrink-0 w-4 h-4 sm:w-5 sm:h-5" />
@@ -128,33 +140,37 @@ const Shipper = () => {
             variants={itemVariants}
             className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16"
           >
-            How It Works for Shippers
+            {t("shipper.how-it-works.title")}
           </motion.h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
             {[
               {
                 step: "1",
-                title: "Post Your Load",
-                description:
-                  "Enter shipment details, including pickup, destination, weight, and special requirements. Get instant load visibility to trusted carriers.",
+                title: t("shipper.how-it-works.card-1.title"),
+                description: `${t(
+                  "shipper.how-it-works.card-1.description-1"
+                )} ${t("shipper.how-it-works.card-1.description-2")}`,
               },
               {
                 step: "2",
-                title: "Get Matched with Reliable Carriers",
-                description:
-                  "Our smart system finds the best carriers & brokers based on availability and price. Review carrier ratings and performance before booking.",
+                title: t("shipper.how-it-works.card-2.title"),
+                description: `${t(
+                  "shipper.how-it-works.card-2.description-1"
+                )} ${t("shipper.how-it-works.card-2.description-2")}`,
               },
               {
                 step: "3",
-                title: "Secure the Best Rate & Confirm Shipment",
-                description:
-                  "Receive competitive bids from carriers. Choose the best offer and confirm your shipment with one click.",
+                title: t("shipper.how-it-works.card-3.title"),
+                description: `${t(
+                  "shipper.how-it-works.card-3.description-1"
+                )} ${t("shipper.how-it-works.card-3.description-2")}`,
               },
               {
                 step: "4",
-                title: "Track & Deliver with Confidence",
-                description:
-                  "Real-time tracking for full shipment visibility. Get notifications on status updates and delivery confirmations.",
+                title: t("shipper.how-it-works.card-4.title"),
+                description: `${t(
+                  "shipper.how-it-works.card-4.description-1"
+                )} ${t("shipper.how-it-works.card-4.description-2")}`,
               },
             ].map((item, index) => (
               <motion.div
@@ -190,30 +206,15 @@ const Shipper = () => {
       >
         <div className="max-w-[90%] sm:max-w-[85%] md:max-w-[80%] mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 md:mb-12 text-center">
-            Key Features for Shippers
+            {t("shipper.key-features.1").split(" - ")[0]}
           </h2>
           <div className="space-y-4 md:space-y-6 flex flex-col items-center">
             {[
-              {
-                title: "Instant Load Posting",
-                description: "Post, manage, and edit shipments easily.",
-              },
-              {
-                title: "Verified Carriers & Brokers",
-                description: "Work with industry-trusted professionals.",
-              },
-              {
-                title: "Freight Rate Calculator",
-                description: "Ensure cost-effective shipping.",
-              },
-              {
-                title: "Optimized Load Matching",
-                description: "Reduce delays and increase efficiency.",
-              },
-              {
-                title: "24/7 Shipment Tracking",
-                description: "Stay informed from pickup to delivery.",
-              },
+              t("shipper.key-features.1"),
+              t("shipper.key-features.2"),
+              t("shipper.key-features.3"),
+              t("shipper.key-features.4"),
+              t("shipper.key-features.5"),
             ].map((feature, index) => (
               <motion.div
                 key={index}
@@ -225,8 +226,12 @@ const Shipper = () => {
                   <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                 </div>
                 <div className="ml-4 sm:ml-6 text-left flex-1">
-                  <h3 className="text-base sm:text-lg md:text-xl font-semibold">{feature.title}</h3>
-                  <p className="text-gray-300 text-sm sm:text-base">{feature.description}</p>
+                  <h3 className="text-base sm:text-lg md:text-xl font-semibold">
+                    {feature.split(" - ")[0]}
+                  </h3>
+                  <p className="text-gray-300 text-sm sm:text-base">
+                    {feature.split(" - ")[1]}
+                  </p>
                 </div>
               </motion.div>
             ))}
@@ -244,12 +249,10 @@ const Shipper = () => {
       >
         <div className="border-2 sm:border-3 md:border-4 border-blue-400 bg-gray-700 max-w-[90%] sm:max-w-[85%] md:max-w-[80%] mx-auto rounded-xl md:rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12 text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-5 md:mb-6">
-            Ship Smarter, Faster & More Efficiently!
+            {t("shipper.ship-smarter.title")}
           </h2>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 sm:mb-7 md:mb-8 text-gray-300">
-            Whether you're a small business or a high-volume shipper, our
-            platform helps you move freight faster, cheaper, and with complete
-            visibility.
+            {t("shipper.ship-smarter.description")}
           </p>
           <motion.button
             whileHover={{
@@ -261,7 +264,9 @@ const Shipper = () => {
             whileTap={{ scale: 0.95 }}
             className="border-2 text-blue-400 border-blue-400 py-2 px-4 sm:py-3 sm:px-6 md:py-4 md:px-8 rounded-full text-base sm:text-lg md:text-xl lg:text-2xl transition-all"
           >
-            Post Your Load Now & Get Matched with Carriers Instantly!
+            {t(
+              "btn-input-texts.post-your-load-now-and-get-matched-with-carriers-instantly"
+            )}
           </motion.button>
         </div>
       </motion.section>

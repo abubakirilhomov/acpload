@@ -6,30 +6,27 @@ import { MdOutlineSystemSecurityUpdateGood } from "react-icons/md";
 import { motion } from "framer-motion";
 import Decor from "../../Decor/Decor";
 import { SiApostrophe } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
 const whyUs = [
   {
-    title: "Fast Posting & Searching",
-    description:
-      "Instantly post loads, find shipments, and match empty trucks with available freight.",
+    title: "main.why-choose.fast-posting-title",
+    description: "main.why-choose.fast-posting-description",
     icon: <SiApostrophe className="text-4xl text-primary" />,
   },
   {
-    title: "User-Friendly Interface",
-    description:
-      "Our intuitive workspace ensures load details are easily accessible for quick decision-making.",
+    title: "main.why-choose.user-interface-title",
+    description: "main.why-choose.user-interface-description",
     icon: <FaUserCheck className="text-4xl text-primary" />,
   },
   {
-    title: "Ratings & Reviews",
-    description:
-      "Carriers and Brokers can rate and review each other, fostering transparency and trust.",
+    title: "main.why-choose.rating-review-title",
+    description: "main.why-choose.rating-review-description",
     icon: <IoStatsChartSharp className="text-4xl text-primary" />,
   },
   {
-    title: "Smart Matching System",
-    description:
-      "Carriers posting empty trucks will automatically attract loads that match their criteria.",
+    title: "main.why-choose.matching-system-title",
+    description: "main.why-choose.matching-system-description",
     icon: (
       <MdOutlineSystemSecurityUpdateGood className="text-4xl text-primary" />
     ),
@@ -38,6 +35,7 @@ const whyUs = [
 
 const WhyUs = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,7 +71,7 @@ const WhyUs = () => {
           transition={{ duration: 2 }}
           className="text-3xl sm:text-4xl font-bold drop-shadow-lg"
         >
-          Why Choose ACP Loads
+          {t("main.why-choose.title")}
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 30 }}
@@ -81,11 +79,7 @@ const WhyUs = () => {
           transition={{ duration: 2 }}
           className="mt-4 text-lg"
         >
-          Welcome to ACP Loads, the most dynamic and efficient trucking load
-          board designed to streamline freight matching and optimize logistics.
-          Whether you're a Carrier Dispatcher, Carrier, Broker, or Shipper, our
-          platform is built to simplify your work and help you move freight
-          faster than ever.
+          {t("main.why-choose.description")}
         </motion.p>
       </motion.div>
 
@@ -109,8 +103,8 @@ const WhyUs = () => {
             >
               <div className="p-3 bg-white/10 rounded-xl">{item.icon}</div>
               <div>
-                <h3 className="text-xl font-semibold">{item.title}</h3>
-                <p className="text-sm mt-2">{item.description}</p>
+                <h3 className="text-xl font-semibold">{t(item.title)}</h3>
+                <p className="text-sm mt-2">{t(item.description)}</p>
               </div>
             </motion.div>
           ))}

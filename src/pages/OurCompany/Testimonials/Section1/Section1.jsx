@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import bgImg from "../../../../assets/testimonials.jpeg";
+import { useTranslation } from "react-i18next";
 
 const Section1 = () => {
+  const { t } = useTranslation();
   return (
     <div
       className="relative bg-cover bg-center"
@@ -27,7 +29,7 @@ const Section1 = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Testimonials & Reviews
+            {t("testimonials-and-reviews.title")}
           </motion.h1>
 
           <motion.p
@@ -37,7 +39,7 @@ const Section1 = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            What Our Community Is Saying
+            {t("testimonials-and-reviews.sub-title")}
           </motion.p>
 
           <motion.p
@@ -46,12 +48,7 @@ const Section1 = () => {
             transition={{ duration: 1, delay: 0.6 }}
             viewport={{ once: true }}
           >
-            At ACP Loads, our mission is to deliver efficiency, transparency,
-            and real value to every member of the US logistics and trucking
-            community. The feedback and experiences of our users—Carriers,
-            Brokers, Dispatchers, and Shippers—drive our continuous improvement
-            and innovation. Here’s what our community has to say about working
-            with ACP Loads.
+            {t("testimonials-and-reviews.description")}
           </motion.p>
         </motion.div>
       </div>

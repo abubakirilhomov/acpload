@@ -1,28 +1,27 @@
 import { CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import img from "../../../../assets/testimodnials.jpg";
 
 const Section2 = () => {
+  const { t } = useTranslation();
+
   const trustPoints = [
     {
-      title: "Verified Users:",
-      description:
-        "All reviews are submitted by registered, verified users—real companies and professionals using our platform.",
+      title: t("testimonials-and-reviews.why-trust.1.title"),
+      description: t("testimonials-and-reviews.why-trust.1.description"),
     },
     {
-      title: "Role-Based Ratings:",
-      description:
-        "See feedback that's specific to your role, whether you're a Carrier, Broker, Dispatcher, or Shipper.",
+      title: t("testimonials-and-reviews.why-trust.2.title"),
+      description: t("testimonials-and-reviews.why-trust.2.description"),
     },
     {
-      title: "Transparency & Integrity:",
-      description:
-        "We encourage honest, constructive feedback, and regularly monitor reviews for fairness and relevance.",
+      title: t("testimonials-and-reviews.why-trust.3.title"),
+      description: t("testimonials-and-reviews.why-trust.3.description"),
     },
     {
-      title: "Multi-Criteria Ratings:",
-      description:
-        "Our rating system covers Communication, Service, Payment Speed, Load Information, and Reliability—so you get the full picture before you work together.",
+      title: t("testimonials-and-reviews.why-trust.4.title"),
+      description: t("testimonials-and-reviews.why-trust.4.description"),
     },
   ];
 
@@ -44,7 +43,7 @@ const Section2 = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            Why Trust Our Reviews?
+            {t("testimonials-and-reviews.why-trust.title")}
           </motion.p>
 
           {/* Trust Points */}
@@ -65,7 +64,9 @@ const Section2 = () => {
                 </div>
                 <div className="text-white">
                   <span className="font-semibold text-lg">{point.title}</span>
-                  <span className="text-gray-200 ml-1">{point.description}</span>
+                  <span className="text-gray-200 ml-1">
+                    {point.description}
+                  </span>
                 </div>
               </motion.div>
             ))}

@@ -8,13 +8,11 @@ import { FaAngleDoubleDown } from "react-icons/fa";
 const HeroSection = () => {
   const { t } = useTranslation();
 
-  // Observer Hook
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.3,
   });
 
-  // Scroll Function
   const handleScroll = () => {
     window.scrollTo({
       top: window.innerHeight,
@@ -38,7 +36,7 @@ const HeroSection = () => {
       >
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-2xl font-bold sm:text-5xl text-white">
-            {t("title")}
+            {t("main.title")}
           </h1>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <motion.button
@@ -46,7 +44,7 @@ const HeroSection = () => {
               whileTap={{ scale: 0.95 }}
               className="px-10 py-3 text-lg w-full btn btn-info md:w-auto rounded-full text-white hover:text-white shadow-md shadow-cyan-900/50"
             >
-              {t("sign-up")}
+              {t("btn-input-texts.sign-up")}
             </motion.button>
           </div>
         </div>

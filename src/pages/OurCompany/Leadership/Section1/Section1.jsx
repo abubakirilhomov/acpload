@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import bgImg from "../../../../assets/leadership-hero.webp";
+import { useTranslation } from "react-i18next";
 
 const LeaderboardHero = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   return (
     <div
       className="relative min-h-[70vh] bg-cover bg-center"
@@ -21,17 +23,11 @@ const LeaderboardHero = () => {
           transition={{ duration: 0.6 }}
         >
           <div className="bg-info py-5 px-2">
-            <p>Leadership</p>
+            <p>{t("leadership.leadership")}</p>
 
-            <h1 className="text-6xl ">Meet the Team Behind ACP Loads</h1>
+            <h1 className="text-6xl">{t("leadership.title")}</h1>
             <p className="max-w-[80%] mx-auto mt-5">
-              At ACP Loads, leadership means more than managing a platform—it
-              means inspiring innovation, championing trust, and driving the
-              freight industry forward. Our leadership team brings together
-              decades of experience in logistics, technology, and customer
-              service. We believe that by combining industry knowledge with a
-              passion for digital transformation, we can solve the biggest
-              challenges in US trucking.
+              {t("leadership.description")}
             </p>
           </div>
         </motion.div>
