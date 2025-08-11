@@ -4,17 +4,35 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const HowToSignUp = () => {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
   });
 
+  if (!ready) return <p>Loading translations...</p>;
+
   const steps = [
-    { number: "1", title: t("howToSignUp.step1Title"), description: t("howToSignUp.step1Description") },
-    { number: "2", title: t("howToSignUp.step2Title"), description: t("howToSignUp.step2Description") },
-    { number: "3", title: t("howToSignUp.step3Title"), description: t("howToSignUp.step3Description") },
-    { number: "4", title: t("howToSignUp.step4Title"), description: t("howToSignUp.step4Description") },
+    {
+      number: "1",
+      title: t("how-it-works.how-to-sign-up.card-1.title"),
+      description: t("how-it-works.how-to-sign-up.card-1.description"),
+    },
+    {
+      number: "2",
+      title: t("how-it-works.how-to-sign-up.card-2.title"),
+      description: t("how-it-works.how-to-sign-up.card-2.description"),
+    },
+    {
+      number: "3",
+      title: t("how-it-works.how-to-sign-up.card-3.title"),
+      description: t("how-it-works.how-to-sign-up.card-3.description"),
+    },
+    {
+      number: "4",
+      title: t("how-it-works.how-to-sign-up.card-4.title"),
+      description: t("how-it-works.how-to-sign-up.card-4.description"),
+    },
   ];
 
   return (
@@ -25,7 +43,7 @@ const HowToSignUp = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="text-3xl md:text-4xl font-bold mb-14"
       >
-        {t("howToSignUp.title")}
+        {t("how-it-works.how-to-sign-up.title")}
       </motion.h2>
 
       <div className="max-w-[90%] w-full mx-auto flex flex-wrap justify-center gap-6">

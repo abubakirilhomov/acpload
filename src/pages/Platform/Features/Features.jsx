@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import Notifications from "./Notifications";
 import Statistics from "./Statistics";
 import Advanced from "./Advanced";
@@ -7,6 +8,8 @@ import Integrated from "./Integrated";
 import Compatibility from "./Compatibility";
 
 const Features = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="relative flex flex-col items-center justify-between min-h-screen bg-gradient-to-r from-[#050A30] to-[#08142B] pb-40 px-4">
       <motion.div
@@ -33,11 +36,11 @@ const Features = () => {
             WebkitTextFillColor: "transparent",
           }}
         >
-          Empower Your Freight Operations
+          {t("features.title")}
         </h2>
 
         <p className="text-base sm:text-xl lg:text-2xl text-gray-300 max-w-5xl leading-relaxed relative z-10">
-          Discover a cutting-edge loadboard platform designed to streamline your US trucking logistics. With our intuitive interface, you can quickly post and search for loads, leverage smart matching with real-time notifications, and utilize advanced tools—like a freight rate calculator, live loadboard statistics, route optimization, and AI-driven insights—to make informed and profitable decisions.
+          {t("features.description")}
         </p>
       </motion.div>
 
@@ -58,9 +61,11 @@ const Features = () => {
           }}
         >
           <div className="absolute inset-0 bg-black/50 rounded-2xl"></div>
-          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold relative z-10">Enhanced Logistics</h3>
+          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold relative z-10">
+            {t("features.fast-and-easy.1.title")} {/* Example, adjust as needed */}
+          </h3>
           <p className="text-base sm:text-xl lg:text-2xl text-gray-300 relative z-10 max-w-[90%]">
-            Optimize your freight operations with our advanced tools. Track shipments in real-time, reduce operational costs, and maximize route efficiency.
+            {t("features.fast-and-easy.1.description-1")} {/* Example, adjust as needed */}
           </p>
         </motion.div>
 
@@ -80,14 +85,15 @@ const Features = () => {
           }}
         >
           <div className="absolute inset-0 bg-black/50 rounded-2xl"></div>
-          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold relative z-10">Seamless Integration</h3>
+          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold relative z-10">
+            {t("features.fast-and-easy.2.title")} {/* Example, adjust as needed */}
+          </h3>
           <p className="text-base sm:text-xl lg:text-2xl text-gray-300 relative z-10 max-w-[90%]">
-            Connect effortlessly with top logistics solutions, integrate with existing TMS systems, and automate processes for a seamless freight experience.
+            {t("features.fast-and-easy.2.description-1")} {/* Example, adjust as needed */}
           </p>
         </motion.div>
       </div>
 
-      {/* Remaining Components */}
       <Advanced />
       <Notifications />
       <Integrated />

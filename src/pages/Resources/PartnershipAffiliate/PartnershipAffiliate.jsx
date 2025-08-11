@@ -11,6 +11,7 @@ import {
   FaHeadset,
   FaCheck,
 } from 'react-icons/fa';
+import { useLocation } from 'react-router-dom';
 
 const PartnershipAffiliate = () => {
   const { t } = useTranslation();
@@ -43,6 +44,12 @@ const PartnershipAffiliate = () => {
       icon: FaHeadset,
     },
   ];
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on route change
+  }, [location.pathname]);
 
   return (
     <div>

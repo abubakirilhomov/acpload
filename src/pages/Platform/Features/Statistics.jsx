@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   FiBell,
   FiMessageSquare,
@@ -8,6 +9,7 @@ import {
 import { FaCheck } from "react-icons/fa";
 
 const Statistics = () => {
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -17,23 +19,23 @@ const Statistics = () => {
   const data = [
     {
       icon: <FiBell className="text-5xl mb-2" />,
-      text: "New Notification",
-      description: "You have a new notification alert.",
+      text: t("features.comprehensive-loadboard.card-1.title"),
+      description: t("features.comprehensive-loadboard.card-1.description"),
     },
     {
       icon: <FiMessageSquare className="text-5xl mb-2" />,
-      text: "New Message",
-      description: "You received a new message.",
+      text: t("features.comprehensive-loadboard.card-2.title"),
+      description: t("features.comprehensive-loadboard.card-2.description"),
     },
     {
       icon: <FiCheckCircle className="text-5xl mb-2" />,
-      text: "Task Completed",
-      description: "Your task has been successfully completed.",
+      text: t("features.comprehensive-loadboard.card-3.title"),
+      description: t("features.comprehensive-loadboard.card-3.description"),
     },
     {
       icon: <FiAlertCircle className="text-5xl mb-2" />,
-      text: "Warning Alert",
-      description: "There is a warning you need to check.",
+      text: t("features.comprehensive-loadboard.card-4.title"),
+      description: t("features.comprehensive-loadboard.card-4.description"),
     },
   ];
 
@@ -44,10 +46,10 @@ const Statistics = () => {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
         }`}
       >
-        Comprehensive Loadboard Statistics
+        {t("features.comprehensive-loadboard.title")}
       </h1>
       <p className="text-white text-lg sm:text-xl text-center mt-4">
-        Live Market Data and Data-Driven Decisions
+        {t("features.comprehensive-loadboard.sub-title")}
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-12 w-full max-w-5xl">

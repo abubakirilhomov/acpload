@@ -6,24 +6,26 @@ import Button from "../../Button/Button";
 import Decor from "../../Decor/Decor";
 
 const WhoBenefits = () => {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
   });
 
+  if (!ready) return <p>Loading translations...</p>;
+
   const benefits = [
     {
-      title: t("whoBenefits.carriers.title"),
-      description: t("whoBenefits.carriers.description"),
+      title: t("how-it-works.who-benefits.card-1.title"),
+      description: t("how-it-works.who-benefits.card-1.description"),
     },
     {
-      title: t("whoBenefits.brokers.title"),
-      description: t("whoBenefits.brokers.description"),
+      title: t("how-it-works.who-benefits.card-2.title"),
+      description: t("how-it-works.who-benefits.card-2.description"),
     },
     {
-      title: t("whoBenefits.owners.title"),
-      description: t("whoBenefits.owners.description"),
+      title: t("how-it-works.who-benefits.card-3.title"),
+      description: t("how-it-works.who-benefits.card-3.description"),
     },
   ];
 
@@ -37,7 +39,7 @@ const WhoBenefits = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-3xl md:text-4xl font-bold mb-6"
         >
-          {t("whoBenefits.title")}
+          {t("how-it-works.who-benefits.title")}
         </motion.h2>
 
         <motion.p
@@ -46,7 +48,7 @@ const WhoBenefits = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
           className="text-lg mb-12"
         >
-          {t("whoBenefits.join")}
+          {t("how-it-works.who-benefits.sub-title")}
         </motion.p>
 
         <div className="flex flex-col lg:flex-row w-full gap-6">
@@ -71,7 +73,7 @@ const WhoBenefits = () => {
           animate={inView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.6 }}
         >
-          <Button text={t("whoBenefits.button")} />
+          <Button text={t("btn-input-texts.get-access-now")} />
         </motion.div>
       </div>
     </section>

@@ -1,19 +1,128 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import SectionContainer from "../../../components/SectionContainer/SectionContainer";
 import CustomText from "../../../components/CustomText/CustomText";
-// Assuming you have a Button component
+import { useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Guides = () => {
   const { t } = useTranslation();
 
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.2 });
+  const [chooseRoleRef, chooseRoleInView] = useInView({ triggerOnce: true, threshold: 0.2 });
+  const [needHelpRef, needHelpInView] = useInView({ triggerOnce: true, threshold: 0.2 });
+
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
+
+  const childVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
+
+  const videoVariants = {
+    hidden: { opacity: 0, x: 50 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
+
+  const VideoEmbed = () => (
+    <div className="aspect-video w-full">
+      <iframe
+        className="rounded w-full h-full"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+  );
+
+  const RoleText = ({ role }) => (
+    <>
+      <CustomText type="title" className="text-3xl font-bold mb-4">
+        {t(`guides-and-videos.${role}.title`)}
+      </CustomText>
+      <CustomText type="text" className="mb-6">
+        {t(`guides-and-videos.${role}.role-overview`)}
+      </CustomText>
+      <CustomText type="text" className="mb-6">
+        {t(`guides-and-videos.${role}.sub-text`)}
+      </CustomText>
+      <CustomText type="text" className="mb-6">
+        {t(`guides-and-videos.${role}.what-will-learn`)}
+        <ul className="list-disc pl-5 mt-2 space-y-1">
+          {Array.from({ length: 5 }, (_, i) => i + 1).map((i) => (
+            <li key={i}>{t(`guides-and-videos.${role}.${i}`)}</li>
+          ))}
+        </ul>
+      </CustomText>
+      <button className="btn btn-info text-white rounded-full w-full sm:w-auto">
+        {t("btn-input-texts.learn-more")}
+      </button>
+    </>
+  );
+
+  const RoleSection = ({ role, bgClass = "", paddingClass = "px-4 py-12", isReversed = false, roundedClass = "" }) => {
+    const [sectionRef, sectionInView] = useInView({ triggerOnce: true, threshold: 0.2 });
+
+    const textClass = isReversed ? `bg-gray-700 p-10 ${roundedClass}` : "";
+    const leftVariants = isReversed ? videoVariants : childVariants;
+    const rightVariants = isReversed ? childVariants : videoVariants;
+    const leftClass = `w-full lg:w-1/2 ${isReversed ? "order-2 lg:order-1" : ""}`;
+    const rightClass = `w-full lg:w-1/2 ${isReversed ? "order-1 lg:order-2" : ""} ${textClass}`;
+
+    const leftContent = isReversed ? <VideoEmbed /> : <RoleText role={role} />;
+    const rightContent = isReversed ? <RoleText role={role} /> : <VideoEmbed />;
+
+    const content = (
+      <motion.div
+        ref={sectionRef}
+        className={`flex flex-col lg:flex-row items-center gap-10 ${paddingClass}`}
+        initial="hidden"
+        animate={sectionInView ? "visible" : "hidden"}
+        variants={sectionVariants}
+      >
+        <motion.div className={leftClass} variants={leftVariants}>
+          {leftContent}
+        </motion.div>
+        <motion.div className={rightClass} variants={rightVariants}>
+          {rightContent}
+        </motion.div>
+      </motion.div>
+    );
+
+    if (bgClass) {
+      return (
+        <div className={bgClass}>
+          <SectionContainer className="text-white">{content}</SectionContainer>
+        </div>
+      );
+    } else {
+      return <SectionContainer className="text-white">{content}</SectionContainer>;
+    }
+  };
+
   return (
     <div>
-      {/* First Section with Background Image */}
-      <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] bg-[url('/images/guides-videos-showcase.png')] bg-cover bg-center flex items-center justify-start">
+      <div ref={heroRef} className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] bg-[url('/images/guides-videos-showcase.png')] bg-cover bg-center flex items-center justify-start">
         <SectionContainer>
           <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
-          <div className="relative z-10 text-start py-12 max-w-3xl">
+          <motion.div
+            className="relative z-10 text-start py-12 max-w-3xl"
+            initial="hidden"
+            animate={heroInView ? "visible" : "hidden"}
+            variants={sectionVariants}
+          >
             <CustomText type="title" className="font-bold mb-6 text-white">
               {t("guides-and-videos.title")}
             </CustomText>
@@ -23,209 +132,36 @@ const Guides = () => {
             <button className="btn btn-info text-white rounded-full">
               {t("main.sub-text")}
             </button>
-          </div>
+          </motion.div>
         </SectionContainer>
       </div>
 
-      {/* Second Section */}
       <SectionContainer>
-        <div className="text-center space-y-5 max-w-3xl mx-auto px-4">
-          <CustomText type="subtitle">
-            {t("guides-and-videos.choose-role-title")}
-          </CustomText>
-          <CustomText type="text">
-            {t("guides-and-videos.choose-role-description")}
-          </CustomText>
-        </div>
+        <motion.div
+          ref={chooseRoleRef}
+          className="text-center space-y-5 max-w-3xl mx-auto px-4"
+          initial="hidden"
+          animate={chooseRoleInView ? "visible" : "hidden"}
+          variants={sectionVariants}
+        >
+          <CustomText type="subtitle">{t("guides-and-videos.choose-role-title")}</CustomText>
+          <CustomText type="text">{t("guides-and-videos.choose-role-description")}</CustomText>
+        </motion.div>
       </SectionContainer>
 
-      {/* Third Section - Carrier Dispatcher */}
-      <div className="bg-gray-800">
-        <SectionContainer className="text-white">
-          <div className="flex flex-col lg:flex-row items-center gap-10 px-4 py-12">
-            {/* Text Section */}
-            <div className="w-full lg:w-1/2">
-              <CustomText type="title" className="text-3xl font-bold mb-4">
-                {t("guides-and-videos.carrier.title")}
-              </CustomText>
-              <CustomText type="text" className="mb-6">
-                {t("guides-and-videos.carrier.role-overview")}
-              </CustomText>
-              <CustomText type="text" className="mb-6">
-                {t("guides-and-videos.carrier.sub-text")}
-              </CustomText>
-              <CustomText type="text" className="mb-6">
-                {t("guides-and-videos.carrier.what-will-learn")}
-                <ul className="list-disc pl-5 mt-2 space-y-1">
-                  <li>{t("guides-and-videos.carrier.1")}</li>
-                  <li>{t("guides-and-videos.carrier.2")}</li>
-                  <li>{t("guides-and-videos.carrier.3")}</li>
-                  <li>{t("guides-and-videos.carrier.4")}</li>
-                  <li>{t("guides-and-videos.carrier.5")}</li>
-                </ul>
-              </CustomText>
-              <button className="btn btn-info text-white rounded-full w-full sm:w-auto">
-                {t("btn-input-texts.learn-more")}
-              </button>
-            </div>
+      <RoleSection role="carrier" bgClass="bg-gray-800" isReversed={false} />
+      <RoleSection role="carrier-dispatcher" bgClass="bg-gray-900" isReversed={true} roundedClass="rounded-tr-4xl rounded-l-4xl" />
+      <RoleSection role="broker" bgClass="bg-gray-800" isReversed={false} />
+      <RoleSection role="shipper" bgClass="" isReversed={true} roundedClass="rounded-br-4xl rounded-l-4xl" paddingClass="px-4 pt-12" />
 
-            {/* Video Section */}
-            <div className="w-full lg:w-1/2">
-              <div className="aspect-video w-full">
-                <iframe
-                  className="rounded w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </SectionContainer>
-      </div>
-
-      {/* Fourth Section - Carrier */}
-      <div className="bg-gray-900">
-        <SectionContainer>
-          <div className="flex flex-col lg:flex-row items-center gap-10 px-4 py-12">
-            {/* Text Section */}
-            <div className="w-full lg:w-1/2">
-              <div className="aspect-video w-full">
-                <iframe
-                  className="rounded w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-
-            <div className="w-full lg:w-1/2 bg-gray-700 p-10 rounded-tr-4xl rounded-l-4xl">
-              <CustomText type="title" className="text-3xl font-bold mb-4">
-                {t("guides-and-videos.carrier-dispatcher.title")}
-              </CustomText>
-              <CustomText type="text" className="mb-6">
-                {t("guides-and-videos.carrier-dispatcher.role-overview")}
-              </CustomText>
-              <CustomText type="text" className="mb-6">
-                {t("guides-and-videos.carrier-dispatcher.sub-text")}
-              </CustomText>
-              <CustomText type="text" className="mb-6">
-                {t("guides-and-videos.carrier-dispatcher.what-will-learn")}
-                <ul className="list-disc pl-5 mt-2 space-y-1">
-                  <li>{t("guides-and-videos.carrier-dispatcher.1")}</li>
-                  <li>{t("guides-and-videos.carrier-dispatcher.2")}</li>
-                  <li>{t("guides-and-videos.carrier-dispatcher.3")}</li>
-                  <li>{t("guides-and-videos.carrier-dispatcher.4")}</li>
-                  <li>{t("guides-and-videos.carrier-dispatcher.5")}</li>
-                </ul>
-              </CustomText>
-              <button className="btn btn-info text-white rounded-full w-full sm:w-auto">
-                {t("btn-input-texts.learn-more")}
-              </button>
-            </div>
-          </div>
-        </SectionContainer>
-      </div>
-
-      {/* Fifth Section - Broker */}
-      <div className="bg-gray-800">
-        <SectionContainer className="text-white">
-          <div className="flex flex-col lg:flex-row items-center gap-10 px-4 py-12">
-            {/* Text Section */}
-            <div className="w-full lg:w-1/2">
-              <CustomText type="title" className="text-3xl font-bold mb-4">
-                {t("guides-and-videos.broker.title")}
-              </CustomText>
-              <CustomText type="text" className="mb-6">
-                {t("guides-and-videos.broker.role-overview")}
-              </CustomText>
-              <CustomText type="text" className="mb-6">
-                {t("guides-and-videos.broker.sub-text")}
-              </CustomText>
-              <CustomText type="text" className="mb-6">
-                {t("guides-and-videos.broker.what-will-learn")}
-                <ul className="list-disc pl-5 mt-2 space-y-1">
-                  <li>{t("guides-and-videos.broker.1")}</li>
-                  <li>{t("guides-and-videos.broker.2")}</li>
-                  <li>{t("guides-and-videos.broker.3")}</li>
-                  <li>{t("guides-and-videos.broker.4")}</li>
-                  <li>{t("guides-and-videos.broker.5")}</li>
-                </ul>
-              </CustomText>
-              <button className="btn btn-info text-white rounded-full w-full sm:w-auto">
-                {t("btn-input-texts.learn-more")}
-              </button>
-            </div>
-
-            {/* Video Section */}
-            <div className="w-full lg:w-1/2">
-              <div className="aspect-video w-full">
-                <iframe
-                  className="rounded w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </SectionContainer>
-      </div>
-
-      {/* Sixth Section - Shipper */}
-      <SectionContainer className="text-white">
-        <div className="flex flex-col lg:flex-row items-center gap-10 px-4 pt-12">
-          {/* Text Section */}
-          <div className="w-full lg:w-1/2">
-            <div className="aspect-video w-full">
-              <iframe
-                className="rounded w-full h-full"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-
-          <div className="w-full lg:w-1/2 bg-gray-700 p-10 rounded-br-4xl rounded-l-4xl">
-            <CustomText type="title" className="text-3xl font-bold mb-4">
-              {t("guides-and-videos.shipper.title")}
-            </CustomText>
-            <CustomText type="text" className="mb-6">
-              {t("guides-and-videos.shipper.role-overview")}
-            </CustomText>
-            <CustomText type="text" className="mb-6">
-              {t("guides-and-videos.shipper.sub-text")}
-            </CustomText>
-            <CustomText type="text" className="mb-6">
-              {t("guides-and-videos.shipper.what-will-learn")}
-              <ul className="list-disc pl-5 mt-2 space-y-1">
-                <li>{t("guides-and-videos.shipper.1")}</li>
-                <li>{t("guides-and-videos.shipper.2")}</li>
-                <li>{t("guides-and-videos.shipper.3")}</li>
-                <li>{t("guides-and-videos.shipper.4")}</li>
-                <li>{t("guides-and-videos.shipper.5")}</li>
-              </ul>
-            </CustomText>
-            <button className="btn btn-info text-white rounded-full w-full sm:w-auto">
-              {t("btn-input-texts.learn-more")}
-            </button>
-          </div>
-        </div>
-      </SectionContainer>
-
-      {/* Need Help Section */}
       <SectionContainer>
-        <div className="border-2 border-info p-10 flex items-center justify-center mx-4">
+        <motion.div
+          ref={needHelpRef}
+          className="border-2 border-info p-10 flex items-center justify-center mx-4"
+          initial="hidden"
+          animate={needHelpInView ? "visible" : "hidden"}
+          variants={sectionVariants}
+        >
           <div className="max-w-3xl text-center">
             <CustomText type="subtitle" className="mb-5">
               {t("guides-and-videos.need-help.title")}
@@ -233,12 +169,12 @@ const Guides = () => {
             <CustomText>
               {t("guides-and-videos.need-help.description-1")}
               <a href="/support-center" className="text-info">
-                 Support Center
+                Support Center
               </a>
               {t("guides-and-videos.need-help.description-2")}
             </CustomText>
           </div>
-        </div>
+        </motion.div>
       </SectionContainer>
     </div>
   );

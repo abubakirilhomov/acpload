@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import CustomText from '../../../components/CustomText/CustomText';
 import SectionContainer from '../../../components/SectionContainer/SectionContainer';
 import { useTranslation } from 'react-i18next';
@@ -6,12 +6,19 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaChartLine, FaTruckMoving, FaFileSignature, FaSearchDollar, FaBolt, FaGlobeAmericas, FaCogs, FaCalculator } from 'react-icons/fa';
 import SubscribeSection from '../../../components/Blog/SubscribeSection/SubscribeSection';
+import { useLocation } from 'react-router-dom';
 
 const Blog = () => {
   const { t } = useTranslation();
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true, threshold: 0.3 });
   const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true, threshold: 0.3 });
   const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true, threshold: 0.3 });
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on route change
+  }, [location.pathname]);
 
   const cardData = [
     { key: 'card-1', icon: FaChartLine },
