@@ -117,12 +117,12 @@ const Carrier = () => {
             variants={itemVariants}
             className="w-full lg:w-[600px] bg-blue-500/80 rounded-2xl p-6 sm:p-8 flex flex-col justify-center items-start"
           >
-            <motion.p
+            {/* <motion.p
               variants={itemVariants}
               className="w-full lg:w-[600px] bg-blue-500/80 rounded-2xl p-6 sm:p-8 flex flex-col justify-center items-start"
             >
               {t("carrier.title")}
-            </motion.p>
+            </motion.p> */}
             <motion.p
               variants={itemVariants}
               className="text-white text-lg sm:text-xl font-medium mb-4 sm:mb-5"
