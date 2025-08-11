@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { Search, Truck, MapPin, Clock } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 export default function FreightLoadboard() {
+  const { t } = useTranslation();
   const [origin, setOrigin] = useState('');
   const [destination, setDestination] = useState('');
   const [freightType, setFreightType] = useState('');
@@ -78,10 +80,10 @@ export default function FreightLoadboard() {
         <div className="relative z-10 flex flex-col items-center justify-center min-h-[60vh] sm:min-h-[80vh] px-4 sm:px-6 lg:px-8 text-center">
           <motion.div variants={fadeIn} initial="hidden" animate="visible">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
-              Live Loadboard
+              {t('loadboard.title')}
             </h1>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 sm:mb-8">
-              Real-Time Freight Opportunities
+              {t('loadboard.sub-title')}
             </h2>
           </motion.div>
 
@@ -92,9 +94,7 @@ export default function FreightLoadboard() {
             animate="visible"
             transition={{ delay: 0.2 }}
           >
-            Unlock up-to-the-minute freight load details at your fingertips. Our Live 
-            Loadboard empowers carriers and owner-operators to quickly identify ideal freight 
-            opportunities as they become available.
+            {t('loadboard.description')}
           </motion.p>
 
           <motion.div
@@ -306,30 +306,34 @@ export default function FreightLoadboard() {
             initial="hidden"
             animate="visible"
           >
-            Key Benefits
+            {t('loadboard.key-benefits.title')}
           </motion.h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-5xl">
             {[
               {
-                title: 'Up-to-the-Minute Information',
-                description: 'Get real-time updates that keep you informed of the latest freight opportunities.'
+                key: 'card-1',
+                title: t('loadboard.key-benefits.card-1.title'),
+                description: t('loadboard.key-benefits.card-1.description')
               },
               {
-                title: 'Enhanced Efficiency',
-                description: 'Advanced filtering and instant notifications minimize downtime, reducing empty miles and increasing profitability.'
+                key: 'card-2',
+                title: t('loadboard.key-benefits.card-2.title'),
+                description: t('loadboard.key-benefits.card-2.description')
               },
               {
-                title: 'Informed Decision-Making',
-                description: 'Leverage live analytics to understand market trends and adjust your operations accordingly.'
+                key: 'card-3',
+                title: t('loadboard.key-benefits.card-3.title'),
+                description: t('loadboard.key-benefits.card-3.description')
               },
               {
-                title: 'Seamless Connectivity',
-                description: 'Direct communication tools help you negotiate and confirm loads quickly, fostering trust and timely transactions.'
+                key: 'card-4',
+                title: t('loadboard.key-benefits.card-4.title'),
+                description: t('loadboard.key-benefits.card-4.description')
               }
             ].map((benefit, index) => (
               <motion.div
-                key={index}
+                key={benefit.key}
                 className="bg-blue-600 bg-opacity-90 rounded-2xl p-6 sm:p-8"
                 variants={scaleUp}
                 initial="hidden"
@@ -354,7 +358,7 @@ export default function FreightLoadboard() {
             initial="hidden"
             animate="visible"
           >
-            Get Started Today
+            {t('loadboard.get-started.title')}
           </motion.h2>
 
           <motion.p
@@ -364,10 +368,7 @@ export default function FreightLoadboard() {
             animate="visible"
             transition={{ delay: 0.2 }}
           >
-            Join our growing network of industry professionals and gain immediate access 
-            to our Live Loadboard. Whether you're looking to post loads or find the perfect 
-            freight match, our live platform is designed to streamline your operations and 
-            drive success.
+            {t('loadboard.get-started.description')}
           </motion.p>
 
           <motion.button
@@ -388,7 +389,7 @@ export default function FreightLoadboard() {
             animate="visible"
             transition={{ delay: 0.4 }}
           >
-            to start harnessing the power of real-time freight management!
+            {t('loadboard.get-started.sub-text')}
           </motion.p>
         </div>
       </div>

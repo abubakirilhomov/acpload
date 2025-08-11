@@ -119,7 +119,7 @@ const Carrier = () => {
           >
             <motion.p
               variants={itemVariants}
-              className="text-2xl sm:text-3xl lg:text-4xl text-white font-bold mb-4 sm:mb-5"
+              className="w-full lg:w-[600px] bg-blue-500/80 rounded-2xl p-6 sm:p-8 flex flex-col justify-center items-start"
             >
               {t("carrier.title")}
             </motion.p>
@@ -142,8 +142,7 @@ const Carrier = () => {
                 backgroundColor: "#ffffff",
                 color: "#000000",
               }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-none border-2 text-white border-white px-6 py-2 sm:px-8 sm:py-3 rounded-md transition text-sm sm:text-base"
+              className="w-full lg:w-auto mt-8 lg:mt-0"
             >
               {t("btn-input-texts.contact-us")}
             </motion.button>
