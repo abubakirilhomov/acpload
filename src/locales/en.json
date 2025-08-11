@@ -348,6 +348,74 @@
     "trucker-calculator": {
         "title": "Trucker Calculator: Estimate Your Gross Earnings",
         "description": "Take control of your finances with our easy-to-use Trucker Calculator. Designed specifically for truckers, this tool helps you estimate your gross revenue for each load by factoring in key variables like distance, rate per mile, and additional income sources.",
+        "stats": {
+            "totalGross": "Total Gross",
+            "workingDays": "Working Days",
+            "totalMiles": "Total Miles",
+            "grossPerMile": "$ per Mile",
+            "netProfit": "Net Profit",
+            "profitPerDay": "Profit per Day",
+            "mileProfit": "Mile Profit",
+            "costPerMile": "Cost per Mile",
+            "totalExpenses": "Total Expenses"
+        },
+        "expenses": {
+            "fixed": "Fixed",
+            "weekly": "Weekly",
+            "monthly": "Monthly",
+            "type": "Type",
+            "typeFixed": "Fixed $",
+            "typePerMile": "Per Mile",
+            "typeOther": "Other",
+            "items": {
+                "truckPayment": "Truck payment",
+                "trailerPayment": "Trailer payment",
+                "truckInsurance": "Truck insurance",
+                "trailerInsurance": "Trailer insurance"
+            }
+        },
+        "expenseSections": {
+            "services": "Services",
+            "wages": "Wages and bonuses",
+            "deductions": "Deductions",
+            "expenses": "Expenses",
+            "labels": {
+                "dispatch": "Dispatch",
+                "safety": "Safety",
+                "factoring": "Factoring",
+                "driverSalary": "Driver salary",
+                "bonuses": "Bonuses",
+                "otherDeductions": "Other deductions",
+                "gallons": "Gallons",
+                "fuel": "Fuel",
+                "tolls": "Tolls",
+                "maintenance": "Maintenance",
+                "eld": "ELD",
+                "ifta": "IFTA",
+                "other": "Other"
+            },
+            "table": {
+                "type": "Type",
+                "value": "Value",
+                "method": "Method",
+                "amount": "Amount",
+                "perMile": "$/mi"
+            },
+            "methods": {
+                "fixed": "Fixed $",
+                "gross": "Gross %",
+                "miles": "Miles $/mi"
+            }
+        },
+        "expenseAnalysis": {
+            "title": "Analysis of your expenses",
+            "categories": {
+                "fixed": "Fixed",
+                "fuel": "Fuel",
+                "services": "Services",
+                "expenses": "Expenses"
+            }
+        },
         "get-started": {
             "title": "Get Started",
             "description": "Ready to see how much you can earn? Simply enter your load details and let our calculator do the rest. Whether you're evaluating a new job or planning your monthly routes, our Trucker Calculator is your partner in financial planning."
@@ -845,8 +913,8 @@
             }
         },
         "fuel-price": {
-            "title": "",
-            "sub-title": "",
+            "title": "Fuel Price Trends",
+            "sub-title": "Cost Insights:",
             "1": {
                 "title": "Fuel Prices Down:",
                 "text": "Diesel costs have decreased by about 4% since January."

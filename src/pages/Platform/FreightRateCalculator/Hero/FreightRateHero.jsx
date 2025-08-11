@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import bgImg from "../../../../assets/freaight-hero.jpeg";
 
 const FreightRateHero = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
+
   return (
     <div
       className="relative text-white min-h-[70vh] bg-cover bg-center"
@@ -21,15 +24,10 @@ const FreightRateHero = () => {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-4xl md:text-5xl text-white font-bold mb-6">
-            Estimate Your Freight Rates Instantly
+            {t("freight-rate-calculator.title")}
           </h1>
           <p className="text-lg md:text-xl text-white mb-8">
-            Unlock accurate freight cost estimates in seconds with our advanced
-            Freight Rate Calculator. Designed for carriers, brokers, and
-            owner-operators, our tool factors in key variables like distance,
-            load weight, and fuel costs to help you plan more efficiently and
-            negotiate better rates. Get started now and see how competitive your
-            pricing can be!
+            {t("freight-rate-calculator.description")}
           </p>
           <motion.button
             className="btn btn-outline text-white border-2 btn-lg"
@@ -37,7 +35,7 @@ const FreightRateHero = () => {
             whileTap={{ scale: 0.95 }}
             onClick={() => navigate("/login")}
           >
-            Post Loads Now
+            {t("btn-input-texts.post-loads-now")}
           </motion.button>
         </motion.div>
       </div>

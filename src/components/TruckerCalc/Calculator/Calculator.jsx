@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const TruckerCalculator = () => {
+  const { t } = useTranslation();
+
   const data = {
     totalGross: 27159,
     workingDays: 30,
@@ -34,31 +37,43 @@ const TruckerCalculator = () => {
 
   return (
     <div className="p-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      <StatBox title="Total Gross" value={`$${data.totalGross.toLocaleString()}`} />
-      <StatBox title="Working Days" value={data.workingDays} />
-      <StatBox title="Total Miles" value={`${data.totalMiles.toLocaleString()}mi`} />
-      <StatBox title="$ per Mile" value={`$${data.grossPerMile}`} />
+      <StatBox
+        title={t("trucker-calculator.stats.totalGross")}
+        value={`$${data.totalGross.toLocaleString()}`}
+      />
+      <StatBox
+        title={t("trucker-calculator.stats.workingDays")}
+        value={data.workingDays}
+      />
+      <StatBox
+        title={t("trucker-calculator.stats.totalMiles")}
+        value={`${data.totalMiles.toLocaleString()}mi`}
+      />
+      <StatBox
+        title={t("trucker-calculator.stats.grossPerMile")}
+        value={`$${data.grossPerMile}`}
+      />
 
       <StatBox
-        title="Net Profit"
+        title={t("trucker-calculator.stats.netProfit")}
         value={`$${data.netProfit.toLocaleString()}`}
         subtext={`${data.netProfitPercent}%`}
         highlight
       />
       <StatBox
-        title="Profit per Day"
+        title={t("trucker-calculator.stats.profitPerDay")}
         value={`$${data.profitPerDay}`}
         subtext={`${data.profitPerDayPercent}%`}
         highlight
       />
       <StatBox
-        title="Mile Profit"
+        title={t("trucker-calculator.stats.mileProfit")}
         value={`$${data.mileProfit}`}
         subtext={`${data.netProfitPercent}%`}
         highlight
       />
       <StatBox
-        title="Cost per Mile"
+        title={t("trucker-calculator.stats.costPerMile")}
         value={`$${data.costPerMile}`}
         subtext={`${data.costPercent}%`}
         highlight
@@ -66,8 +81,12 @@ const TruckerCalculator = () => {
 
       <div className="col-span-full">
         <div className="bg-base-200 rounded-xl p-4 text-center">
-          <span className="font-semibold">Total Expenses: </span>
-          <span className="text-error font-bold">${data.totalExpenses.toLocaleString()} </span>
+          <span className="font-semibold">
+            {t("trucker-calculator.stats.totalExpenses")}:{" "}
+          </span>
+          <span className="text-error font-bold">
+            ${data.totalExpenses.toLocaleString()}{" "}
+          </span>
           <span className="text-gray-500">({data.costPercent}%)</span>
         </div>
       </div>

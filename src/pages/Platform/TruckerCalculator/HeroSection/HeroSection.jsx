@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
 import bgImg from "/images/trucker-calc.png";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const HeroSection = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  const { t } = useTranslation();
+
   return (
     <div
       className="relative min-h-[70vh] bg-cover bg-center"
@@ -21,22 +24,18 @@ const HeroSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-4xl md:text-5xl text-white font-bold mb-6">
-            Trucker Calculator: Estimate Your Gross Earnings
+            {t("trucker-calculator.title")}
           </h1>
           <p className="text-lg md:text-xl text-white mb-8">
-            Take control of your finances with our easy-to-use Trucker
-            Calculator. Designed specifically for truckers, this tool helps you
-            estimate your gross revenue for each load by factoring in key
-            variables like distance, rate per mile, and additional income
-            sources.
+            {t("trucker-calculator.description")}
           </p>
           <motion.button
             className="btn btn-outline text-white border-2 btn-lg"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => navigate('/products/loadboard')}
+            onClick={() => navigate("/products/loadboard")}
           >
-            Book Loads Now
+            {t("trucker-calculator.get-started.title")}
           </motion.button>
         </motion.div>
       </div>

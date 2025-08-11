@@ -22,7 +22,7 @@
     "msg": "Mensaje",
     "submit": "Entregar",
     "send-msg": "Enviar un mensaje",
-    "learn-more": "Más información",
+    "learn-more": "Obtenga más información",
     "read-more": "Leer más",
     "get-access-now": "Obtenga acceso ahora",
     "post-loads-now": "Publicar cargas ahora",
@@ -128,7 +128,7 @@
     },
     "futured-partners": {
       "title": "Socios destacados",
-      "description": "En ACP Loads, creemos en el poder de la colaboración. Nos enorgullece asociarnos con marcas líderes de la industria que comparten nuestro compromiso con la innovación, la eficiencia y la confiabilidad en el sector del transporte y la logística en EE. UU. Estas alianzas nos permiten brindar a nuestros usuarios las mejores herramientas, conocimientos y oportunidades para impulsar el éxito en la industria.",
+      "description": "En ACP Cargas, creemos en el poder de la colaboración. ",
       "osrm": "OSRM: mapeo eficiente y enrutamiento optimizado a través de OSRM",
       "google": "Google: mapeo de precisión para navegación sin problemas",
       "github": "GitHub: Empoderar la colaboración de código sin costuras",
@@ -143,7 +143,7 @@
     }
   },
   "how-it-works": {
-    "title": "Cómo funciona: ¡una coincidencia de carga perfecta para todos!",
+    "title": "Cómo funciona: ¡coincidencia de carga perfecta para todos!",
     "description": "ACP Loads está diseñado para conectar Freight Shi Ppers, corredores, operadores de propietarios y operadores de una manera rápida, eficiente y rentable. ",
     "sub-title": "Comencemos, ¡es 100% gratis!",
     "who-benefits": {
@@ -170,7 +170,7 @@
       },
       "card-2": {
         "title": "Completa el formulario:",
-        "description": "Complete la información necesaria; no te preocupes, solo lleva unos minutos. "
+        "description": "Complete la información necesaria: no se preocupe, solo lleva unos minutos. "
       },
       "card-3": {
         "title": "Verificar:",
@@ -231,7 +231,7 @@
     "fast-and-easy": {
       "1": {
         "title": "Publicación de carga optimizada:",
-        "description-1": "Sin esfuerzo para corredores y cargadores: publique rápidamente las cargas con especificaciones detalladas: ubicaciones de recolección y entrega, peso, requisitos de equipos y marcos de tiempo.",
+        "description-1": "Sin esfuerzo para corredores y cargadores: publique rápidamente las cargas con especificaciones detalladas: ubicaciones de recogida y entrega, peso, requisitos de equipos y plazos.",
         "description-2": "Registro sin problemas: los despachadores de operadores pueden registrarse sin un número de MC, por lo que puede comenzar a publicar cargas de inmediato."
       },
       "2": {
@@ -348,6 +348,74 @@
   "trucker-calculator": {
     "title": "Calculadora de camioneros: estimar sus ganancias brutas",
     "description": "Tome el control de sus finanzas con nuestra calculadora de camioneros fáciles de usar. ",
+    "stats": {
+      "totalGross": "Total bruto",
+      "workingDays": "Días de trabajo",
+      "totalMiles": "Total de millas",
+      "grossPerMile": "$ por milla",
+      "netProfit": "Beneficio neto",
+      "profitPerDay": "Ganancias por día",
+      "mileProfit": "Ganancia de milla",
+      "costPerMile": "Costo por milla",
+      "totalExpenses": "Gastos totales"
+    },
+    "expenses": {
+      "fixed": "Fijado",
+      "weekly": "Semanalmente",
+      "monthly": "Mensual",
+      "type": "Tipo",
+      "typeFixed": "$ $",
+      "typePerMile": "Por milla",
+      "typeOther": "Otro",
+      "items": {
+        "truckPayment": "Pago del camión",
+        "trailerPayment": "Pago del remolque",
+        "truckInsurance": "Seguro de camión",
+        "trailerInsurance": "Seguro de remolque"
+      }
+    },
+    "expenseSections": {
+      "services": "Servicios",
+      "wages": "Salarios y bonos",
+      "deductions": "Deducciones",
+      "expenses": "Gastos",
+      "labels": {
+        "dispatch": "Despacho",
+        "safety": "Seguridad",
+        "factoring": "Factorización",
+        "driverSalary": "Salario del conductor",
+        "bonuses": "Bonificaciones",
+        "otherDeductions": "Otras deducciones",
+        "gallons": "Galón",
+        "fuel": "Combustible",
+        "tolls": "Peajes",
+        "maintenance": "Mantenimiento",
+        "eld": "VEJEZ",
+        "ifta": "Ifta",
+        "other": "Otro"
+      },
+      "table": {
+        "type": "Tipo",
+        "value": "Valor",
+        "method": "Método",
+        "amount": "Cantidad",
+        "perMile": "$/mi"
+      },
+      "methods": {
+        "fixed": "$ $",
+        "gross": "Bruto %",
+        "miles": "Millas $/mi"
+      }
+    },
+    "expenseAnalysis": {
+      "title": "Análisis de sus gastos",
+      "categories": {
+        "fixed": "Fijado",
+        "fuel": "Combustible",
+        "services": "Servicios",
+        "expenses": "Gastos"
+      }
+    },
     "get-started": {
       "title": "Empezar",
       "description": "¿Listo para ver cuánto puedes ganar? "
@@ -395,7 +463,7 @@
       },
       "4": {
         "title": "Interfaz fácil de usar:",
-        "description": "Diseñado para una entrada rápida y cálculos rápidos: obtenga su tasa en segundos"
+        "description": "Diseñado para una entrada rápida y cálculos rápidos: obtenga su tarifa en segundos"
       },
       "5": {
         "title": "Insights del mercado:",
@@ -487,12 +555,12 @@
   },
   "acp-tms": {
     "coming-soon": "Muy pronto:",
-    "title": "ACP TMS: ¡el futuro de la gestión de carga!",
+    "title": "ACP TMS - ¡El futuro de la gestión de carga!",
     "description": "¡Prepárate para una forma más inteligente y más eficiente de administrar tus operaciones de camiones! "
   },
   "carrier-dispatcher": {
     "title": "Buscar y administrar cargas con facilidad",
-    "description": "Maximice la eficiencia, minimice la molestia: la herramienta de búsqueda de carga definitiva para despachadores de operadores! Los despachadores de operadores juegan un papel fundamental en la industria del transporte de camiones al administrar cargas, coordinar a los conductores y garantizar la entrega oportuna de carga. ",
+    "description": "Maximice la eficiencia, minimice la molestia: la herramienta de búsqueda de carga definitiva para los despachadores de operadores! Los despachadores de transportistas juegan un papel fundamental en la industria del transporte de camiones al administrar cargas, coordinar a los conductores y garantizar la entrega oportuna de carga. ",
     "why-use-platform": {
       "1": {
         "title": "Acceso de carga instantánea",
@@ -720,7 +788,7 @@
         "text-2": "Compare y elija las mejores ofertas."
       },
       "4": {
-        "text-1": "Seguimiento en tiempo real-",
+        "text-1": "Seguimiento en tiempo real -",
         "text-2": "Monitoree sus envíos en cada paso del camino."
       },
       "5": {
@@ -729,7 +797,7 @@
       },
       "6": {
         "text-1": "Entrega más rápida -",
-        "text-2": "Reduzca el tiempo de tránsito con la coincidencia de portadores optimizado."
+        "text-2": "Reduzca el tiempo de tránsito con la coincidencia de operadores optimizado."
       },
       "title": "¿Por qué los cargadores eligen nuestra plataforma?"
     },
@@ -759,7 +827,7 @@
     "key-features": {
       "1": "Publicación de carga instantánea: publicar, administrar y editar envíos fácilmente.",
       "2": "Carriers y corredores verificados: trabaje con profesionales de la industria.",
-      "3": "Calculadora de tarifas de flete: garantizar el envío rentable.",
+      "3": "Calculadora de tarifas de flete: garantice un envío rentable.",
       "4": "Matriota de carga optimizada: reduzca los retrasos y aumente la eficiencia.",
       "5": "Seguimiento de envío 24/7: manténgase informado desde la recolección hasta la entrega."
     },
@@ -815,7 +883,7 @@
     "fmcsa-and-dot": {
       "1": {
         "title": "Fecha límite de camioneta anterior a 2000:",
-        "text": "A partir de junio de 2025, todos los camiones, incluidos los modelos anteriores a 2000, deben cumplir con el mandato de campo. "
+        "text": "A partir de junio de 2025, todos los camiones, incluidos los modelos anteriores a 2000, deben cumplir con el mandato de ELD. "
       },
       "2": {
         "title": "Los certificados médicos de DOT se vuelven digital:",
@@ -838,7 +906,7 @@
         "text": "Ajuste las estrategias basadas en las densidades de carga de cambio, las tasas de rechazo y los cambios en el mercado spot."
       },
       "3": {
-        "title": "Partnaciones de operador -broter:",
+        "title": "Asociaciones de corredor de operadores:",
         "text": "Fortalecer las relaciones aprovechando las tasas en vivo, la comunicación transparente y las herramientas de envío confiables."
       },
       "title": "Estrategias de envío para 2025",
@@ -853,8 +921,8 @@
         "title": "Los riesgos geopolíticos permanecen:",
         "text": "Las interrupciones del envío de Medio Oriente aún podrían crear volatilidad, así que vigile las tarifas globales de los petroleros y los cuellos de botella de la cadena de suministro."
       },
-      "title": "",
-      "sub-title": ""
+      "title": "Tendencias de los precios del combustible",
+      "sub-title": "Información sobre costos:"
     },
     "building-freight-networks": {
       "1": {
@@ -903,7 +971,7 @@
     "why-partner": {
       "1": {
         "title": "Tablero de carga de confianza en el sector de logística de EE. UU.",
-        "description": "Nuestra plataforma conecta miles de transportistas, corredores, despachadores y cargadores todos los días."
+        "description": "Nuestra plataforma conecta miles de operadores, corredores, despachadores y cargadores todos los días."
       },
       "2": {
         "title": "Acceso libre, crecimiento rápido",
@@ -938,7 +1006,7 @@
           "text-3": "Operadores de paradas de camiones y proveedores de telemática",
           "text-4": "Startups de tecnología en automatización de logística",
           "text-5": "Corredores de carga digital",
-          "description": "Exploremos cómo podemos integrar, compartir la marca o desarrollar herramientas para avanzar a la industria, juntas."
+          "description": "Exploremos cómo podemos integrar, compartir o desarrollar herramientas para avanzar a la industria."
         },
         "3": {
           "title": "Para corredores con sistemas automatizados",
