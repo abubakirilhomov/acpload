@@ -6,21 +6,23 @@ import { useTranslation } from "react-i18next";
 
 const ReviewRateGrow = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
+
+  if (!ready) return <p>Loading translations...</p>;
 
   const cardData = [
     {
       id: 1,
       icon: <Star className="text-5xl text-info mb-4" />,
-      title: t("review_rate_grow.transparent_reviews.title"),
-      description: t("review_rate_grow.transparent_reviews.description"),
+      title: t("how-it-works.review-grow.1.title"),
+      description: t("how-it-works.review-grow.1.description"),
     },
     {
       id: 2,
       icon: <Users className="text-5xl text-info mb-4" />,
-      title: t("review_rate_grow.build_reputation.title"),
-      description: t("review_rate_grow.build_reputation.description"),
-    }
+      title: t("how-it-works.review-grow.2.title"),
+      description: t("how-it-works.review-grow.2.description"),
+    },
   ];
 
   return (
@@ -31,7 +33,7 @@ const ReviewRateGrow = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        {t("review_rate_grow.heading")}
+        {t("how-it-works.review-grow.title")}
       </motion.h2>
       <div className="flex flex-col md:flex-row justify-center items-center gap-8">
         {cardData.map((card, index) => (

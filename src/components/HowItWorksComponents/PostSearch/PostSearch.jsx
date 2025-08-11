@@ -12,7 +12,9 @@ import {
 
 const PostSearch = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
+
+  if (!ready) return <p>Loading translations...</p>;
 
   return (
     <div ref={ref} className="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center mt-10">
@@ -23,7 +25,7 @@ const PostSearch = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        {t("post_search.heading")}
+        {t("how-it-works.post-search-loads.title")}
       </motion.h1>
 
       {/* Two Columns */}
@@ -36,7 +38,7 @@ const PostSearch = () => {
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
         >
           <h2 className="text-3xl font-semibold mb-6 flex items-center gap-3">
-            {t("post_search.brokers_shippers.title")}
+            {t("how-it-works.post-search-loads.1.sub-title-1")}
           </h2>
           <ul className="space-y-5 text-gray-300">
             <li className="flex items-start gap-4">
@@ -44,9 +46,9 @@ const PostSearch = () => {
                 <FaRegListAlt className="text-white w-6 h-6" />
               </span>
               <div>
-                <strong className="text-lg">{t("post_search.brokers_shippers.load_posting.title")}</strong>
+                <strong className="text-lg">{t("how-it-works.post-search-loads.1.title")}</strong>
                 <p className="mt-1 text-gray-400">
-                  {t("post_search.brokers_shippers.load_posting.description")}
+                  {t("how-it-works.post-search-loads.1.description-1")}
                 </p>
               </div>
             </li>
@@ -55,9 +57,9 @@ const PostSearch = () => {
                 <FaBullseye className="text-white w-6 h-6" />
               </span>
               <div>
-                <strong className="text-lg">{t("post_search.brokers_shippers.targeted_reach.title")}</strong>
+                <strong className="text-lg">{t("how-it-works.post-search-loads.1.sub-title-2")}</strong>
                 <p className="mt-1 text-gray-400">
-                  {t("post_search.brokers_shippers.targeted_reach.description")}
+                  {t("how-it-works.post-search-loads.1.description-2")}
                 </p>
               </div>
             </li>
@@ -72,7 +74,7 @@ const PostSearch = () => {
           transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
         >
           <h2 className="text-3xl font-semibold mb-6 flex items-center gap-3">
-            {t("post_search.carriers_dispatchers.title")}
+            {t("how-it-works.post-search-loads.2.title")}
           </h2>
           <ul className="space-y-5 text-gray-300">
             <li className="flex items-start gap-4">
@@ -80,9 +82,9 @@ const PostSearch = () => {
                 <FaSearch className="text-white w-6 h-6" />
               </span>
               <div>
-                <strong className="text-lg">{t("post_search.carriers_dispatchers.load_searching.title")}</strong>
+                <strong className="text-lg">{t("how-it-works.post-search-loads.2.sub-title-1")}</strong>
                 <p className="mt-1 text-gray-400">
-                  {t("post_search.carriers_dispatchers.load_searching.description")}
+                  {t("how-it-works.post-search-loads.2.description-1")}
                 </p>
               </div>
             </li>
@@ -91,9 +93,9 @@ const PostSearch = () => {
                 <FaTruckLoading className="text-white w-6 h-6" />
               </span>
               <div>
-                <strong className="text-lg">{t("post_search.carriers_dispatchers.empty_truck.title")}</strong>
+                <strong className="text-lg">{t("how-it-works.post-search-loads.2.sub-title-2")}</strong>
                 <p className="mt-1 text-gray-400">
-                  {t("post_search.carriers_dispatchers.empty_truck.description")}
+                  {t("how-it-works.post-search-loads.2.description-2")}
                 </p>
               </div>
             </li>

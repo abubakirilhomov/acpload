@@ -3,8 +3,10 @@ import CustomText from '../../../components/CustomText/CustomText';
 import SectionContainer from '../../../components/SectionContainer/SectionContainer';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useTranslation } from 'react-i18next';
 
 const SubscribeSection = () => {
+  const { t } = useTranslation();
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
 
   return (
@@ -18,20 +20,17 @@ const SubscribeSection = () => {
       <div className="flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="text-white">
           <CustomText type="subtitle" className="text-white mb-2">
-            Subscribe for latest news
-          </CustomText>
-          <CustomText type="subtitle" className="text-white">
-            & updates
+            {t('freight-and-logistics-blog.subscribe.text')}
           </CustomText>
         </div>
         <div className="flex flex-col gap-4 w-full md:w-[360px]">
           <input
             type="email"
-            placeholder="Enter a valid email address"
+            placeholder={t('freight-and-logistics-blog.subscribe.subscribe-form.placeholder')}
             className="rounded-full px-6 py-3 w-full bg-[#3E4F5F] border border-white text-white placeholder-white/70 focus:outline-none"
           />
           <button className="btn btn-info text-white px-6 py-3 rounded-full w-full transition-all duration-300">
-            SUBSCRIBE
+            {t('freight-and-logistics-blog.subscribe.subscribe-form.button')}
           </button>
         </div>
       </div>

@@ -11,7 +11,10 @@ const Showcase = () => {
     threshold: 0.2, // Starts animation when 20% of the component is visible
   });
 
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
+
+  // Show a loading state while translations are not ready
+  if (!ready) return <p>Loading translations...</p>;
 
   const handleScroll = () => {
     window.scrollTo({
@@ -37,7 +40,7 @@ const Showcase = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"
         >
-          {t("showcase.title")}
+          {t("how-it-works.title")}
         </motion.h1>
 
         <motion.p
@@ -46,7 +49,7 @@ const Showcase = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
           className="text-base sm:text-lg md:text-xl leading-relaxed"
         >
-          {t("showcase.description")}
+          {t("how-it-works.description")}
         </motion.p>
 
         <motion.div
@@ -54,7 +57,7 @@ const Showcase = () => {
           animate={inView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.6 }}
         >
-          <Button text={t("showcase.signIn")} />
+          <Button text={t("how-it-works.sub-title")} />
         </motion.div>
       </div>
       <button

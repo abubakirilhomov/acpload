@@ -841,6 +841,7 @@
         "sub-title": "Your Trusted Source for Industry Insights",
         "description": "Stay Ahead in the Fast-Paced World of Freight & Logistics!",
         "why-follow": {
+            "title": "Why Follow Our Blog?",
             "card-1": {
                 "title": "Stay Informed",
                 "description": "Get timely updates on industry trends, regulations, and freight markets."
@@ -960,7 +961,14 @@
                 "text": "Real-time freight rate calculators help carriers and brokers negotiate more competitively."
             }
         },
-        "subscribe": "Subscribe for latest news & updates"
+        "subscribe": {
+           "text": "Subscribe for latest news & updates",
+           "subscribe-form": {
+                "placeholder": "Enter a valid email address",
+                "button": "SUBSCRIBE",
+                "subscribe": "Subscribe for latest news & updates"
+      } 
+    }
     },
     "partnership-and-affiliate": {
         "title": "Partnership & Affiliate Program",
@@ -995,7 +1003,8 @@
                     "text-2": "Custom Referral Links",
                     "text-3": "Analytics Dashboard",
                     "text-4": "Payouts via Stripe or PayPal",
-                    "footer-text": "✅ Perfect for dispatching trainers, loadboard reviewers, and freight marketing pros."
+                    "footer-text": "✅ Perfect for dispatching trainers, loadboard reviewers, and freight marketing pros.",
+                    "read-more": "Read More"  
                 },
                 "2": {
                     "title": "Strategic Partnerships",
@@ -1006,7 +1015,8 @@
                     "text-3": "Truck stop operators & telematics providers",
                     "text-4": "Tech startups in logistics automation",
                     "text-5": "Digital freight brokers",
-                    "description": "Let’s explore how we can integrate, co-brand, or develop tools to move the industry forward  -  together."
+                    "description": "Let’s explore how we can integrate, co-brand, or develop tools to move the industry forward  -  together.",
+                    "read-more": "Read More"
                 },
                 "3": {
                     "title": "For Brokers with Automated Systems",
