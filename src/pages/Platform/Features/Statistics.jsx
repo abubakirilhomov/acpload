@@ -7,6 +7,7 @@ import {
   FiAlertCircle,
 } from "react-icons/fi";
 import { FaCheck } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Statistics = () => {
   const { t } = useTranslation();
@@ -40,38 +41,89 @@ const Statistics = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-4 py-16 bg-[#1e1e2f]">
-      <h1
-        className={`text-3xl sm:text-4xl lg:text-6xl font-bold text-white text-center transition-opacity duration-1000 ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
-        }`}
+    <motion.div
+      className="flex flex-col w-full items-center justify-center min-h-screen px-4 py-16 bg-gradient-to-br from-[#1e1e2f] to-[#2a2a3f]"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      viewport={{ once: false }}
+    >
+      <motion.h1
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        viewport={{ once: false }}
+        className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white text-center mb-4"
       >
         {t("features.comprehensive-loadboard.title")}
-      </h1>
-      <p className="text-white text-lg sm:text-xl text-center mt-4">
+      </motion.h1>
+      <motion.p
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
+        viewport={{ once: false }}
+        className="text-white text-lg sm:text-xl text-center mb-12"
+      >
         {t("features.comprehensive-loadboard.sub-title")}
-      </p>
+      </motion.p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-12 w-full max-w-5xl">
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 w-full max-w-5xl"
+        initial="hidden"
+        whileInView="visible"
+        variants={{
+          hidden: { opacity: 0 },
+          visible: {
+            opacity: 1,
+            transition: { staggerChildren: 0.2, ease: "easeInOut" },
+          },
+        }}
+        viewport={{ once: false }}
+      >
         {data.map((item, index) => (
-          <div
+          <motion.div
             key={index}
-            className={`relative bg-gray-700 border border-white/20 rounded-2xl shadow-xl px-6 py-8 flex flex-col items-center justify-center text-white transition-all duration-1000 transform ${
-              isVisible ? "scale-100 opacity-100" : "scale-50 opacity-0"
-            }`}
+            variants={{
+              hidden: { opacity: 0, scale: 0.9 },
+              visible: { opacity: 1, scale: 1 },
+            }}
+            whileHover={{
+              scale: 1.03,
+              boxShadow: "0 0 30px rgba(255,255,255,0.1)",
+              transition: { duration: 0.3, ease: "easeInOut" },
+            }}
+            className="relative bg-gray-800/80 border border-white/20 rounded-2xl shadow-xl px-6 py-8 flex flex-col items-center justify-center text-white backdrop-blur-sm"
           >
-            <div className="absolute top-4 left-4 w-10 h-10 flex items-center justify-center bg-blue-500 rounded-full">
+            <div className="absolute top-4 left-4 w-10 h-10 flex items-center justify-center bg-blue-600 rounded-full">
               <FaCheck className="text-white text-sm" />
             </div>
-            {item.icon}
-            <h1 className="text-xl sm:text-2xl font-semibold mt-2">{item.text}</h1>
-            <p className="text-sm sm:text-base text-gray-300 text-center mt-2">
+            <motion.div
+              initial={{ opacity: 0, rotate: -10 }}
+              animate={{ opacity: 1, rotate: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+            >
+              {item.icon}
+            </motion.div>
+            <motion.h1
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1, ease: "easeInOut" }}
+              className="text-xl sm:text-2xl font-semibold mt-2"
+            >
+              {item.text}
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
+              className="text-sm sm:text-base text-gray-300 text-center mt-2"
+            >
               {item.description}
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
