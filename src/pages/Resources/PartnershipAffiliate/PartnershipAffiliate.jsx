@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import SectionContainer from '../../../components/SectionContainer/SectionContainer';
 import CustomText from '../../../components/CustomText/CustomText';
