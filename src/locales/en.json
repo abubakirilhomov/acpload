@@ -79,6 +79,11 @@
             "title": "Daily Posted Loads",
             "description": "At ACP Loads, our numbers tell the story of a dynamic and thriving freight community. Our statistics highlight the robust activity on our platform, ensuring that carriers, brokers, and shippers have access to a high volume of opportunities every day."
         },
+        "stats": {
+            "truckloads": "TRUCKLOADS POSTED ANNUALLY",
+            "opportunity": "AVAILABLE LOADS OPPORTUNITIES",
+            "carriers": "Carriers"
+        },
         "why-choose": {
             "title": "Why Choose ACP Loads?",
             "description": "Welcome to ACP Loads, the most dynamic and efficient trucking load board designed to streamline freight matching and optimize logistics. Whether you're a Carrier Dispatcher, Carrier, Broker, or Shipper, our platform is built to simplify your work and help you move freight faster than ever.",

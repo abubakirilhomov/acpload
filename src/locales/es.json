@@ -79,6 +79,11 @@
       "title": "Cargas publicadas diarias",
       "description": "En ACP Cargas, nuestros números cuentan la historia de una comunidad de carga dinámica y próspera. "
     },
+    "stats": {
+      "truckloads": "CAMIONES PUBLICADOS ANUALMENTE",
+      "opportunity": "OPORTUNIDADES DE CARGAS DISPONIBLES",
+      "carriers": "Transportistas"
+    },
     "why-choose": {
       "title": "¿Por qué elegir las cargas de ACP?",
       "description": "Bienvenido a las cargas ACP, el tablero de carga de camiones más dinámico y eficiente diseñado para agilizar la coincidencia de carga y optimizar la logística. ",

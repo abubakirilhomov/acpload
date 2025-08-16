@@ -149,7 +149,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Right Section: App Store Buttons and Trustpilot */}
           <div className="lg:col-span-2 flex flex-col gap-4">
             <div className="flex flex-col gap-2">
               <a

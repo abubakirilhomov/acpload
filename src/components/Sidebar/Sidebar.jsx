@@ -23,9 +23,9 @@ const navLinks = {
       { title: "ACP TMS", link: "/products/acp-tms" },
     ],
     solutions: [
+      { title: "Carrier", link: "/solutions/carrier" },
       { title: "Carrier Dispatcher", link: "/solutions/carrier-dispatcher" },
       { title: "Broker", link: "/solutions/broker" },
-      { title: "Carrier", link: "/solutions/carrier" },
       { title: "Shipper", link: "/solutions/shipper" },
     ],
     resources: [
