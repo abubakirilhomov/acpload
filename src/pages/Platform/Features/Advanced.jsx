@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 const Advanced = () => {
   const { t } = useTranslation();
@@ -22,40 +23,90 @@ const Advanced = () => {
     },
   ];
 
+  const textVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <div className="relative w-full bg-black">
-      <div className="absolute inset-0 bg-black bg-opacity-60 z-10 flex flex-col items-center justify-center px-6 py-12 text-center">
-        <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
+    <motion.div
+      className="relative w-full mt-5 overflow-hidden"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      viewport={{ once: false }}
+    >
+      <div className="absolute inset-0 bg-black/60 z-10 flex flex-col items-center justify-center px-6 py-12 text-center">
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          viewport={{ once: false }}
+          className="text-3xl md:text-5xl font-bold text-white mb-6 drop-shadow-lg"
+        >
           {t("features.advanced-calculator.title")}
-        </h1>
-        <p className="text-white text-sm md:text-lg max-w-3xl">
-          <strong>{t("features.advanced-calculator.1.title")}</strong>
-          <br />
-          • {t("features.advanced-calculator.1.description-1")}
-          <br />
-          • {t("features.advanced-calculator.1.description-2")}
-          <br />
-          <br />
-          <strong>{t("features.advanced-calculator.2.title")}</strong>
-          <br />
-          • {t("features.advanced-calculator.2.description-1")}
-          <br />
-          • {t("features.advanced-calculator.2.description-2")}
-        </p>
+        </motion.h1>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: { staggerChildren: 0.2, ease: "easeInOut" },
+            },
+          }}
+          viewport={{ once: false }}
+          className="text-white text-sm md:text-lg max-w-3xl leading-relaxed"
+        >
+          <motion.strong variants={textVariants} className="block mb-2">
+            {t("features.advanced-calculator.1.title")}
+          </motion.strong>
+          <motion.ul variants={textVariants} className="list-disc list-inside">
+            <motion.li variants={textVariants}>
+              {t("features.advanced-calculator.1.description-1")}
+            </motion.li>
+            <motion.li variants={textVariants}>
+              {t("features.advanced-calculator.1.description-2")}
+            </motion.li>
+          </motion.ul>
+          <motion.strong variants={textVariants} className="block mb-2 mt-4">
+            {t("features.advanced-calculator.2.title")}
+          </motion.strong>
+          <motion.ul variants={textVariants} className="list-disc list-inside">
+            <motion.li variants={textVariants}>
+              {t("features.advanced-calculator.2.description-1")}
+            </motion.li>
+            <motion.li variants={textVariants}>
+              {t("features.advanced-calculator.2.description-2")}
+            </motion.li>
+          </motion.ul>
+        </motion.div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-0 h-[90vh]">
         {images.map((item, index) => (
-          <div key={index} className="relative w-full h-full">
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.6,
+              delay: index * 0.1,
+              ease: "easeInOut",
+            }}
+            viewport={{ once: false }}
+            className="relative w-full h-full overflow-hidden"
+          >
             <img
               src={item.src}
               alt={item.alt}
-              className="w-full h-full object-cover opacity-70"
+              className="w-full h-full object-cover opacity-80 hover:scale-105 transition-transform duration-500 ease-in-out"
             />
-          </div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
