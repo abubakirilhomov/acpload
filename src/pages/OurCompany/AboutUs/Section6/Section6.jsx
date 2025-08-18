@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { AlignEndHorizontal, ShieldHalf, Truck, Users } from 'lucide-react';
 import CountUp from 'react-countup';
 import { useTranslation } from 'react-i18next';
@@ -30,53 +31,123 @@ const Section6 = () => {
     },
   ];
 
+  // Animatsiya variantlari
+  const titleVariants = {
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
+
+  const descriptionVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.2, ease: "easeOut" } },
+  };
+
+  const buttonVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5, delay: 0.4, ease: "easeOut" } },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, delay: i * 0.2, ease: "easeOut" },
+    }),
+  };
+
+  const imageVariants = {
+    hidden: { opacity: 0, x: 100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8, delay: 0.6, ease: "easeOut" } },
+  };
+
   return (
     <section className="bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 py-20 px-6">
       <div className="container mx-auto max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          
           {/* Left Content */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              <motion.h2
+                className="text-4xl md:text-5xl font-bold text-white mb-6"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                variants={titleVariants}
+              >
                 {t("about-us.meet-our-team.title")}
-              </h2>
-              <p className="text-lg text-gray-300 leading-relaxed mb-8">
+              </motion.h2>
+              <motion.p
+                className="text-lg text-gray-300 leading-relaxed mb-8"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                variants={descriptionVariants}
+              >
                 {t("about-us.meet-our-team.description")}
-              </p>
-              <button className="bg-info hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded transition-all duration-300 transform hover:scale-105 shadow-lg">
+              </motion.p>
+              <motion.button
+                className="bg-info hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded transition-all duration-300 transform hover:scale-105 shadow-lg"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                variants={buttonVariants}
+                whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
+                whileTap={{ scale: 0.95 }}
+              >
                 {t("about-us.contact-us.get-in-touch")}
-              </button>
+              </motion.button>
             </div>
-            
+
             {/* Statistics */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12">
               {stats.map((stat, index) => (
-                <div key={index} className="bg-info bg-opacity-90 rounded-lg p-6 text-center">
-                  <div className="flex justify-center mb-4">
+                <motion.div
+                  key={index}
+                  className="bg-info bg-opacity-90 rounded-lg p-6 text-center"
+                  custom={index}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.3 }}
+                  variants={cardVariants}
+                >
+                  <motion.div
+                    className="flex justify-center mb-4"
+                    whileHover={{ scale: 1.2, rotate: 10, transition: { duration: 0.3 } }}
+                  >
                     {stat.icon}
-                  </div>
+                  </motion.div>
                   <h3 className="text-lg font-semibold text-white mb-2">
                     {stat.title}
                   </h3>
                   <p className="text-4xl font-bold text-white">
                     <CountUp end={stat.value} duration={3} separator="," />
                   </p>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
 
           {/* Right Image */}
-          <div className="relative">
+          <motion.div
+            className="relative"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={imageVariants}
+          >
             <div className="rounded-lg overflow-hidden shadow-2xl">
               <div className="relative h-96 lg:h-[500px] bg-gradient-to-br from-gray-300 to-gray-400">
-                <img src={img1} alt="Acp Loads" className="w-full h-full object-cover" />
+                <motion.img
+                  src={img1}
+                  alt="Acp Loads"
+                  className="w-full h-full object-cover"
+                  whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
             </div>
-          </div>
-
+          </motion.div>
         </div>
       </div>
     </section>

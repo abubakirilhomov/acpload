@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion"; // framer-motion import qilinadi
 import bgImg from "../../../../assets/about3.jpg";
 import { Truck, Package, Users, Monitor } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -11,7 +12,7 @@ const Section3 = () => {
       icon: <Users className="w-8 h-8 text-white" />,
       title: t("about-us.who-we-serve.carrier-dispacther"),
       description: t("about-us.who-we-serve.carrier-dispacther-description"),
-      buttonText: t("common.more", "MORE"), // можно вынести в common.json
+      buttonText: t("common.more", "MORE"),
     },
     {
       icon: <Truck className="w-8 h-8 text-white" />,
@@ -33,25 +34,68 @@ const Section3 = () => {
     },
   ];
 
+  // Animatsiya variantlari
+  const titleVariants = {
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
+
+  const descriptionVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.2, ease: "easeOut" } },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, delay: i * 0.2, ease: "easeOut" },
+    }),
+  };
+
   return (
     <section
       style={{ backgroundImage: `url(${bgImg})` }}
       className="md:py-16 md:mt-0 mt-10 md:pt-10 pt-10"
     >
-      <p className="text-4xl text-info font-semibold text-center">
+      <motion.p
+        className="text-5xl text-white font-semibold text-center"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={titleVariants}
+      >
         {t("about-us.who-we-serve.title")}
-      </p>
-      <p className="text-xl text-center">
+      </motion.p>
+      <motion.p
+        className="text-xl text-center text-white"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={descriptionVariants}
+      >
         {t("about-us.who-we-serve.description")}
-      </p>
+      </motion.p>
 
       <div className="grid grid-cols-1 mt-16 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-10 md:pb-0 max-w-[90%] md:max-w-7xl mx-auto">
         {services.map((service, index) => (
-          <div key={index} className="group">
+          <motion.div
+            key={index}
+            className="group"
+            custom={index}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={cardVariants}
+          >
             <div className="bg-blue-400 bg-opacity-90 backdrop-blur-sm rounded-lg p-8 h-full flex flex-col items-center text-center shadow-2xl transform transition-all duration-300 hover:scale-105 hover:bg-opacity-100">
-              <div className="bg-blue-600 rounded-full p-4 mb-6 group-hover:bg-blue-700 transition-colors duration-300">
+              <motion.div
+                className="bg-blue-600 rounded-full p-4 mb-6 group-hover:bg-blue-700 transition-colors duration-300"
+                whileHover={{ scale: 1.1, rotate: 10, transition: { duration: 0.3 } }}
+              >
                 {service.icon}
-              </div>
+              </motion.div>
 
               <h3 className="text-xl font-bold text-white mb-4">
                 {service.title}
@@ -61,11 +105,15 @@ const Section3 = () => {
                 {service.description}
               </p>
 
-              <button className="bg-transparent border-2 border-white text-white px-8 py-2 rounded font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105">
+              <motion.button
+                className="bg-transparent border-2 border-white text-white px-8 py-2 rounded font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105"
+                whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
+                whileTap={{ scale: 0.95 }}
+              >
                 {service.buttonText}
-              </button>
+              </motion.button>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
