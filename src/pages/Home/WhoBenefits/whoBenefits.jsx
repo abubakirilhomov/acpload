@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-const whoBenefits = () => {
+const WhoBenefits = () => {
   const [isVisible, setIsVisible] = useState(false);
   const { t } = useTranslation();
 
@@ -138,4 +138,4 @@ const whoBenefits = () => {
   );
 };
 
-export default whoBenefits;
+export default WhoBenefits;
