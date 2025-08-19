@@ -2,4 +2,7 @@
 @plugin "daisyui" {
   themes: night --default;
 }
-  
+
+@theme {
+  --color-brand: #4096d1
+}
