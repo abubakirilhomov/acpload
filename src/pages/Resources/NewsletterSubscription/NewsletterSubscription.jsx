@@ -163,13 +163,13 @@ const NewsletterSubscription = () => {
                   variants={childVariants}
                   className="btn btn-info text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors"
                 >
-                  {t("btn-input-texts.mission")}
+                  {t("btn-input-texts.subscribe")}
                 </motion.button>
                 <motion.button
                   variants={childVariants}
                   className="btn btn-outline text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition-colors"
                 >
-                  {t("btn-input-texts.donate-now")}
+                  {t("btn-input-texts.contact-us")}
                 </motion.button>
               </motion.div>
             </motion.div>
