@@ -490,6 +490,28 @@
         "description": "Manténgase informado sobre las condiciones actuales del mercado y ajuste su estrategia de precios en tiempo real."
       },
       "title": "¿Por qué usar nuestra calculadora de tasa de carga?"
+    },
+    "form": {
+      "origin": "Origen",
+      "destination": "Destino",
+      "stop": "Parada {{number}}",
+      "add-stop": "Agregar Parada",
+      "weight": "Peso (lbs)",
+      "length": "Longitud (ft)",
+      "freight-type": "Tipo de Flete",
+      "ftl": "FTL",
+      "ltl": "LTL",
+      "base-rate": "Tarifa Base ($/milla)",
+      "total-miles": "Millas Totales (mi)",
+      "fuel-charge": "Cargo por Combustible ($)",
+      "toll-charge": "Cargo por Peaje ($)",
+      "fees-charge": "Cargo por Tarifas ($)",
+      "calculate": "Calcular",
+      "result": "Resultado",
+      "stops": "Paradas",
+      "total-rate": "Tarifa Total ($)",
+      "rpm": "RPM ($/milla)",
+      "post-load": "Publicar tu Carga"
     }
   },
   "terms-and-conditions": {

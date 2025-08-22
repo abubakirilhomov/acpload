@@ -490,6 +490,28 @@
                 "title": "Competitive Advantage:",
                 "description": "Stay informed of current market conditions and adjust your pricing strategy in real time."
             }
+        },
+        "form": {
+            "origin": "Origin",
+            "destination": "Destination",
+            "stop": "Stop {{number}}",
+            "add-stop": "Add Stop",
+            "weight": "Weight (lbs)",
+            "length": "Length (ft)",
+            "freight-type": "Freight Type",
+            "ftl": "FTL",
+            "ltl": "LTL",
+            "base-rate": "Base Rate ($/mile)",
+            "total-miles": "Total Miles (mi)",
+            "fuel-charge": "Fuel Charge ($)",
+            "toll-charge": "Toll Charge ($)",
+            "fees-charge": "Fees Charge ($)",
+            "calculate": "Calculate",
+            "result": "Result",
+            "stops": "Stops",
+            "total-rate": "Total Rate ($)",
+            "rpm": "RPM ($/mile)",
+            "post-load": "Post Your Load"
         }
     },
     "terms-and-conditions": {
