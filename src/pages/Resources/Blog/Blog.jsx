@@ -99,7 +99,7 @@ const Blog = () => {
                 whileHover={{ scale: 1.05 }}
                 className="relative flex-1 min-w-[250px] p-8 flex flex-col items-center text-center bg-white/10 rounded-2xl border border-white/20 cursor-pointer select-none shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] text-white backdrop-blur-md"
               >
-                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 flex items-center justify-center text-white text-2xl font-bold bg-info dark:bg-blue-500 rounded-full shadow-lg">
+                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 flex items-center justify-center text-white text-2xl font-bold bg-info dark:bg-brand rounded-full shadow-lg">
                   <Icon />
                 </div>
                 <CustomText type="heading" className="mt-6">

@@ -40,7 +40,6 @@ const Guides = () => {
         className="rounded w-full h-full"
         src="https://www.youtube.com/embed/dQw4w9WgXcQ"
         title="YouTube video player"
-        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
@@ -66,7 +65,7 @@ const Guides = () => {
           ))}
         </ul>
       </CustomText>
-      <button className="btn btn-info text-white rounded-full w-full sm:w-auto">
+      <button className="btn bg-brand hover:bg-[#3082b8] outline-0 border-0 text-white rounded-full w-full sm:w-auto">
         {t("btn-input-texts.learn-more")}
       </button>
     </>
@@ -129,7 +128,7 @@ const Guides = () => {
             <CustomText type="text" className="mb-8 text-white">
               {t("guides-and-videos.description")}
             </CustomText>
-            <button className="btn btn-info text-white rounded-full">
+            <button className="btn bg-brand hover:bg-[#3082b8] outline-0 border-0 text-white rounded-full">
               {t("main.sub-text")}
             </button>
           </motion.div>
@@ -157,7 +156,7 @@ const Guides = () => {
       <SectionContainer>
         <motion.div
           ref={needHelpRef}
-          className="border-2 border-info p-10 flex items-center justify-center mx-4"
+          className="border-2 border-brand p-10 flex items-center justify-center mx-4"
           initial="hidden"
           animate={needHelpInView ? "visible" : "hidden"}
           variants={sectionVariants}
@@ -167,11 +166,11 @@ const Guides = () => {
               {t("guides-and-videos.need-help.title")}
             </CustomText>
             <CustomText>
-              {t("guides-and-videos.need-help.description-1")}
-              <a href="/support-center" className="text-info">
+              {t("guides-and-videos.need-help.description-1")}{" "}
+              <a href="/support-center" className="text-brand">
                 Support Center
               </a>
-              {t("guides-and-videos.need-help.description-2")}
+              {" "}{t("guides-and-videos.need-help.description-2")}
             </CustomText>
           </div>
         </motion.div>

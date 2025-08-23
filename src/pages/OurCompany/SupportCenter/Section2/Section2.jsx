@@ -24,7 +24,7 @@ const Section2 = () => {
 
   return (
     <motion.section
-      className="bg-blue-300/10 flex flex-col items-center justify-center text-white px-4 py-14 min-h-screen"
+      className="bg-brand/10 flex flex-col items-center justify-center text-white px-4 py-14 min-h-screen"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
@@ -40,7 +40,7 @@ const Section2 = () => {
       <div className="flex flex-col justify-center items-start md:flex-row w-full max-w-5xl gap-10">
         {/* Left Panel */}
         <motion.div
-          className="flex flex-col items-start justify-center border-b-2 md:border-b-0 md:border-r-2 border-blue-300 md:h-80 md:pr-10 w-full md:w-1/2 gap-8"
+          className="flex flex-col items-start justify-center border-b-2 md:border-b-0 md:border-r-2 border-brand md:h-80 md:pr-10 w-full md:w-1/2 gap-8"
           variants={itemVariants}
         >
           <div className="flex flex-col justify-center items-start gap-4 w-full ml-8">
@@ -60,7 +60,7 @@ const Section2 = () => {
               {t("support-center.how-can-we-help.2.description")}
             </p>
             <motion.button
-              className="bg-blue-400 text-white py-2 w-40 hover:bg-blue-500 transition mt-4"
+              className="bg-brand text-white py-2 w-40 hover:bg-blue-500 transition mt-4"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -77,7 +77,7 @@ const Section2 = () => {
           {[
             {
               icon: (
-                <LuMessageCircleQuestion className="text-5xl sm:text-6xl text-blue-400" />
+                <LuMessageCircleQuestion className="text-5xl sm:text-6xl text-brand" />
               ),
               title: t("support-center.how-can-we-help.3.title"),
               text: t("support-center.how-can-we-help.3.description"),
@@ -86,7 +86,7 @@ const Section2 = () => {
               icon: (
                 <BsFillQuestionSquareFill
                   size={40}
-                  className="sm:text-6xl text-blue-400"
+                  className="sm:text-6xl text-brand"
                 />
               ),
               title: t("support-center.how-can-we-help.4.title"),
@@ -94,7 +94,7 @@ const Section2 = () => {
             },
             {
               icon: (
-                <BsNewspaper className="text-5xl sm:text-6xl text-blue-400" />
+                <BsNewspaper className="text-5xl sm:text-6xl text-brand" />
               ),
               title: t("support-center.how-can-we-help.5.title"),
               text: t("support-center.how-can-we-help.5.description"),

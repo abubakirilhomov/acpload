@@ -21,7 +21,7 @@ const Section2 = () => {
           {t("contact-us.how-to-reach-us.card-3.description")}{"\n"}
           <a
             href="mailto:partners@acploads.com"
-            className="text-blue-400 underline"
+            className="text-brand underline"
           >
             {t("contact-us.how-to-reach-us.card-3.email")} partners@acploads.com
           </a>
@@ -34,7 +34,7 @@ const Section2 = () => {
     <div className="bg-gray-900 text-white py-16 px-4 text-center">
       {/* Animated Heading */}
       <motion.h1
-        className="text-4xl md:text-5xl font-bold text-blue-400 mb-10"
+        className="text-4xl md:text-5xl font-bold text-brand mb-10"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -60,14 +60,14 @@ const Section2 = () => {
         {cards.map((card, i) => (
           <motion.div
             key={i}
-            className="bg-gray-800 border border-gray-700 hover:border-blue-500 transition-all p-6 rounded-2xl shadow-md hover:shadow-blue-500/20 hover:scale-[1.03] duration-300 ease-in-out"
+            className="bg-gray-800 border border-gray-700 hover:border-[#0986da] transition-all p-6 rounded-2xl shadow-md hover:shadow-blue-500/20 hover:scale-[1.03] duration-300 ease-in-out"
             variants={{
               hidden: { opacity: 0, y: 30 },
               visible: { opacity: 1, y: 0 },
             }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
-            <h3 className="text-xl font-semibold text-blue-400 mb-3">
+            <h3 className="text-xl font-semibold text-brand mb-3">
               {card.title}
             </h3>
             <p className="text-sm text-gray-200 leading-relaxed">

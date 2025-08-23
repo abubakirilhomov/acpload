@@ -59,7 +59,7 @@ const Section5 = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <motion.h2
-            className="text-4xl md:text-5xl font-bold text-blue-400 mb-8"
+            className="text-4xl md:text-5xl font-bold text-brand mb-8"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
@@ -84,12 +84,12 @@ const Section5 = () => {
               <div
                 className={`
                   ${feature.highlighted
-                    ? 'bg-gradient-to-br from-blue-500 to-blue-600'
+                    ? 'bg-gradient-to-br from-brand to-[#0986da]'
                     : 'bg-transparent border-2 border-gray-600'
                   } 
                   rounded-lg p-8 h-full flex flex-col items-start text-left shadow-2xl 
-                  transform transition-all duration-300 hover:scale-105 
-                  ${feature.highlighted ? 'hover:from-blue-600 hover:to-blue-700' : 'hover:border-blue-400 hover:bg-gray-800/30'}
+                  transform transition-all duration-300 hover:scale-105
+                  ${feature.highlighted ? 'hover:from-[#0986da] hover:to-brand' : 'hover:border-brand hover:bg-gray-800/30'}
                 `}
               >
                 <motion.div
@@ -105,7 +105,7 @@ const Section5 = () => {
                 <h3
                   className={`
                     text-2xl font-bold mb-4
-                    ${feature.highlighted ? 'text-white' : 'text-blue-400'}
+                    ${feature.highlighted ? 'text-white' : 'text-brand'}
                   `}
                 >
                   {feature.title}
@@ -127,7 +127,7 @@ const Section5 = () => {
         {/* CTA Button */}
         <div className="text-center mt-16">
           <motion.button
-            className="bg-info hover:bg-blue-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="bg-brand hover:bg-[#0986da] text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}

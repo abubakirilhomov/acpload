@@ -57,7 +57,7 @@ const ContactSection = () => {
                     </span>
                     <a
                       href="mailto:info@acploads.com"
-                      className="text-blue-400 hover:text-blue-300 transition-colors"
+                      className="text-brand hover:text-blue-300 transition-colors"
                     >
                       info@acploads.com
                     </a>
@@ -68,7 +68,7 @@ const ContactSection = () => {
                     </span>
                     <a
                       href="mailto:support@acploads.com"
-                      className="text-blue-400 hover:text-blue-300 transition-colors"
+                      className="text-brand hover:text-blue-300 transition-colors"
                     >
                       support@acploads.com
                     </a>
@@ -123,7 +123,7 @@ const ContactSection = () => {
                   placeholder={t("btn-input-texts.enter-name")}
                   value={formData.name}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 bg-slate-500 text-white placeholder-slate-300 rounded border border-slate-600 focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-400 transition-colors"
+                  className="w-full px-4 py-3 bg-slate-500 text-white placeholder-slate-300 rounded border border-slate-600 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand transition-colors"
                   required
                 />
 
@@ -135,7 +135,7 @@ const ContactSection = () => {
                   }
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 bg-slate-500 text-white placeholder-slate-300 rounded border border-slate-600 focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-400 transition-colors"
+                  className="w-full px-4 py-3 bg-slate-500 text-white placeholder-slate-300 rounded border border-slate-600 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand transition-colors"
                   required
                 />
 
@@ -145,7 +145,7 @@ const ContactSection = () => {
                   placeholder={t("btn-input-texts.enter-phone")}
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 bg-slate-500 text-white placeholder-slate-300 rounded border border-slate-600 focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-400 transition-colors"
+                  className="w-full px-4 py-3 bg-slate-500 text-white placeholder-slate-300 rounded border border-slate-600 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand transition-colors"
                   required
                 />
 
@@ -155,7 +155,7 @@ const ContactSection = () => {
                   placeholder={t("btn-input-texts.enter-company")}
                   value={formData.company}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 bg-slate-500 text-white placeholder-slate-300 rounded border border-slate-600 focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-400 transition-colors"
+                  className="w-full px-4 py-3 bg-slate-500 text-white placeholder-slate-300 rounded border border-slate-600 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand transition-colors"
                 />
 
                 <textarea
@@ -164,13 +164,13 @@ const ContactSection = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                   rows={6}
-                  className="w-full px-4 py-3 bg-slate-500 text-white placeholder-slate-300 rounded border border-slate-600 focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-400 transition-colors resize-vertical"
+                  className="w-full px-4 py-3 bg-slate-500 text-white placeholder-slate-300 rounded border border-slate-600 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand transition-colors resize-vertical"
                   required
                 />
 
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-slate-700"
+                  className="w-full bg-brand hover:bg-[#0986da] text-white font-semibold py-3 px-6 rounded transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 focus:ring-offset-slate-700"
                 >
                   {t("btn-input-texts.submit")}
                 </button>

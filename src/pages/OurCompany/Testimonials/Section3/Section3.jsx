@@ -78,7 +78,7 @@ const Section3 = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-300 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-brand mb-4">
             {t("testimonials-and-reviews.real-stories.title")}
           </h2>
           <p className="text-white text-lg md:text-xl">
@@ -121,7 +121,7 @@ const Section3 = () => {
 
               {/* Author Info */}
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-brand rounded-full flex items-center justify-center flex-shrink-0">
                   <User className="w-6 h-6 text-white" />
                 </div>
                 <div className="text-white">

@@ -30,7 +30,7 @@ const SubscribeSection = () => {
             )}
             className="rounded-full px-6 py-3 w-full bg-[#3E4F5F] border border-white text-white placeholder-white/70 focus:outline-none"
           />
-          <button className="btn btn-info text-white px-6 py-3 rounded-full w-full transition-all duration-300">
+          <button className="btn bg-brand border-0 outline-0 hover:bg-[#3082b8] text-white px-6 py-3 rounded-full w-full transition-all duration-300">
             {t("freight-and-logistics-blog.subscribe.subscribe-form.button")}
           </button>
         </div>

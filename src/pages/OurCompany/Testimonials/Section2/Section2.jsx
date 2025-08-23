@@ -38,7 +38,7 @@ const Section2 = () => {
         >
           {/* Heading */}
           <motion.p
-            className="text-3xl text-center md:text-5xl font-bold text-blue-300 leading-tight"
+            className="text-3xl text-center md:text-5xl font-bold text-brand leading-tight"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -58,7 +58,7 @@ const Section2 = () => {
                 viewport={{ once: true }}
               >
                 <div className="flex-shrink-0 mt-1">
-                  <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 bg-brand rounded-full flex items-center justify-center">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                 </div>

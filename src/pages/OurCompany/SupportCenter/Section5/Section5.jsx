@@ -50,21 +50,21 @@ const Section5 = () => {
               {[
                 {
                   icon: (
-                    <LuMessageCircleQuestion className="text-5xl sm:text-6xl text-blue-400" />
+                    <LuMessageCircleQuestion className="text-5xl sm:text-6xl text-brand" />
                   ),
                   title: t("support-center.how-can-we-help.3.title"),
                   text: t("support-center.how-can-we-help.3.description"),
                 },
                 {
                   icon: (
-                    <BsFillQuestionSquareFill className="text-5xl sm:text-6xl text-blue-400" />
+                    <BsFillQuestionSquareFill className="text-5xl sm:text-6xl text-brand" />
                   ),
                   title: t("support-center.how-can-we-help.4.title"),
                   text: t("support-center.how-can-we-help.4.description"),
                 },
                 {
                   icon: (
-                    <BsNewspaper className="text-5xl sm:text-6xl text-blue-400" />
+                    <BsNewspaper className="text-5xl sm:text-6xl text-brand" />
                   ),
                   title: t("support-center.how-can-we-help.5.title"),
                   text: t("support-center.how-can-we-help.5.description"),

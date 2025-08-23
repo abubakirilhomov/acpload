@@ -37,7 +37,7 @@ const Section5 = () => {
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="relative z-10 max-w-6xl mx-auto text-center">
         <motion.p
-          className="text-4xl md:text-5xl font-semibold text-blue-300 mb-6"
+          className="text-4xl md:text-5xl font-semibold text-brand mb-6"
           variants={itemVariants}
         >
           {t("testimonials-and-reviews.share-your-story.title")}
@@ -55,7 +55,7 @@ const Section5 = () => {
           variants={itemVariants}
         >
           <motion.button
-            className="bg-blue-500 text-white px-10 md:px-20 py-3 rounded-full hover:bg-white hover:text-black transition-all duration-300 mb-5 md:mb-0"
+            className="bg-brand text-white px-10 md:px-20 py-3 rounded-full hover:bg-white hover:text-black transition-all duration-300 mb-5 md:mb-0"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -63,7 +63,7 @@ const Section5 = () => {
           </motion.button>
 
           <motion.button
-            className="bg-white text-black px-10 md:px-20 py-3 rounded-full hover:bg-blue-500 hover:text-white transition-all duration-300"
+            className="bg-white text-black px-10 md:px-20 py-3 rounded-full hover:bg-brand hover:text-white transition-all duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

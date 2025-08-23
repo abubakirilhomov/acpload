@@ -99,7 +99,7 @@ const FAQs = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            className="w-full md:w-2/3 z-10 bg-gray-500 p-6 sm:p-8 md:p-10 rounded-3xl mb-10 md:mb-0 md:-mr-16"
+            className="w-full md:w-2/3 z-10 bg-brand p-6 sm:p-8 md:p-10 rounded-3xl mb-10 md:mb-0 md:-mr-16"
           >
             <CustomText
               type="title"
@@ -216,7 +216,7 @@ const FAQs = () => {
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
                 type="text"
                 placeholder={t("btn-input-texts.full-name")}
-                className="w-full px-4 py-3 rounded-4xl bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full px-4 py-3 rounded-4xl bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand"
               />
               <motion.input
                 initial={{ opacity: 0, y: 20 }}
@@ -224,7 +224,7 @@ const FAQs = () => {
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
                 type="email"
                 placeholder={t("btn-input-texts.email")}
-                className="w-full px-4 py-3 rounded-4xl bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full px-4 py-3 rounded-4xl bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand"
               />
             </div>
             <motion.textarea
@@ -233,7 +233,7 @@ const FAQs = () => {
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
               rows="5"
               placeholder={t("btn-input-texts.enter-msg")}
-              className="w-full px-4 py-3 rounded-2xl bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full px-4 py-3 rounded-2xl bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand"
             ></motion.textarea>
 
             <motion.button
@@ -241,7 +241,7 @@ const FAQs = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
               type="submit"
-              className="btn bg-[#3f96d1] rounded-full text-white transition"
+              className="btn bg-brand rounded-full text-white transition"
             >
               {t("btn-input-texts.submit")}
             </motion.button>

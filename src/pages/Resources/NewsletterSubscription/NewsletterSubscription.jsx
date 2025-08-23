@@ -92,7 +92,7 @@ const NewsletterSubscription = () => {
   ];
 
   const InfoCard = ({ icon, text }) => (
-    <div className="bg-[#4c7397] p-6 rounded-2xl">
+    <div className="bg-brand p-6 rounded-2xl">
       <motion.div whileInView={{ scale: 1.05 }} transition={{ duration: 0.5 }}>
         <span className="block mb-2">{icon}</span>
         <CustomText type="text" className="text-base sm:text-lg text-white/90">
@@ -111,7 +111,7 @@ const NewsletterSubscription = () => {
       whileHover={{ scale: 1.05 }}
       className="flex-1 min-w-[250px] p-4 sm:p-6 flex flex-col lg:flex-row items-center lg:items-center text-left bg-[#2a3447] rounded-4xl border border-white/10 cursor-pointer select-none shadow-md"
     >
-      <div className="lg:static lg:ml-0 lg:mr-4 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-info sm:bg-transparent text-info rounded-full shadow-md">
+      <div className="lg:static lg:ml-0 lg:mr-4 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-brand sm:bg-transparent text-brand rounded-full shadow-md">
         <MdStarRate className=" text-xl sm:text-3xl text-white sm:text-info" />
       </div>
       <div className="mt-4 lg:mt-0">
@@ -161,7 +161,7 @@ const NewsletterSubscription = () => {
               <motion.div variants={childVariants} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <motion.button
                   variants={childVariants}
-                  className="btn bg-[#3b82f6] text-white px-6 py-3 rounded-full  transition-colors"
+                  className="btn bg-brand hover:bg-[#3082b8] text-white px-6 py-3 rounded-full  transition-colors"
                 >
                   {t("btn-input-texts.subscribe")}
                 </motion.button>
@@ -195,7 +195,7 @@ const NewsletterSubscription = () => {
             <CustomText type="text" className="mb-6">
               {t("newsletter-subscription.join-our-newsletter.description")}
             </CustomText>
-            <button className="btn bg-[#4c7397] rounded-full text-white">
+            <button className="btn bg-brand rounded-full text-white">
               {t("btn-input-texts.learn-more")}
             </button>
           </motion.div>
@@ -232,7 +232,7 @@ const NewsletterSubscription = () => {
       >
         <SectionContainer className="text-white py-8">
           <div className="flex items-center">
-            <span className="block w-6 h-36 bg-info mb-2"></span>
+            <span className="block w-6 h-36 bg-brand mb-2"></span>
             <div className="ml-4">
               <CustomText type="title" className="text-4xl font-bold">
                 {t("newsletter-subscription.our-privacy-matters.title")}

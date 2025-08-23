@@ -54,7 +54,7 @@ const Section4 = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-300 capitalize">
+          <h2 className="text-4xl md:text-5xl font-bold text-brand capitalize">
             {t("testimonials-and-reviews.how-our-review.title")}
           </h2>
         </motion.div>

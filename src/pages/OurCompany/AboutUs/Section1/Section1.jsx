@@ -54,7 +54,7 @@ export default function AboutUs() {
             variants={textVariants}
           >
             <div className="space-y-4">
-              <p className="text-blue-400 text-lg font-medium tracking-wide">{t("about-us.about-us")}</p>
+              <p className="text-brand text-lg font-medium tracking-wide">{t("about-us.about-us")}</p>
 
               <h1 className="text-white text-4xl lg:text-5xl font-bold leading-tight">
                 {t("about-us.title")}
@@ -73,7 +73,7 @@ export default function AboutUs() {
               variants={buttonVariants}
             >
               <button
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg font-semibold tracking-wide"
+                className="bg-brand hover:bg-[#3082b8] transition-all text-white px-8 py-3 text-lg font-semibold tracking-wide"
                 size="lg"
               >
                 {t("btn-input-texts.contact-us")}

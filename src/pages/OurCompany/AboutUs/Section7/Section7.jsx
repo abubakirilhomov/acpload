@@ -9,15 +9,15 @@ const Section7 = () => {
 
   const commitments = [
     {
-      icon: <Users className="w-6 h-6 text-blue-400" />,
+      icon: <Users className="w-6 h-6 text-brand" />,
       title: t("about-us.our-commitment.1"),
     },
     {
-      icon: <Shield className="w-6 h-6 text-blue-400" />,
+      icon: <Shield className="w-6 h-6 text-brand" />,
       title: t("about-us.our-commitment.2"),
     },
     {
-      icon: <TrendingUp className="w-6 h-6 text-blue-400" />,
+      icon: <TrendingUp className="w-6 h-6 text-brand" />,
       title: t("about-us.our-commitment.3"),
     },
   ];
@@ -27,7 +27,7 @@ const Section7 = () => {
     { name: "LANDSTAR", color: "text-blue-600" },
     { name: "FedEx", color: "text-purple-600" },
     { name: "UNITED STATES POSTAL SERVICE", color: "text-blue-500" },
-    { name: "OSRM", color: "text-blue-400" },
+    { name: "OSRM", color: "text-brand" },
   ];
 
   // Animatsiya variantlari
@@ -75,7 +75,7 @@ const Section7 = () => {
           {/* Left Content - Commitments */}
           <div className="space-y-8">
             <motion.h2
-              className="text-4xl md:text-5xl font-bold text-blue-400 mb-8"
+              className="text-4xl md:text-5xl font-bold text-brand mb-8"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
@@ -204,7 +204,7 @@ const Section7 = () => {
                   )}
                   {partner.name === "OSRM" && (
                     <motion.div
-                      className="text-blue-400 font-bold text-xl"
+                      className="text-brand font-bold text-xl"
                       whileHover={{ scale: 1.2, transition: { duration: 0.3 } }}
                     >
                       OSRM

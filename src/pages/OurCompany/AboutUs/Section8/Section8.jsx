@@ -22,12 +22,9 @@ const Section8 = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
     setFormData({ name: '', email: '', message: '' });
   };
 
-  // Animatsiya variantlari
   const titleVariants = {
     hidden: { opacity: 0, y: -50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
@@ -113,7 +110,7 @@ const Section8 = () => {
                     variants={contactVariants}
                   >
                     <motion.div
-                      className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center"
+                      className="w-12 h-12 bg-brand rounded-full flex items-center justify-center"
                       whileHover={{ scale: 1.2, rotate: 10, transition: { duration: 0.3 } }}
                     >
                       {item?.icon}
@@ -168,7 +165,7 @@ const Section8 = () => {
                         onChange={handleInputChange}
                         rows="5"
                         placeholder={field.placeholder}
-                        className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 resize-vertical"
+                        className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand text-gray-900 resize-vertical"
                       />
                     ) : (
                       <input
@@ -177,7 +174,7 @@ const Section8 = () => {
                         value={formData[field.name]}
                         onChange={handleInputChange}
                         placeholder={field.placeholder}
-                        className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
+                        className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand text-gray-900"
                       />
                     )}
                   </motion.div>
@@ -185,12 +182,12 @@ const Section8 = () => {
 
                 <motion.button
                   onClick={handleSubmit}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                  className="w-full bg-brand hover:bg-[#0986da] text-white font-semibold py-3 px-6 rounded-lg shadow-lg"
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.3 }}
                   variants={buttonVariants}
-                  whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
+                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                   whileTap={{ scale: 0.95 }}
                 >
                     {t("btn-input-texts.submit")}

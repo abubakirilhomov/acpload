@@ -40,7 +40,7 @@ const Section4 = () => {
           variants={itemVariants}
         >
           <div className="w-full mx-auto">
-            <div className="text-4xl text-blue-500 font-semibold">
+            <div className="text-4xl text-brand font-semibold">
               <TextType
                 text={[
                   t("support-center.submit-request.title"),
@@ -76,7 +76,7 @@ const Section4 = () => {
                 type="text"
                 id="name"
                 placeholder={t("btn-input-texts.enter-name")}
-                className="w-full p-2 text-gray-800 bg-white rounded-sm outline-none"
+                className="w-full p-2 text-gray-800 bg-white rounded-sm outline-none border-0"
               />
             </div>
             <div>
@@ -87,7 +87,7 @@ const Section4 = () => {
                 type="email"
                 id="email"
                 placeholder={t("btn-input-texts.enter-email")}
-                className="w-full p-2 text-gray-800 bg-white rounded-sm outline-none"
+                className="w-full p-2 text-gray-800 bg-white rounded-sm outline-none border-0"
               />
             </div>
             <div>
@@ -98,12 +98,12 @@ const Section4 = () => {
                 id="message"
                 rows="6"
                 placeholder={t("btn-input-texts.enter-msg")}
-                className="w-full p-2 text-gray-800 bg-white rounded-sm outline-none resize-none"
+                className="w-full p-2 text-gray-800 bg-white rounded-sm outline-none border-0 resize-none"
               ></textarea>
             </div>
             <motion.button
               type="submit"
-              className="bg-[#5a9bd8] text-white px-4 py-2 mt-2 hover:bg-[#488dc7] transition"
+              className="bg-brand text-white px-4 py-2 mt-2 hover:bg-[#0986da]"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

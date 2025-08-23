@@ -19,7 +19,7 @@ const Section6 = () => {
             showCursor={true}
             cursorCharacter="_"
           />
-          <span className="border-l-4 border-blue-500 mr-3 h-10"></span>
+          <span className="border-l-4 border-brand mr-3 h-10"></span>
         </h1>
 
         <div className="flex flex-col md:flex-row justify-between items-stretch gap-8">
@@ -45,7 +45,7 @@ const Section6 = () => {
               <p className="text-gray-300 mt-2">
                 {t("support-center.stay-connected.card-1.description")}
               </p>
-              <button className="mt-6 px-5 py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded">
+              <button className="mt-6 px-5 py-2 bg-brand hover:bg-[#0986da] transition-all text-white font-semibold rounded">
                 {t("btn-input-texts.read-more")}
               </button>
             </div>
@@ -73,7 +73,7 @@ const Section6 = () => {
               <p className="text-gray-300 mt-2">
                 {t("support-center.stay-connected.card-2.description")}
               </p>
-              <button className="mt-6 px-5 py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded">
+              <button className="mt-6 px-5 py-2 bg-brand hover:bg-[#0986da] transition-all text-white font-semibold rounded">
                 {t("btn-input-texts.read-more")}
               </button>
             </div>

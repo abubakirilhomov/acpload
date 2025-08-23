@@ -89,9 +89,9 @@ const Section3 = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={cardVariants}
           >
-            <div className="bg-blue-400 bg-opacity-90 backdrop-blur-sm rounded-lg p-8 h-full flex flex-col items-center text-center shadow-2xl transform transition-all duration-300 hover:scale-105 hover:bg-opacity-100">
+            <div className="bg-brand bg-opacity-90 backdrop-blur-sm rounded-lg p-8 h-full flex flex-col items-center text-center shadow-2xl transform transition-all duration-300 hover:scale-105 hover:bg-opacity-100">
               <motion.div
-                className="bg-blue-600 rounded-full p-4 mb-6 group-hover:bg-blue-700 transition-colors duration-300"
+                className="bg-[#29709f] rounded-full p-4 mb-6 group-hover:bg-[#0387df] transition-colors duration-300"
                 whileHover={{ scale: 1.1, rotate: 10, transition: { duration: 0.3 } }}
               >
                 {service.icon}
@@ -106,7 +106,7 @@ const Section3 = () => {
               </p>
 
               <motion.button
-                className="bg-transparent border-2 border-white text-white px-8 py-2 rounded font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105"
+                className="bg-transparent border-2 border-white text-white px-8 py-2 rounded font-semibold hover:bg-white hover:text-brand transition-all duration-300 transform hover:scale-105"
                 whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
                 whileTap={{ scale: 0.95 }}
               >

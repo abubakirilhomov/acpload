@@ -61,7 +61,7 @@ const PartnershipAffiliate = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="flex flex-col lg:flex-row items-start justify-between gap-6 mb-10"
         >
-          <div className="w-full lg:w-[65%] h-64 sm:h-80 p-4 sm:p-6 bg-[#4c7397] rounded-2xl sm:rounded-4xl flex flex-col justify-center">
+          <div className="w-full lg:w-[65%] h-64 sm:h-80 p-4 sm:p-6 bg-brand rounded-2xl sm:rounded-4xl flex flex-col justify-center">
             <CustomText type="title">{t('partnership-and-affiliate.title')}</CustomText>
             <CustomText type="heading" className="mt-2">{t('partnership-and-affiliate.sub-title-1')}</CustomText>
             <CustomText type="text" className="mt-4 sm:mt-6">
@@ -86,7 +86,7 @@ const PartnershipAffiliate = () => {
           className="flex flex-col lg:flex-row items-start justify-between gap-6"
         >
           <div className="w-full lg:w-[35%] mb-6 lg:mt-0 lg:mr-6">
-            <div className="w-full h-64 sm:h-80 p-4 sm:p-6 bg-[#4c7397] rounded-2xl sm:rounded-4xl flex flex-col justify-center">
+            <div className="w-full h-64 sm:h-80 p-4 sm:p-6 bg-brand rounded-2xl sm:rounded-4xl flex flex-col justify-center">
               <CustomText type="text" className="mb-5">
               {t('partnership-and-affiliate.description-2')}
             </CustomText>
@@ -126,7 +126,7 @@ const PartnershipAffiliate = () => {
                   whileHover={{ scale: 1.05 }}
                   className="flex-1 min-w-[250px] p-4 sm:p-6 flex flex-col lg:flex-row items-center lg:items-start text-left bg-[#2a3447] rounded-4xl border border-white/10 cursor-pointer select-none shadow-md text-white"
                 >
-                  <div className="lg:static lg:ml-0 lg:mr-4 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-info rounded-full shadow-md">
+                  <div className="lg:static lg:ml-0 lg:mr-4 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-brand rounded-full shadow-md">
                     <Icon className="text-white text-xl sm:text-2xl" />
                   </div>
                   <div className="mt-4 lg:mt-0">
@@ -190,7 +190,7 @@ const PartnershipAffiliate = () => {
                 {t('partnership-and-affiliate.why-partner.cards.1.footer-text')}
               </CustomText>
             </div>
-            <button className="btn rounded-full border-none bg-[#6b99c7] text-white hover:bg-[#5a87b6] transition-colors">
+            <button className="btn rounded-full border-none bg-brand text-white hover:bg-[#3082b8] transition-colors">
               {t('btn-input-texts.read-more')}
             </button>
           </motion.div>
@@ -199,7 +199,7 @@ const PartnershipAffiliate = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView3 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: 'easeOut', delay: 0.4 }}
-            className="flex-1 p-8 rounded-4xl shadow-lg bg-[#4c7397]"
+            className="flex-1 p-8 rounded-4xl shadow-lg bg-brand"
           >
             <CustomText type="subtitle" className="text-white mb-4">
               {t('partnership-and-affiliate.why-partner.cards.2.title')}
@@ -220,7 +220,7 @@ const PartnershipAffiliate = () => {
             <CustomText type="text" className="text-white/80 mb-8 leading-relaxed">
               {t('partnership-and-affiliate.why-partner.cards.2.description')}
             </CustomText>
-            <button className="btn rounded-full border-none bg-[#6b99c7] text-white hover:bg-[#5a87b6] transition-colors">
+            <button className="btn rounded-full border-none bg-base-200 text-white transition-colors">
               {t('btn-input-texts.read-more', { defaultValue: 'Read More' })}
             </button>
           </motion.div>
@@ -235,7 +235,7 @@ const PartnershipAffiliate = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="flex flex-col lg:flex-row items-start justify-between gap-6"
         >
-          <div className="w-full lg:w-[50%] h-[400px] sm:h-[500px] p-4 sm:p-6 bg-[#4c7397] rounded-2xl sm:rounded-4xl flex flex-col justify-center">
+          <div className="w-full lg:w-[50%] h-[400px] sm:h-[500px] p-4 sm:p-6 bg-brand rounded-2xl sm:rounded-4xl flex flex-col justify-center">
             <CustomText type="subtitle">{t('partnership-and-affiliate.why-partner.cards.3.title')}</CustomText>
             <CustomText type="text" className="mt-4 sm:mt-6">
               {t('partnership-and-affiliate.why-partner.cards.3.description')}
@@ -306,7 +306,7 @@ const PartnershipAffiliate = () => {
               className="w-full p-3 bg-gray-500 text-white rounded-2xl focus:outline-none h-32"
             ></textarea>
           </div>
-          <button type="submit" className="w-full btn btn-info text-white px-6 py-5 rounded-2xl transition-colors">
+          <button type="submit" className="w-full btn bg-brand border-0 outline-0 hover:bg-[#3082b8] text-white px-6 py-5 rounded-2xl transition-colors">
             {t('btn-input-texts.submit', { defaultValue: 'Submit' })}
           </button>
         </motion.form>

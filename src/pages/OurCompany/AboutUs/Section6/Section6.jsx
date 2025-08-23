@@ -87,12 +87,12 @@ const Section6 = () => {
                 {t("about-us.meet-our-team.description")}
               </motion.p>
               <motion.button
-                className="bg-info hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="bg-brand hover:bg-[#0986da] text-white font-semibold py-3 px-8 rounded shadow-lg"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
                 variants={buttonVariants}
-                whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
+                whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                 whileTap={{ scale: 0.95 }}
               >
                 {t("about-us.contact-us.get-in-touch")}
@@ -104,7 +104,7 @@ const Section6 = () => {
               {stats.map((stat, index) => (
                 <motion.div
                   key={index}
-                  className="bg-info bg-opacity-90 rounded-lg p-6 text-center"
+                  className="bg-brand bg-opacity-90 rounded-lg p-6 text-center"
                   custom={index}
                   initial="hidden"
                   whileInView="visible"

@@ -49,7 +49,7 @@ const Section3 = () => {
       </motion.p>
       <div className="flex flex-col lg:flex-row items-start justify-center md:gap-12 w-full">
         <motion.img
-          className="w-1/2 border-2 border-blue-400 shadow-sm shadow-white mx-auto sm:max-w-sm md:max-w-md"
+          className="w-1/2 border-2 border-brand shadow-sm shadow-white mx-auto sm:max-w-sm md:max-w-md"
           src="/images/think.png"
           alt="support"
           variants={itemVariants}
@@ -64,7 +64,7 @@ const Section3 = () => {
               className="flex items-start justify-center gap-2 sm:gap-4"
               variants={itemVariants}
             >
-              <IoCheckmarkCircle className="text-blue-400" size={35} />
+              <IoCheckmarkCircle className="text-brand" size={35} />
               <p className="text-sm sm:text-xl md:text-2xl">{topic}</p>
             </motion.div>
           ))}

@@ -16,14 +16,14 @@ const Section1 = () => {
       {/* Animated content container */}
       <div className="relative max-w-[90%] md:max-w-screen-xl mx-auto py-20 z-10">
         <motion.div
-          className="border-8 py-10 px-5 text-white border-info max-w-4xl"
+          className="border-8 py-10 px-5 text-white border-brand max-w-4xl"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
           <motion.h1
-            className="md:text-6xl text-4xl font-bold text-info"
+            className="md:text-6xl text-4xl font-bold text-brand"
             initial={{ opacity: 0, y: -30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
