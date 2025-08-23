@@ -54,7 +54,7 @@ const FAQs = () => {
                   className="w-full flex justify-between items-center px-6 py-4 text-left focus:outline-none"
                 >
                   <span className="text-base sm:text-lg font-medium">
-                    {t(`faqs.${titleKey}.${item.q}`)}
+                    {t(`faqs.${titleKey}.${item?.q}`)}
                   </span>
                   <svg
                     className={`w-5 h-5 transform transition-transform duration-300 ${
@@ -74,7 +74,7 @@ const FAQs = () => {
                 </button>
                 {openIndex === index && (
                   <div className="px-6 pb-4 text-sm sm:text-base text-gray-200">
-                    {t(`faqs.${titleKey}.${item.a}`)}
+                    {t(`faqs.${titleKey}.${item?.a}`)}
                   </div>
                 )}
               </motion.div>

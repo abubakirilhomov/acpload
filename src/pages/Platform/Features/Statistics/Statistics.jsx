@@ -102,7 +102,7 @@ const Statistics = () => {
               animate={{ opacity: 1, rotate: 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
-              {item.icon}
+              {item?.icon}
             </motion.div>
             <motion.h1
               initial={{ opacity: 0, y: 10 }}
@@ -110,7 +110,7 @@ const Statistics = () => {
               transition={{ duration: 0.5, delay: 0.1, ease: "easeInOut" }}
               className="text-xl sm:text-2xl font-semibold mt-2"
             >
-              {item.text}
+              {item?.text}
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 10 }}
@@ -118,7 +118,7 @@ const Statistics = () => {
               transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
               className="text-sm sm:text-base text-gray-300 text-center mt-2"
             >
-              {item.description}
+              {item?.description}
             </motion.p>
           </motion.div>
         ))}

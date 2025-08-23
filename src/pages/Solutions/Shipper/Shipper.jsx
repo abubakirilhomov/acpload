@@ -181,13 +181,13 @@ const Shipper = () => {
               >
                 <div className="flex flex-col items-center">
                   <div className="bg-blue-100 text-blue-800 rounded-full w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto mb-3 sm:mb-4 md:mb-6 flex items-center justify-center font-bold text-sm sm:text-base md:text-lg">
-                    {item.step}
+                    {item?.step}
                   </div>
                   <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-2 sm:mb-3 md:mb-4 text-center">
-                    {item.title}
+                    {item?.title}
                   </h3>
                   <p className="text-gray-300 text-center text-xs sm:text-sm md:text-base leading-relaxed">
-                    {item.description}
+                    {item?.description}
                   </p>
                 </div>
               </motion.div>

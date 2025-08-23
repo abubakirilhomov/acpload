@@ -101,10 +101,10 @@ const WhyUs = () => {
               transition={{ duration: 1, delay: index * 0.2 }}
               className="glassmorphism-card p-6 flex items-center gap-4 rounded-2xl border border-white/10 shadow-lg"
             >
-              <div className="p-3 bg-white/10 rounded-xl">{item.icon}</div>
+              <div className="p-3 bg-white/10 rounded-xl">{item?.icon}</div>
               <div>
-                <h3 className="text-xl font-semibold">{t(item.title)}</h3>
-                <p className="text-sm mt-2">{t(item.description)}</p>
+                <h3 className="text-xl font-semibold">{t(item?.title)}</h3>
+                <p className="text-sm mt-2">{t(item?.description)}</p>
               </div>
             </motion.div>
           ))}

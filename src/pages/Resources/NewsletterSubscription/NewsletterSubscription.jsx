@@ -163,13 +163,13 @@ const NewsletterSubscription = () => {
                   variants={childVariants}
                   className="btn bg-[#3b82f6] text-white px-6 py-3 rounded-full  transition-colors"
                 >
-                  {t("btn-input-texts.mission")}
+                  {t("btn-input-texts.subscribe")}
                 </motion.button>
                 <motion.button
                   variants={childVariants}
                   className="btn btn-outline text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition-colors"
                 >
-                  {t("btn-input-texts.donate-now")}
+                  {t("btn-input-texts.contact-us")}
                 </motion.button>
               </motion.div>
             </motion.div>
@@ -202,7 +202,7 @@ const NewsletterSubscription = () => {
 
           <motion.div variants={childVariants} className="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
             {items.map((item, i) => (
-              <InfoCard key={i} icon={item.icon} text={item.text} />
+              <InfoCard key={i} icon={item?.icon} text={item?.text} />
             ))}
           </motion.div>
         </motion.div>

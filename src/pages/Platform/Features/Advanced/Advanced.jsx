@@ -99,8 +99,8 @@ const Advanced = () => {
             className="relative w-full h-full overflow-hidden"
           >
             <img
-              src={item.src}
-              alt={item.alt}
+              src={item?.src}
+              alt={item?.alt}
               className="w-full h-full object-cover opacity-80 hover:scale-105 transition-transform duration-500 ease-in-out"
             />
           </motion.div>
