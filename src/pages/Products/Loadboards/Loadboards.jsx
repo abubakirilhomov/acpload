@@ -98,7 +98,7 @@ export default function FreightLoadboard() {
           </motion.p>
 
           <motion.div
-            className="b bg-opacity-60 backdrop-blur-sm rounded-lg p-4 sm:p-6 w-full max-w-4xl"
+            className="b bg-opacity-60 border-1 rounded-lg p-4 sm:p-6 w-full max-w-4xl"
             variants={scaleUp}
             initial="hidden"
             animate="visible"
@@ -167,7 +167,7 @@ export default function FreightLoadboard() {
               >
                 <button
                   onClick={handleSearch}
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-md font-semibold transition-all duration-300 flex items-center gap-2 w-full sm:w-auto justify-center shadow-lg"
+                  className="bg-[#3f96d1] hover:bg-blue-700 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-md font-semibold transition-all duration-300 flex items-center gap-2 w-full sm:w-auto justify-center shadow-lg"
                 >
                   <Search className="h-5 w-5" />
                   Search
@@ -189,7 +189,7 @@ export default function FreightLoadboard() {
           >
             <h3 className="text-2xl sm:text-3xl font-bold text-white">Explore Live Opportunities</h3>
             <motion.button
-              className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-all duration-300 shadow-lg"
+              className="flex items-center gap-2 bg-[#3f96d1] hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-all duration-300 shadow-lg"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -206,7 +206,7 @@ export default function FreightLoadboard() {
             initial="hidden"
             animate="visible"
           >
-            <div className="hidden sm:block bg-blue-600 px-4 sm:px-6 py-4 rounded-t-lg">
+            <div className="hidden sm:block bg-[#3f96d1] px-4 sm:px-6 py-4 rounded-t-lg">
               <div className="grid grid-cols-10 gap-2 sm:gap-4 text-white font-semibold text-xs sm:text-sm">
                 <div>Age</div>
                 <div>PU Date</div>
@@ -274,7 +274,7 @@ export default function FreightLoadboard() {
                     <div className="sm:flex sm:items-center flex justify-between">
                       <span className="sm:hidden font-semibold text-white">Contact:</span>
                       <motion.button
-                        className="text-blue-600 hover:text-blue-700 underline text-sm transition-colors duration-300"
+                        className="text-[#3f96d1] hover:text-blue-700 underline text-sm transition-colors duration-300"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                       >
@@ -334,7 +334,7 @@ export default function FreightLoadboard() {
             ].map((benefit, index) => (
               <motion.div
                 key={benefit.key}
-                className="bg-blue-600 bg-opacity-90 rounded-2xl p-6 sm:p-8"
+                className="bg-[#3f96d1] bg-opacity-90 rounded-2xl p-6 sm:p-8"
                 variants={scaleUp}
                 initial="hidden"
                 animate="visible"
@@ -372,7 +372,7 @@ export default function FreightLoadboard() {
           </motion.p>
 
           <motion.button
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 sm:px-12 py-3 sm:py-4 rounded-lg font-bold text-lg sm:text-xl shadow-xl"
+            className="bg-[#3f96d1] hover:bg-blue-700 text-white px-8 sm:px-12 py-3 sm:py-4 rounded-lg font-bold text-lg sm:text-xl shadow-xl"
             variants={bounce}
             initial="hidden"
             animate="visible"

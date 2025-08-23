@@ -161,7 +161,7 @@ const NewsletterSubscription = () => {
               <motion.div variants={childVariants} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <motion.button
                   variants={childVariants}
-                  className="btn btn-info text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors"
+                  className="btn bg-[#3b82f6] text-white px-6 py-3 rounded-full  transition-colors"
                 >
                   {t("btn-input-texts.mission")}
                 </motion.button>
@@ -195,7 +195,7 @@ const NewsletterSubscription = () => {
             <CustomText type="text" className="mb-6">
               {t("newsletter-subscription.join-our-newsletter.description")}
             </CustomText>
-            <button className="btn btn-info rounded-full text-white">
+            <button className="btn bg-[#4c7397] rounded-full text-white">
               {t("btn-input-texts.learn-more")}
             </button>
           </motion.div>

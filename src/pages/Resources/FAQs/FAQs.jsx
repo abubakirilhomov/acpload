@@ -241,7 +241,7 @@ const FAQs = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
               type="submit"
-              className="btn btn-info rounded-full text-white transition"
+              className="btn bg-[#3f96d1] rounded-full text-white transition"
             >
               {t("btn-input-texts.submit")}
             </motion.button>

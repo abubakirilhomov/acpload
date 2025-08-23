@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import Notifications from "./Notifications";
-import Statistics from "./Statistics";
-import Advanced from "./Advanced";
-import Integrated from "./Integrated";
-import Compatibility from "./Compatibility";
+import Notifications from "./Notifications/Notifications";
+import Statistics from "./Statistics/Statistics";
+import Advanced from "./Advanced/Advanced";
+import Integrated from "./Integrated/Integrated";
+import Compatibility from "./Compatibility/Compatibility";
 
 const Features = () => {
   const { t } = useTranslation();

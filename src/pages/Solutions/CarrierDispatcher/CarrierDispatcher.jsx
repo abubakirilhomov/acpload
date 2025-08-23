@@ -266,7 +266,7 @@ const CarrierDispatcher = () => {
             <motion.div
               key={index}
               variants={index % 2 === 0 ? slideInLeft : slideInRight}
-              className="bg-gradient-to-r from-blue-600 to-gray-900 p-4 sm:p-5 md:p-6 rounded-2xl flex flex-col sm:flex-row items-center justify-between h-auto sm:h-32 md:h-36 lg:h-40 w-full max-w-4xl"
+              className="bg-gradient-to-r from-[#3f96d1] to-gray-900 p-4 sm:p-5 md:p-6 rounded-2xl flex flex-col sm:flex-row items-center justify-between h-auto sm:h-32 md:h-36 lg:h-40 w-full max-w-4xl"
             >
               <div className="bg-white text-blue-800 rounded-full p-2 sm:p-3 md:p-4 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center mb-3 sm:mb-0 sm:mr-4 md:mr-6 shrink-0">
                 <img

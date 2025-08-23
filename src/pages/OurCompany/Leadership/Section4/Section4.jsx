@@ -110,7 +110,7 @@ const Section4 = () => {
                 transition={{ duration: 0.3 }}
                 className="avatar mb-6"
               >
-                <div className="w-32 h-32 rounded-full ring-4 ring-blue-300 ring-offset-4 ring-offset-transparent">
+                <div className="w-32 h-32 rounded-full ring-4 ring-[#3f96d1] ring-offset-4 ring-offset-transparent">
                   <img
                     src={leader.image || "/placeholder.svg"}
                     alt={leader.name}

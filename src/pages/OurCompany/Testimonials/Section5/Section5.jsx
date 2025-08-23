@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import bgImg from "../../../../assets/testimonials3.jpg";
+import bgImg from "../../../../assets/pexels-quintingellar-2199293.jpg";
 
 const Section5 = () => {
   const { t } = useTranslation();
@@ -34,7 +34,7 @@ const Section5 = () => {
       whileInView="visible"
       viewport={{ once: true }}
     >
-      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="absolute inset-0 bg-black/50"></div>
       <div className="relative z-10 max-w-6xl mx-auto text-center">
         <motion.p
           className="text-4xl md:text-5xl font-semibold text-blue-300 mb-6"

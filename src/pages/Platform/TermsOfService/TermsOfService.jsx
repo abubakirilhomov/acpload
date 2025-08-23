@@ -136,7 +136,7 @@ const TermsOfService = () => {
               <p className="w-2xl text-lg mb-4">
                 {t('terms-and-conditions.your-agreement.description')}
               </p>
-              <button className="bg-blue-500 text-white py-2 px-4 rounded-lg">
+              <button className="bg-[#3f96d1] text-white py-2 px-4 rounded-lg">
                 {t('terms-and-conditions.read-full', 'READ THE FULL TERMS AND CONDITIONS')}
               </button>
               <p className='text-lg'>

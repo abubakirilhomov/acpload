@@ -82,7 +82,7 @@ const ACPTMS = () => {
         >
           <div className="inline-flex items-center justify-center">
             <motion.div 
-              className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-3 rounded-2xl text-4xl sm:text-5xl lg:text-6xl font-bold shadow-xl"
+              className="bg-gradient-to-r bg-[#3f96d1] text-white px-6 py-3 rounded-2xl text-4xl sm:text-5xl lg:text-6xl font-bold shadow-xl"
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300 }}
             >

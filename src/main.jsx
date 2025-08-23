@@ -9,9 +9,6 @@ import {
 import './i18n';
 
 import Home from './pages/Home/Home.jsx';
-import AboutUs from './pages/About-Us/AboutUs.jsx';
-import Services from './pages/Services/Services.jsx';
-import Carriers from './pages/Carriers/Carriers.jsx';
 
 // Platform 
 import HowItWorks from './pages/Platform/HowItWorks/HowItWorks.jsx';
@@ -39,6 +36,7 @@ import Videos from './pages/Resources/Videos/Videos.jsx';
 import FAQs from './pages/Resources/FAQs/FAQs.jsx';
 
 // Our Company 
+import AboutUs from './pages/OurCompany/AboutUs/AboutUs.jsx';
 import Leadership from './pages/OurCompany/Leadership/Leadership.jsx';
 import Testimonials from './pages/OurCompany/Testimonials/Testimonials.jsx';
 import SupportCenter from './pages/OurCompany/SupportCenter/SupportCenter.jsx';
@@ -50,9 +48,6 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: "/", element: <Home /> },
-      { path: "/services", element: <Services /> },
-      { path: "/carriers", element: <Carriers /> },
-      { path: "/about-us", element: <AboutUs /> },
 
       // Platform
       { path: "/platform/how-it-works", element: <HowItWorks /> },
@@ -66,9 +61,9 @@ const router = createBrowserRouter([
       { path: "/products/acp-tms", element: <ACPTMS /> },
 
       // Solutions
+      { path: "/solutions/carrier", element: <Carrier /> },
       { path: "/solutions/carrier-dispatcher", element: <CarrierDispatcher /> },
       { path: "/solutions/broker", element: <Broker /> },
-      { path: "/solutions/carrier", element: <Carrier /> },
       { path: "/solutions/shipper", element: <Shipper /> },
 
       // Resources

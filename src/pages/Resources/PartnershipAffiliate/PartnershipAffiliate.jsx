@@ -86,7 +86,7 @@ const PartnershipAffiliate = () => {
           className="flex flex-col lg:flex-row items-start justify-between gap-6"
         >
           <div className="w-full lg:w-[35%] mb-6 lg:mt-0 lg:mr-6">
-            <div className="w-full h-64 sm:h-80 p-4 sm:p-6 bg-info rounded-2xl sm:rounded-4xl flex flex-col justify-center">
+            <div className="w-full h-64 sm:h-80 p-4 sm:p-6 bg-[#4c7397] rounded-2xl sm:rounded-4xl flex flex-col justify-center">
               <CustomText type="text" className="mb-5">
               {t('partnership-and-affiliate.description-2')}
             </CustomText>

@@ -8,7 +8,7 @@ const DropdownMenu = ({ links, title }) => {
       <div
         tabIndex={0}
         role="button"
-        className="btn m-1 flex items-center gap-1 backdrop-blur-3xl bg-white/20 border-none"
+        className=" m-1 flex items-center gap-2 hover:text-[#3f96d1] transition-colors duration-200"
       >
         {title} <IoIosArrowDown />
       </div>

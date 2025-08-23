@@ -22,7 +22,7 @@ const LeaderboardHero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="bg-info py-5 px-2">
+          <div className="bg-[#3f96d1] rounded-md py-5 px-2">
             <p>{t("leadership.leadership")}</p>
 
             <h1 className="text-6xl">{t("leadership.title")}</h1>

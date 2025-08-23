@@ -95,10 +95,12 @@ const Broker = () => {
             {t("broker.description")}
           </motion.p>
           <motion.button
-            whileHover={{ scale: 1.05, backgroundColor: "#1E40AF" }}
+            whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-primary uppercase hover:text-white text-black font-medium py-2 sm:py-3 px-6 sm:px-8 rounded-lg transition text-sm sm:text-base"
+            className="bg-[#3f96d1] text-white uppercase font-medium py-2 sm:py-3 px-6 sm:px-8 rounded-lg transition duration-300 text-sm sm:text-base border-2 border-transparent hover:bg-white hover:text-[#3f96d1] hover:border-[#3f96d1]"
           >
+
+
             {t("btn-input-texts.sign-up-now")}
           </motion.button>
         </motion.div>
@@ -374,9 +376,9 @@ const Broker = () => {
             {t("broker.scale-brokerage.description")}
           </motion.p>
           <motion.button
-            whileHover={{ scale: 1.05, backgroundColor: "#1E40AF" }}
+            whileHover={{ scale: 1.05, backgroundColor: "#3f96d1" }}
             whileTap={{ scale: 0.95 }}
-            className="bg-white hover:bg-gray-100 text-primary font-bold py-3 px-8 md:px-12 rounded-full transition shadow-lg mb-6"
+            className="bg-white border-[#3f96d1] border-2 hover:bg-gray-100 hover:text-white text-primary font-bold py-3 px-8 md:px-12 rounded-full transition shadow-lg mb-6"
           >
             {t("btn-input-texts.sign-up-today")}
           </motion.button>
@@ -402,7 +404,7 @@ const Broker = () => {
             }}
             src="https://static.vecteezy.com/system/resources/thumbnails/024/558/280/small_2x/businessman-isolated-illustration-ai-generative-free-png.png"
             alt="Business illustration"
-            className="w-full max-w-[500px] mx-auto lg:mx-0"
+            className="w-full max-w-[500px] mx-auto lg:mx-0  rounded-full bg-white border-3 border-[#3f96d1]"
           />
         </motion.div>
       </motion.div>
