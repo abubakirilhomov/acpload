@@ -22,34 +22,7 @@ const Features = () => {
 
   return (
     <div className="relative flex flex-col items-center justify-between bg-gradient-to-br from-[#050A30] to-[#0A1F3A] overflow-hidden py-16">
-      {/* Hero Section */}
-      {/* <motion.div
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
-        className="relative px-6 sm:px-10 lg:px-20 py-12 sm:py-16 rounded-3xl w-full max-w-screen-xl flex flex-col items-center justify-center text-white text-center space-y-8 sm:space-y-10 z-20"
-        style={{
-          background: "linear-gradient(145deg, #0a0f29, #06142e)",
-          borderRadius: "40px",
-          overflow: "hidden",
-          border: "3px solid rgba(255, 255, 255, 0.15)",
-          boxShadow: "0 0 60px rgba(0, 255, 255, 0.3)",
-        }}
-      >
-        <h2
-          className="text-3xl sm:text-5xl lg:text-6xl font-extrabold uppercase drop-shadow-xl relative z-10"
-          style={{
-            background: "linear-gradient(to right, #00BFFF, #00FA9A)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }}
-        >
-          {t("features.title")}
-        </h2>
-        <p className="text-base sm:text-xl lg:text-2xl text-gray-200 max-w-5xl leading-relaxed relative z-10">
-          {t("features.description")}
-        </p>
-      </motion.div> */}
+ 
 
       {/* Main Content Section */}
       <div className="w-full max-w-screen-xl px-4 mt-16">
