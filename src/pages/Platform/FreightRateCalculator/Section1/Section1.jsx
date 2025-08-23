@@ -59,13 +59,13 @@ const Section1 = () => {
             {["origin", "destination"].map((field) => (
               <div key={field} className="flex flex-col">
                 <label htmlFor={field} className="mb-1 font-medium">
-                  {field.charAt(0).toUpperCase() + field.slice(1)}
+                  {t(`freight-rate-calculator.form.${field}`)}
                 </label>
                 <input
                   type="text"
                   name={field}
                   id={field}
-                  placeholder={field.charAt(0).toUpperCase() + field.slice(1)}
+                  placeholder={t(`freight-rate-calculator.form.${field}`)}
                   value={formValues[field]}
                   onChange={handleChange}
                   className="input input-bordered w-full"
@@ -76,12 +76,12 @@ const Section1 = () => {
               {stops.map((stop, i) => (
                 <div key={i} className="flex flex-col mb-4">
                   <label htmlFor={`stop-${i}`} className="mb-1 font-medium">
-                    Stop {i + 1}
+                    {t("freight-rate-calculator.form.stop", { number: i + 1 })}
                   </label>
                   <input
                     type="text"
                     id={`stop-${i}`}
-                    placeholder={`Stop ${i + 1}`}
+                    placeholder={t("freight-rate-calculator.form.stop", { number: i + 1 })}
                     className="input input-bordered w-full"
                     value={stop}
                     onChange={(e) =>
@@ -96,7 +96,7 @@ const Section1 = () => {
               onClick={() => setStops([...stops, ""])}
               className="btn btn-outline w-fit"
             >
-              Add Stop
+              {t("freight-rate-calculator.form.add-stop")}
             </button>
           </div>
 
@@ -106,16 +106,13 @@ const Section1 = () => {
               {["weight", "length"].map((field) => (
                 <div key={field} className="flex flex-col w-full">
                   <label htmlFor={field} className="mb-1 font-medium">
-                    {field.charAt(0).toUpperCase() + field.slice(1)} (
-                    {field === "weight" ? "lbs" : "ft"})
+                    {t(`freight-rate-calculator.form.${field}`)}
                   </label>
                   <input
                     type="number"
                     name={field}
                     id={field}
-                    placeholder={`${
-                      field.charAt(0).toUpperCase() + field.slice(1)
-                    } (${field === "weight" ? "lbs" : "ft"})`}
+                    placeholder={t(`freight-rate-calculator.form.${field}`)}
                     value={formValues[field]}
                     onChange={handleChange}
                     className="input input-bordered w-full"
@@ -126,7 +123,7 @@ const Section1 = () => {
 
             <div className="flex flex-col">
               <label htmlFor="type" className="mb-1 font-medium">
-                Freight Type
+                {t("freight-rate-calculator.form.freight-type")}
               </label>
               <select
                 name="type"
@@ -135,19 +132,17 @@ const Section1 = () => {
                 onChange={handleChange}
                 className="select select-bordered w-full"
               >
-                <option value="FTL">FTL</option>
-                <option value="LTL">LTL</option>
+                <option value="FTL">{t("freight-rate-calculator.form.ftl")}</option>
+                <option value="LTL">{t("freight-rate-calculator.form.ltl")}</option>
               </select>
             </div>
 
             {/* Base rate & miles */}
             <div className="flex space-x-4">
-              {["baseRate", "totalMiles"].map((field) => (
+              {["base-rate", "total-miles"].map((field) => (
                 <div key={field} className="flex flex-col w-full">
                   <label htmlFor={field} className="mb-1 font-medium">
-                    {field === "baseRate"
-                      ? "Base Rate ($/mile)"
-                      : "Total Miles (mi)"}
+                    {t(`freight-rate-calculator.form.${field}`)}
                   </label>
                   <input
                     type="number"
@@ -167,13 +162,13 @@ const Section1 = () => {
             {["fuel", "toll", "fees"].map((field) => (
               <div key={field} className="flex flex-col">
                 <label htmlFor={field} className="mb-1 font-medium">
-                  {field.charAt(0).toUpperCase() + field.slice(1)} Charge ($)
+                  {t(`freight-rate-calculator.form.${field}-charge`)}
                 </label>
                 <input
                   type="number"
                   name={field}
                   id={field}
-                  placeholder={`${field.charAt(0).toUpperCase() + field.slice(1)} Charge $`}
+                  placeholder={t(`freight-rate-calculator.form.${field}-charge`)}
                   value={formValues[field]}
                   onChange={handleChange}
                   className="input input-bordered w-full"
@@ -187,14 +182,16 @@ const Section1 = () => {
           type="submit"
           className="btn bg-brand mt-8 p-5 text-white w-full"
         >
-          Calculate
+          {t("freight-rate-calculator.form.calculate")}
         </button>
       </form>
 
       {/* Result Section */}
       {showResult && (
         <div ref={resultRef} className="mt-8 w-full max-w-5xl border p-10 rounded-3xl">
-          <p className="text-xl font-bold text-center mb-5">Result</p>
+          <p className="text-xl font-bold text-center mb-5">
+            {t("freight-rate-calculator.form.result")}
+          </p>
           <TwoColumnView>
             {["origin", "destination", "type", "weight", "length"].map(
               (field) => (
@@ -203,7 +200,7 @@ const Section1 = () => {
                     htmlFor={`result-${field}`}
                     className="mb-1 font-medium"
                   >
-                    {field.charAt(0).toUpperCase() + field.slice(1)}
+                    {t(`freight-rate-calculator.form.${field}`)}
                   </label>
                   <div id={`result-${field}`} className="input input-bordered w-full">
                     {formValues[field] || "-"}
@@ -213,7 +210,7 @@ const Section1 = () => {
             )}
             <div className="flex flex-col">
               <label htmlFor="result-stops" className="mb-1 font-medium">
-                Stops
+                {t("freight-rate-calculator.form.stops")}
               </label>
               <div className="max-h-40 overflow-y-auto">
                 {stops.filter(Boolean).map((stop, i) => (
@@ -222,7 +219,7 @@ const Section1 = () => {
                     id={`result-stop-${i}`}
                     className="input input-bordered w-full mb-2"
                   >
-                    Stop {i + 1}: {stop}
+                    {t("freight-rate-calculator.form.stop", { number: i + 1 })}: {stop}
                   </div>
                 ))}
                 {stops.filter(Boolean).length === 0 && (
@@ -233,19 +230,25 @@ const Section1 = () => {
             {calculation && (
               <>
                 <div className="flex flex-col">
-                  <label className="mb-1 font-medium">Total Rate ($)</label>
+                  <label className="mb-1 font-medium">
+                    {t("freight-rate-calculator.form.total-rate")}
+                  </label>
                   <div className="input input-bordered w-full">
                     ${calculation.totalRate.toFixed(2)}
                   </div>
                 </div>
                 <div className="flex flex-col">
-                  <label className="mb-1 font-medium">Total Miles</label>
+                  <label className="mb-1 font-medium">
+                    {t("freight-rate-calculator.form.total-miles")}
+                  </label>
                   <div className="input input-bordered w-full">
                     {calculation.miles} mi
                   </div>
                 </div>
                 <div className="flex flex-col">
-                  <label className="mb-1 font-medium">RPM ($/mile)</label>
+                  <label className="mb-1 font-medium">
+                    {t("freight-rate-calculator.form.rpm")}
+                  </label>
                   <div className="input input-bordered w-full">
                     ${calculation.rpm.toFixed(2)}
                   </div>
@@ -254,7 +257,7 @@ const Section1 = () => {
             )}
           </TwoColumnView>
           <button className="btn bg-brand mt-6 p-5 text-white w-full">
-            Post Your Load
+            {t("freight-rate-calculator.form.post-load")}
           </button>
         </div>
       )}
