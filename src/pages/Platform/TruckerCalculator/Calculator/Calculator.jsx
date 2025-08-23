@@ -1,93 +1,213 @@
-import React from "react";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
+import {
+  setTotalGross,
+  setWorkingDays as setWD,
+  setTotalMiles as setTM,
+} from "../../../../redux/slices/truckerCalculatorSlice";
 
 const Calculator = () => {
   const { t } = useTranslation();
+  const main = useSelector((state) => state.truckerCalculator.main);
+  const dispatch = useDispatch();
 
-  const data = {
-    totalGross: 27159,
-    workingDays: 30,
-    totalMiles: 10489,
-    netProfit: 10486,
-    profitPerDay: 349.53,
-    mileProfit: 1.0,
-    costPerMile: 1.59,
-    totalExpenses: 16672.66,
-    grossPerMile: 2.59,
-    netProfitPercent: 38.61,
-    costPercent: 61.39,
-    profitPerDayPercent: 3.33,
-  };
+  // Локальное форматирование только для отображения
+  const [grossInput, setGrossInput] = useState(String(main.totalGross || ""));
+  const [daysInput, setDaysInput] = useState(String(main.workingDays || ""));
+  const [milesInput, setMilesInput] = useState(String(main.totalMiles || ""));
 
-  const StatBox = ({ title, value, subtext, highlight = false }) => (
-    <div className="bg-base-100 shadow-md rounded-xl p-4 flex flex-col gap-2 w-full">
-      <span className="text-gray-500 text-sm">{title}</span>
-      <div className="text-2xl font-bold">{value}</div>
-      {subtext && (
-        <div
-          className={`text-sm font-semibold ${
-            highlight ? "text-green-500" : "text-gray-400"
-          }`}
-        >
-          {subtext}
-        </div>
-      )}
-    </div>
+  useEffect(
+    () => setGrossInput(String(main.totalGross || "")),
+    [main.totalGross]
+  );
+  useEffect(
+    () => setDaysInput(String(main.workingDays || "")),
+    [main.workingDays]
+  );
+  useEffect(
+    () => setMilesInput(String(main.totalMiles || "")),
+    [main.totalMiles]
   );
 
   return (
-    <div className="p-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      <StatBox
-        title={t("trucker-calculator.stats.totalGross")}
-        value={`$${data.totalGross.toLocaleString()}`}
-      />
-      <StatBox
-        title={t("trucker-calculator.stats.workingDays")}
-        value={data.workingDays}
-      />
-      <StatBox
-        title={t("trucker-calculator.stats.totalMiles")}
-        value={`${data.totalMiles.toLocaleString()}mi`}
-      />
-      <StatBox
-        title={t("trucker-calculator.stats.grossPerMile")}
-        value={`$${data.grossPerMile}`}
-      />
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+      {/* TOTAL GROSS */}
+      <div className="card bg-base-200 shadow-xl">
+        <div className="card-body p-4">
+          <p className="text-sm opacity-70">
+            {t("trucker-calculator.stats.totalGross")}
+          </p>
+          <input
+            type="text"
+            value={Number(grossInput).toLocaleString("en-US")}
+            onChange={(e) => {
+              const raw = e.target.value
+                .replace(/[^0-9.]/g, "")
+                .replace(/(\..*)\./g, "$1");
+              setGrossInput(raw);
+              dispatch(setTotalGross(Number(raw)));
+            }}
+            placeholder="0"
+            className="input input-bordered w-full font-bold text-xl"
+          />
+          <div className="mt-2 bg-base-300 p-3 rounded-lg">
+            <p className="text-sm">{t("trucker-calculator.stats.netProfit")}</p>
+            <div className="flex justify-between items-center">
+              <span className="font-bold">
+                $
+                {main.netProfit.toLocaleString("en-US", {
+                  maximumFractionDigits: 2,
+                })}
+              </span>
+              <span
+                className={`${
+                  main.netProfitPercent < 0 ? "text-red-500" : "text-green-500"
+                } text-sm`}
+              >
+                {main.netProfitPercent}%
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <StatBox
-        title={t("trucker-calculator.stats.netProfit")}
-        value={`$${data.netProfit.toLocaleString()}`}
-        subtext={`${data.netProfitPercent}%`}
-        highlight
-      />
-      <StatBox
-        title={t("trucker-calculator.stats.profitPerDay")}
-        value={`$${data.profitPerDay}`}
-        subtext={`${data.profitPerDayPercent}%`}
-        highlight
-      />
-      <StatBox
-        title={t("trucker-calculator.stats.mileProfit")}
-        value={`$${data.mileProfit}`}
-        subtext={`${data.netProfitPercent}%`}
-        highlight
-      />
-      <StatBox
-        title={t("trucker-calculator.stats.costPerMile")}
-        value={`$${data.costPerMile}`}
-        subtext={`${data.costPercent}%`}
-        highlight
-      />
+      {/* WORKING DAYS */}
+      <div className="card bg-base-200 shadow-xl">
+        <div className="card-body p-4">
+          <p className="text-sm opacity-70">
+            {t("trucker-calculator.stats.workingDays")}
+          </p>
+          <input
+            type="text"
+            value={daysInput}
+            onChange={(e) => {
+              const n = e.target.value.replace(/\D/g, "");
+              const v = Math.min(Number(n) || 0, 31);
+              setDaysInput(String(v));
+              dispatch(setWD(v));
+            }}
+            placeholder="0"
+            className="input input-bordered w-full font-bold text-xl"
+          />
+          <div className="mt-2 bg-base-300 p-3 rounded-lg">
+            <p className="text-sm">
+              {t("trucker-calculator.stats.profitPerDay")}
+            </p>
+            <div className="flex justify-between items-center">
+              <span className="font-bold">
+                $
+                {main.profitPerDay.toLocaleString("en-US", {
+                  maximumFractionDigits: 2,
+                })}
+              </span>
+              <span
+                className={`${
+                  main.profitPerDayPercent < 0
+                    ? "text-red-500"
+                    : "text-green-500"
+                } text-sm`}
+              >
+                {main.profitPerDayPercent}%
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div className="col-span-full">
-        <div className="bg-base-200 rounded-xl p-4 text-center">
-          <span className="font-semibold">
-            {t("trucker-calculator.stats.totalExpenses")}:{" "}
-          </span>
-          <span className="text-error font-bold">
-            ${data.totalExpenses.toLocaleString()}{" "}
-          </span>
-          <span className="text-gray-500">({data.costPercent}%)</span>
+      {/* TOTAL MILES */}
+      <div className="card bg-base-200 shadow-xl">
+        <div className="card-body p-4">
+          <p className="text-sm opacity-70">
+            {t("trucker-calculator.stats.totalMiles")}
+          </p>
+          <input
+            type="text"
+            value={Number(milesInput).toLocaleString("en-US")}
+            onChange={(e) => {
+              const raw = e.target.value
+                .replace(/[^0-9.]/g, "")
+                .replace(/(\..*)\./g, "$1");
+              setMilesInput(raw);
+              dispatch(setTM(Number(raw)));
+            }}
+            placeholder="0"
+            className="input input-bordered w-full font-bold text-xl"
+          />
+          <div className="mt-2 bg-base-300 p-3 rounded-lg">
+            <p className="text-sm">
+              {t("trucker-calculator.stats.mileProfit")}
+            </p>
+            <div className="flex justify-between items-center">
+              <span className="font-bold">
+                $
+                {main.mileProfit.toLocaleString("en-US", {
+                  maximumFractionDigits: 2,
+                })}
+              </span>
+              <span
+                className={`${
+                  main.mileProfitPercent < 0 ? "text-red-500" : "text-green-500"
+                } text-sm`}
+              >
+                {main.mileProfitPercent}%
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* GROSS/COST PER MILE */}
+      <div className="card bg-base-200 shadow-xl">
+        <div className="card-body p-4">
+          <p className="text-sm opacity-70">
+            {t("trucker-calculator.stats.grossPerMile")}
+          </p>
+          <h2 className="text-xl font-bold">
+            $
+            {main.grossPerMile.toLocaleString("en-US", {
+              maximumFractionDigits: 2,
+            })}
+          </h2>
+          <div className="mt-2 bg-base-300 p-3 rounded-lg">
+            <p className="text-sm">
+              {t("trucker-calculator.stats.costPerMile")}
+            </p>
+            <div className="flex justify-between items-center">
+              <span className="font-bold">
+                $
+                {main.costPerMile.toLocaleString("en-US", {
+                  maximumFractionDigits: 2,
+                })}
+              </span>
+              <span
+                className={`${
+                  main.costPerMilePercent < 0
+                    ? "text-red-500"
+                    : "text-green-500"
+                } text-sm`}
+              >
+                {main.costPerMilePercent}%
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* TOTAL EXPENSES */}
+      <div className="col-span-1 sm:col-span-2 lg:col-span-4 card bg-base-300 shadow-inner mt-2">
+        <div className="p-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+          <p className="font-semibold">
+            {t("trucker-calculator.stats.totalExpenses")}
+          </p>
+          <p className="font-bold">
+            $
+            {main.totalExpenses.toLocaleString("en-US", {
+              maximumFractionDigits: 2,
+            })}{" "}
+            ({main.totalExpensesPercent}%)
+          </p>
+          <span></span>
         </div>
       </div>
     </div>

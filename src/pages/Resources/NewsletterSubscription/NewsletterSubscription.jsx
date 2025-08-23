@@ -202,7 +202,7 @@ const NewsletterSubscription = () => {
 
           <motion.div variants={childVariants} className="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
             {items.map((item, i) => (
-              <InfoCard key={i} icon={item.icon} text={item.text} />
+              <InfoCard key={i} icon={item?.icon} text={item?.text} />
             ))}
           </motion.div>
         </motion.div>

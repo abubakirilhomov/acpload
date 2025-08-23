@@ -57,17 +57,17 @@ const ConnectSection = () => {
           {socialLinks.map((item, index) => (
             <a
               key={index}
-              href={item.href}
+              href={item?.href}
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center space-y-3 transition-transform hover:scale-105"
             >
               <div
-                className={`w-20 h-20 flex items-center justify-center rounded-full shadow-md ${item.bgColor}`}
+                className={`w-20 h-20 flex items-center justify-center rounded-full shadow-md ${item?.bgColor}`}
               >
-                {item.icon}
+                {item?.icon}
               </div>
-              <span className="text-blue-300 font-medium">{item.label}</span>
+              <span className="text-blue-300 font-medium">{item?.label}</span>
             </a>
           ))}
         </div>

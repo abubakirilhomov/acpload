@@ -101,10 +101,10 @@ const Section2 = () => {
             },
           ].map((item, idx) => (
             <div key={idx} className="flex items-start gap-6 p-4 rounded-lg">
-              {item.icon}
+              {item?.icon}
               <div>
-                <p className="font-bold">{item.title}</p>
-                <p>{item.text}</p>
+                <p className="font-bold">{item?.title}</p>
+                <p>{item?.text}</p>
               </div>
             </div>
           ))}

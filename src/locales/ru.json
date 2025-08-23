@@ -395,8 +395,8 @@
         "fuel": "Топливо",
         "tolls": "Проезд",
         "maintenance": "Обслуживание",
-        "eld": "Поля",
-        "ifta": "Ifta",
+        "eld": "ELD",
+        "ifta": "IFTA",
         "other": "Другой"
       },
       "table": {
@@ -407,9 +407,9 @@
         "perMile": "$/mi"
       },
       "methods": {
-        "fixed": "Исправлена $",
-        "gross": "Валовой %",
-        "miles": "Miles $/mi"
+        "fixed": "Фикс. $",
+        "gross": "Вал. %",
+        "miles": "Миля $/mi"
       }
     },
     "expenseAnalysis": {

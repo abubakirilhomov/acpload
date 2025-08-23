@@ -18,8 +18,8 @@ const DropdownMenu = ({ links, title }) => {
       >
         {links.map((item, index) => (
           <li key={index} className="py-1">
-            <Link to={item.link} className="block px-2 py-1 hover:bg-gray-200 hover:text-black">
-              {item.title}
+            <Link to={item?.link} className="block px-2 py-1 hover:bg-gray-200 hover:text-black">
+              {item?.title}
             </Link>
           </li>
         ))}

@@ -116,13 +116,13 @@ const Section8 = () => {
                       className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center"
                       whileHover={{ scale: 1.2, rotate: 10, transition: { duration: 0.3 } }}
                     >
-                      {item.icon}
+                      {item?.icon}
                     </motion.div>
                     <div>
                       <h4 className="text-lg font-semibold text-white mb-2">
-                        {item.title}
+                        {item?.title}
                       </h4>
-                      <p className="text-gray-300" dangerouslySetInnerHTML={{ __html: item.content }} />
+                      <p className="text-gray-300" dangerouslySetInnerHTML={{ __html: item?.content }} />
                     </div>
                   </motion.div>
                 ))}

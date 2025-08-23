@@ -44,8 +44,8 @@ const Section2 = () => {
             .filter(([key]) => !isNaN(key))
             .map(([key, item]) => (
               <li key={key}>
-                <p className="text-2xl list-disc font-bold">{item.title}</p>
-                <p className="mb-4">{item.description}</p>
+                <p className="text-2xl list-disc font-bold">{item?.title}</p>
+                <p className="mb-4">{item?.description}</p>
               </li>
             ))}
         </ul>

@@ -86,7 +86,7 @@ const Notifications = () => {
               animate={{ opacity: 1, rotate: 0 }}
               transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
             >
-              {item.icon}
+              {item?.icon}
             </motion.div>
             <motion.p
               initial={{ opacity: 0, y: 10 }}
@@ -94,7 +94,7 @@ const Notifications = () => {
               transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
               className="text-lg sm:text-xl text-center"
             >
-              {item.text}
+              {item?.text}
             </motion.p>
           </motion.div>
         ))}

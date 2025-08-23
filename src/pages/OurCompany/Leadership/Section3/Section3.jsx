@@ -33,8 +33,8 @@ const Section3 = () => {
               key={index}
               className="bg-info text-white opacity-80 p-6 rounded-md shadow-md"
             >
-              <h3 className="text-lg font-semibold mb-2">{t(item.title)}</h3>
-              <p className="text-sm italic leading-relaxed">{t(item.desc)}</p>
+              <h3 className="text-lg font-semibold mb-2">{t(item?.title)}</h3>
+              <p className="text-sm italic leading-relaxed">{t(item?.desc)}</p>
             </div>
           ))}
         </div>

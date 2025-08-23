@@ -75,10 +75,10 @@ const Section5 = () => {
                   className="flex items-start gap-4 p-6 rounded-lg"
                   variants={itemVariants}
                 >
-                  {item.icon}
+                  {item?.icon}
                   <div>
-                    <p className="font-bold">{item.title}</p>
-                    <p>{item.text}</p>
+                    <p className="font-bold">{item?.title}</p>
+                    <p>{item?.text}</p>
                   </div>
                 </motion.div>
               ))}
