@@ -4,7 +4,7 @@ import HeroSection from "./HeroSection/HeroSection";
 import Calculator from "./Calculator/Calculator";
 import FixedExpensesTable from "./FixedExpensesTable/FixedExpensesTable";
 import ExpenseSection from "./ExpenseSection/ExpenseSection";
-import ExpenseAnalysisSection from "./ExpenseAnalysisSection/ExpenseAnalysisSection";
+// import ExpenseAnalysisSection from "./ExpenseAnalysisSection/ExpenseAnalysisSection";
 
 const TruckerCalculator = () => {
   return (
@@ -14,7 +14,7 @@ const TruckerCalculator = () => {
         <Calculator />
         <FixedExpensesTable />
         <ExpenseSection />
-        <ExpenseAnalysisSection />
+        {/* <ExpenseAnalysisSection /> */}
       </div>
     </>
   );
