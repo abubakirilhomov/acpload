@@ -55,9 +55,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Navigation Columns */}
           <div className="lg:col-span-7 grid grid-cols-2 md:grid-cols-5 gap-6">
-            {/* Platform Column */}
             <div className="flex flex-col gap-2">
               <h3 className="font-bold text-base mb-2 text-[#3f96d1]">{t('navfooter.platform')}</h3>
               <Link to="#" className="text-sm hover:text-[#3f96d1] text-[#3f96d1]">
@@ -80,7 +78,6 @@ const Footer = () => {
               </Link>
             </div>
 
-            {/* Products Column */}
             <div className="flex flex-col gap-2">
               <h3 className="font-bold text-base mb-2 text-[#3f96d1]">{t('navfooter.products')}</h3>
               <Link to="#" className="text-sm hover:text-[#3f96d1] text-[#3f96d1]">
@@ -91,7 +88,6 @@ const Footer = () => {
               </Link>
             </div>
 
-            {/* Solutions Column */}
             <div className="flex flex-col gap-2">
               <h3 className="font-bold text-base mb-2 text-[#3f96d1]">{t('navfooter.solutions')}</h3>
               <Link to="#" className="text-sm hover:text-[#3f96d1] text-[#3f96d1]">
@@ -108,7 +104,6 @@ const Footer = () => {
               </Link>
             </div>
 
-            {/* Resources Column */}
             <div className="flex flex-col gap-2">
               <h3 className="font-bold text-base mb-2 text-[#3f96d1]">{t('navfooter.resources')}</h3>
               <Link to="#" className="text-sm hover:text-[#3f96d1] text-[#3f96d1]">
@@ -128,7 +123,6 @@ const Footer = () => {
               </Link>
             </div>
 
-            {/* Our Company Column */}
             <div className="flex flex-col gap-2">
               <h3 className="font-bold text-base mb-2 text-[#3f96d1]">{t('navfooter.our-company')}</h3>
               <Link to="#" className="text-sm hover:text-[#3f96d1] text-[#3f96d1]">
@@ -192,7 +186,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Section: Copyright and Social Icons */}
         <div className="divider my-6"></div>
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs opacity-70">{t('navfooter.footer-sub-text')} 2022</p>
